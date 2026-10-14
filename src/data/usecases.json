@@ -1,0 +1,519 @@
+[
+ {
+  "title": "Daily Reddit Digest",
+  "description": "Summarize a curated digest of your favourite subreddits, based on your preferences.",
+  "category": "Social Media",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/daily-reddit-digest.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "daily-reddit-digest"
+ },
+ {
+  "title": "Daily YouTube Digest",
+  "description": "Get daily summaries of new videos from your favorite channels \u2014 never miss content from creators you follow.",
+  "category": "Social Media",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/daily-youtube-digest.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "daily-youtube-digest"
+ },
+ {
+  "title": "X Account Analysis",
+  "description": "Get a qualitative analysis of your X account.",
+  "category": "Social Media",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/x-account-analysis.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "x-account-analysis"
+ },
+ {
+  "title": "Multi-Source Tech News Digest",
+  "description": "Automatically aggregate and deliver quality-scored tech news from 109+ sources (RSS, Twitter/X, GitHub, web search) via natural language.",
+  "category": "Social Media",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/multi-source-tech-news-digest.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "multi-source-tech-news-digest"
+ },
+ {
+  "title": "X/Twitter Automation",
+  "description": "Post tweets, reply, like, retweet, follow, DM, search, extract data, run giveaways, and monitor accounts \u2014 all from chat via the TweetClaw plugin.",
+  "category": "Social Media",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/x-twitter-automation.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "x-twitter-automation"
+ },
+ {
+  "title": "Goal-Driven Autonomous Tasks",
+  "description": "Brain dump your goals and have your agent autonomously generate, schedule, and complete daily tasks \u2014 including building surprise mini-apps overnight.",
+  "category": "Creative & Building",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/overnight-mini-app-builder.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "goal-driven-autonomous-tasks"
+ },
+ {
+  "title": "YouTube Content Pipeline",
+  "description": "Automate video idea scouting, research, and tracking for a YouTube channel.",
+  "category": "Creative & Building",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/youtube-content-pipeline.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "youtube-content-pipeline"
+ },
+ {
+  "title": "Multi-Agent Content Factory",
+  "description": "Run a multi-agent content pipeline in Discord \u2014 research, writing, and thumbnail agents working in dedicated channels.",
+  "category": "Creative & Building",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/content-factory.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "multi-agent-content-factory"
+ },
+ {
+  "title": "Autonomous Game Dev Pipeline",
+  "description": "Full lifecycle management of educational game development: from backlog selection to implementation, registration, documentation, and git commit. Enforces \"Bugs First\" policy.",
+  "category": "Creative & Building",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/autonomous-game-dev-pipeline.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "autonomous-game-dev-pipeline"
+ },
+ {
+  "title": "Podcast Production Pipeline",
+  "description": "Automate the full podcast workflow \u2014 guest research, episode outlines, show notes, and social media promo \u2014 from topic to publish-ready assets.",
+  "category": "Creative & Building",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/podcast-production-pipeline.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "podcast-production-pipeline"
+ },
+ {
+  "title": "AI Video Editing via Chat",
+  "description": "Edit videos by describing changes in natural language \u2014 trim, merge, add music, subtitles, color grade, crop to vertical. No timeline, no GUI.",
+  "category": "Creative & Building",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/ai-video-editing.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "ai-video-editing-via-chat"
+ },
+ {
+  "title": "n8n Workflow Orchestration",
+  "description": "Delegate API calls to n8n workflows via webhooks \u2014 the agent never touches credentials, and every integration is visual and lockable.",
+  "category": "Infrastructure & DevOps",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/n8n-workflow-orchestration.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "n8n-workflow-orchestration"
+ },
+ {
+  "title": "Self-Healing Home Server",
+  "description": "Run an always-on infrastructure agent with SSH access, automated cron jobs, and self-healing capabilities across your home network.",
+  "category": "Infrastructure & DevOps",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/self-healing-home-server.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "self-healing-home-server"
+ },
+ {
+  "title": "Autonomous Project Management",
+  "description": "Coordinate multi-agent projects using STATE.yaml pattern \u2014 subagents work in parallel without orchestrator overhead.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/autonomous-project-management.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "autonomous-project-management"
+ },
+ {
+  "title": "Multi-Channel AI Customer Service",
+  "description": "Unify WhatsApp, Instagram, Email, and Google Reviews in one AI-powered inbox with 24/7 auto-responses.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/multi-channel-customer-service.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "multi-channel-ai-customer-service"
+ },
+ {
+  "title": "Phone-Based Personal Assistant",
+  "description": "Access your AI agent via phone calls, hands-free voice assistance for any phone.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/phone-based-personal-assistant.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "phone-based-personal-assistant"
+ },
+ {
+  "title": "Inbox De-clutter",
+  "description": "Summarize Newsletters and send you a digest as an email.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/inbox-declutter.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "inbox-de-clutter"
+ },
+ {
+  "title": "Personal CRM",
+  "description": "Automatically discover and track contacts from your email and calendar, with natural language queries.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/personal-crm.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "personal-crm"
+ },
+ {
+  "title": "Health & Symptom Tracker",
+  "description": "Track food intake and symptoms to identify triggers, with scheduled check-in reminders.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/health-symptom-tracker.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "health-symptom-tracker"
+ },
+ {
+  "title": "Multi-Channel Personal Assistant",
+  "description": "Route tasks across Telegram, Slack, email, and calendar from a single AI assistant.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/multi-channel-assistant.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "multi-channel-personal-assistant"
+ },
+ {
+  "title": "Project State Management",
+  "description": "Event-driven project tracking with automatic context capture, replacing static Kanban boards.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/project-state-management.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "project-state-management"
+ },
+ {
+  "title": "Dynamic Dashboard",
+  "description": "Real-time dashboard with parallel data fetching from APIs, databases, and social media.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/dynamic-dashboard.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "dynamic-dashboard"
+ },
+ {
+  "title": "Todoist Task Manager",
+  "description": "Maximize agent transparency by syncing reasoning and progress logs to Todoist.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/todoist-task-manager.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "todoist-task-manager"
+ },
+ {
+  "title": "Family Calendar & Household Assistant",
+  "description": "Aggregate all family calendars into a morning briefing, monitor messages for appointments, and manage household inventory.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/family-calendar-household-assistant.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "family-calendar-household-assistant"
+ },
+ {
+  "title": "Multi-Agent Specialized Team",
+  "description": "Run multiple specialized agents (strategy, dev, marketing, business) as a coordinated team via a single Telegram chat.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/multi-agent-team.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "multi-agent-specialized-team"
+ },
+ {
+  "title": "OpenClaw as Desktop Cowork",
+  "description": "Use OpenClaw as a desktop Cowork app \u2014 unified UI, multi-agent, MCP once, WebUI/Telegram/Lark/DingTalk. When OpenClaw is down, fix it remotely via Telegram or WebUI using the built-in OpenClaw deployment expert (install, detect, repair).",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/aionui-cowork-desktop.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "openclaw-as-desktop-cowork"
+ },
+ {
+  "title": "Custom Morning Brief",
+  "description": "Get a fully customized daily briefing \u2014 news, tasks, content drafts, and AI-recommended actions \u2014 texted to you every morning.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/custom-morning-brief.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "custom-morning-brief"
+ },
+ {
+  "title": "Automated Meeting Notes & Action Items",
+  "description": "Turn meeting transcripts into structured summaries and automatically create tasks in Jira, Linear, or Todoist \u2014 assigned to the right person.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/meeting-notes-action-items.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "automated-meeting-notes-action-items"
+ },
+ {
+  "title": "Habit Tracker & Accountability Coach",
+  "description": "Proactive daily check-ins via Telegram or SMS that track habits, maintain streaks, and adapt their tone based on your progress.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/habit-tracker-accountability-coach.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "habit-tracker-accountability-coach"
+ },
+ {
+  "title": "Second Brain",
+  "description": "Text anything to your bot to remember it, then search through all your memories in a custom Next.js dashboard.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/second-brain.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "second-brain"
+ },
+ {
+  "title": "Event Guest Confirmation",
+  "description": "Call a list of event guests one-by-one to confirm attendance, collect notes, and compile a summary \u2014 fully automated via AI voice calls.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/event-guest-confirmation.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "event-guest-confirmation"
+ },
+ {
+  "title": "Phone Call Notifications",
+  "description": "Turn your agent's alerts into real phone calls \u2014 morning briefings, price drops, urgent emails \u2014 with two-way conversation.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/phone-call-notifications.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "phone-call-notifications"
+ },
+ {
+  "title": "Local CRM Framework",
+  "description": "Turn OpenClaw into a fully local CRM and sales automation platform with `npx denchclaw` \u2014 DuckDB, browser automation, multi-view UI, and natural language queries.",
+  "category": "Productivity",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/local-crm-framework.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "local-crm-framework"
+ },
+ {
+  "title": "AI Earnings Tracker",
+  "description": "Track tech/AI earnings reports with automated previews, alerts, and detailed summaries.",
+  "category": "Research & Learning",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/earnings-tracker.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "ai-earnings-tracker"
+ },
+ {
+  "title": "Personal Knowledge Base (RAG)",
+  "description": "Build a searchable knowledge base by dropping URLs, tweets, and articles into chat.",
+  "category": "Research & Learning",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/knowledge-base-rag.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "personal-knowledge-base-rag"
+ },
+ {
+  "title": "Market Research & Product Factory",
+  "description": "Mine Reddit and X for real pain points using the Last 30 Days skill, then have OpenClaw build MVPs that solve them.",
+  "category": "Research & Learning",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/market-research-product-factory.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "market-research-product-factory"
+ },
+ {
+  "title": "Pre-Build Idea Validator",
+  "description": "Automatically scan GitHub, HN, npm, PyPI, and Product Hunt before building anything new \u2014 stop if the space is crowded, proceed if it's open.",
+  "category": "Research & Learning",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/pre-build-idea-validator.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "pre-build-idea-validator"
+ },
+ {
+  "title": "Semantic Memory Search",
+  "description": "Add vector-powered semantic search to your OpenClaw markdown memory files with hybrid retrieval and auto-sync.",
+  "category": "Research & Learning",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/semantic-memory-search.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "semantic-memory-search"
+ },
+ {
+  "title": "arXiv Paper Reader",
+  "description": "Read and analyze arXiv papers conversationally \u2014 fetch by ID, browse sections, compare abstracts, and get AI summaries.",
+  "category": "Research & Learning",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/arxiv-paper-reader.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "arxiv-paper-reader"
+ },
+ {
+  "title": "LaTeX Paper Writing",
+  "description": "Write and compile LaTeX papers conversationally with instant PDF preview \u2014 no local TeX installation needed.",
+  "category": "Research & Learning",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/latex-paper-writing.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "latex-paper-writing"
+ },
+ {
+  "title": "HF Papers Research Discovery",
+  "description": "Discover trending ML papers on Hugging Face, triage by upvotes, and deep-read via arXiv \u2014 all conversationally.",
+  "category": "Research & Learning",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/hf-papers-research-discovery.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "hf-papers-research-discovery"
+ },
+ {
+  "title": "Polymarket Autopilot",
+  "description": "Automated paper trading on prediction markets with backtesting, strategy analysis, and daily performance reports.",
+  "category": "Finance & Trading",
+  "tools": [
+   "OpenClaw"
+  ],
+  "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/polymarket-autopilot.md",
+  "sourceName": "awesome-openclaw-usecases (GitHub)",
+  "slug": "polymarket-autopilot"
+ },
+ {
+  "title": "Rakuten: 7-hour autonomous refactor in vLLM",
+  "description": "Claude Code worked 7 hours autonomously implementing an activation-vector extraction method in vLLM; feature time-to-market cut from 24 to 5 days.",
+  "category": "Enterprise Engineering",
+  "tools": [
+   "Claude Code"
+  ],
+  "source": "https://claude.com/customers/rakuten",
+  "sourceName": "Anthropic customer story",
+  "slug": "rakuten-7-hour-autonomous-refactor-in-vllm"
+ },
+ {
+  "title": "Stripe: Scala-to-Java migration in 4 days",
+  "description": "A Stripe team migrated 10,000 lines of Scala to Java in four days (estimated 10 engineer-weeks) after rolling Claude Code out to 1,370 engineers.",
+  "category": "Enterprise Engineering",
+  "tools": [
+   "Claude Code"
+  ],
+  "source": "https://claude.com/customers/stripe",
+  "sourceName": "Anthropic customer story",
+  "slug": "stripe-scala-to-java-migration-in-4-days"
+ },
+ {
+  "title": "Spotify: background coding agent for fleet migrations",
+  "description": "Claude Agent SDK runs as a background agent from prompt to merged PR, producing 650+ merged PRs per month and saving up to 90% of migration time.",
+  "category": "Enterprise Engineering",
+  "tools": [
+   "Claude Agent SDK"
+  ],
+  "source": "https://claude.com/customers/spotify",
+  "sourceName": "Anthropic customer story",
+  "slug": "spotify-background-coding-agent-for-fleet-migrations"
+ },
+ {
+  "title": "Satispay: Java 8 to 21 upgrade in under 4 days",
+  "description": "Claude Code modernized Satispay's core transaction service (Java 8\u219221 plus a major Spring upgrade) against a four-week estimate.",
+  "category": "Enterprise Engineering",
+  "tools": [
+   "Claude Code"
+  ],
+  "source": "https://claude.com/customers/satispay",
+  "sourceName": "Anthropic customer story",
+  "slug": "satispay-java-8-to-21-upgrade-in-under-4-days"
+ },
+ {
+  "title": "Money Forward: incident and Kubernetes auto-fix agents",
+  "description": "Engineers built Sherlock (incident investigation) and Lumos (auto-fixes Kubernetes issues and opens a PR in ~5 minutes) with Claude Code.",
+  "category": "Enterprise Engineering",
+  "tools": [
+   "Claude Code"
+  ],
+  "source": "https://claude.com/customers/money-forward",
+  "sourceName": "Anthropic customer story",
+  "slug": "money-forward-incident-and-kubernetes-auto-fix-agents"
+ }
+]

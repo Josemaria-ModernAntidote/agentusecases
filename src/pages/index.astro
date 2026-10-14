@@ -1,0 +1,60 @@
+---
+import data from '../data/usecases.json';
+const cats = [...new Set(data.map(d => d.category))];
+const title = 'AI Agent Use Cases — Real things people do with AI agents';
+const desc = `A searchable directory of ${data.length} real AI agent use cases across ${cats.length} categories, with tools and source links.`;
+const url = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : '/';
+const ld = { '@context':'https://schema.org','@type':'ItemList', name: title, itemListElement: data.map((d,i)=>({'@type':'ListItem',position:i+1,name:d.title,url:d.source})) };
+---
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{title}</title><meta name="description" content={desc}><link rel="canonical" href={url}>
+<meta property="og:type" content="website"><meta property="og:title" content={title}><meta property="og:description" content={desc}><meta property="og:url" content={url}>
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content={title}><meta name="twitter:description" content={desc}>
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<script type="application/ld+json" set:html={JSON.stringify(ld)} />
+<style is:global>
+:root{--bg:#0b0d12;--card:#141823;--line:#232a3a;--fg:#e8ecf4;--mut:#94a0b8;--acc:#7c5cff}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--fg)}
+a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{padding:56px 0 24px}h1{font-size:clamp(32px,5vw,52px);margin:0 0 12px;letter-spacing:-.02em}
+h1 span{background:linear-gradient(90deg,#7c5cff,#2ad4ff);-webkit-background-clip:text;color:transparent}
+.sub{color:var(--mut);font-size:18px;max-width:640px}
+.sponsor{display:flex;justify-content:space-between;align-items:center;gap:12px;border:1px dashed var(--acc);border-radius:14px;padding:14px 18px;margin:20px 0;color:var(--mut)}
+.btn{background:var(--acc);color:#fff;border:0;border-radius:10px;padding:10px 16px;font-weight:600;text-decoration:none;cursor:pointer}
+.controls{position:sticky;top:0;background:var(--bg);padding:14px 0;z-index:2}
+input[type=search],input[type=email]{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--fg);font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.chip{border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:6px 12px;cursor:pointer}
+.chip.on{background:var(--acc);color:#fff;border-color:var(--acc)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin:10px 0 40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:8px}
+.card h3{margin:0;font-size:17px}.card p{margin:0;color:var(--mut);font-size:14px;line-height:1.5;flex:1}
+.meta{display:flex;flex-wrap:wrap;gap:6px;font-size:12px}.tag{background:#1d2333;border-radius:6px;padding:3px 8px}.cat{color:#2ad4ff}
+.src{font-size:13px;color:#a99bff}section h2{font-size:28px;margin:48px 0 16px}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.plan{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.price{font-size:30px;font-weight:700;margin:6px 0}.news{display:flex;gap:10px;max-width:520px}footer{color:var(--mut);padding:40px 0;font-size:14px;border-top:1px solid var(--line);margin-top:48px}
+</style></head><body><div class="wrap">
+<header><h1>AI <span>Agent Use Cases</span></h1><p class="sub">{desc} Stop wondering what to do with your agent — steal a workflow.</p>
+<div class="sponsor"><span>⭐ Your product here — reach builders exploring AI agents.</span><a class="btn" href="mailto:josemaria@mail.grokbot.com?subject=Sponsor%20AI%20Agent%20Use%20Cases">Sponsor this site</a></div></header>
+<div class="controls"><input id="q" type="search" placeholder={`Search ${data.length} use cases…`} aria-label="Search">
+<div class="chips"><button class="chip on" data-cat="">All ({data.length})</button>{cats.map(c=> <button class="chip" data-cat={c}>{c} ({data.filter(d=>d.category===c).length})</button>)}</div></div>
+<p id="count" style="color:var(--mut)"></p>
+<div class="grid" id="grid">{data.map(d=> <article class="card" data-cat={d.category} data-text={(d.title+' '+d.description+' '+d.tools.join(' ')+' '+d.category).toLowerCase()}>
+<div class="meta"><span class="cat">{d.category}</span></div><h3>{d.title}</h3><p>{d.description}</p>
+<div class="meta">{d.tools.map(t=> <span class="tag">{t}</span>)}</div>
+<a class="src" href={d.source} target="_blank" rel="noopener">Source: {d.sourceName} ↗</a></article>)}</div>
+<section id="pricing"><h2>Get featured</h2><div class="plans">
+<div class="plan"><b>Free listing</b><div class="price">$0</div><p class="sub" style="font-size:14px">Submit a real use case with a public source link.</p><a class="btn" href="mailto:josemaria@mail.grokbot.com">Submit</a></div>
+<div class="plan"><b>Featured listing</b><div class="price">TBD</div><p class="sub" style="font-size:14px">Pinned at the top of its category with a highlight badge. (Pricing coming soon.)</p><a class="btn" href="mailto:josemaria@mail.grokbot.com?subject=Featured%20listing">Contact us</a></div>
+<div class="plan"><b>Site + newsletter sponsor</b><div class="price">TBD</div><p class="sub" style="font-size:14px">Logo in the header sponsor slot and in the weekly newsletter.</p><a class="btn" href="mailto:josemaria@mail.grokbot.com?subject=Sponsorship">Contact us</a></div></div></section>
+<section id="newsletter"><h2>New use cases, weekly</h2><p class="sub">The best new agent workflows in your inbox. No spam.</p>
+<form class="news" id="nl"><input type="email" required placeholder="you@email.com" aria-label="Email"><button class="btn">Subscribe</button></form><p id="nlmsg" class="sub"></p></section>
+<footer>Every entry links to its original public source. Machine-readable list: <a href="/llms.txt">/llms.txt</a> · <a href="/sitemap-index.xml">Sitemap</a></footer>
+</div>
+<script>
+const q=document.getElementById('q'),cards=[...document.querySelectorAll('.card')],chips=[...document.querySelectorAll('.chip')];let cat='';
+function f(){const s=q.value.toLowerCase().trim();let n=0;cards.forEach(c=>{const ok=(!cat||c.dataset.cat===cat)&&(!s||c.dataset.text.includes(s));c.style.display=ok?'':'none';if(ok)n++});document.getElementById('count').textContent=n+' use cases'}
+q.addEventListener('input',f);chips.forEach(b=>b.onclick=()=>{cat=b.dataset.cat;chips.forEach(x=>x.classList.toggle('on',x===b));f()});f();
+// Newsletter stub: not wired to any provider yet (e.g. Resend/Buttondown).
+document.getElementById('nl').onsubmit=e=>{e.preventDefault();document.getElementById('nlmsg').textContent='Thanks! Signups open soon (newsletter not connected yet).'};
+</script></body></html>

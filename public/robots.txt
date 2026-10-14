@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://agentusecases.co/sitemap-index.xml
