@@ -834,5 +834,71 @@
     "source": "https://www.manus.im/blog/manus-user-story-noelle-fleur",
     "sourceName": "Manus blog",
     "slug": "no-code-ai-bouquet-designer"
+  },
+  {
+    "title": "LG CNS: Modernize 20-Year-Old Enterprise Systems",
+    "description": "LG CNS's Build Factory used Claude Code to convert 2,888 of 2,913 legacy APIs (99.1%) and migrate 1,340 screens to React in a seven-month modernization at about half the cost of a conventional rebuild.",
+    "category": "Enterprise Engineering",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://claude.com/customers/lg-cns",
+    "sourceName": "Anthropic Customers",
+    "slug": "lg-cns-modernize-20-year-old-enterprise-systems"
+  },
+  {
+    "title": "Pictet: Compliance Gap Analysis in Hours",
+    "description": "Swiss bank Pictet used Claude Code to compare over 50 internal directives against current regulations in hours instead of a projected two-week, three-person effort.",
+    "category": "Finance & Trading",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://claude.com/customers/pictet",
+    "sourceName": "Anthropic Customers",
+    "slug": "pictet-compliance-gap-analysis-in-hours"
+  },
+  {
+    "title": "NTT DATA: Cut Incident Analysis to 30 Minutes",
+    "description": "NTT DATA Group used Codex to complete a complex critical-system incident analysis in 30 minutes that previously took five engineers three days, then rolled Codex out to ~9,000 employees.",
+    "category": "Infrastructure & DevOps",
+    "tools": [
+      "OpenAI Codex"
+    ],
+    "source": "https://openai.com/index/ntt-data/",
+    "sourceName": "OpenAI",
+    "slug": "ntt-data-cut-incident-analysis-to-30-minutes"
+  },
+  {
+    "title": "Coinbase: Agent-First Idea-to-Production in Under 2 Days",
+    "description": "Coinbase runs Cursor across 2,400+ developers so agents create ~75% of PRs and some teams cut idea-to-production time from 20 days to about 1.8 days.",
+    "category": "Enterprise Engineering",
+    "tools": [
+      "Cursor"
+    ],
+    "source": "https://cursor.com/blog/coinbase",
+    "sourceName": "Cursor Blog",
+    "slug": "coinbase-agent-first-idea-to-production"
+  },
+  {
+    "title": "AngelList: Redshift-to-Snowflake Metabase Migration",
+    "description": "AngelList used up to 20 parallel Devin agents to retarget, rewrite, and validate 14,000 Metabase cards from Redshift to Snowflake, finishing the cutover 5.2× faster than estimated.",
+    "category": "Infrastructure & DevOps",
+    "tools": [
+      "Devin"
+    ],
+    "source": "https://devin.ai/customers/angellist",
+    "sourceName": "Devin Customers",
+    "slug": "angellist-redshift-to-snowflake-metabase-migration"
+  },
+  {
+    "title": "Ascendea: AI Chief of Staff That Wrote 303 SOPs in a Day",
+    "description": "Ascendea runs Manus as “James,” an AI chief of staff that produced 303 SOPs in one day and coordinates complex strategy, research, and prospecting work for a 10-person team serving 112 clients.",
+    "category": "Productivity",
+    "tools": [
+      "Manus"
+    ],
+    "source": "https://manus.im/blog/Ascendea-James-Customer-Story",
+    "sourceName": "Manus blog",
+    "slug": "ascendea-ai-chief-of-staff-303-sops"
   }
 ]
