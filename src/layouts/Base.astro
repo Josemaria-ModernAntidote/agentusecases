@@ -1,0 +1,27 @@
+---
+import Analytics from '../components/Analytics.astro';
+import { NAME, abs, lastUpdated } from '../lib/site';
+const { title, desc, path, ld = [], type = 'website' } = Astro.props;
+const url = abs(path); const og = abs('/og.png');
+---
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{title}</title><meta name="description" content={desc}><link rel="canonical" href={url}>
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:site_name" content={NAME}><meta property="og:type" content={type}><meta property="og:title" content={title}><meta property="og:description" content={desc}><meta property="og:url" content={url}><meta property="og:image" content={og}><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AI Agent Use Cases">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content={title}><meta name="twitter:description" content={desc}><meta name="twitter:image" content={og}>
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt"><link rel="sitemap" href="/sitemap-index.xml">
+<script type="application/ld+json" set:html={JSON.stringify(ld)} />
+<style is:global>
+:root{--bg:#0b0d12;--card:#141823;--line:#232a3a;--fg:#e8ecf4;--mut:#94a0b8;--acc:#7c5cff}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--fg);line-height:1.55}
+a{color:#a99bff}.wrap{max-width:880px;margin:0 auto;padding:0 20px}nav.top{padding:18px 0;font-size:14px;display:flex;gap:16px;flex-wrap:wrap}nav.top a{color:var(--mut);text-decoration:none}
+.bc{font-size:13px;color:var(--mut)}.bc a{color:var(--mut)}h1{font-size:clamp(26px,4.5vw,38px);letter-spacing:-.02em;margin:10px 0}
+.lead{font-size:17px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}.mut{color:var(--mut);font-size:14px}
+ul.l{padding-left:20px}ul.l li{margin:6px 0}.tag{background:#1d2333;border-radius:6px;padding:3px 8px;font-size:12px;margin-right:4px;color:var(--fg);text-decoration:none}
+footer{color:var(--mut);padding:32px 0;font-size:14px;border-top:1px solid var(--line);margin-top:40px}
+</style><Analytics /></head><body><div class="wrap">
+<nav class="top" aria-label="Main"><a href="/"><b>AI Agent Use Cases</b></a><a href="/agents/">Agents</a><a href="/categories/">Categories</a><a href="/about/">About &amp; FAQ</a></nav>
+<main><slot /></main>
+<footer>Every entry links to its original public source. Data last updated <time datetime={lastUpdated}>{lastUpdated}</time>. <a href="/llms.txt">llms.txt</a> · <a href="/llms-full.txt">llms-full.txt</a> · <a href="/sitemap-index.xml">Sitemap</a></footer>
+</div></body></html>

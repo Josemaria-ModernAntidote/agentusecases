@@ -5,12 +5,13 @@ const cats = [...new Set(data.map(d => d.category))];
 const agents = [...new Set(data.flatMap(d => d.tools))];
 const title = 'AI Agent Use Cases — Real things people do with AI agents';
 const desc = `A searchable directory of ${data.length} real AI agent use cases across ${cats.length} categories and ${agents.length} agents, with tools and source links.`;
-const url = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : '/';
-const ogImage = new URL('/og.png', Astro.site || 'https://agent-uses.com').href;
+const url = 'https://agent-uses.com/';
+const slugify = (s) => s.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const ogImage = 'https://agent-uses.com/og.png';
 const ld = [
   { '@context':'https://schema.org','@type':'WebSite', name: 'AI Agent Use Cases', url: Astro.site ? new URL('/', Astro.site).href : 'https://agent-uses.com/', description: desc, potentialAction: { '@type':'SearchAction', target: { '@type':'EntryPoint', urlTemplate: (Astro.site ? new URL('/', Astro.site).href : 'https://agent-uses.com/') + '?q={search_term_string}' }, 'query-input':'required name=search_term_string' } },
   { '@context':'https://schema.org','@type':'Organization', name: 'AI Agent Use Cases', url: Astro.site ? new URL('/', Astro.site).href : 'https://agent-uses.com/', logo: ogImage },
-  { '@context':'https://schema.org','@type':'ItemList', name: title, itemListElement: data.map((d,i)=>({'@type':'ListItem',position:i+1,name:d.title,url:d.source})) }
+  { '@context':'https://schema.org','@type':'ItemList', name: title, itemListElement: data.map((d,i)=>({'@type':'ListItem',position:i+1,name:d.title,url:'https://agent-uses.com/use-cases/'+d.slug+'/'})) }
 ];
 ---
 <html lang="en"><head>
@@ -41,14 +42,14 @@ input[type=search],input[type=email]{width:100%;padding:12px 14px;border-radius:
 .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.plan{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
 .price{font-size:30px;font-weight:700;margin:6px 0}.news{display:flex;gap:10px;max-width:520px}footer{color:var(--mut);padding:40px 0;font-size:14px;border-top:1px solid var(--line);margin-top:48px}
 </style><Analytics /></head><body><div class="wrap">
-<header><h1>AI <span>Agent Use Cases</span></h1><p class="sub">{data.length} real workflows people run with AI agents, each with a source.</p></header>
+<header><h1>AI <span>Agent Use Cases</span></h1><p class="sub">{data.length} real workflows people run with AI agents, each with a source.</p><p class="sub" style="font-size:14px">Browse by <a href="/agents/">agent</a> · <a href="/categories/">category</a> · <a href="/about/">About &amp; FAQ</a></p></header>
 <div class="controls"><input id="q" type="search" placeholder={`Search ${data.length} use cases…`} aria-label="Search">
 <div class="frow"><div class="chips" role="group" aria-label="Category"><button class="chip on" data-cat="">All</button>{cats.map(c=> <button class="chip" data-cat={c}>{c}</button>)}</div>
 <select id="agent" aria-label="Filter by agent"><option value="">All agents</option>{agents.map(a=> <option value={a}>{a} ({data.filter(d=>d.tools.includes(a)).length})</option>)}</select></div></div>
 <p id="count" style="color:var(--mut)"></p>
 <div class="grid" id="grid">{data.map(d=> <article class="card" data-slug={d.slug} data-cat={d.category} data-agents={d.tools.join('|')} data-text={(d.title+' '+d.description+' '+d.tools.join(' ')+' '+d.category).toLowerCase()}>
-<div class="meta"><span class="cat">{d.category}</span></div><h3>{d.title}</h3><p>{d.description}</p>
-<div class="meta">{d.tools.map(t=> <span class="tag">{t}</span>)}</div>
+<div class="meta"><a class="cat" style="text-decoration:none" href={`/categories/${slugify(d.category)}/`}>{d.category}</a></div><h3><a href={`/use-cases/${d.slug}/`} style="text-decoration:none">{d.title}</a></h3><p>{d.description}</p>
+<div class="meta">{d.tools.map(t=> <a class="tag" style="text-decoration:none" href={`/agents/${slugify(t)}/`}>{t}</a>)}</div>
 <div class="foot"><a class="src" href={d.source} target="_blank" rel="noopener" data-slug={d.slug} data-agent={d.tools.join(',')}>Source: {d.sourceName} ↗</a><span class="vote" data-slug={d.slug}>Useful? <button data-v="up" aria-label="Useful">👍</button><button data-v="down" aria-label="Not useful">👎</button></span></div></article>)}</div>
 <section id="pricing"><h2>Get featured</h2><div class="plans">
 <div class="plan"><b>Free listing</b><div class="price">$0</div><p class="sub" style="font-size:14px">Submit a real use case with a public source link.</p><a class="btn" href="mailto:josemaria@mail.grokbot.com">Submit</a></div>
@@ -67,7 +68,7 @@ try{const r=await fetch('/api/subscribe',{method:'POST',body:new FormData(f)});c
 m.textContent=d.ok?'Thanks! You are subscribed.':(d.error||'Something went wrong.');if(d.ok)f.reset();}catch{m.textContent='Something went wrong.';}});
 </script>
 <div class="sponsor"><span>⭐ Your product here — reach builders exploring AI agents.</span><a class="btn" href="mailto:josemaria@mail.grokbot.com?subject=Sponsor%20AI%20Agent%20Use%20Cases">Sponsor this site</a></div>
-<footer>Every entry links to its original public source. Machine-readable list: <a href="/llms.txt">/llms.txt</a> · <a href="/sitemap-index.xml">Sitemap</a></footer>
+<footer>Every entry links to its original public source. Machine-readable list: <a href="/llms.txt">/llms.txt</a> · <a href="/llms-full.txt">/llms-full.txt</a> · <a href="/about/">About &amp; FAQ</a> · <a href="/sitemap-index.xml">Sitemap</a></footer>
 </div>
 <script>
 import { track } from '@vercel/analytics';

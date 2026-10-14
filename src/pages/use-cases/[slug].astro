@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import { items, slugify, crumbs, abs, lastUpdated, NAME } from '../../lib/site';
+export function getStaticPaths() { return items.map(d => ({ params: { slug: d.slug }, props: { d } })); }
+const { d } = Astro.props;
+const by = d.tools.join(', ');
+const title = `${d.title} — ${by} use case | ${NAME}`;
+const desc = `${d.description}`.slice(0, 155);
+const path = `/use-cases/${d.slug}/`;
+const related = items.filter(x => x.slug !== d.slug && (x.category === d.category || x.tools.some(t => d.tools.includes(t)))).slice(0, 6);
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'Article', headline: d.title, description: d.description, url: abs(path), dateModified: lastUpdated, image: abs('/og.png'), articleSection: d.category, keywords: [...d.tools, d.category].join(', '), about: d.tools.map(t => ({ '@type': 'SoftwareApplication', name: t, applicationCategory: 'AI agent' })), isBasedOn: d.source, citation: d.source, publisher: { '@type': 'Organization', name: NAME, url: abs('/') } },
+  crumbs([['Home', '/'], [d.category, `/categories/${slugify(d.category)}/`], [d.title, path]])
+];
+---
+<Base title={title} desc={desc} path={path} ld={ld} type="article">
+<p class="bc"><a href="/">Home</a> › <a href={`/categories/${slugify(d.category)}/`}>{d.category}</a> › {d.title}</p>
+<article>
+<h1>{d.title}</h1>
+<p class="lead"><b>Summary:</b> {d.title} is a {d.category.toLowerCase()} use case for {by}. {d.description}</p>
+<dl>
+<dt class="mut">Agent(s)</dt><dd>{d.tools.map(t => <a class="tag" href={`/agents/${slugify(t)}/`}>{t}</a>)}</dd>
+<dt class="mut">Category</dt><dd><a href={`/categories/${slugify(d.category)}/`}>{d.category}</a></dd>
+<dt class="mut">Original source</dt><dd><a href={d.source} rel="noopener">{d.sourceName} ↗</a></dd>
+<dt class="mut">Last updated</dt><dd><time datetime={lastUpdated}>{lastUpdated}</time></dd>
+</dl>
+</article>
+{related.length > 0 && <section><h2>Related use cases</h2><ul class="l">{related.map(r => <li><a href={`/use-cases/${r.slug}/`}>{r.title}</a> <span class="mut">— {r.tools.join(', ')}</span></li>)}</ul></section>}
+</Base>

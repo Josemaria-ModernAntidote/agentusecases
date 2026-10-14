@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import { items, cats, agents, crumbs, NAME, lastUpdated } from '../lib/site';
+const faq = [
+  ['What is AI Agent Use Cases?', `A free, searchable directory of ${items.length} real-world AI agent use cases across ${cats.length} categories and ${agents.length} agents (${agents.join(', ')}).`],
+  ['Where do the use cases come from?', 'Every entry links to its original public source (for example a GitHub repository, documentation page or published case study). Entries without a public source are not listed.'],
+  ['Which AI agents are covered?', `${agents.join(', ')}.`],
+  ['How often is the directory updated?', `The data was last updated on ${lastUpdated}.`],
+  ['How can I submit a use case?', 'Email josemaria@mail.grokbot.com with the use case and a public source link. Free listings are accepted.'],
+  ['Is there a machine-readable version?', 'Yes: /llms.txt (summary index) and /llms-full.txt (every entry with its category, agents and source), plus /sitemap-index.xml.'],
+];
+const ld = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }, crumbs([['Home', '/'], ['About & FAQ', '/about/']])];
+---
+<Base title={`About & FAQ | ${NAME}`} desc={`What AI Agent Use Cases is, where its ${items.length} source-linked entries come from, and how to submit one.`} path="/about/" ld={ld}>
+<h1>About AI Agent Use Cases</h1>
+<p class="lead">{faq[0][1]} {faq[1][1]}</p>
+<h2>FAQ</h2>
+{faq.map(([q, a]) => <section><h3>{q}</h3><p>{a}</p></section>)}
+</Base>

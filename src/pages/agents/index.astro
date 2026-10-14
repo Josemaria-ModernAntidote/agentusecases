@@ -1,0 +1,11 @@
+---
+import Base from '../../layouts/Base.astro';
+import { items, agents, slugify, crumbs, NAME } from '../../lib/site';
+const rows = agents.map(a => [a, items.filter(d => d.tools.includes(a)).length] as const).sort((x, y) => y[1] - x[1]);
+const ld = [crumbs([['Home', '/'], ['Agents', '/agents/']]), { '@context': 'https://schema.org', '@type': 'ItemList', name: 'AI agents', itemListElement: rows.map(([a], i) => ({ '@type': 'ListItem', position: i + 1, name: a, url: `https://agent-uses.com/agents/${slugify(a)}/` })) }];
+---
+<Base title={`AI agents with documented use cases (${agents.length}) | ${NAME}`} desc={`Browse ${items.length} real use cases by AI agent: ${agents.join(', ')}.`.slice(0,155)} path="/agents/" ld={ld}>
+<h1>Browse use cases by AI agent</h1>
+<p class="lead">{items.length} use cases across {agents.length} AI agents. Most documented: {rows[0][0]} ({rows[0][1]}).</p>
+<ul class="l">{rows.map(([a, n]) => <li><a href={`/agents/${slugify(a)}/`}>{a}</a> — {n} use case{n === 1 ? '' : 's'}</li>)}</ul>
+</Base>

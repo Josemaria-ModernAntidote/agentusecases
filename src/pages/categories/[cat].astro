@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro';
+import { items, cats, slugify, crumbs, itemList, NAME, lastUpdated } from '../../lib/site';
+export function getStaticPaths() { return cats.map(c => ({ params: { cat: slugify(c) }, props: { c } })); }
+const { c } = Astro.props;
+const list = items.filter(d => d.category === c);
+const ag = [...new Set(list.flatMap(d => d.tools))];
+const path = `/categories/${slugify(c)}/`;
+const title = `${c} AI agent use cases (${list.length}) | ${NAME}`;
+const desc = `${list.length} real ${c} use cases for AI agents including ${ag.join(', ')}, each with a source link.`.slice(0, 155);
+const ld = [itemList(`${c} AI agent use cases`, list), crumbs([['Home', '/'], ['Categories', '/categories/'], [c, path]])];
+---
+<Base title={title} desc={desc} path={path} ld={ld}>
+<p class="bc"><a href="/">Home</a> › <a href="/categories/">Categories</a> › {c}</p>
+<h1>{c} AI agent use cases</h1>
+<p class="lead">There are <b>{list.length}</b> documented {c} use cases in this directory, covering {ag.length} agent{ag.length === 1 ? '' : 's'}: {ag.map((a, i) => <>{i ? ', ' : ''}<a href={`/agents/${slugify(a)}/`}>{a}</a></>)}. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>.</p>
+<ul class="l">{list.map(d => <li><a href={`/use-cases/${d.slug}/`}><b>{d.title}</b></a> <span class="mut">({d.tools.join(', ')})</span> — {d.description}</li>)}</ul>
+</Base>
