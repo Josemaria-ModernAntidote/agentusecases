@@ -37,7 +37,7 @@ input[type=search],input[type=email]{width:100%;padding:12px 14px;border-radius:
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin:10px 0 40px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:8px}
 .card h3{margin:0;font-size:17px}.card p{margin:0;color:var(--mut);font-size:14px;line-height:1.5;flex:1}
-.meta{display:flex;flex-wrap:wrap;gap:6px;font-size:12px}.tag{background:#1d2333;border-radius:6px;padding:3px 8px}.cat{color:#2ad4ff}
+.meta{display:flex;flex-wrap:wrap;gap:6px;font-size:12px}.tag{background:#1d2333;border-radius:6px;padding:3px 8px}.cat{color:#2ad4ff}.niche{color:#ffb86b;background:#2a2116}
 .src{font-size:13px;color:#a99bff}section h2{font-size:28px;margin:48px 0 16px}
 .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.plan{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
 .price{font-size:30px;font-weight:700;margin:6px 0}.news{display:flex;gap:10px;max-width:520px}footer{color:var(--mut);padding:40px 0;font-size:14px;border-top:1px solid var(--line);margin-top:48px}
@@ -47,8 +47,8 @@ input[type=search],input[type=email]{width:100%;padding:12px 14px;border-radius:
 <div class="frow"><div class="chips" role="group" aria-label="Category"><button class="chip on" data-cat="">All</button>{cats.map(c=> <button class="chip" data-cat={c}>{c}</button>)}</div>
 <select id="agent" aria-label="Filter by agent"><option value="">All agents</option>{agents.map(a=> <option value={a}>{a} ({data.filter(d=>d.tools.includes(a)).length})</option>)}</select></div></div>
 <p id="count" style="color:var(--mut)"></p>
-<div class="grid" id="grid">{data.map(d=> <article class="card" data-slug={d.slug} data-cat={d.category} data-agents={d.tools.join('|')} data-text={(d.title+' '+d.description+' '+d.tools.join(' ')+' '+d.category).toLowerCase()}>
-<div class="meta"><a class="cat" style="text-decoration:none" href={`/categories/${slugify(d.category)}/`}>{d.category}</a></div><h3><a href={`/use-cases/${d.slug}/`} style="text-decoration:none">{d.title}</a></h3><p>{d.description}</p>
+<div class="grid" id="grid">{data.map(d=> <article class="card" data-slug={d.slug} data-cat={d.category} data-agents={d.tools.join('|')} data-niche={d.niche ? '1' : undefined} data-text={(d.title+' '+d.description+' '+d.tools.join(' ')+' '+d.category+(d.niche?' niche':'')).toLowerCase()}>
+<div class="meta"><a class="cat" style="text-decoration:none" href={`/categories/${slugify(d.category)}/`}>{d.category}</a>{d.niche && <span class="tag niche" title="Niche, surprising use case">Niche</span>}</div><h3><a href={`/use-cases/${d.slug}/`} style="text-decoration:none">{d.title}</a></h3><p>{d.description}</p>
 <div class="meta">{d.tools.map(t=> <a class="tag" style="text-decoration:none" href={`/agents/${slugify(t)}/`}>{t}</a>)}</div>
 <div class="foot"><a class="src" href={d.source} target="_blank" rel="noopener" data-slug={d.slug} data-agent={d.tools.join(',')}>Source: {d.sourceName} ↗</a><span class="vote" data-slug={d.slug}>Useful? <button data-v="up" aria-label="Useful">👍</button><button data-v="down" aria-label="Not useful">👎</button></span></div></article>)}</div>
 <section id="pricing"><h2>Get featured</h2><div class="plans">

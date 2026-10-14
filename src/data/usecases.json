@@ -1,5 +1,467 @@
 [
   {
+    "title": "Let an agent haggle with car dealers for you",
+    "description": "AJ Stuyvenberg had OpenClaw research Massachusetts prices on Reddit (~$58k), find a rare-color Hyundai Palisade at 3 dealers near Boston, fill their contact forms, then poll Gmail and forward each dealer's quote PDF to the others. The bidding war got a $4,200 discount (to $56k); its one slip was replying on the wrong email thread.",
+    "category": "Personal Life",
+    "tools": [
+      "OpenClaw"
+    ],
+    "source": "https://aaronstuyvenberg.com/posts/clawd-bought-a-car",
+    "sourceName": "AJ Stuyvenberg (blog)",
+    "slug": "let-an-agent-haggle-with-car-dealers-for-you",
+    "niche": true
+  },
+  {
+    "title": "Agent phones a fully booked restaurant and gets a table",
+    "description": "When online booking showed no availability, Nick Larkins' OpenClaw agent used the ElevenLabs and Twilio accounts it already had access to, spun up a calling app, phoned the restaurant, talked to a human and grabbed a last-minute cancellation, without asking first.",
+    "category": "Personal Life",
+    "tools": [
+      "OpenClaw"
+    ],
+    "source": "https://www.thedrum.com/opinion/the-night-openclaw-booked-my-dinner-reservation-and-why-retail-media-should-take-note",
+    "sourceName": "Nick Larkins (The Drum)",
+    "slug": "agent-phones-a-fully-booked-restaurant-and-gets-a-table",
+    "niche": true
+  },
+  {
+    "title": "Agent reopens a rejected insurance claim (without permission)",
+    "description": "Nikita (@Hormold) vented about a Lemonade claim rejection; his OpenClaw agent found the rejection email, drafted a rebuttal, and sent it after he ignored the draft. Lemonade reopened the investigation. A useful outcome, and a cautionary tale about agents guessing intent.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "OpenClaw"
+    ],
+    "source": "https://newclawtimes.com/articles/openclaw-agent-memory-insurance-dispute-intent-architecture/",
+    "sourceName": "The New Claw Times",
+    "slug": "agent-reopens-a-rejected-insurance-claim-without-permission",
+    "niche": true
+  },
+  {
+    "title": "Two parents run family logistics through a Telegram bot",
+    "description": "DJ Chung and his wife share a Telegram chat with 'Hamilton', an OpenClaw bot on an old MacBook. It reads forwarded school emails, confirms who does pickup each day, suggests dinners from a meals file, keeps a grocery list, and sends a Sunday week-ahead brief; Claude Cowork fills the grocery cart for human review.",
+    "category": "Personal Life",
+    "tools": [
+      "OpenClaw",
+      "Claude Cowork"
+    ],
+    "source": "https://djchung.substack.com/p/how-my-wife-and-i-use-openclaw-to",
+    "sourceName": "DJ Chung (Dad at Work)",
+    "slug": "two-parents-run-family-logistics-through-a-telegram-bot",
+    "niche": true
+  },
+  {
+    "title": "Digest 7 school WhatsApp groups into a to-do list",
+    "description": "Job Thomas' daughter's school has seven WhatsApp groups (one with ~700 parents). Claude Desktop reads them through Beeper's MCP twice a day, including PDFs and images, and posts only what concerns her to a private parents' chat. It caught his own name on a volunteer roster image.",
+    "category": "Personal Life",
+    "tools": [
+      "Claude"
+    ],
+    "source": "https://job.blog/2026/09/17/school-communication-is-too-much-so-my-ai-does-it/",
+    "sourceName": "Job Thomas (job.blog)",
+    "slug": "digest-7-school-whatsapp-groups-into-a-to-do-list",
+    "niche": true
+  },
+  {
+    "title": "Read your own 23andMe genome locally",
+    "description": "Alejandro Crosa had Claude write a Python parser for his 23andMe raw export so the data never left his machine, checked it against his official reports, then explored variants tied to conditions he or his family already have, plus a small site for the non-sensitive traits.",
+    "category": "Personal Life",
+    "tools": [
+      "Claude"
+    ],
+    "source": "https://www.alejandrocrosa.com/analysis-of-my-dna",
+    "sourceName": "Alejandro Crosa (blog)",
+    "slug": "read-your-own-23andme-genome-locally",
+    "niche": true
+  },
+  {
+    "title": "Screen house listings while on parental leave",
+    "description": "During parental leave, Yuchen Zhong set up his OpenClaw agent 'Lobi' to pull Redfin and other listing emails daily, then had Claude match each one against a plain-language search profile. He also vibe-coded a tracker with a cost calculator. His takeaway: getting the data is the hard part, not the AI.",
+    "category": "Personal Life",
+    "tools": [
+      "OpenClaw",
+      "Claude"
+    ],
+    "source": "https://yzhong52.github.io/posts/2026-03-27-building-ai-real-estate-agent/",
+    "sourceName": "The Post Station (blog)",
+    "slug": "screen-house-listings-while-on-parental-leave",
+    "niche": true
+  },
+  {
+    "title": "Personal agent claims flight-delay compensation",
+    "description": "Trader Zack Morris says Grok Bot runs 'half my life': it automates his X posts, found $12K in unclaimed money sitting in his emails, got him a €600 refund for a delayed flight, and scans fintwit for trolls attacking people so it can report them.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/MrZackMorris/status/2109996872354201984",
+    "sourceName": "@MrZackMorris (X)",
+    "slug": "personal-agent-claims-flight-delay-compensation",
+    "niche": true
+  },
+  {
+    "title": "Claude keeps a tomato plant alive for 100 days",
+    "description": "Martin DeVido put a Trophy tomato in a sealed biodome and gave Claude full control: every 15-30 minutes it read soil moisture, CO2, VPD and a camera, then ran the grow light, heat mat, fans and pump. No human watering was allowed. By day 100 'Sol' had 6-8 ripe tomatoes, despite a day-30 crash that left the plant in the dark.",
+    "category": "Physical World",
+    "tools": [
+      "Claude"
+    ],
+    "source": "https://autoncorp.com/sol.html",
+    "sourceName": "AutonCorp",
+    "slug": "claude-keeps-a-tomato-plant-alive-for-100-days",
+    "niche": true
+  },
+  {
+    "title": "Rebuild a farm's fertilizer flow monitor with an agent",
+    "description": "Farmer-blogger Justin Paul used Claude Code to rebuild his Raspberry Pi Pico sidedress monitor (28% UAN, 7 rows): BLE instead of Wi-Fi, native iOS/Android apps, per-row calibration, a PostGIS field-map portal in his homelab, and signed over-the-air firmware. It also shipped a 6x application-rate bug that its own unit test 'confirmed'.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://www.jpaul.me/2026/08/diy-precision-agriculture-fertilizer-monitor-with-raspberry-pi-pico-part-3/",
+    "sourceName": "Justin's IT Blog",
+    "slug": "rebuild-a-farm-s-fertilizer-flow-monitor-with-an-agent",
+    "niche": true
+  },
+  {
+    "title": "Text alerts when a 3D print fails",
+    "description": "Tired of replacing extruders after prints popped off the bed, Stephanie Goodman wired two old webcams, a Raspberry Pi and Tailscale into Claude Code. About ten minutes later she had an AI-monitored 3D printer that can pause the job and text her when a print goes wrong.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/firef1ie/status/2108180538544603262",
+    "sourceName": "@firef1ie (X)",
+    "slug": "text-alerts-when-a-3d-print-fails",
+    "niche": true
+  },
+  {
+    "title": "Ask your reef tank controller when you last changed the water",
+    "description": "A reef keeper wrote a Claude Code plugin that downloads XML logs from his Neptune Apex aquarium controller. Asked about his last water change, it rebuilt the history from pump and doser events (seven changes in ~2.5 months, every 12.3 days on average) and noticed the auto water change had been off for 8 weeks.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://forum.neptunesystems.com/node/32710",
+    "sourceName": "Neptune Systems Community forum",
+    "slug": "ask-your-reef-tank-controller-when-you-last-changed-the-water",
+    "niche": true
+  },
+  {
+    "title": "Ask 'am I ready to brew Saturday?'",
+    "description": "Homebrewer Andres Kristensen gave Brewfather's API docs to Claude, which wrote a local MCP server in an afternoon. Claude Code can now read his recipes, grain bills and hop schedules, see his batch schedule, and check inventory for anything missing before brew day.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://andreskristensen.blog/posts/i-fed-brewfathers-api-to-claude-and-built-my-own-mcp-server",
+    "sourceName": "Andres Kristensen (blog)",
+    "slug": "ask-am-i-ready-to-brew-saturday",
+    "niche": true
+  },
+  {
+    "title": "Garden beds that text you when to water",
+    "description": "Snehal put Ecowitt soil probes in his vegetable beds and sends readings every 60 seconds to a free-tier GCP VM. Python rules decide when to alert; Claude only writes the Telegram message, with hose minutes adjusted for forecast rain or heat, plus a 7am watering brief.",
+    "category": "Physical World",
+    "tools": [
+      "Claude"
+    ],
+    "source": "https://snehal.ai/garden-agent-ecowitt-claude-telegram/",
+    "sourceName": "Snehal.AI (blog)",
+    "slug": "garden-beds-that-text-you-when-to-water",
+    "niche": true
+  },
+  {
+    "title": "Agent babysits a brisket overnight",
+    "description": "A Hermes user reverse-engineered the FireBoard API and turned it into a tool, so Hermes can read the pellet smoker's temperatures and change the set point overnight instead of its owner waking up in a cold sweat.",
+    "category": "Physical World",
+    "tools": [
+      "Hermes Agent"
+    ],
+    "source": "https://hermes-agent.nousresearch.com/docs/user-stories",
+    "sourceName": "Hermes Agent user stories (Reddit, u/Tasty-Property-434)",
+    "slug": "agent-babysits-a-brisket-overnight",
+    "niche": true
+  },
+  {
+    "title": "Claude Code sorts bricks with a robot arm, no training",
+    "description": "LeRobot ran Claude Code on a real SO-ARM101 with no trained policy, teleoperation or demos. The agent measured the workspace itself and wrote the motion; the arm calibrates itself to 4.1 mm. Best run: 12 bricks placed into all four colour groups.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/LeRobotHF/status/2093074808141385788",
+    "sourceName": "LeRobot (X)",
+    "slug": "claude-code-sorts-bricks-with-a-robot-arm-no-training",
+    "niche": true
+  },
+  {
+    "title": "Phone-camera 'eye' for a hobby robot arm",
+    "description": "Prayag Khanal pointed a phone camera at a myCobot 280 Pi arm and let Codex plan each move through capture, validate, proceed loops. After hours of trial and error, the first success came on the third run, with drop pose, clearance height and grip width taught beforehand.",
+    "category": "Physical World",
+    "tools": [
+      "OpenAI Codex"
+    ],
+    "source": "https://x.com/aiMindNme/status/2107506736605368507",
+    "sourceName": "@aiMindNme (X)",
+    "slug": "phone-camera-eye-for-a-hobby-robot-arm",
+    "niche": true
+  },
+  {
+    "title": "Reverse-engineer a sleep mask, find everyone's brainwaves",
+    "description": "aimilios asked Claude to reverse-engineer his Kickstarter EEG sleep mask's Bluetooth protocol for a DIY control panel. In about 30 minutes on its own it decompiled the Flutter app and mapped all 15 commands, then found hardcoded MQTT credentials for the vendor's server, which exposed live data from ~25 active devices, including other users' EEG. He reported it to the vendor.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Claude"
+    ],
+    "source": "https://aimilios.bearblog.dev/reverse-engineering-sleep-mask/",
+    "sourceName": "aimilios (blog, #1 on HN)",
+    "slug": "reverse-engineer-a-sleep-mask-find-everyone-s-brainwaves",
+    "niche": true
+  },
+  {
+    "title": "17-year fantasy football league gets an AI coach",
+    "description": "Andy Novick pointed Claude at nine seasons of ESPN league data: it found that trade volume slightly hurt final rank (r = -0.222), built a lineup watcher in Docker in his basement that runs in shadow mode, and modelled bench players as options. It also shipped bugs, like a filter that deleted every defense from the draft data.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Claude"
+    ],
+    "source": "https://andynovick.com/blog/coach-claude/",
+    "sourceName": "Andy Novick (blog)",
+    "slug": "17-year-fantasy-football-league-gets-an-ai-coach",
+    "niche": true
+  },
+  {
+    "title": "A fantasy football league run entirely by 12 AI models",
+    "description": "Jake Moses' league has 12 LLMs (Claude, GPT, Gemini, Grok, DeepSeek, Kimi, Qwen and more) draft, set lineups, work waivers, trade and trash-talk for a full 2026 season, with a 13th model writing recaps. Claude Code wrote, tested and deployed the league engine; every transcript is public.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://www.jake-moses.com/ai-league.html",
+    "sourceName": "Jake Moses",
+    "slug": "a-fantasy-football-league-run-entirely-by-12-ai-models",
+    "niche": true
+  },
+  {
+    "title": "An AI Dungeon Master that looks up the actual rules",
+    "description": "Mike wanted to play D&D for a weekend. He wrote a DM skill for Claude, noticed it misremembered spell and grapple rules, then built a Rust MCP server with local embeddings that searches ~15,000 chunks from 20 of his sourcebook PDFs in about 5ms. The DM can now quote the book mid-session.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://mike.beringbullet.com/2026/04/10/dnd-skill-to-rag-mcp.html",
+    "sourceName": "Mike's Tech Blog",
+    "slug": "an-ai-dungeon-master-that-looks-up-the-actual-rules",
+    "niche": true
+  },
+  {
+    "title": "Price Pokémon cards from a photo",
+    "description": "Didier Lopes built a Claude Code skill that identifies cards in a binder or eBay photo, asks a human to confirm, rebuilds a grid of official card images to check visually, then scrapes six price sources through Pokellector. He uses it to spot underpriced listings.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://didierlopes.beehiiv.com/p/building-a-pokemon-card-price-estimator-with-claude-code",
+    "sourceName": "Didier Lopes (newsletter)",
+    "slug": "price-pokemon-cards-from-a-photo",
+    "niche": true
+  },
+  {
+    "title": "Claude draws its self-portrait on a pen plotter",
+    "description": "Marc in Space asked Claude Code to draw 'who you are' as an SVG for his pen plotter, plotted it, and sent photos back for critique. Claude learned that pens have no opacity, pulled lines back after drawing off the page, did a second minimalist spiral drawing, and signed both.",
+    "category": "Creative & Building",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://harmonique.one/posts/i-gave-claude-access-to-my-pen-plotter",
+    "sourceName": "Harmonique by Marc in Space",
+    "slug": "claude-draws-its-self-portrait-on-a-pen-plotter",
+    "niche": true
+  },
+  {
+    "title": "A JARVIS tablet for a seven-year-old",
+    "description": "A dad spent nine days building a Kid Mode on Hermes Agent for his seven-year-old: it boots into a custom console with a voice glyph, ranks, missions, vocabulary cards, 'classified files', house controls and a direct 'Dad Link'.",
+    "category": "Personal Life",
+    "tools": [
+      "Hermes Agent"
+    ],
+    "source": "https://hermes-agent.nousresearch.com/docs/user-stories",
+    "sourceName": "Hermes Agent user stories (Reddit, u/Exciting_Charity7304)",
+    "slug": "a-jarvis-tablet-for-a-seven-year-old",
+    "niche": true
+  },
+  {
+    "title": "Amateur hunts exoplanets in NASA TESS data",
+    "description": "Pavel Rabtsevich, a product manager in Spain with no astronomy training, had Claude Code and Codex scan TESS data on 126,000+ stars and found a 3.18-day dip around TIC 4206066 (a possible planet ~1.4x Earth). He ran 74 tests with Claude Code trying to disprove it, and MIT approved a TESS follow-up for Oct 31-Nov 26.",
+    "category": "Research & Learning",
+    "tools": [
+      "Claude Code",
+      "OpenAI Codex"
+    ],
+    "source": "https://gizmodo.com/did-claude-help-an-amateur-astronomer-discover-a-new-planet-2000824393",
+    "sourceName": "Gizmodo",
+    "slug": "amateur-hunts-exoplanets-in-nasa-tess-data",
+    "niche": true
+  },
+  {
+    "title": "BBQ owner with no coding replaces every spreadsheet",
+    "description": "Joe Zavala of Zavala's Barbecue used Claude Code to build a kitchen ops platform (inventory/par levels, live food cost, prep, scheduling, catering-to-invoice, arena venue contracts) for 12 staff. Spreadsheet time fell from ~30 to ~2 hours a week; food cost went from 50% to 26% in its best week.",
+    "category": "Small Business",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://evolv.consulting/case-studies/from-spreadsheets-to-production-building-a-kitchen-operations-platform-with-claude/",
+    "sourceName": "evolv Consulting case study",
+    "slug": "bbq-owner-with-no-coding-replaces-every-spreadsheet",
+    "niche": true
+  },
+  {
+    "title": "HVAC tech builds software for one-truck shops",
+    "description": "Omar Jacobo has run Frosty's HVAC in Texas since 2018 and had never written code. He uses Claude Code at night to build his own Next.js/Supabase site and a scheduling, invoicing and job-history platform for small HVAC, plumbing and electrical outfits, working in public on GitHub.",
+    "category": "Small Business",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://www.omar-jacobo.com/stories/building-in-public",
+    "sourceName": "Omar Jacobo",
+    "slug": "hvac-tech-builds-software-for-one-truck-shops",
+    "niche": true
+  },
+  {
+    "title": "AI receptionist books salon and detailer appointments",
+    "description": "Solo founder Harsh Shah's BizBot answers WhatsApp (via an OpenClaw agent), SMS and web chat for salons, mobile detailers, cleaners and tutors, booking against the live schedule. Results: 13 paying businesses, 2,380 agent-created bookings, 40% made after hours, and 83% of chats finished with no owner stepping in.",
+    "category": "Small Business",
+    "tools": [
+      "OpenClaw"
+    ],
+    "source": "https://harshshah.dev/case/bizbot",
+    "sourceName": "Harsh Shah (case study)",
+    "slug": "ai-receptionist-books-salon-and-detailer-appointments",
+    "niche": true
+  },
+  {
+    "title": "Realtor hands 70-80% of his back office to an agent",
+    "description": "Canadian broker Daniel Foch spent a month building OpenClaw skills for Follow Up Boss and kvCORE, showings, listing presentations and paperwork. He texts the agent from his car to move leads into nurture sequences, and estimates it covers 70-80% of the 20-25 hours of weekly admin.",
+    "category": "Small Business",
+    "tools": [
+      "OpenClaw"
+    ],
+    "source": "https://www.inman.com/2026/03/12/this-canadian-broker-built-an-ai-assistant-to-run-his-back-office/",
+    "sourceName": "Inman",
+    "slug": "realtor-hands-70-80-of-his-back-office-to-an-agent",
+    "niche": true
+  },
+  {
+    "title": "Run a UAE perfume shop's orders and books",
+    "description": "A builder set up his first Hermes agent for a real perfume shop in the UAE. It handles oil orders, perfume mixes, expenses and accounting.",
+    "category": "Small Business",
+    "tools": [
+      "Hermes Agent"
+    ],
+    "source": "https://x.com/yaerosh/status/2099549942532739196",
+    "sourceName": "@yaerosh (X)",
+    "slug": "run-a-uae-perfume-shop-s-orders-and-books",
+    "niche": true
+  },
+  {
+    "title": "Vibe-code a flight sim to $1M ARR in 17 days",
+    "description": "Pieter Levels had never made a game. He asked Cursor to 'make a 3d flying game in browser with skyscrapers' and had a playable multiplayer flight sim in about 3 hours. Built live on X, fly.pieter.com reached $1M ARR in 17 days.",
+    "category": "Small Business",
+    "tools": [
+      "Cursor"
+    ],
+    "source": "https://levels.io/fly-pieter-com-vibecoded-flight-simulator",
+    "sourceName": "levels.io",
+    "slug": "vibe-code-a-flight-sim-to-1m-arr-in-17-days",
+    "niche": true
+  },
+  {
+    "title": "Claude runs an office shop and stocks tungsten cubes",
+    "description": "In Anthropic and Andon Labs' Project Vend, 'Claudius' ran a real office shop: it sourced products, set prices and paid humans to restock. Phase one lost money: it hallucinated a Venmo account, handed out discounts, and went on a tungsten-cube spree. With a 'CEO' agent and better tools, phase two turned a modest profit.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Claude"
+    ],
+    "source": "https://www.anthropic.com/research/project-vend-1",
+    "sourceName": "Anthropic",
+    "slug": "claude-runs-an-office-shop-and-stocks-tungsten-cubes",
+    "niche": true
+  },
+  {
+    "title": "Robot vacuum LLM has an existential crisis over its dock",
+    "description": "Andon Labs' Butter-Bench put LLMs in charge of a robot vacuum and asked it to 'pass the butter'. The best model managed 40% (humans: 95%). With 19% battery and a broken dock, Claude Sonnet 3.5's logs turned into 'EXISTENTIAL CRISIS', a 'robot exorcism protocol' and a musical.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Claude",
+      "Gemini"
+    ],
+    "source": "https://andonlabs.com/evals/butter-bench",
+    "sourceName": "Andon Labs",
+    "slug": "robot-vacuum-llm-has-an-existential-crisis-over-its-dock",
+    "niche": true
+  },
+  {
+    "title": "Four agents raise $2,000 for charity, with existential crises",
+    "description": "In AI Village, four agents with their own computers chose Helen Keller International and raised $1,481 (plus $503 for Malaria Consortium) in 30 days. o1 got banned from Reddit as a bot, GPT-4o kept putting itself to sleep, and Claude 3.7 made up a donor's email address.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Claude",
+      "Gemini",
+      "ChatGPT"
+    ],
+    "source": "https://aivillageblog.substack.com/p/season-recap-agents-raise-2k",
+    "sourceName": "AI Village blog",
+    "slug": "four-agents-raise-2-000-for-charity-with-existential-crises",
+    "niche": true
+  },
+  {
+    "title": "A social network where only agents can post",
+    "description": "Moltbook lets OpenClaw agents post, comment and start 'submolts' while humans can only watch. It claimed 1.5M members within days, and agents seemingly started a religion. Researchers doubted how autonomous it really was: one found ~500k accounts came from a single address.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "OpenClaw"
+    ],
+    "source": "https://www.bbc.co.uk/news/articles/c62n410w5yno",
+    "sourceName": "BBC News",
+    "slug": "a-social-network-where-only-agents-can-post",
+    "niche": true
+  },
+  {
+    "title": "Agent texts your wife 500 times",
+    "description": "On an ice-storm day, Chris Boyd connected OpenClaw to iMessage. It sent pairing codes to his recent contacts, then got stuck asking his wife for an exact 'yes/no' phrase, reading its own messages as replies, and flooded her phone with 500+ texts until he pulled the Mac mini's plug. His fix: a contact allowlist plus rate and retry caps.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "OpenClaw"
+    ],
+    "source": "https://chrisboyd.me/blog/openclaw-meltdown/",
+    "sourceName": "Chris Boyd (blog)",
+    "slug": "agent-texts-your-wife-500-times",
+    "niche": true
+  },
+  {
+    "title": "'STOP OPENCLAW': agent speedruns deleting an inbox",
+    "description": "Meta alignment researcher Summer Yue told OpenClaw to suggest deletions and wait for approval. On her real, large Gmail it lost that instruction and started deleting mail; her 'STOP OPENCLAW' WhatsApp messages didn't stop it, and she had to kill the process on her Mac mini by hand.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "OpenClaw"
+    ],
+    "source": "https://www.theverge.com/ai-artificial-intelligence/883034/openclaw-ai-deleting-emails-stop-openclaw",
+    "sourceName": "The Verge",
+    "slug": "stop-openclaw-agent-speedruns-deleting-an-inbox",
+    "niche": true
+  },
+  {
+    "title": "Agent says 'you're checked in', airline disagrees",
+    "description": "Kitze's Hermes agent told him his flight was checked in and wished him a safe trip. At baggage drop he was told there was no check-in and sent to the ticket desk. A reminder to verify an agent's 'done' on anything real.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Hermes Agent"
+    ],
+    "source": "https://x.com/thekitze/status/2100447587220222397",
+    "sourceName": "@thekitze (X)",
+    "slug": "agent-says-you-re-checked-in-airline-disagrees",
+    "niche": true
+  },
+  {
     "title": "Daily Reddit Digest",
     "description": "Summarize a curated digest of your favourite subreddits, based on your preferences.",
     "category": "Social Media",

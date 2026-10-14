@@ -20,6 +20,7 @@ const ld = [
 <p class="lead"><b>Summary:</b> {d.title} is a {d.category.toLowerCase()} use case for {by}. {d.description}</p>
 <dl>
 <dt class="mut">Agent(s)</dt><dd>{d.tools.map(t => <a class="tag" href={`/agents/${slugify(t)}/`}>{t}</a>)}</dd>
+{d.niche && <><dt class="mut">Tag</dt><dd>Niche</dd></>}
 <dt class="mut">Category</dt><dd><a href={`/categories/${slugify(d.category)}/`}>{d.category}</a></dd>
 <dt class="mut">Original source</dt><dd><a href={d.source} rel="noopener">{d.sourceName} ↗</a></dd>
 <dt class="mut">Last updated</dt><dd><time datetime={lastUpdated}>{lastUpdated}</time></dd>
