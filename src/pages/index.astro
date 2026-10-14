@@ -1,4 +1,5 @@
 ---
+import Analytics from "../components/Analytics.astro";
 import data from '../data/usecases.json';
 const cats = [...new Set(data.map(d => d.category))];
 const agents = [...new Set(data.flatMap(d => d.tools))];
@@ -34,7 +35,7 @@ input[type=search],input[type=email]{width:100%;padding:12px 14px;border-radius:
 .src{font-size:13px;color:#a99bff}section h2{font-size:28px;margin:48px 0 16px}
 .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.plan{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
 .price{font-size:30px;font-weight:700;margin:6px 0}.news{display:flex;gap:10px;max-width:520px}footer{color:var(--mut);padding:40px 0;font-size:14px;border-top:1px solid var(--line);margin-top:48px}
-</style></head><body><div class="wrap">
+</style><Analytics /></head><body><div class="wrap">
 <header><h1>AI <span>Agent Use Cases</span></h1><p class="sub">{desc} Stop wondering what to do with your agent — steal a workflow.</p>
 <div class="sponsor"><span>⭐ Your product here — reach builders exploring AI agents.</span><a class="btn" href="mailto:josemaria@mail.grokbot.com?subject=Sponsor%20AI%20Agent%20Use%20Cases">Sponsor this site</a></div></header>
 <div class="controls"><input id="q" type="search" placeholder={`Search ${data.length} use cases…`} aria-label="Search">
