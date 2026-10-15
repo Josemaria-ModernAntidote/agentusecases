@@ -1,13 +1,13 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { items, cats, slugify, crumbs, itemList, NAME, lastUpdated } from '../../lib/site';
+import { items, cats, slugify, crumbs, itemList, NAME, lastUpdated, clip } from '../../lib/site';
 export function getStaticPaths() { return cats.map(c => ({ params: { cat: slugify(c) }, props: { c } })); }
 const { c } = Astro.props;
 const list = items.filter(d => d.category === c);
 const ag = [...new Set(list.flatMap(d => d.tools))];
 const path = `/categories/${slugify(c)}/`;
 const title = `${c} AI agent use cases (${list.length}) | ${NAME}`;
-const desc = `${list.length} real ${c} use cases for AI agents including ${ag.join(', ')}, each with a source link.`.slice(0, 155);
+const desc = clip(`${list.length} real ${c} use cases for AI agents including ${ag.join(', ')}, each with a source link.`);
 const ld = [itemList(`${c} AI agent use cases`, list), crumbs([['Home', '/'], ['Categories', '/categories/'], [c, path]])];
 ---
 <Base title={title} desc={desc} path={path} ld={ld}>

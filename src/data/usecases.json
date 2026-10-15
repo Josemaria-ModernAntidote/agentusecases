@@ -206,6 +206,30 @@
     "niche": true
   },
   {
+    "title": "Revive a smart energy meter after its maker went bankrupt",
+    "description": "When the cloud behind his BLE energy-meter sensor died with its bankrupt maker, Kacper Grabowski dumped the nRF51822 firmware with a Raspberry Pi Pico debug probe, then gave Claude Code live access to the probe and a Bluetooth adapter in an isolated VM. It set a hardware breakpoint inside the encryption routine to capture matching plaintext/ciphertext, worked out ~80% of the device, and wrote ~90% of a cloud-free Home Assistant integration.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://medium.com/kingfisher-technology/when-the-cloud-dies-reverse-engineering-an-abandoned-iot-device-264ce7e5a24e",
+    "sourceName": "Kacper Grabowski (Kingfisher-Technology, Medium)",
+    "slug": "revive-a-smart-energy-meter-after-its-maker-went-bankrupt",
+    "niche": true
+  },
+  {
+    "title": "Claude Code reads a Citroën's internal car network from the dashboard",
+    "description": "A Python/SEO developer with no car or Android experience SSH'd into his 2018 Citroën C3's aftermarket Android head unit via Termux and pointed Claude Code at it. It reverse-engineered a private vehicle-data service, built a 33KB APK with raw command-line tools, and decoded live speed, throttle and gear frames, asking 'Did you back out of a parking spot?' (he had).",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://medium.com/@antoniomaculus/hacking-my-car-with-claude-code-day-1-0a8f61746bee",
+    "sourceName": "Antonio Maculus (Medium)",
+    "slug": "claude-code-reads-a-citroen-car-network-from-the-dashboard",
+    "niche": true
+  },
+  {
     "title": "Reverse-engineer a sleep mask, find everyone's brainwaves",
     "description": "aimilios asked Claude to reverse-engineer his Kickstarter EEG sleep mask's Bluetooth protocol for a DIY control panel. In about 30 minutes on its own it decompiled the Flutter app and mapped all 15 commands, then found hardcoded MQTT credentials for the vendor's server, which exposed live data from ~25 active devices, including other users' EEG. He reported it to the vendor.",
     "category": "Weird & Experimental",
@@ -263,6 +287,30 @@
     "source": "https://didierlopes.beehiiv.com/p/building-a-pokemon-card-price-estimator-with-claude-code",
     "sourceName": "Didier Lopes (newsletter)",
     "slug": "price-pokemon-cards-from-a-photo",
+    "niche": true
+  },
+  {
+    "title": "Design a family board game, then simulate it 4,000 times to balance it",
+    "description": "Nick Farina used Claude Code to turn the Dungeon Crawler Carl books he reads with his 11-year-old twins into a homemade game on a HeroQuest board: an interactive map editor, a card designer with Nano Banana 2 art printed on card stock, and a simulator that played Floor 1 4,000 times to tune the floor-collapse timer (22 turns) toward an ~80% win rate. The boys beat the boss just before the floor collapsed.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://nfarina.substack.com/p/creating-my-own-dcc-board-game",
+    "sourceName": "Nick Farina (Substack)",
+    "slug": "design-a-family-board-game-then-simulate-it-4000-times",
+    "niche": true
+  },
+  {
+    "title": "A 90s-pinball dot-matrix display fed by a Hermes agent",
+    "description": "Zachary Taylor built a Raspberry Pi 5 dot-matrix display inspired by 90s pinball scoreboards. His Hermes agent feeds it the weather, fishing conditions on his lake, a live hyperlocal bird report, Twin Cities shows, sports on TV and AI news, plus a demoscene intro.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Hermes Agent"
+    ],
+    "source": "https://x.com/ztaylor/status/2108289455228616868",
+    "sourceName": "Zachary Taylor (X)",
+    "slug": "a-90s-pinball-dot-matrix-display-fed-by-a-hermes-agent",
     "niche": true
   },
   {
@@ -372,6 +420,18 @@
     "source": "https://levels.io/fly-pieter-com-vibecoded-flight-simulator",
     "sourceName": "levels.io",
     "slug": "vibe-code-a-flight-sim-to-1m-arr-in-17-days",
+    "niche": true
+  },
+  {
+    "title": "Rebuild a family macadamia farm's web shop one-handed from Telegram",
+    "description": "Working on his phone while soothing his five-month-old son, a dad had his OpenClaw agent rebuild his sister-in-law's macadamia farm site (riofarm.vn) from Gatsby to Astro over Telegram in four days: 62 Playwright tests, nine products, twelve blog posts and a working cart. Unprompted, it suggested a Zalo chat button for Vietnamese buyers and pulled YouTube captions to write cited posts. He still caught the mobile bugs himself.",
+    "category": "Small Business",
+    "tools": [
+      "OpenClaw"
+    ],
+    "source": "https://thucldnguyen.com/blog/openclaw-riofarm-demo/",
+    "sourceName": "thucldnguyen.com (blog)",
+    "slug": "rebuild-a-family-macadamia-farms-web-shop-from-telegram",
     "niche": true
   },
   {

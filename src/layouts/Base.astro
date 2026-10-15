@@ -1,13 +1,13 @@
 ---
 import Analytics from '../components/Analytics.astro';
 import { NAME, abs, lastUpdated } from '../lib/site';
-const { title, desc, path, ld = [], type = 'website' } = Astro.props;
+const { title, desc, path, ld = [], type = 'website', noindex = false } = Astro.props;
 const url = abs(path); const og = abs('/og.png');
 ---
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title}</title><meta name="description" content={desc}><link rel="canonical" href={url}>
-<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="robots" content={noindex ? 'noindex,follow' : 'index,follow,max-image-preview:large'}>
 <meta property="og:site_name" content={NAME}><meta property="og:type" content={type}><meta property="og:title" content={title}><meta property="og:description" content={desc}><meta property="og:url" content={url}><meta property="og:image" content={og}><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AI Agent Use Cases">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content={title}><meta name="twitter:description" content={desc}><meta name="twitter:image" content={og}>
 <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt"><link rel="sitemap" href="/sitemap-index.xml">

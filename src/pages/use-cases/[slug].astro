@@ -1,13 +1,17 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { items, slugify, crumbs, abs, lastUpdated, NAME } from '../../lib/site';
+import { items, slugify, crumbs, abs, lastUpdated, NAME, clip, relatedTo } from '../../lib/site';
 export function getStaticPaths() { return items.map(d => ({ params: { slug: d.slug }, props: { d } })); }
 const { d } = Astro.props;
 const by = d.tools.join(', ');
 const title = `${d.title} — ${by} use case | ${NAME}`;
-const desc = `${d.description}`.slice(0, 155);
+const desc = clip(d.description);
 const path = `/use-cases/${d.slug}/`;
-const related = items.filter(x => x.slug !== d.slug && (x.category === d.category || x.tools.some(t => d.tools.includes(t)))).slice(0, 6);
+const related = relatedTo(d);
+const sameCat = items.filter(x => x.category === d.category);
+const ci = sameCat.findIndex(x => x.slug === d.slug);
+const prev = sameCat.length > 1 ? sameCat[(ci - 1 + sameCat.length) % sameCat.length] : null;
+const next = sameCat.length > 2 ? sameCat[(ci + 1) % sameCat.length] : null;
 const ld = [
   { '@context': 'https://schema.org', '@type': 'Article', headline: d.title, description: d.description, url: abs(path), dateModified: lastUpdated, image: abs('/og.png'), articleSection: d.category, keywords: [...d.tools, d.category].join(', '), about: d.tools.map(t => ({ '@type': 'SoftwareApplication', name: t, applicationCategory: 'AI agent' })), isBasedOn: d.source, citation: d.source, publisher: { '@type': 'Organization', name: NAME, url: abs('/') } },
   crumbs([['Home', '/'], [d.category, `/categories/${slugify(d.category)}/`], [d.title, path]])
@@ -27,4 +31,5 @@ const ld = [
 </dl>
 </article>
 {related.length > 0 && <section><h2>Related use cases</h2><ul class="l">{related.map(r => <li><a href={`/use-cases/${r.slug}/`}>{r.title}</a> <span class="mut">— {r.tools.join(', ')}</span></li>)}</ul></section>}
+{prev && <nav class="mut" aria-label={`More ${d.category} use cases`}><p>More in <a href={`/categories/${slugify(d.category)}/`}>{d.category}</a>: <a href={`/use-cases/${prev.slug}/`} rel="prev">← {prev.title}</a>{next && <> · <a href={`/use-cases/${next.slug}/`} rel="next">{next.title} →</a></>}</p></nav>}
 </Base>
