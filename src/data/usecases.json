@@ -1,5 +1,55 @@
 [
   {
+    "title": "Drive Amazon and Uber Eats from a Waydroid phone",
+    "description": "Jeff Nash built Clawdroid so OpenClaw and Hermes can tap real Android apps inside Waydroid on Linux: the agent snapshots the accessibility tree into short-lived refs (a1, a2…), taps through ADB, and falls back to a vision model when Compose screens hide the tree. He used it to open CNN and add Whole Blends shampoo to an Amazon cart—stopping before checkout after a protected-action guard—dodging the CAPTCHAs that kill browser automation.",
+    "category": "Physical World",
+    "tools": [
+      "OpenClaw",
+      "Hermes Agent"
+    ],
+    "source": "https://www.djfa.ai/articles/clawdroid",
+    "sourceName": "Jeff Nash (blog)",
+    "slug": "drive-amazon-and-uber-eats-from-a-waydroid-phone",
+    "niche": true
+  },
+  {
+    "title": "Desk voice box from a Pi Zero and a 3D-printer display",
+    "description": "DrkPxl built chatbox: a printed wedge with a Raspberry Pi Zero W, INMP441 mic, and a BigTreeTech Mini12864 (LCD + knob + LEDs scavenged from 3D-printer parts). Press the knob, speak, and answers stream onto the 128×64 screen or speak via Home Assistant—while a LAN Hermes Agent (OpenAI-compatible) does the thinking. Idle mode shows weather, air quality, and the shared calendar.",
+    "category": "Physical World",
+    "tools": [
+      "Hermes Agent",
+      "OpenClaw"
+    ],
+    "source": "https://www.drkpxl.com/chatbox-a-desk-terminal-with-exactly-one-job/",
+    "sourceName": "DrkPxl",
+    "slug": "desk-voice-box-from-a-pi-zero-and-a-3d-printer-display",
+    "niche": true
+  },
+  {
+    "title": "OpenClaw builds a voice receptionist for tradies",
+    "description": "Ben Karciauskas, a solutions architect not a programmer, described an AI voice receptionist for tradies who miss calls under a sink. Over a weekend his OpenClaw agent 'Clawdia' set up Twilio, configured the voice agent with a natural Australian accent, wrote the webhook server, and got 'Sam' live on a phone number that takes details and texts him a summary.",
+    "category": "Small Business",
+    "tools": [
+      "OpenClaw"
+    ],
+    "source": "https://benny-k.com/posts/i-gave-an-ai-agent-access-to-my-whole-life/",
+    "sourceName": "Ben Karciauskas",
+    "slug": "openclaw-builds-a-voice-receptionist-for-tradies",
+    "niche": true
+  },
+  {
+    "title": "OpenClaw-class agents that self-program an ESP32",
+    "description": "pycoClaw runs OpenClaw-class autonomous agents on ESP32 MicroPython hardware: an LLM 'self-programs' local scripts (e.g. reverse-engineer an unknown EV motor on CAN bus until it works, then save a skill), then those skills run locally without further LLM calls. Flash via WebSerial at pycoclaw.com; the creator frames it as a $2 embodied agent—robot, wearable, or tamagotchi-style companion.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "OpenClaw"
+    ],
+    "source": "https://news.ycombinator.com/item?id=47357515",
+    "sourceName": "Show HN / pycoClaw",
+    "slug": "openclaw-class-agents-that-self-program-an-esp32",
+    "niche": true
+  },
+  {
     "title": "Let an agent haggle with car dealers for you",
     "description": "AJ Stuyvenberg had OpenClaw research Massachusetts prices on Reddit (~$58k), find a rare-color Hyundai Palisade at 3 dealers near Boston, fill their contact forms, then poll Gmail and forward each dealer's quote PDF to the others. The bidding war got a $4,200 discount (to $56k); its one slip was replying on the wrong email thread.",
     "category": "Personal Life",
