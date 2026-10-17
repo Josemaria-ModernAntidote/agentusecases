@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import { items, slugify, crumbs, itemList, abs, NAME, lastUpdated, clip } from '../lib/site';
+// Landing page for the niche, surprising entries (individuals, hobbies, physical world, small operators).
+const list = items.filter(d => d.niche);
+const lc = [...new Set(list.map(d => d.category))];
+const ag = [...new Set(list.flatMap(d => d.tools))];
+const path = '/niche/';
+const title = `Niche and surprising AI agent use cases (${list.length}) | ${NAME}`;
+const desc = clip(`${list.length} unusual, real AI agent use cases from individuals, hobbyists and small operators: farms, family life, hardware hacks and weird experiments, each with a source.`);
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Niche and surprising AI agent use cases', description: desc, url: abs(path), dateModified: lastUpdated, isPartOf: { '@type': 'WebSite', name: NAME, url: abs('/') } },
+  itemList('Niche and surprising AI agent use cases', list),
+  crumbs([['Home', '/'], ['Niche and surprising', path]])
+];
+---
+<Base title={title} desc={desc} path={path} ld={ld}>
+<p class="bc"><a href="/">Home</a> › Niche and surprising</p>
+<h1>Niche and surprising AI agent use cases</h1>
+<p class="lead">These <b>{list.length}</b> entries are the unusual ones: real people using {ag.map((a, i) => <>{i ? ', ' : ''}<a href={`/agents/${slugify(a)}/`}>{a}</a></>)} for hobbies, family life, farms and small shops, hardware hacks and odd experiments, not enterprise demos. Every one links to its original public source. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>.</p>
+<p class="mut">Jump to: {lc.map((c, i) => <>{i ? ' · ' : ''}<a href={`#${slugify(c)}`}>{c}</a> ({list.filter(d => d.category === c).length})</>)}</p>
+{lc.map(c => <section id={slugify(c)}><h2><a href={`/categories/${slugify(c)}/`}>{c}</a></h2><ul class="l">{list.filter(d => d.category === c).map(d => <li><a href={`/use-cases/${d.slug}/`}><b>{d.title}</b></a> <span class="mut">({d.tools.join(', ')})</span>: {d.description}</li>)}</ul></section>)}
+</Base>

@@ -7,5 +7,5 @@ const ld = [crumbs([['Home', '/'], ['Agents', '/agents/']]), { '@context': 'http
 <Base title={`AI agents with documented use cases (${agents.length}) | ${NAME}`} desc={`Browse ${items.length} real use cases by AI agent: ${agents.join(', ')}.`.slice(0,155)} path="/agents/" ld={ld}>
 <h1>Browse use cases by AI agent</h1>
 <p class="lead">{items.length} use cases across {agents.length} AI agents. Most documented: {rows[0][0]} ({rows[0][1]}).</p>
-<ul class="l">{rows.map(([a, n]) => <li><a href={`/agents/${slugify(a)}/`}>{a}</a> — {n} use case{n === 1 ? '' : 's'}</li>)}</ul>
+<ul class="l">{rows.map(([a, n]) => <li><a href={`/agents/${slugify(a)}/`}>{a}</a>: {n} use case{n === 1 ? '' : 's'}</li>)}</ul>
 </Base>

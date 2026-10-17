@@ -14,5 +14,5 @@ const ld = [itemList(`${a} use cases`, list), crumbs([['Home', '/'], ['Agents', 
 <p class="bc"><a href="/">Home</a> › <a href="/agents/">Agents</a> › {a}</p>
 <h1>{a} use cases</h1>
 <p class="lead">This directory lists <b>{list.length}</b> documented {a} use case{list.length === 1 ? '' : 's'} across {lc.length} categor{lc.length === 1 ? 'y' : 'ies'} ({lc.join(', ')}), each linked to its original public source. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>.</p>
-{lc.map(c => <section><h2><a href={`/categories/${slugify(c)}/`}>{c}</a></h2><ul class="l">{list.filter(d => d.category === c).map(d => <li><a href={`/use-cases/${d.slug}/`}><b>{d.title}</b></a> — {d.description}</li>)}</ul></section>)}
+{lc.map(c => <section><h2><a href={`/categories/${slugify(c)}/`}>{c}</a></h2><ul class="l">{list.filter(d => d.category === c).map(d => <li><a href={`/use-cases/${d.slug}/`}><b>{d.title}</b></a>: {d.description}</li>)}</ul></section>)}
 </Base>

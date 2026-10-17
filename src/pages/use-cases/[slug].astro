@@ -4,7 +4,7 @@ import { items, slugify, crumbs, abs, lastUpdated, NAME, clip, relatedTo } from 
 export function getStaticPaths() { return items.map(d => ({ params: { slug: d.slug }, props: { d } })); }
 const { d } = Astro.props;
 const by = d.tools.join(', ');
-const title = `${d.title} — ${by} use case | ${NAME}`;
+const title = `${d.title} - ${by} use case | ${NAME}`;
 const desc = clip(d.description);
 const path = `/use-cases/${d.slug}/`;
 const related = relatedTo(d);
@@ -30,6 +30,6 @@ const ld = [
 <dt class="mut">Last updated</dt><dd><time datetime={lastUpdated}>{lastUpdated}</time></dd>
 </dl>
 </article>
-{related.length > 0 && <section><h2>Related use cases</h2><ul class="l">{related.map(r => <li><a href={`/use-cases/${r.slug}/`}>{r.title}</a> <span class="mut">— {r.tools.join(', ')}</span></li>)}</ul></section>}
+{related.length > 0 && <section><h2>Related use cases</h2><ul class="l">{related.map(r => <li><a href={`/use-cases/${r.slug}/`}>{r.title}</a> <span class="mut">({r.tools.join(', ')})</span></li>)}</ul></section>}
 {prev && <nav class="mut" aria-label={`More ${d.category} use cases`}><p>More in <a href={`/categories/${slugify(d.category)}/`}>{d.category}</a>: <a href={`/use-cases/${prev.slug}/`} rel="prev">← {prev.title}</a>{next && <> · <a href={`/use-cases/${next.slug}/`} rel="next">{next.title} →</a></>}</p></nav>}
 </Base>

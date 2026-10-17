@@ -11,5 +11,5 @@ const latest = items.filter(d => d.niche).slice(0, 8);
 <h2>Agents</h2>
 <p>{agents.map(a => <a class="tag" href={`/agents/${slugify(a)}/`}>{a}</a>)}</p>
 <h2>Niche picks</h2>
-<ul class="l">{latest.map(d => <li><a href={`/use-cases/${d.slug}/`}>{d.title}</a> <span class="mut">— {d.tools.join(', ')}</span></li>)}</ul>
+<ul class="l">{latest.map(d => <li><a href={`/use-cases/${d.slug}/`}>{d.title}</a> <span class="mut">({d.tools.join(', ')})</span></li>)}</ul>
 </Base>

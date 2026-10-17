@@ -1,7 +1,67 @@
 [
   {
+    "title": "Agent gets missing Lego minifigure pieces replaced",
+    "description": "A dad's daughter opened a Lego minifigure blind box that held only 2 pieces. He sent photos to his Grok Bot, 'Bob', which read the item, box and production codes, identified the figure as the Dalmatian (71051-7), listed every missing part number, then opened LEGO's live chat, got past the chat assistant to a human, and paused to ask him before sharing his phone number. About 20 minutes later a replacement order was in.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/CreativeSkyAI/status/2111277357659000869",
+    "sourceName": "@CreativeSkyAI (X)",
+    "slug": "agent-gets-missing-lego-minifigure-pieces-replaced",
+    "niche": true
+  },
+  {
+    "title": "Farmer Claude grows seedlings with one camera and a pump",
+    "description": "Tal Raviv put Claude Code on a Raspberry Pi with a camera, a smart-plug water pump and a grow lamp, gave it a one-line MISSION.md, and refused to say what seeds he planted or how fast the pump ran. It test-pulsed the water, scheduled its own wake-ups with cron, kept a journal for its future selves, fixed the lamp on its own after a power outage, and diagnosed drooping as overcrowding rather than drought. A month in, no harvest yet.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://www.talraviv.co/p/fable-grows-my-food",
+    "sourceName": "Tal Raviv (Substack)",
+    "slug": "farmer-claude-grows-seedlings-with-one-camera-and-a-pump",
+    "niche": true
+  },
+  {
+    "title": "Text-message medical diary for a mom on home care",
+    "description": "When a home care nurse told his mom to keep a diary of her medical information and she said she'd need a secretary, Novel Ninja set up a Grok Bot before the nurse finished talking. She sends something like a text ('X food at Y time, ABC readings, DEF meds taken'); the bot prompts for anything missing and builds a spreadsheet that can be emailed to the doctor's office automatically. The nurse thought it was science fiction.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/thenovelninja/status/2109150354050785761",
+    "sourceName": "@thenovelninja (X)",
+    "slug": "text-message-medical-diary-for-a-mom-on-home-care",
+    "niche": true
+  },
+  {
+    "title": "A mango farm's worker tracker, rebuilt in one evening",
+    "description": "Vinit Desai's dad runs a mango farm in Gujarat, and the app he used to track his workers started charging ₹15,000 a year. Vinit rebuilt it for him in one evening with Claude Code: plain JavaScript plus Firebase, works offline, costs ₹0. Dad is customer #1.",
+    "category": "Small Business",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/desaivinit/status/2106815153295536393",
+    "sourceName": "@desaivinit (X)",
+    "slug": "a-mango-farm-s-worker-tracker-rebuilt-in-one-evening",
+    "niche": true
+  },
+  {
+    "title": "Explain Snell's law to kids with an archerfish game",
+    "description": "Frank's kids asked why a straw looks bent in water, so he asked Grok Bot. It built a playable 3D game in a single HTML file: an archerfish shoots at a fly that, seen from below the surface, looks 26 cm higher than it really is. The first shot misses by 15 cm; then it applies water's refractive index (1.33), aims 7.2 degrees lower, and hits. The kids watched it miss, learn and nail it.",
+    "category": "Research & Learning",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/Frank_AI_Lab/status/2105898453893009485",
+    "sourceName": "@Frank_AI_Lab (X)",
+    "slug": "explain-snell-s-law-to-kids-with-an-archerfish-game",
+    "niche": true
+  },
+  {
     "title": "Drive Amazon and Uber Eats from a Waydroid phone",
-    "description": "Jeff Nash built Clawdroid so OpenClaw and Hermes can tap real Android apps inside Waydroid on Linux: the agent snapshots the accessibility tree into short-lived refs (a1, a2…), taps through ADB, and falls back to a vision model when Compose screens hide the tree. He used it to open CNN and add Whole Blends shampoo to an Amazon cart—stopping before checkout after a protected-action guard—dodging the CAPTCHAs that kill browser automation.",
+    "description": "Jeff Nash built Clawdroid so OpenClaw and Hermes can tap real Android apps inside Waydroid on Linux: the agent snapshots the accessibility tree into short-lived refs (a1, a2…), taps through ADB, and falls back to a vision model when Compose screens hide the tree. He used it to open CNN and add Whole Blends shampoo to an Amazon cart (stopping before checkout after a protected-action guard), dodging the CAPTCHAs that kill browser automation.",
     "category": "Physical World",
     "tools": [
       "OpenClaw",
@@ -14,7 +74,7 @@
   },
   {
     "title": "Desk voice box from a Pi Zero and a 3D-printer display",
-    "description": "DrkPxl built chatbox: a printed wedge with a Raspberry Pi Zero W, INMP441 mic, and a BigTreeTech Mini12864 (LCD + knob + LEDs scavenged from 3D-printer parts). Press the knob, speak, and answers stream onto the 128×64 screen or speak via Home Assistant—while a LAN Hermes Agent (OpenAI-compatible) does the thinking. Idle mode shows weather, air quality, and the shared calendar.",
+    "description": "DrkPxl built chatbox: a printed wedge with a Raspberry Pi Zero W, INMP441 mic, and a BigTreeTech Mini12864 (LCD + knob + LEDs scavenged from 3D-printer parts). Press the knob, speak, and answers stream onto the 128×64 screen or speak via Home Assistant, while a LAN Hermes Agent (OpenAI-compatible) does the thinking. Idle mode shows weather, air quality, and the shared calendar.",
     "category": "Physical World",
     "tools": [
       "Hermes Agent",
@@ -39,7 +99,7 @@
   },
   {
     "title": "OpenClaw-class agents that self-program an ESP32",
-    "description": "pycoClaw runs OpenClaw-class autonomous agents on ESP32 MicroPython hardware: an LLM 'self-programs' local scripts (e.g. reverse-engineer an unknown EV motor on CAN bus until it works, then save a skill), then those skills run locally without further LLM calls. Flash via WebSerial at pycoclaw.com; the creator frames it as a $2 embodied agent—robot, wearable, or tamagotchi-style companion.",
+    "description": "pycoClaw runs OpenClaw-class autonomous agents on ESP32 MicroPython hardware: an LLM 'self-programs' local scripts (e.g. reverse-engineer an unknown EV motor on CAN bus until it works, then save a skill), then those skills run locally without further LLM calls. Flash via WebSerial at pycoclaw.com; the creator frames it as a $2 embodied agent: robot, wearable, or tamagotchi-style companion.",
     "category": "Weird & Experimental",
     "tools": [
       "OpenClaw"
@@ -584,7 +644,7 @@
   },
   {
     "title": "Daily YouTube Digest",
-    "description": "Get daily summaries of new videos from your favorite channels — never miss content from creators you follow.",
+    "description": "Get daily summaries of new videos from your favorite channels, so you never miss content from creators you follow.",
     "category": "Social Media",
     "tools": [
       "OpenClaw"
@@ -617,7 +677,7 @@
   },
   {
     "title": "X/Twitter Automation",
-    "description": "Post tweets, reply, like, retweet, follow, DM, search, extract data, run giveaways, and monitor accounts — all from chat via the TweetClaw plugin.",
+    "description": "Post tweets, reply, like, retweet, follow, DM, search, extract data, run giveaways, and monitor accounts, all from chat via the TweetClaw plugin.",
     "category": "Social Media",
     "tools": [
       "OpenClaw"
@@ -628,7 +688,7 @@
   },
   {
     "title": "Goal-Driven Autonomous Tasks",
-    "description": "Brain dump your goals and have your agent autonomously generate, schedule, and complete daily tasks — including building surprise mini-apps overnight.",
+    "description": "Brain dump your goals and have your agent autonomously generate, schedule, and complete daily tasks, including building surprise mini-apps overnight.",
     "category": "Creative & Building",
     "tools": [
       "OpenClaw"
@@ -650,7 +710,7 @@
   },
   {
     "title": "Multi-Agent Content Factory",
-    "description": "Run a multi-agent content pipeline in Discord — research, writing, and thumbnail agents working in dedicated channels.",
+    "description": "Run a multi-agent content pipeline in Discord: research, writing, and thumbnail agents working in dedicated channels.",
     "category": "Creative & Building",
     "tools": [
       "OpenClaw"
@@ -672,7 +732,7 @@
   },
   {
     "title": "Podcast Production Pipeline",
-    "description": "Automate the full podcast workflow — guest research, episode outlines, show notes, and social media promo — from topic to publish-ready assets.",
+    "description": "Automate the full podcast workflow (guest research, episode outlines, show notes, and social media promo) from topic to publish-ready assets.",
     "category": "Creative & Building",
     "tools": [
       "OpenClaw"
@@ -683,7 +743,7 @@
   },
   {
     "title": "AI Video Editing via Chat",
-    "description": "Edit videos by describing changes in natural language — trim, merge, add music, subtitles, color grade, crop to vertical. No timeline, no GUI.",
+    "description": "Edit videos by describing changes in natural language: trim, merge, add music, subtitles, color grade, crop to vertical. No timeline, no GUI.",
     "category": "Creative & Building",
     "tools": [
       "OpenClaw"
@@ -694,7 +754,7 @@
   },
   {
     "title": "n8n Workflow Orchestration",
-    "description": "Delegate API calls to n8n workflows via webhooks — the agent never touches credentials, and every integration is visual and lockable.",
+    "description": "Delegate API calls to n8n workflows via webhooks; the agent never touches credentials, and every integration is visual and lockable.",
     "category": "Infrastructure & DevOps",
     "tools": [
       "OpenClaw"
@@ -716,7 +776,7 @@
   },
   {
     "title": "Autonomous Project Management",
-    "description": "Coordinate multi-agent projects using STATE.yaml pattern — subagents work in parallel without orchestrator overhead.",
+    "description": "Coordinate multi-agent projects using STATE.yaml pattern; subagents work in parallel without orchestrator overhead.",
     "category": "Productivity",
     "tools": [
       "OpenClaw"
@@ -848,7 +908,7 @@
   },
   {
     "title": "OpenClaw as Desktop Cowork",
-    "description": "Use OpenClaw as a desktop Cowork app — unified UI, multi-agent, MCP once, WebUI/Telegram/Lark/DingTalk. When OpenClaw is down, fix it remotely via Telegram or WebUI using the built-in OpenClaw deployment expert (install, detect, repair).",
+    "description": "Use OpenClaw as a desktop Cowork app: unified UI, multi-agent, MCP once, WebUI/Telegram/Lark/DingTalk. When OpenClaw is down, fix it remotely via Telegram or WebUI using the built-in OpenClaw deployment expert (install, detect, repair).",
     "category": "Productivity",
     "tools": [
       "OpenClaw"
@@ -859,7 +919,7 @@
   },
   {
     "title": "Custom Morning Brief",
-    "description": "Get a fully customized daily briefing — news, tasks, content drafts, and AI-recommended actions — texted to you every morning.",
+    "description": "Get a fully customized daily briefing (news, tasks, content drafts, and AI-recommended actions) texted to you every morning.",
     "category": "Productivity",
     "tools": [
       "OpenClaw"
@@ -870,7 +930,7 @@
   },
   {
     "title": "Automated Meeting Notes & Action Items",
-    "description": "Turn meeting transcripts into structured summaries and automatically create tasks in Jira, Linear, or Todoist — assigned to the right person.",
+    "description": "Turn meeting transcripts into structured summaries and automatically create tasks in Jira, Linear, or Todoist, assigned to the right person.",
     "category": "Productivity",
     "tools": [
       "OpenClaw"
@@ -903,7 +963,7 @@
   },
   {
     "title": "Event Guest Confirmation",
-    "description": "Call a list of event guests one-by-one to confirm attendance, collect notes, and compile a summary — fully automated via AI voice calls.",
+    "description": "Call a list of event guests one-by-one to confirm attendance, collect notes, and compile a summary, fully automated via AI voice calls.",
     "category": "Productivity",
     "tools": [
       "OpenClaw"
@@ -914,7 +974,7 @@
   },
   {
     "title": "Phone Call Notifications",
-    "description": "Turn your agent's alerts into real phone calls — morning briefings, price drops, urgent emails — with two-way conversation.",
+    "description": "Turn your agent's alerts into real phone calls (morning briefings, price drops, urgent emails) with two-way conversation.",
     "category": "Productivity",
     "tools": [
       "OpenClaw"
@@ -925,7 +985,7 @@
   },
   {
     "title": "Local CRM Framework",
-    "description": "Turn OpenClaw into a fully local CRM and sales automation platform with `npx denchclaw` — DuckDB, browser automation, multi-view UI, and natural language queries.",
+    "description": "Turn OpenClaw into a fully local CRM and sales automation platform with `npx denchclaw`: DuckDB, browser automation, multi-view UI, and natural language queries.",
     "category": "Productivity",
     "tools": [
       "OpenClaw"
@@ -969,7 +1029,7 @@
   },
   {
     "title": "Pre-Build Idea Validator",
-    "description": "Automatically scan GitHub, HN, npm, PyPI, and Product Hunt before building anything new — stop if the space is crowded, proceed if it's open.",
+    "description": "Automatically scan GitHub, HN, npm, PyPI, and Product Hunt before building anything new; stop if the space is crowded, proceed if it's open.",
     "category": "Research & Learning",
     "tools": [
       "OpenClaw"
@@ -991,7 +1051,7 @@
   },
   {
     "title": "arXiv Paper Reader",
-    "description": "Read and analyze arXiv papers conversationally — fetch by ID, browse sections, compare abstracts, and get AI summaries.",
+    "description": "Read and analyze arXiv papers conversationally: fetch by ID, browse sections, compare abstracts, and get AI summaries.",
     "category": "Research & Learning",
     "tools": [
       "OpenClaw"
@@ -1002,7 +1062,7 @@
   },
   {
     "title": "LaTeX Paper Writing",
-    "description": "Write and compile LaTeX papers conversationally with instant PDF preview — no local TeX installation needed.",
+    "description": "Write and compile LaTeX papers conversationally with instant PDF preview, no local TeX installation needed.",
     "category": "Research & Learning",
     "tools": [
       "OpenClaw"
@@ -1013,7 +1073,7 @@
   },
   {
     "title": "HF Papers Research Discovery",
-    "description": "Discover trending ML papers on Hugging Face, triage by upvotes, and deep-read via arXiv — all conversationally.",
+    "description": "Discover trending ML papers on Hugging Face, triage by upvotes, and deep-read via arXiv, all conversationally.",
     "category": "Research & Learning",
     "tools": [
       "OpenClaw"

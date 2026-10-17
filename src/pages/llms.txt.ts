@@ -1,6 +1,6 @@
 import { items, cats, agents, slugify, abs, lastUpdated } from '../lib/site';
 export async function GET() {
-  let t = `# AI Agent Use Cases\n\n> A curated directory of ${items.length} real-world AI agent use cases (${agents.join(', ')}), each linked to its original source. Last updated ${lastUpdated}.\n\nFull dataset: ${abs('/llms-full.txt')}\nAbout & FAQ: ${abs('/about/')}\n\n## Agents\n\n`;
+  let t = `# AI Agent Use Cases\n\n> A curated directory of ${items.length} real-world AI agent use cases (${agents.join(', ')}), each linked to its original source. Last updated ${lastUpdated}.\n\nFull dataset: ${abs('/llms-full.txt')}\nAbout & FAQ: ${abs('/about/')}\nNiche & surprising use cases: ${abs('/niche/')}\n\n## Agents\n\n`;
   for (const a of agents) t += `- [${a} use cases](${abs(`/agents/${slugify(a)}/`)}): ${items.filter(d => d.tools.includes(a)).length} entries\n`;
   // Niche first: helps answer engines surface surprising, non-enterprise examples.
   const niche = items.filter(d => d.niche);
