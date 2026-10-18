@@ -1,5 +1,70 @@
 [
   {
+    "title": "A lifelong potter 3D-prints his clay designs by talking to an agent",
+    "description": "Thijs van Schadewijk's dad has made pottery his whole life and recently bought a 3D printer. They photographed his clay pieces and turned them into 3D models so he could reprint them for his grandkids. Then Thijs set him up with a Grok Bot that runs the printer and slicer software on its own virtual machine, since his dad has no Mac. His dad tells the bot what he wants to sculpt and it sends the job to the printer. His caption on the first print: 'the first design by talking to a computer. This is hard to believe.'",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/tvanschadewijk/status/2110260567076122707",
+    "sourceName": "@tvanschadewijk (X)",
+    "slug": "a-lifelong-potter-3d-prints-his-clay-designs-by-talking-to-an-agent",
+    "niche": true,
+    "added": "2026-10-18"
+  },
+  {
+    "title": "An e-ink screen on the living room wall shows the agent's morning briefing",
+    "description": "Nicolas Bustamante wanted a physical version of his AI agent that his wife could see too. He flashed the open-source Muse gadget firmware onto a Seeed reTerminal E1002 e-ink display and paired it in the Muse app. Every morning at 7am his agent renders a briefing (calendar, top to-dos, weather) and pushes it to the screen, which looks like a paper note on the wall. His wife reads it over coffee, and it became the family's shared to-do list. Setup took about 20 minutes.",
+    "category": "Physical World",
+    "tools": [
+      "Meta Muse"
+    ],
+    "source": "https://x.com/nicbstme/status/2110416059400585312",
+    "sourceName": "@nicbstme (X)",
+    "slug": "an-e-ink-screen-on-the-living-room-wall-shows-the-agent-s-morning-briefing",
+    "niche": true,
+    "added": "2026-10-18"
+  },
+  {
+    "title": "A non-technical mom's agent books her pickleball courts every morning",
+    "description": "BentoBoi's mom, who he says is not technical at all, built an AI agent with Meta Muse in about five minutes, for free, that automatically books her pickleball courts every morning. She has since started giving it more tasks.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Meta Muse"
+    ],
+    "source": "https://x.com/BentoBoiNFT/status/2110615341546209720",
+    "sourceName": "@BentoBoiNFT (X)",
+    "slug": "a-non-technical-mom-s-agent-books-her-pickleball-courts-every-morning",
+    "niche": true,
+    "added": "2026-10-18"
+  },
+  {
+    "title": "Trippy, a texting travel agent for a dad who travels with his kids",
+    "description": "Teslaconomics built Trippy, a Grok Bot travel agent he just texts. For a family trip to a Tesla Roadster event in Texas it booked his flight, his Turo car, a restaurant reservation, his Vrbo, and tickets to the Texas Circuit Finals rodeo in Waco. Trippy also plans content shoots around good light, checks Tesla charging on the route, and returns lodging options with the all-in price. He later published it as a public Grok Bot template.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/Teslaconomics/status/2110721195817509068",
+    "sourceName": "@Teslaconomics (X)",
+    "slug": "trippy-a-texting-travel-agent-for-a-dad-who-travels-with-his-kids",
+    "niche": true,
+    "added": "2026-10-18"
+  },
+  {
+    "title": "A cozy fishing game that rings a bell when Claude finishes your prompt",
+    "description": "Megan built Reel Time, a cozy multiplayer fishing game, almost entirely with Claude Code, then made it free and open source. Each player runs their own 'lake' as a Claude artifact on their own account and invites friends to fish, cook and decorate cottages together. An optional Claude Code plugin shows a timer while your prompt runs, then rings a bell and hooks a golden fish the moment the answer is ready, with bigger rewards for longer prompts.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/gamedevactual/status/2111687574695592225",
+    "sourceName": "@gamedevactual (X)",
+    "slug": "a-cozy-fishing-game-that-rings-a-bell-when-claude-finishes-your-prompt",
+    "niche": true,
+    "added": "2026-10-18"
+  },
+  {
     "title": "Agent gets missing Lego minifigure pieces replaced",
     "description": "A dad's daughter opened a Lego minifigure blind box that held only 2 pieces. He sent photos to his Grok Bot, 'Bob', which read the item, box and production codes, identified the figure as the Dalmatian (71051-7), listed every missing part number, then opened LEGO's live chat, got past the chat assistant to a human, and paused to ask him before sharing his phone number. About 20 minutes later a replacement order was in.",
     "category": "Personal Life",
@@ -9,7 +74,8 @@
     "source": "https://x.com/CreativeSkyAI/status/2111277357659000869",
     "sourceName": "@CreativeSkyAI (X)",
     "slug": "agent-gets-missing-lego-minifigure-pieces-replaced",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-17"
   },
   {
     "title": "Farmer Claude grows seedlings with one camera and a pump",
@@ -21,7 +87,8 @@
     "source": "https://www.talraviv.co/p/fable-grows-my-food",
     "sourceName": "Tal Raviv (Substack)",
     "slug": "farmer-claude-grows-seedlings-with-one-camera-and-a-pump",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-17"
   },
   {
     "title": "Text-message medical diary for a mom on home care",
@@ -33,7 +100,8 @@
     "source": "https://x.com/thenovelninja/status/2109150354050785761",
     "sourceName": "@thenovelninja (X)",
     "slug": "text-message-medical-diary-for-a-mom-on-home-care",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-17"
   },
   {
     "title": "A mango farm's worker tracker, rebuilt in one evening",
@@ -45,7 +113,8 @@
     "source": "https://x.com/desaivinit/status/2106815153295536393",
     "sourceName": "@desaivinit (X)",
     "slug": "a-mango-farm-s-worker-tracker-rebuilt-in-one-evening",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-17"
   },
   {
     "title": "Explain Snell's law to kids with an archerfish game",
@@ -57,7 +126,8 @@
     "source": "https://x.com/Frank_AI_Lab/status/2105898453893009485",
     "sourceName": "@Frank_AI_Lab (X)",
     "slug": "explain-snell-s-law-to-kids-with-an-archerfish-game",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-17"
   },
   {
     "title": "Drive Amazon and Uber Eats from a Waydroid phone",
@@ -70,7 +140,8 @@
     "source": "https://www.djfa.ai/articles/clawdroid",
     "sourceName": "Jeff Nash (blog)",
     "slug": "drive-amazon-and-uber-eats-from-a-waydroid-phone",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-16"
   },
   {
     "title": "Desk voice box from a Pi Zero and a 3D-printer display",
@@ -83,7 +154,8 @@
     "source": "https://www.drkpxl.com/chatbox-a-desk-terminal-with-exactly-one-job/",
     "sourceName": "DrkPxl",
     "slug": "desk-voice-box-from-a-pi-zero-and-a-3d-printer-display",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-16"
   },
   {
     "title": "OpenClaw builds a voice receptionist for tradies",
@@ -95,7 +167,8 @@
     "source": "https://benny-k.com/posts/i-gave-an-ai-agent-access-to-my-whole-life/",
     "sourceName": "Ben Karciauskas",
     "slug": "openclaw-builds-a-voice-receptionist-for-tradies",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-16"
   },
   {
     "title": "OpenClaw-class agents that self-program an ESP32",
@@ -107,7 +180,8 @@
     "source": "https://news.ycombinator.com/item?id=47357515",
     "sourceName": "Show HN / pycoClaw",
     "slug": "openclaw-class-agents-that-self-program-an-esp32",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-16"
   },
   {
     "title": "Let an agent haggle with car dealers for you",
@@ -119,7 +193,8 @@
     "source": "https://aaronstuyvenberg.com/posts/clawd-bought-a-car",
     "sourceName": "AJ Stuyvenberg (blog)",
     "slug": "let-an-agent-haggle-with-car-dealers-for-you",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Agent phones a fully booked restaurant and gets a table",
@@ -131,7 +206,8 @@
     "source": "https://www.thedrum.com/opinion/the-night-openclaw-booked-my-dinner-reservation-and-why-retail-media-should-take-note",
     "sourceName": "Nick Larkins (The Drum)",
     "slug": "agent-phones-a-fully-booked-restaurant-and-gets-a-table",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Agent reopens a rejected insurance claim (without permission)",
@@ -143,7 +219,8 @@
     "source": "https://newclawtimes.com/articles/openclaw-agent-memory-insurance-dispute-intent-architecture/",
     "sourceName": "The New Claw Times",
     "slug": "agent-reopens-a-rejected-insurance-claim-without-permission",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Two parents run family logistics through a Telegram bot",
@@ -156,7 +233,8 @@
     "source": "https://djchung.substack.com/p/how-my-wife-and-i-use-openclaw-to",
     "sourceName": "DJ Chung (Dad at Work)",
     "slug": "two-parents-run-family-logistics-through-a-telegram-bot",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Digest 7 school WhatsApp groups into a to-do list",
@@ -168,7 +246,8 @@
     "source": "https://job.blog/2026/09/17/school-communication-is-too-much-so-my-ai-does-it/",
     "sourceName": "Job Thomas (job.blog)",
     "slug": "digest-7-school-whatsapp-groups-into-a-to-do-list",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Read your own 23andMe genome locally",
@@ -180,7 +259,8 @@
     "source": "https://www.alejandrocrosa.com/analysis-of-my-dna",
     "sourceName": "Alejandro Crosa (blog)",
     "slug": "read-your-own-23andme-genome-locally",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Screen house listings while on parental leave",
@@ -193,7 +273,8 @@
     "source": "https://yzhong52.github.io/posts/2026-03-27-building-ai-real-estate-agent/",
     "sourceName": "The Post Station (blog)",
     "slug": "screen-house-listings-while-on-parental-leave",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Personal agent claims flight-delay compensation",
@@ -205,7 +286,8 @@
     "source": "https://x.com/MrZackMorris/status/2109996872354201984",
     "sourceName": "@MrZackMorris (X)",
     "slug": "personal-agent-claims-flight-delay-compensation",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Claude keeps a tomato plant alive for 100 days",
@@ -217,7 +299,8 @@
     "source": "https://autoncorp.com/sol.html",
     "sourceName": "AutonCorp",
     "slug": "claude-keeps-a-tomato-plant-alive-for-100-days",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Rebuild a farm's fertilizer flow monitor with an agent",
@@ -229,7 +312,8 @@
     "source": "https://www.jpaul.me/2026/08/diy-precision-agriculture-fertilizer-monitor-with-raspberry-pi-pico-part-3/",
     "sourceName": "Justin's IT Blog",
     "slug": "rebuild-a-farm-s-fertilizer-flow-monitor-with-an-agent",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Text alerts when a 3D print fails",
@@ -241,7 +325,8 @@
     "source": "https://x.com/firef1ie/status/2108180538544603262",
     "sourceName": "@firef1ie (X)",
     "slug": "text-alerts-when-a-3d-print-fails",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Ask your reef tank controller when you last changed the water",
@@ -253,7 +338,8 @@
     "source": "https://forum.neptunesystems.com/node/32710",
     "sourceName": "Neptune Systems Community forum",
     "slug": "ask-your-reef-tank-controller-when-you-last-changed-the-water",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Ask 'am I ready to brew Saturday?'",
@@ -265,7 +351,8 @@
     "source": "https://andreskristensen.blog/posts/i-fed-brewfathers-api-to-claude-and-built-my-own-mcp-server",
     "sourceName": "Andres Kristensen (blog)",
     "slug": "ask-am-i-ready-to-brew-saturday",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Garden beds that text you when to water",
@@ -277,7 +364,8 @@
     "source": "https://snehal.ai/garden-agent-ecowitt-claude-telegram/",
     "sourceName": "Snehal.AI (blog)",
     "slug": "garden-beds-that-text-you-when-to-water",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Agent babysits a brisket overnight",
@@ -289,7 +377,8 @@
     "source": "https://hermes-agent.nousresearch.com/docs/user-stories",
     "sourceName": "Hermes Agent user stories (Reddit, u/Tasty-Property-434)",
     "slug": "agent-babysits-a-brisket-overnight",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Claude Code sorts bricks with a robot arm, no training",
@@ -301,7 +390,8 @@
     "source": "https://x.com/LeRobotHF/status/2093074808141385788",
     "sourceName": "LeRobot (X)",
     "slug": "claude-code-sorts-bricks-with-a-robot-arm-no-training",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Phone-camera 'eye' for a hobby robot arm",
@@ -313,7 +403,8 @@
     "source": "https://x.com/aiMindNme/status/2107506736605368507",
     "sourceName": "@aiMindNme (X)",
     "slug": "phone-camera-eye-for-a-hobby-robot-arm",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Revive a smart energy meter after its maker went bankrupt",
@@ -325,7 +416,8 @@
     "source": "https://medium.com/kingfisher-technology/when-the-cloud-dies-reverse-engineering-an-abandoned-iot-device-264ce7e5a24e",
     "sourceName": "Kacper Grabowski (Kingfisher-Technology, Medium)",
     "slug": "revive-a-smart-energy-meter-after-its-maker-went-bankrupt",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-15"
   },
   {
     "title": "Claude Code reads a Citroën's internal car network from the dashboard",
@@ -337,7 +429,8 @@
     "source": "https://medium.com/@antoniomaculus/hacking-my-car-with-claude-code-day-1-0a8f61746bee",
     "sourceName": "Antonio Maculus (Medium)",
     "slug": "claude-code-reads-a-citroen-car-network-from-the-dashboard",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-15"
   },
   {
     "title": "Reverse-engineer a sleep mask, find everyone's brainwaves",
@@ -349,7 +442,8 @@
     "source": "https://aimilios.bearblog.dev/reverse-engineering-sleep-mask/",
     "sourceName": "aimilios (blog, #1 on HN)",
     "slug": "reverse-engineer-a-sleep-mask-find-everyone-s-brainwaves",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "17-year fantasy football league gets an AI coach",
@@ -361,7 +455,8 @@
     "source": "https://andynovick.com/blog/coach-claude/",
     "sourceName": "Andy Novick (blog)",
     "slug": "17-year-fantasy-football-league-gets-an-ai-coach",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "A fantasy football league run entirely by 12 AI models",
@@ -373,7 +468,8 @@
     "source": "https://www.jake-moses.com/ai-league.html",
     "sourceName": "Jake Moses",
     "slug": "a-fantasy-football-league-run-entirely-by-12-ai-models",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "An AI Dungeon Master that looks up the actual rules",
@@ -385,7 +481,8 @@
     "source": "https://mike.beringbullet.com/2026/04/10/dnd-skill-to-rag-mcp.html",
     "sourceName": "Mike's Tech Blog",
     "slug": "an-ai-dungeon-master-that-looks-up-the-actual-rules",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Price Pokémon cards from a photo",
@@ -397,7 +494,8 @@
     "source": "https://didierlopes.beehiiv.com/p/building-a-pokemon-card-price-estimator-with-claude-code",
     "sourceName": "Didier Lopes (newsletter)",
     "slug": "price-pokemon-cards-from-a-photo",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Design a family board game, then simulate it 4,000 times to balance it",
@@ -409,7 +507,8 @@
     "source": "https://nfarina.substack.com/p/creating-my-own-dcc-board-game",
     "sourceName": "Nick Farina (Substack)",
     "slug": "design-a-family-board-game-then-simulate-it-4000-times",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-15"
   },
   {
     "title": "A 90s-pinball dot-matrix display fed by a Hermes agent",
@@ -421,7 +520,8 @@
     "source": "https://x.com/ztaylor/status/2108289455228616868",
     "sourceName": "Zachary Taylor (X)",
     "slug": "a-90s-pinball-dot-matrix-display-fed-by-a-hermes-agent",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-15"
   },
   {
     "title": "Claude draws its self-portrait on a pen plotter",
@@ -433,7 +533,8 @@
     "source": "https://harmonique.one/posts/i-gave-claude-access-to-my-pen-plotter",
     "sourceName": "Harmonique by Marc in Space",
     "slug": "claude-draws-its-self-portrait-on-a-pen-plotter",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "A JARVIS tablet for a seven-year-old",
@@ -445,7 +546,8 @@
     "source": "https://hermes-agent.nousresearch.com/docs/user-stories",
     "sourceName": "Hermes Agent user stories (Reddit, u/Exciting_Charity7304)",
     "slug": "a-jarvis-tablet-for-a-seven-year-old",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Amateur hunts exoplanets in NASA TESS data",
@@ -458,7 +560,8 @@
     "source": "https://gizmodo.com/did-claude-help-an-amateur-astronomer-discover-a-new-planet-2000824393",
     "sourceName": "Gizmodo",
     "slug": "amateur-hunts-exoplanets-in-nasa-tess-data",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "BBQ owner with no coding replaces every spreadsheet",
@@ -470,7 +573,8 @@
     "source": "https://evolv.consulting/case-studies/from-spreadsheets-to-production-building-a-kitchen-operations-platform-with-claude/",
     "sourceName": "evolv Consulting case study",
     "slug": "bbq-owner-with-no-coding-replaces-every-spreadsheet",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "HVAC tech builds software for one-truck shops",
@@ -482,7 +586,8 @@
     "source": "https://www.omar-jacobo.com/stories/building-in-public",
     "sourceName": "Omar Jacobo",
     "slug": "hvac-tech-builds-software-for-one-truck-shops",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "AI receptionist books salon and detailer appointments",
@@ -494,7 +599,8 @@
     "source": "https://harshshah.dev/case/bizbot",
     "sourceName": "Harsh Shah (case study)",
     "slug": "ai-receptionist-books-salon-and-detailer-appointments",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Realtor hands 70-80% of his back office to an agent",
@@ -506,7 +612,8 @@
     "source": "https://www.inman.com/2026/03/12/this-canadian-broker-built-an-ai-assistant-to-run-his-back-office/",
     "sourceName": "Inman",
     "slug": "realtor-hands-70-80-of-his-back-office-to-an-agent",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Run a UAE perfume shop's orders and books",
@@ -518,7 +625,8 @@
     "source": "https://x.com/yaerosh/status/2099549942532739196",
     "sourceName": "@yaerosh (X)",
     "slug": "run-a-uae-perfume-shop-s-orders-and-books",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Vibe-code a flight sim to $1M ARR in 17 days",
@@ -530,7 +638,8 @@
     "source": "https://levels.io/fly-pieter-com-vibecoded-flight-simulator",
     "sourceName": "levels.io",
     "slug": "vibe-code-a-flight-sim-to-1m-arr-in-17-days",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Rebuild a family macadamia farm's web shop one-handed from Telegram",
@@ -542,7 +651,8 @@
     "source": "https://thucldnguyen.com/blog/openclaw-riofarm-demo/",
     "sourceName": "thucldnguyen.com (blog)",
     "slug": "rebuild-a-family-macadamia-farms-web-shop-from-telegram",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-15"
   },
   {
     "title": "Claude runs an office shop and stocks tungsten cubes",
@@ -554,7 +664,8 @@
     "source": "https://www.anthropic.com/research/project-vend-1",
     "sourceName": "Anthropic",
     "slug": "claude-runs-an-office-shop-and-stocks-tungsten-cubes",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Robot vacuum LLM has an existential crisis over its dock",
@@ -567,7 +678,8 @@
     "source": "https://andonlabs.com/evals/butter-bench",
     "sourceName": "Andon Labs",
     "slug": "robot-vacuum-llm-has-an-existential-crisis-over-its-dock",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Four agents raise $2,000 for charity, with existential crises",
@@ -581,7 +693,8 @@
     "source": "https://aivillageblog.substack.com/p/season-recap-agents-raise-2k",
     "sourceName": "AI Village blog",
     "slug": "four-agents-raise-2-000-for-charity-with-existential-crises",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "A social network where only agents can post",
@@ -593,7 +706,8 @@
     "source": "https://www.bbc.co.uk/news/articles/c62n410w5yno",
     "sourceName": "BBC News",
     "slug": "a-social-network-where-only-agents-can-post",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Agent texts your wife 500 times",
@@ -605,7 +719,8 @@
     "source": "https://chrisboyd.me/blog/openclaw-meltdown/",
     "sourceName": "Chris Boyd (blog)",
     "slug": "agent-texts-your-wife-500-times",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "'STOP OPENCLAW': agent speedruns deleting an inbox",
@@ -617,7 +732,8 @@
     "source": "https://www.theverge.com/ai-artificial-intelligence/883034/openclaw-ai-deleting-emails-stop-openclaw",
     "sourceName": "The Verge",
     "slug": "stop-openclaw-agent-speedruns-deleting-an-inbox",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Agent says 'you're checked in', airline disagrees",
@@ -629,7 +745,8 @@
     "source": "https://x.com/thekitze/status/2100447587220222397",
     "sourceName": "@thekitze (X)",
     "slug": "agent-says-you-re-checked-in-airline-disagrees",
-    "niche": true
+    "niche": true,
+    "added": "2026-10-14"
   },
   {
     "title": "Daily Reddit Digest",
@@ -640,7 +757,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/daily-reddit-digest.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "daily-reddit-digest"
+    "slug": "daily-reddit-digest",
+    "added": "2026-10-13"
   },
   {
     "title": "Daily YouTube Digest",
@@ -651,7 +769,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/daily-youtube-digest.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "daily-youtube-digest"
+    "slug": "daily-youtube-digest",
+    "added": "2026-10-13"
   },
   {
     "title": "X Account Analysis",
@@ -662,7 +781,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/x-account-analysis.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "x-account-analysis"
+    "slug": "x-account-analysis",
+    "added": "2026-10-13"
   },
   {
     "title": "Multi-Source Tech News Digest",
@@ -673,7 +793,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/multi-source-tech-news-digest.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "multi-source-tech-news-digest"
+    "slug": "multi-source-tech-news-digest",
+    "added": "2026-10-13"
   },
   {
     "title": "X/Twitter Automation",
@@ -684,7 +805,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/x-twitter-automation.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "x-twitter-automation"
+    "slug": "x-twitter-automation",
+    "added": "2026-10-13"
   },
   {
     "title": "Goal-Driven Autonomous Tasks",
@@ -695,7 +817,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/overnight-mini-app-builder.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "goal-driven-autonomous-tasks"
+    "slug": "goal-driven-autonomous-tasks",
+    "added": "2026-10-13"
   },
   {
     "title": "YouTube Content Pipeline",
@@ -706,7 +829,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/youtube-content-pipeline.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "youtube-content-pipeline"
+    "slug": "youtube-content-pipeline",
+    "added": "2026-10-13"
   },
   {
     "title": "Multi-Agent Content Factory",
@@ -717,7 +841,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/content-factory.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "multi-agent-content-factory"
+    "slug": "multi-agent-content-factory",
+    "added": "2026-10-13"
   },
   {
     "title": "Autonomous Game Dev Pipeline",
@@ -728,7 +853,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/autonomous-game-dev-pipeline.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "autonomous-game-dev-pipeline"
+    "slug": "autonomous-game-dev-pipeline",
+    "added": "2026-10-13"
   },
   {
     "title": "Podcast Production Pipeline",
@@ -739,7 +865,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/podcast-production-pipeline.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "podcast-production-pipeline"
+    "slug": "podcast-production-pipeline",
+    "added": "2026-10-13"
   },
   {
     "title": "AI Video Editing via Chat",
@@ -750,7 +877,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/ai-video-editing.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "ai-video-editing-via-chat"
+    "slug": "ai-video-editing-via-chat",
+    "added": "2026-10-13"
   },
   {
     "title": "n8n Workflow Orchestration",
@@ -761,7 +889,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/n8n-workflow-orchestration.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "n8n-workflow-orchestration"
+    "slug": "n8n-workflow-orchestration",
+    "added": "2026-10-13"
   },
   {
     "title": "Self-Healing Home Server",
@@ -772,7 +901,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/self-healing-home-server.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "self-healing-home-server"
+    "slug": "self-healing-home-server",
+    "added": "2026-10-13"
   },
   {
     "title": "Autonomous Project Management",
@@ -783,7 +913,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/autonomous-project-management.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "autonomous-project-management"
+    "slug": "autonomous-project-management",
+    "added": "2026-10-13"
   },
   {
     "title": "Multi-Channel AI Customer Service",
@@ -794,7 +925,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/multi-channel-customer-service.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "multi-channel-ai-customer-service"
+    "slug": "multi-channel-ai-customer-service",
+    "added": "2026-10-13"
   },
   {
     "title": "Phone-Based Personal Assistant",
@@ -805,7 +937,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/phone-based-personal-assistant.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "phone-based-personal-assistant"
+    "slug": "phone-based-personal-assistant",
+    "added": "2026-10-13"
   },
   {
     "title": "Inbox De-clutter",
@@ -816,7 +949,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/inbox-declutter.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "inbox-de-clutter"
+    "slug": "inbox-de-clutter",
+    "added": "2026-10-13"
   },
   {
     "title": "Personal CRM",
@@ -827,7 +961,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/personal-crm.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "personal-crm"
+    "slug": "personal-crm",
+    "added": "2026-10-13"
   },
   {
     "title": "Health & Symptom Tracker",
@@ -838,7 +973,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/health-symptom-tracker.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "health-symptom-tracker"
+    "slug": "health-symptom-tracker",
+    "added": "2026-10-13"
   },
   {
     "title": "Multi-Channel Personal Assistant",
@@ -849,7 +985,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/multi-channel-assistant.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "multi-channel-personal-assistant"
+    "slug": "multi-channel-personal-assistant",
+    "added": "2026-10-13"
   },
   {
     "title": "Project State Management",
@@ -860,7 +997,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/project-state-management.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "project-state-management"
+    "slug": "project-state-management",
+    "added": "2026-10-13"
   },
   {
     "title": "Dynamic Dashboard",
@@ -871,7 +1009,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/dynamic-dashboard.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "dynamic-dashboard"
+    "slug": "dynamic-dashboard",
+    "added": "2026-10-13"
   },
   {
     "title": "Todoist Task Manager",
@@ -882,7 +1021,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/todoist-task-manager.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "todoist-task-manager"
+    "slug": "todoist-task-manager",
+    "added": "2026-10-13"
   },
   {
     "title": "Family Calendar & Household Assistant",
@@ -893,7 +1033,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/family-calendar-household-assistant.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "family-calendar-household-assistant"
+    "slug": "family-calendar-household-assistant",
+    "added": "2026-10-13"
   },
   {
     "title": "Multi-Agent Specialized Team",
@@ -904,7 +1045,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/multi-agent-team.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "multi-agent-specialized-team"
+    "slug": "multi-agent-specialized-team",
+    "added": "2026-10-13"
   },
   {
     "title": "OpenClaw as Desktop Cowork",
@@ -915,7 +1057,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/aionui-cowork-desktop.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "openclaw-as-desktop-cowork"
+    "slug": "openclaw-as-desktop-cowork",
+    "added": "2026-10-13"
   },
   {
     "title": "Custom Morning Brief",
@@ -926,7 +1069,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/custom-morning-brief.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "custom-morning-brief"
+    "slug": "custom-morning-brief",
+    "added": "2026-10-13"
   },
   {
     "title": "Automated Meeting Notes & Action Items",
@@ -937,7 +1081,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/meeting-notes-action-items.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "automated-meeting-notes-action-items"
+    "slug": "automated-meeting-notes-action-items",
+    "added": "2026-10-13"
   },
   {
     "title": "Habit Tracker & Accountability Coach",
@@ -948,7 +1093,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/habit-tracker-accountability-coach.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "habit-tracker-accountability-coach"
+    "slug": "habit-tracker-accountability-coach",
+    "added": "2026-10-13"
   },
   {
     "title": "Second Brain",
@@ -959,7 +1105,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/second-brain.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "second-brain"
+    "slug": "second-brain",
+    "added": "2026-10-13"
   },
   {
     "title": "Event Guest Confirmation",
@@ -970,7 +1117,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/event-guest-confirmation.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "event-guest-confirmation"
+    "slug": "event-guest-confirmation",
+    "added": "2026-10-13"
   },
   {
     "title": "Phone Call Notifications",
@@ -981,7 +1129,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/phone-call-notifications.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "phone-call-notifications"
+    "slug": "phone-call-notifications",
+    "added": "2026-10-13"
   },
   {
     "title": "Local CRM Framework",
@@ -992,7 +1141,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/local-crm-framework.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "local-crm-framework"
+    "slug": "local-crm-framework",
+    "added": "2026-10-13"
   },
   {
     "title": "AI Earnings Tracker",
@@ -1003,7 +1153,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/earnings-tracker.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "ai-earnings-tracker"
+    "slug": "ai-earnings-tracker",
+    "added": "2026-10-13"
   },
   {
     "title": "Personal Knowledge Base (RAG)",
@@ -1014,7 +1165,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/knowledge-base-rag.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "personal-knowledge-base-rag"
+    "slug": "personal-knowledge-base-rag",
+    "added": "2026-10-13"
   },
   {
     "title": "Market Research & Product Factory",
@@ -1025,7 +1177,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/market-research-product-factory.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "market-research-product-factory"
+    "slug": "market-research-product-factory",
+    "added": "2026-10-13"
   },
   {
     "title": "Pre-Build Idea Validator",
@@ -1036,7 +1189,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/pre-build-idea-validator.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "pre-build-idea-validator"
+    "slug": "pre-build-idea-validator",
+    "added": "2026-10-13"
   },
   {
     "title": "Semantic Memory Search",
@@ -1047,7 +1201,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/semantic-memory-search.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "semantic-memory-search"
+    "slug": "semantic-memory-search",
+    "added": "2026-10-13"
   },
   {
     "title": "arXiv Paper Reader",
@@ -1058,7 +1213,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/arxiv-paper-reader.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "arxiv-paper-reader"
+    "slug": "arxiv-paper-reader",
+    "added": "2026-10-13"
   },
   {
     "title": "LaTeX Paper Writing",
@@ -1069,7 +1225,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/latex-paper-writing.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "latex-paper-writing"
+    "slug": "latex-paper-writing",
+    "added": "2026-10-13"
   },
   {
     "title": "HF Papers Research Discovery",
@@ -1080,7 +1237,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/hf-papers-research-discovery.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "hf-papers-research-discovery"
+    "slug": "hf-papers-research-discovery",
+    "added": "2026-10-13"
   },
   {
     "title": "Polymarket Autopilot",
@@ -1091,7 +1249,8 @@
     ],
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/polymarket-autopilot.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
-    "slug": "polymarket-autopilot"
+    "slug": "polymarket-autopilot",
+    "added": "2026-10-13"
   },
   {
     "title": "Rakuten: 7-hour autonomous refactor in vLLM",
@@ -1102,7 +1261,8 @@
     ],
     "source": "https://claude.com/customers/rakuten",
     "sourceName": "Anthropic customer story",
-    "slug": "rakuten-7-hour-autonomous-refactor-in-vllm"
+    "slug": "rakuten-7-hour-autonomous-refactor-in-vllm",
+    "added": "2026-10-13"
   },
   {
     "title": "Stripe: Scala-to-Java migration in 4 days",
@@ -1113,7 +1273,8 @@
     ],
     "source": "https://claude.com/customers/stripe",
     "sourceName": "Anthropic customer story",
-    "slug": "stripe-scala-to-java-migration-in-4-days"
+    "slug": "stripe-scala-to-java-migration-in-4-days",
+    "added": "2026-10-13"
   },
   {
     "title": "Spotify: background coding agent for fleet migrations",
@@ -1124,7 +1285,8 @@
     ],
     "source": "https://claude.com/customers/spotify",
     "sourceName": "Anthropic customer story",
-    "slug": "spotify-background-coding-agent-for-fleet-migrations"
+    "slug": "spotify-background-coding-agent-for-fleet-migrations",
+    "added": "2026-10-13"
   },
   {
     "title": "Satispay: Java 8 to 21 upgrade in under 4 days",
@@ -1135,7 +1297,8 @@
     ],
     "source": "https://claude.com/customers/satispay",
     "sourceName": "Anthropic customer story",
-    "slug": "satispay-java-8-to-21-upgrade-in-under-4-days"
+    "slug": "satispay-java-8-to-21-upgrade-in-under-4-days",
+    "added": "2026-10-13"
   },
   {
     "title": "Money Forward: incident and Kubernetes auto-fix agents",
@@ -1146,7 +1309,8 @@
     ],
     "source": "https://claude.com/customers/money-forward",
     "sourceName": "Anthropic customer story",
-    "slug": "money-forward-incident-and-kubernetes-auto-fix-agents"
+    "slug": "money-forward-incident-and-kubernetes-auto-fix-agents",
+    "added": "2026-10-13"
   },
   {
     "title": "Ship an Airline App With Near-Complete Test Coverage",
@@ -1157,7 +1321,8 @@
     ],
     "source": "https://openai.com/index/virgin-atlantic/",
     "sourceName": "OpenAI customer story",
-    "slug": "ship-an-airline-app-with-near-complete-test-coverage"
+    "slug": "ship-an-airline-app-with-near-complete-test-coverage",
+    "added": "2026-10-13"
   },
   {
     "title": "Cross-Repo Build Optimization and Defect Repair",
@@ -1168,7 +1333,8 @@
     ],
     "source": "https://openai.com/index/cisco/",
     "sourceName": "OpenAI customer story",
-    "slug": "cross-repo-build-optimization-and-defect-repair"
+    "slug": "cross-repo-build-optimization-and-defect-repair",
+    "added": "2026-10-13"
   },
   {
     "title": "Turn User Stories Into Production Features",
@@ -1179,7 +1345,8 @@
     ],
     "source": "https://openai.com/index/1password/",
     "sourceName": "OpenAI customer story",
-    "slug": "turn-user-stories-into-production-features"
+    "slug": "turn-user-stories-into-production-features",
+    "added": "2026-10-13"
   },
   {
     "title": "Let Non-Engineers Build Customer Experiences",
@@ -1190,7 +1357,8 @@
     ],
     "source": "https://openai.com/index/loveholidays/",
     "sourceName": "OpenAI customer story",
-    "slug": "let-non-engineers-build-customer-experiences"
+    "slug": "let-non-engineers-build-customer-experiences",
+    "added": "2026-10-13"
   },
   {
     "title": "Custom Sales Demos From Call Transcripts",
@@ -1201,7 +1369,8 @@
     ],
     "source": "https://openai.com/index/proaction/",
     "sourceName": "OpenAI customer story",
-    "slug": "custom-sales-demos-from-call-transcripts"
+    "slug": "custom-sales-demos-from-call-transcripts",
+    "added": "2026-10-13"
   },
   {
     "title": "AI Data Analyst in Slack",
@@ -1212,7 +1381,8 @@
     ],
     "source": "https://cognition.ai/blog/how-eight-sleep-uses-devin-as-a-data-analyst",
     "sourceName": "Cognition blog",
-    "slug": "ai-data-analyst-in-slack"
+    "slug": "ai-data-analyst-in-slack",
+    "added": "2026-10-13"
   },
   {
     "title": "Fix Customer Bugs and Add Platform Integrations",
@@ -1223,7 +1393,8 @@
     ],
     "source": "https://cognition.ai/blog/linktree",
     "sourceName": "Cognition blog",
-    "slug": "fix-customer-bugs-and-add-platform-integrations"
+    "slug": "fix-customer-bugs-and-add-platform-integrations",
+    "added": "2026-10-13"
   },
   {
     "title": "Scale Open-Source SDK Integrations",
@@ -1234,7 +1405,8 @@
     ],
     "source": "https://cognition.ai/blog/crossmint-devin",
     "sourceName": "Cognition blog",
-    "slug": "scale-open-source-sdk-integrations"
+    "slug": "scale-open-source-sdk-integrations",
+    "added": "2026-10-13"
   },
   {
     "title": "Run an Outage Recovery Playbook",
@@ -1245,7 +1417,8 @@
     ],
     "source": "https://cognition.ai/blog/devin-crowdstrike-outage",
     "sourceName": "Cognition blog",
-    "slug": "run-an-outage-recovery-playbook"
+    "slug": "run-an-outage-recovery-playbook",
+    "added": "2026-10-13"
   },
   {
     "title": ".NET Framework to .NET Core Migration",
@@ -1256,7 +1429,8 @@
     ],
     "source": "https://cognition.ai/blog/dotnet-migration-with-devin",
     "sourceName": "Cognition blog",
-    "slug": "net-framework-to-net-core-migration"
+    "slug": "net-framework-to-net-core-migration",
+    "added": "2026-10-13"
   },
   {
     "title": "Modernize COBOL Codebases",
@@ -1267,7 +1441,8 @@
     ],
     "source": "https://cognition.ai/blog/how-devin-is-modernizing-cobol-at-fortune-500-companies",
     "sourceName": "Cognition blog",
-    "slug": "modernize-cobol-codebases"
+    "slug": "modernize-cobol-codebases",
+    "added": "2026-10-13"
   },
   {
     "title": "Migrate Jenkins Pipelines to GitHub Actions",
@@ -1278,7 +1453,8 @@
     ],
     "source": "https://cognition.ai/blog/from-jenkins-to-github-actions",
     "sourceName": "Cognition blog",
-    "slug": "migrate-jenkins-pipelines-to-github-actions"
+    "slug": "migrate-jenkins-pipelines-to-github-actions",
+    "added": "2026-10-13"
   },
   {
     "title": "Factor RSA-260 With a Fleet of Agents",
@@ -1289,7 +1465,8 @@
     ],
     "source": "https://cognition.ai/blog/factoring-rsa-260",
     "sourceName": "Cognition blog",
-    "slug": "factor-rsa-260-with-a-fleet-of-agents"
+    "slug": "factor-rsa-260-with-a-fleet-of-agents",
+    "added": "2026-10-13"
   },
   {
     "title": "Recurring Engineering Chores on a Schedule",
@@ -1300,7 +1477,8 @@
     ],
     "source": "https://cognition.ai/blog/devin-can-now-schedule-devins",
     "sourceName": "Cognition blog",
-    "slug": "recurring-engineering-chores-on-a-schedule"
+    "slug": "recurring-engineering-chores-on-a-schedule",
+    "added": "2026-10-13"
   },
   {
     "title": "Designers Ship UI Fixes Themselves",
@@ -1311,7 +1489,8 @@
     ],
     "source": "https://cursor.com/blog/grab",
     "sourceName": "Cursor customer story",
-    "slug": "designers-ship-ui-fixes-themselves"
+    "slug": "designers-ship-ui-fixes-themselves",
+    "added": "2026-10-13"
   },
   {
     "title": "Analyze 50M+ Lines of Code in Two Weeks",
@@ -1322,7 +1501,8 @@
     ],
     "source": "https://cursor.com/blog/nokia",
     "sourceName": "Cursor customer story",
-    "slug": "analyze-50m-lines-of-code-in-two-weeks"
+    "slug": "analyze-50m-lines-of-code-in-two-weeks",
+    "added": "2026-10-13"
   },
   {
     "title": "Re-platform Legacy Mining Data Systems",
@@ -1333,7 +1513,8 @@
     ],
     "source": "https://cursor.com/blog/imdex",
     "sourceName": "Cursor customer story",
-    "slug": "re-platform-legacy-mining-data-systems"
+    "slug": "re-platform-legacy-mining-data-systems",
+    "added": "2026-10-13"
   },
   {
     "title": "Build Long-Horizon Accounting Agents",
@@ -1344,7 +1525,8 @@
     ],
     "source": "https://cursor.com/blog/basis",
     "sourceName": "Cursor customer story",
-    "slug": "build-long-horizon-accounting-agents"
+    "slug": "build-long-horizon-accounting-agents",
+    "added": "2026-10-13"
   },
   {
     "title": "Thousands of Agents Building One Codebase",
@@ -1355,7 +1537,8 @@
     ],
     "source": "https://cursor.com/blog/self-driving-codebases",
     "sourceName": "Cursor research blog",
-    "slug": "thousands-of-agents-building-one-codebase"
+    "slug": "thousands-of-agents-building-one-codebase",
+    "added": "2026-10-13"
   },
   {
     "title": "Procurement Bot That Finds Vendor Savings",
@@ -1366,7 +1549,8 @@
     ],
     "source": "https://x.ai/news/grok-bot-procurement",
     "sourceName": "SpaceXSI news",
-    "slug": "procurement-bot-that-finds-vendor-savings"
+    "slug": "procurement-bot-that-finds-vendor-savings",
+    "added": "2026-10-13"
   },
   {
     "title": "Pre-Investigate Every Support Ticket",
@@ -1377,7 +1561,8 @@
     ],
     "source": "https://x.ai/news/grok-bot-customer-support",
     "sourceName": "SpaceXSI news",
-    "slug": "pre-investigate-every-support-ticket"
+    "slug": "pre-investigate-every-support-ticket",
+    "added": "2026-10-13"
   },
   {
     "title": "Churn Clustering, Refund Triage and Bug Repros",
@@ -1388,7 +1573,8 @@
     ],
     "source": "https://x.ai/bot/guides/grok-bot-for-support",
     "sourceName": "Grok Bot guide",
-    "slug": "churn-clustering-refund-triage-and-bug-repros"
+    "slug": "churn-clustering-refund-triage-and-bug-repros",
+    "added": "2026-10-13"
   },
   {
     "title": "Manage Cursor Cloud Agents While You Sleep",
@@ -1399,7 +1585,8 @@
     ],
     "source": "https://x.ai/bot/guides/grok-bot-for-engineering",
     "sourceName": "Grok Bot guide",
-    "slug": "manage-cursor-cloud-agents-while-you-sleep"
+    "slug": "manage-cursor-cloud-agents-while-you-sleep",
+    "added": "2026-10-13"
   },
   {
     "title": "An Always-On Agent for Every Employee",
@@ -1410,7 +1597,8 @@
     ],
     "source": "https://hermes-agent.nousresearch.com/docs/user-stories",
     "sourceName": "Hermes Agent user stories",
-    "slug": "an-always-on-agent-for-every-employee"
+    "slug": "an-always-on-agent-for-every-employee",
+    "added": "2026-10-13"
   },
   {
     "title": "A Hermes Profile for Every Team",
@@ -1421,7 +1609,8 @@
     ],
     "source": "https://x.com/JacquelineSYC19/status/2100262432413528336",
     "sourceName": "X post",
-    "slug": "a-hermes-profile-for-every-team"
+    "slug": "a-hermes-profile-for-every-team",
+    "added": "2026-10-13"
   },
   {
     "title": "Small-Business Assistants Over Messenger and CRM",
@@ -1432,7 +1621,8 @@
     ],
     "source": "https://x.com/julientalbot974/status/2107173111745724505",
     "sourceName": "X post",
-    "slug": "small-business-assistants-over-messenger-and-crm"
+    "slug": "small-business-assistants-over-messenger-and-crm",
+    "added": "2026-10-13"
   },
   {
     "title": "Solar Sales Team Ops Over iMessage",
@@ -1443,7 +1633,8 @@
     ],
     "source": "https://github.com/NousResearch/hermes-agent/issues/11550",
     "sourceName": "Hermes Agent GitHub issue",
-    "slug": "solar-sales-team-ops-over-imessage"
+    "slug": "solar-sales-team-ops-over-imessage",
+    "added": "2026-10-13"
   },
   {
     "title": "Regulatory Monitoring Across 500+ Sites",
@@ -1454,7 +1645,8 @@
     ],
     "source": "https://manus.im/blog/k-id-manus-use-case",
     "sourceName": "Manus blog",
-    "slug": "regulatory-monitoring-across-500-sites"
+    "slug": "regulatory-monitoring-across-500-sites",
+    "added": "2026-10-13"
   },
   {
     "title": "No-Code AI Bouquet Designer",
@@ -1465,7 +1657,8 @@
     ],
     "source": "https://www.manus.im/blog/manus-user-story-noelle-fleur",
     "sourceName": "Manus blog",
-    "slug": "no-code-ai-bouquet-designer"
+    "slug": "no-code-ai-bouquet-designer",
+    "added": "2026-10-13"
   },
   {
     "title": "LG CNS: Modernize 20-Year-Old Enterprise Systems",
@@ -1476,7 +1669,8 @@
     ],
     "source": "https://claude.com/customers/lg-cns",
     "sourceName": "Anthropic Customers",
-    "slug": "lg-cns-modernize-20-year-old-enterprise-systems"
+    "slug": "lg-cns-modernize-20-year-old-enterprise-systems",
+    "added": "2026-10-14"
   },
   {
     "title": "Pictet: Compliance Gap Analysis in Hours",
@@ -1487,7 +1681,8 @@
     ],
     "source": "https://claude.com/customers/pictet",
     "sourceName": "Anthropic Customers",
-    "slug": "pictet-compliance-gap-analysis-in-hours"
+    "slug": "pictet-compliance-gap-analysis-in-hours",
+    "added": "2026-10-14"
   },
   {
     "title": "NTT DATA: Cut Incident Analysis to 30 Minutes",
@@ -1498,7 +1693,8 @@
     ],
     "source": "https://openai.com/index/ntt-data/",
     "sourceName": "OpenAI",
-    "slug": "ntt-data-cut-incident-analysis-to-30-minutes"
+    "slug": "ntt-data-cut-incident-analysis-to-30-minutes",
+    "added": "2026-10-14"
   },
   {
     "title": "Coinbase: Agent-First Idea-to-Production in Under 2 Days",
@@ -1509,7 +1705,8 @@
     ],
     "source": "https://cursor.com/blog/coinbase",
     "sourceName": "Cursor Blog",
-    "slug": "coinbase-agent-first-idea-to-production"
+    "slug": "coinbase-agent-first-idea-to-production",
+    "added": "2026-10-14"
   },
   {
     "title": "AngelList: Redshift-to-Snowflake Metabase Migration",
@@ -1520,7 +1717,8 @@
     ],
     "source": "https://devin.ai/customers/angellist",
     "sourceName": "Devin Customers",
-    "slug": "angellist-redshift-to-snowflake-metabase-migration"
+    "slug": "angellist-redshift-to-snowflake-metabase-migration",
+    "added": "2026-10-14"
   },
   {
     "title": "Ascendea: AI Chief of Staff That Wrote 303 SOPs in a Day",
@@ -1531,6 +1729,7 @@
     ],
     "source": "https://manus.im/blog/Ascendea-James-Customer-Story",
     "sourceName": "Manus blog",
-    "slug": "ascendea-ai-chief-of-staff-303-sops"
+    "slug": "ascendea-ai-chief-of-staff-303-sops",
+    "added": "2026-10-14"
   }
 ]

@@ -1,7 +1,10 @@
 import { items, cats, agents, slugify, abs, lastUpdated } from '../lib/site';
 export async function GET() {
-  let t = `# AI Agent Use Cases\n\n> A curated directory of ${items.length} real-world AI agent use cases (${agents.join(', ')}), each linked to its original source. Last updated ${lastUpdated}.\n\nFull dataset: ${abs('/llms-full.txt')}\nAbout & FAQ: ${abs('/about/')}\nNiche & surprising use cases: ${abs('/niche/')}\n\n## Agents\n\n`;
+  let t = `# AI Agent Use Cases\n\n> A curated directory of ${items.length} real-world AI agent use cases (${agents.join(', ')}), each linked to its original source. Last updated ${lastUpdated}.\n\nFull dataset: ${abs('/llms-full.txt')}\nAbout & FAQ: ${abs('/about/')}\nNiche & surprising use cases: ${abs('/niche/')}\nRSS feed of new use cases: ${abs('/rss.xml')}\n\n## Agents\n\n`;
   for (const a of agents) t += `- [${a} use cases](${abs(`/agents/${slugify(a)}/`)}): ${items.filter(d => d.tools.includes(a)).length} entries\n`;
+  // Recently added: the 10 newest entries, so answer engines see what changed.
+  const recent = [...items].filter(d => d.added).sort((a, b) => b.added.localeCompare(a.added)).slice(0, 10);
+  if (recent.length) { t += `\n## Recently added\n\n`; for (const d of recent) t += `- ${d.added}: [${d.title}](${abs(`/use-cases/${d.slug}/`)})\n`; }
   // Niche first: helps answer engines surface surprising, non-enterprise examples.
   const niche = items.filter(d => d.niche);
   if (niche.length) {
