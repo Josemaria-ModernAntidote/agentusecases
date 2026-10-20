@@ -1,5 +1,70 @@
 [
   {
+    "title": "Google Maps turns as Morse code buzzes on a cheap smartwatch",
+    "description": "Anurag Phadnis rides a two-wheeler with no earphones and no phone mount, and wanted directions by touch. Working in Claude Code, Anurag and Claude reverse-engineered the BLE protocol of a budget boAt Wave Fury watch from Bluetooth snoop logs and the decompiled companion app, then built MorseNav, an Android app that reads the turn arrow from the Google Maps notification and fires fake notifications at the watch to make dots and dashes. A dash is four notifications 150 ms apart, timed with a microphone held to the watch. Left coming up is dash-dot, right is dot-dash, and the watch is worn face-in so every cue is felt.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://phadnis-anurag.medium.com/feeling-the-turns-google-maps-as-morse-code-on-a-cheap-smartwatch-54843baf5db4",
+    "sourceName": "Anurag Phadnis (Medium)",
+    "slug": "google-maps-turns-as-morse-code-buzzes-on-a-cheap-smartwatch",
+    "niche": true,
+    "added": "2026-10-20"
+  },
+  {
+    "title": "A school agent that prints a weekly drawing and Minecraft sheet for a kid",
+    "description": "Yani Pascual set up a Hermes Agent profile to handle their daughter's school events, notifications and payments, which they call a boring personal agent. Then they had it use all that info to generate a weekly two-page printable, printed both sides. The back is a creative page with one drawing idea and one Minecraft build idea, illustrated with characters based on her own original characters and paintings. Their daughter loves it.",
+    "category": "Personal Life",
+    "tools": [
+      "Hermes Agent"
+    ],
+    "source": "https://x.com/Yani3rt/status/2111867054387065272",
+    "sourceName": "@Yani3rt (X)",
+    "slug": "a-school-agent-that-prints-a-weekly-drawing-and-minecraft-sheet-for-a-kid",
+    "niche": true,
+    "added": "2026-10-20"
+  },
+  {
+    "title": "A bubble tea shop's agent spots card fees and cuts them",
+    "description": "While going through the shop's email, Yong.C's Grok Bot noticed the bubble tea shop was paying almost 1.9% in card fees and suggested switching to SumUp's Pagamenti Plus plan, which charges nothing on payments under 10 euros and halves the rate on the rest. Most of the shop's orders are under 10 euros, so the owner switched on the spot and let the bot handle the setup, estimating at least 300 euros saved a year.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/william40152988/status/2111900675202335162",
+    "sourceName": "@william40152988 (X)",
+    "slug": "a-bubble-tea-shop-s-agent-spots-card-fees-and-cuts-them",
+    "niche": true,
+    "added": "2026-10-20"
+  },
+  {
+    "title": "A parent builds a vet-rescue math game for their 8-year-old",
+    "description": "Steven Fahey wasn't busy enough to need help with email, so they tried Grok Bot on something else: a math game for their 8-year-old daughter, who loves animals and vet shows. The bot took the idea from outline to script, artwork, gameplay and a working game without them seeing any code, with math showing up naturally, like working out the right dose of medicine for a rescued animal. Four days later she played the first episode and wanted more. Then came an interview bot to record their mom's stories and personality before they are lost.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/Stevolutionary1/status/2112345989445275914",
+    "sourceName": "@Stevolutionary1 (X)",
+    "slug": "a-parent-builds-a-vet-rescue-math-game-for-their-8-year-old",
+    "niche": true,
+    "added": "2026-10-20"
+  },
+  {
+    "title": "90s tech greeting cards for a dad with dementia who still loves Linux",
+    "description": "stalefated used Claude Code to make a stack of 90s tech themed greeting cards for their dad, who has dementia but still nerds out about Linux, so he gets a midweek surprise between weekend visits. They called it probably the best use of tech they have made recently.",
+    "category": "Personal Life",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/stalefated/status/2111849273273049117",
+    "sourceName": "@stalefated (X)",
+    "slug": "90s-tech-greeting-cards-for-a-dad-with-dementia-who-still-loves-linux",
+    "niche": true,
+    "added": "2026-10-20"
+  },
+  {
     "title": "A lifelong potter 3D-prints his clay designs by talking to an agent",
     "description": "Thijs van Schadewijk's dad has made pottery his whole life and recently bought a 3D printer. They photographed his clay pieces and turned them into 3D models so he could reprint them for his grandkids. Then Thijs set him up with a Grok Bot that runs the printer and slicer software on its own virtual machine, since his dad has no Mac. His dad tells the bot what he wants to sculpt and it sends the job to the printer. His caption on the first print: 'the first design by talking to a computer. This is hard to believe.'",
     "category": "Hobbies & Games",
