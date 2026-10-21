@@ -23,3 +23,18 @@ export const relatedTo = (d: (typeof data)[number], n = 6) => {
 export const abs = (p: string) => new URL(p, SITE).href;
 export const crumbs = (list: [string, string][]) => ({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: list.map(([name, p], i) => ({ '@type': 'ListItem', position: i + 1, name, item: abs(p) })) });
 export const itemList = (name: string, list: typeof data) => ({ '@context': 'https://schema.org', '@type': 'ItemList', name, numberOfItems: list.length, itemListElement: list.map((d, i) => ({ '@type': 'ListItem', position: i + 1, name: d.title, url: abs(`/use-cases/${d.slug}/`) })) });
+// Hub page Q&A: short, factual answers built from the data so answer engines can quote a hub
+// (an agent or a category) directly. Rendered on the page and emitted as FAQPage JSON-LD.
+const newest = (list: typeof data) => [...list].filter(d => d.added).sort((a, b) => b.added.localeCompare(a.added));
+const names = (list: typeof data, n = 3) => list.slice(0, n).map(d => `"${d.title}"`).join('; ');
+export const hubFaq = (kind: 'agent' | 'category', label: string, list: typeof data): [string, string][] => {
+  const other = kind === 'agent' ? [...new Set(list.map(d => d.category))] : [...new Set(list.flatMap(d => d.tools))];
+  const niche = newest(list.filter(d => d.niche)); const recent = newest(list);
+  const subject = kind === 'agent' ? `${label} use cases` : `${label} AI agent use cases`;
+  const qa: [string, string][] = [[`What are real examples of ${subject}?`, `This directory lists ${list.length} documented ${subject}, ${kind === 'agent' ? 'in' : 'using'} ${other.length} ${kind === 'agent' ? (other.length === 1 ? 'category' : 'categories') : (other.length === 1 ? 'agent' : 'agents')} (${other.join(', ')}). Recent examples: ${names(recent)}.`]];
+  if (niche.length) qa.push([`What are the most unusual ${subject}?`, `${niche.length} of the ${list.length} are tagged niche, meaning individuals, hobbies, small operators or odd experiments rather than enterprise demos. For example: ${names(niche)}.`]);
+  if (recent[0]) qa.push([`When was the newest ${subject.replace(/s$/, '')} added?`, `The newest one, "${recent[0].title}", was added on ${recent[0].added}.`]);
+  qa.push([`Where do these examples come from?`, `Every entry links to its original public source, such as a post on X, a blog, a GitHub repository or a published case study. Entries without a public source are not listed.`]);
+  return qa;
+};
+export const faqLd = (qa: [string, string][]) => ({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: qa.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) });

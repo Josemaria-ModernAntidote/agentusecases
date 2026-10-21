@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { items, agents, cats, slugify, crumbs, itemList, NAME, lastUpdated, clip } from '../../lib/site';
+import { items, agents, cats, slugify, crumbs, itemList, NAME, lastUpdated, clip, hubFaq, faqLd } from '../../lib/site';
 export function getStaticPaths() { return agents.map(a => ({ params: { agent: slugify(a) }, props: { a } })); }
 const { a } = Astro.props;
 const list = items.filter(d => d.tools.includes(a));
@@ -8,11 +8,13 @@ const lc = cats.filter(c => list.some(d => d.category === c));
 const path = `/agents/${slugify(a)}/`;
 const title = `${a} use cases: ${list.length} real examples | ${NAME}`;
 const desc = clip(`${list.length} real, source-linked ${a} use cases across ${lc.join(', ')}.`);
-const ld = [itemList(`${a} use cases`, list), crumbs([['Home', '/'], ['Agents', '/agents/'], [a, path]])];
+const qa = hubFaq('agent', a, list);
+const ld = [itemList(`${a} use cases`, list), crumbs([['Home', '/'], ['Agents', '/agents/'], [a, path]]), faqLd(qa)];
 ---
 <Base title={title} desc={desc} path={path} ld={ld}>
 <p class="bc"><a href="/">Home</a> › <a href="/agents/">Agents</a> › {a}</p>
 <h1>{a} use cases</h1>
 <p class="lead">This directory lists <b>{list.length}</b> documented {a} use case{list.length === 1 ? '' : 's'} across {lc.length} categor{lc.length === 1 ? 'y' : 'ies'} ({lc.join(', ')}), each linked to its original public source. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>.</p>
 {lc.map(c => <section><h2><a href={`/categories/${slugify(c)}/`}>{c}</a></h2><ul class="l">{list.filter(d => d.category === c).map(d => <li><a href={`/use-cases/${d.slug}/`}><b>{d.title}</b></a>: {d.description}</li>)}</ul></section>)}
+<section><h2>Quick answers</h2>{qa.map(([q, ans]) => <><h3>{q}</h3><p>{ans}</p></>)}</section>
 </Base>

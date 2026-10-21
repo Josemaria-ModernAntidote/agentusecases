@@ -1,5 +1,70 @@
 [
   {
+    "title": "A ham radio operator gets Claude Code to run his IC-9700 and make FT8 contacts on autopilot",
+    "description": "Polish ham SQ5CBA asked Claude Code one evening whether his Icom IC-9700 could be driven from a browser. In about an hour and a half it wrote a panel on his home server that speaks Icom's undocumented network protocol, learned from the open-source wfview code, with analog-style power, SWR and S-meters, memory channels, push-to-talk from the laptop with several safety cutoffs, a band waterfall, and FT8 without WSJT-X. An AUTOMAT button calls CQ and answers stations on its own, and logs every contact to QRZ.com. The next day the panel made two FT8 contacts on 2 m by itself, after they found the 2 m preamp was off. He wrote none of the roughly 2,850 lines of code, and he stays the licensed operator responsible for every transmission.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://sq5cba.pl/panel-ic9700-claude-code.html",
+    "sourceName": "SQ5CBA (blog)",
+    "slug": "a-ham-radio-operator-gets-claude-code-to-run-his-ic-9700-and-make-ft8-contacts",
+    "niche": true,
+    "added": "2026-10-21"
+  },
+  {
+    "title": "An open-source beehive scale that weighs the hive and reports over LoRaWAN",
+    "description": "Hussein Daj built TanenBase, an open-source hive scale: the hive stands on a load-cell platform that weighs it, a probe reads the temperature inside, and the node reports over LoRaWAN to The Things Network, then sleeps at about 4 microamps so it runs for years on three AAA lithium cells. Calibration happens over Web Bluetooth from a web page, so nothing gets plugged in once the lid is closed. Claude Code co-developed the firmware with him, from the state machine, drivers and power management to a chip port and load-cell temperature-drift analysis, and he reviewed and hardware-tested every change before it landed.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://github.com/hmd83/tanen",
+    "sourceName": "hmd83/tanen (GitHub)",
+    "slug": "an-open-source-beehive-scale-that-weighs-the-hive-and-reports-over-lorawan",
+    "niche": true,
+    "added": "2026-10-21"
+  },
+  {
+    "title": "A radio DJ turns 1,200 Bandcamp purchases into a walk-in 3D record store",
+    "description": "Tarik Moody has hosted the syndicated show Rhythm Lab Radio since 2005 and does much of his show prep in his Bandcamp collection of about 1,200 records. Using Claude Code and Bandcamp's Subsonic API integration, he built the Rhythm Lab Record Store, a 3D shop with brick walls, a neon sign and wooden bins in eight sections. You flip through crates as records tip forward, pull one out to play it with Bandcamp's player, build and share your own crates, and click through to buy from the artist. The code is open source.",
+    "category": "Creative & Building",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/tarikjmoody/status/2112601214323978672",
+    "sourceName": "@tarikjmoody (X)",
+    "slug": "a-radio-dj-turns-1200-bandcamp-purchases-into-a-walk-in-3d-record-store",
+    "niche": true,
+    "added": "2026-10-21"
+  },
+  {
+    "title": "A son's agent fixes wrong prices on his parents' restaurant website and POS",
+    "description": "After one night with Grok Bot, Professor X had it log into Wix, where it found and fixed incorrect prices on their parents' restaurant website, then go into the Square POS and make updates there too. Next on the list is a bot to handle the restaurant's Yelp and Google reviews.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/El_professorX/status/2112201850850259019",
+    "sourceName": "@El_professorX (X)",
+    "slug": "a-son-s-agent-fixes-wrong-prices-on-his-parents-restaurant-website-and-pos",
+    "niche": true,
+    "added": "2026-10-21"
+  },
+  {
+    "title": "An auto repair shop builds its own AI-friendly shop software and sells it next door",
+    "description": "Diego runs edcauto, an auto repair shop in Santa Clarita, California. Grok Bot already worked with the shop's existing management software, but its limited API held it back, so with Grok Bot he is building a replacement, wobots, made to integrate fully with Grok and Grok Bot. Its agents answer leads and texts, build estimates, follow up, book appointments and take payments. He demoed it to the neighboring shop, and they signed up.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/skyburxd/status/2111708865880568097",
+    "sourceName": "@skyburxd (X)",
+    "slug": "an-auto-repair-shop-builds-its-own-ai-friendly-shop-software-and-sells-it-next-door",
+    "niche": true,
+    "added": "2026-10-21"
+  },
+  {
     "title": "Google Maps turns as Morse code buzzes on a cheap smartwatch",
     "description": "Anurag Phadnis rides a two-wheeler with no earphones and no phone mount, and wanted directions by touch. Working in Claude Code, Anurag and Claude reverse-engineered the BLE protocol of a budget boAt Wave Fury watch from Bluetooth snoop logs and the decompiled companion app, then built MorseNav, an Android app that reads the turn arrow from the Google Maps notification and fires fake notifications at the watch to make dots and dashes. A dash is four notifications 150 ms apart, timed with a microphone held to the watch. Left coming up is dash-dot, right is dot-dash, and the watch is worn face-in so every cue is felt.",
     "category": "Physical World",

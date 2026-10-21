@@ -64,7 +64,7 @@ input[type=search],input[type=email]{width:100%;padding:12px 14px;border-radius:
 <script>
 const f=document.getElementById('nl-form'),m=document.getElementById('nl-msg');
 f.addEventListener('submit',async e=>{e.preventDefault();m.textContent='Subscribing…';
-try{const r=await fetch('/api/subscribe',{method:'POST',body:new FormData(f)});const d=await r.json();
+try{const r=await fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:String(new FormData(f).get('email')||'')})});const d=await r.json();
 m.textContent=d.ok?'Thanks! You are subscribed.':(d.error||'Something went wrong.');if(d.ok)f.reset();}catch{m.textContent='Something went wrong.';}});
 </script>
 <div class="sponsor"><span>⭐ Your product here. Reach builders exploring AI agents.</span><a class="btn" href="mailto:josemaria@mail.grokbot.com?subject=Sponsor%20AI%20Agent%20Use%20Cases">Sponsor this site</a></div>
@@ -76,7 +76,9 @@ const q=document.getElementById('q'),sel=document.getElementById('agent'),cards=
 function f(){const s=q.value.toLowerCase().trim();let n=0;cards.forEach(c=>{const ok=(!cat||c.dataset.cat===cat)&&(!ag||c.dataset.agents.split('|').includes(ag))&&(!s||c.dataset.text.includes(s));c.style.display=ok?'':'none';if(ok)n++});document.getElementById('count').textContent=n+' use cases';return n}
 q.addEventListener('input',()=>{const n=f();clearTimeout(st);st=setTimeout(()=>{const v=q.value.trim();if(v.length>1)track('search_used',{query:v.slice(0,100),results:n})},800)});
 chips.forEach(b=>b.onclick=()=>{cat=b.dataset.cat;chips.forEach(x=>x.classList.toggle('on',x===b));track('filter_used',{type:'category',value:cat||'all',results:f()})});
-sel.onchange=()=>{ag=sel.value;track('filter_used',{type:'agent',value:ag||'all',results:f()})};f();
+sel.onchange=()=>{ag=sel.value;track('filter_used',{type:'agent',value:ag||'all',results:f()})};
+// Deep links: /?q=term, /?agent=Name, /?cat=Name (the WebSite SearchAction points at ?q=).
+const up=new URLSearchParams(location.search);if(up.get('q'))q.value=up.get('q');if(up.get('agent')&&[...sel.options].some(o=>o.value===up.get('agent'))){ag=up.get('agent');sel.value=ag}if(up.get('cat')){const b=chips.find(x=>x.dataset.cat===up.get('cat'));if(b){cat=b.dataset.cat;chips.forEach(x=>x.classList.toggle('on',x===b))}}f();
 document.querySelectorAll('a.src').forEach(a=>a.addEventListener('click',()=>track('source_click',{slug:a.dataset.slug,agent:a.dataset.agent})));
 document.querySelectorAll('.vote').forEach(v=>v.querySelectorAll('button').forEach(b=>b.onclick=()=>{if(v.classList.contains('done'))return;v.classList.add('done');b.classList.add('on');track('usecase_feedback',{slug:v.dataset.slug,vote:b.dataset.v})}));
 const nf=document.getElementById('nl-form');nf&&nf.addEventListener('submit',()=>track('newsletter_submit'));
