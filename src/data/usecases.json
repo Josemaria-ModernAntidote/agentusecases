@@ -1861,5 +1861,57 @@
     "sourceName": "Manus blog",
     "slug": "ascendea-ai-chief-of-staff-303-sops",
     "added": "2026-10-14"
+  },
+  {
+    "title": "A Hokkaido farmer hires Codex as his field engineer to open greenhouse vents from LINE",
+    "description": "Tomiyasu grows green onions and broccoli in Hokkaido and is not an engineer. He used to walk from greenhouse to greenhouse opening the vents when it got hot and closing them when it got cold. Working with Codex on both the code and the wiring design, he connected temperature and humidity sensors, an ESP32 and the vent motors to LINE, so he can check each greenhouse's temperature from his phone and open or close the side curtains remotely. He calls it hiring an engineer named Codex, and OpenAI invited him to Tokyo to hear how he did it.",
+    "category": "Physical World",
+    "tools": [
+      "OpenAI Codex"
+    ],
+    "source": "https://note.com/tomiyasu16/n/n4d3cface30ae",
+    "sourceName": "Tomiyasu (note)",
+    "slug": "a-hokkaido-farmer-hires-codex-as-his-field-engineer-to-open-greenhouse-vents-from-line",
+    "niche": true,
+    "added": "2026-10-22"
+  },
+  {
+    "title": "A native Claude client for the classic Atari ST, written in Claude Code",
+    "description": "Erez Yaary built ClaudeST, a GEM desktop app that brings his real claude.ai account to the Atari ST, STE, TT and Falcon. A Raspberry Pi on the home network acts as a bridge, and the Atari gets chats, projects, search, artifacts it can save to disk, file attachments, a usage ring, and even replies to Claude Code sessions, on any screen from 640x200 in monochrome up. It is one of a family of retro apps he is making for the Atari, including e-mail, calendar and FTP clients. The README says ClaudeST was written with Claude, in Claude Code: a claude.ai client for the Atari, built by talking to claude.ai.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://github.com/whomper/ClaudeST",
+    "sourceName": "whomper/ClaudeST (GitHub)",
+    "slug": "a-native-claude-client-for-the-classic-atari-st-written-in-claude-code",
+    "niche": true,
+    "added": "2026-10-22"
+  },
+  {
+    "title": "An agent talks a man through fixing his own broken dryer for $30",
+    "description": "When Dan's dryer broke, he skipped the appliance repair visit and worked it out with Grok Bot instead. It helped him troubleshoot the exact fault, a broken timer dial, ordered the right replacement part on Amazon for about $30 with overnight delivery, and walked him through every step of the swap, down to which tools to use: a flathead, needle-nose pliers and a T10 Torx driver. He says it saved him more than $200 and hours of his day.",
+    "category": "Physical World",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/KettlebellDan/status/2112987611660714302",
+    "sourceName": "@KettlebellDan (X)",
+    "slug": "an-agent-talks-a-man-through-fixing-his-own-broken-dryer-for-30",
+    "niche": true,
+    "added": "2026-10-22"
+  },
+  {
+    "title": "A first-time eBay seller has an agent list his item end to end",
+    "description": "Peer Richelsen had never sold anything on eBay because he could not be bothered with signing up, identity checks, connecting a bank, uploading photos, researching a price and adjusting it over time. So he asked Grok Bot to do it, and it listed his item end to end.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/peer_rich/status/2112623006774374536",
+    "sourceName": "@peer_rich (X)",
+    "slug": "a-first-time-ebay-seller-has-an-agent-list-his-item-end-to-end",
+    "niche": true,
+    "added": "2026-10-22"
   }
 ]
