@@ -1913,5 +1913,70 @@
     "slug": "a-first-time-ebay-seller-has-an-agent-list-his-item-end-to-end",
     "niche": true,
     "added": "2026-10-22"
+  },
+  {
+    "title": "A machine shop's agent office manager buys its first cutting tool",
+    "description": "Russell Winter gave his machine shop a Grok Bot office manager, and its first supplies purchase was a real shop tool: a 1 1/8-12 four-flute tap. A small manufacturing business letting an agent handle the boring part of keeping the shop stocked.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/MFG_SMB/status/2112544662711902431",
+    "sourceName": "@MFG_SMB (X)",
+    "slug": "a-machine-shop-s-agent-office-manager-buys-its-first-cutting-tool",
+    "niche": true,
+    "added": "2026-10-23"
+  },
+  {
+    "title": "A dad's agent writes two kids' editions of the news every morning",
+    "description": "Instead of paying for a print daily nobody finished, Frank has a Grok Bot read the news each morning and write a short summary of Germany, his region and the world, plus two kids' editions with real sources and headlines like a 1,000-year-old coin turning up in Shetland.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/Frank_AI_Lab/status/2113556341646082509",
+    "sourceName": "@Frank_AI_Lab (X)",
+    "slug": "a-dad-s-agent-writes-two-kids-editions-of-the-news-every-morning",
+    "niche": true,
+    "added": "2026-10-23"
+  },
+  {
+    "title": "An agent remembers the dentist address and sends it to the car's navigation",
+    "description": "Driving his kids to a dentist he had never visited and could not remember the name of, a dad asked Grok in his Cybertruck by voice whether his Grok Bot remembered the appointment. It did, sent the address to the Tesla navigation, and self-driving took it from there without him touching his phone.",
+    "category": "Physical World",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/Texas_Twins_Dad/status/2112532552716029996",
+    "sourceName": "@Texas_Twins_Dad (X)",
+    "slug": "an-agent-remembers-the-dentist-address-and-sends-it-to-the-car-s-navigation",
+    "niche": true,
+    "added": "2026-10-23"
+  },
+  {
+    "title": "A used car buyer brings an agent-built cost spreadsheet to the dealership",
+    "description": "Faced with a 12-year-old Kia Sorento listed at $5.5k that came out to $12k on paper, the buyer had his Grok Bot build a spreadsheet of every cost and what each should actually be, paired it with a third-party inspection, and walked out several times before getting it for $7k flat.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/Joshifyed1/status/2112222762345353434",
+    "sourceName": "@Joshifyed1 (X)",
+    "slug": "a-used-car-buyer-brings-an-agent-built-cost-spreadsheet-to-the-dealership",
+    "niche": true,
+    "added": "2026-10-23"
+  },
+  {
+    "title": "A research agent prints a fact-checked crypto sheet on paper every morning",
+    "description": "One of James Rule's Grok Bot agents, his \"Chief of Research\", compiles a one-page sheet of the last 24 hours in crypto, fact-checked against primary sources, and prints it on his home printer at 6:00am Central so it is waiting with the coffee.",
+    "category": "Finance & Trading",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/allthemoney/status/2112124493896266224",
+    "sourceName": "@allthemoney (X)",
+    "slug": "a-research-agent-prints-a-fact-checked-crypto-sheet-on-paper-every-morning",
+    "niche": true,
+    "added": "2026-10-23"
   }
 ]

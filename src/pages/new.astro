@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import { items, slugify, crumbs, itemList, abs, NAME, lastUpdated, clip } from '../lib/site';
+// Fresh-content landing page: the newest entries grouped by the day they were added, so
+// "new AI agent use cases" searches and answer engines have one page that always shows what changed.
+const dated = [...items].filter(d => d.added).sort((a, b) => b.added.localeCompare(a.added));
+const list = dated.slice(0, 40);
+const days = [...new Set(list.map(d => d.added))];
+const path = '/new/';
+const title = `New AI agent use cases, latest additions (${lastUpdated}) | ${NAME}`;
+const desc = clip(`The ${list.length} newest real AI agent use cases added to the directory, grouped by date. Latest update ${lastUpdated}. Every entry links to its original public source.`);
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'New AI agent use cases', description: desc, url: abs(path), dateModified: lastUpdated, isPartOf: { '@type': 'WebSite', name: NAME, url: abs('/') } },
+  itemList('New AI agent use cases', list),
+  crumbs([['Home', '/'], ['New', path]])
+];
+---
+<Base title={title} desc={desc} path={path} ld={ld}>
+<p class="bc"><a href="/">Home</a> › New</p>
+<h1>New AI agent use cases</h1>
+<p class="lead">The <b>{list.length}</b> most recently added use cases, newest first. New real examples are added most days, each linked to its original public source. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>. Follow along with the <a href="/rss.xml">RSS feed</a>.</p>
+{days.map(day => <section><h2><time datetime={day}>{day}</time></h2><ul class="l">{list.filter(d => d.added === day).map(d => <li><a href={`/use-cases/${d.slug}/`}><b>{d.title}</b></a> <span class="mut">({d.tools.map((t, i) => <>{i ? ', ' : ''}<a href={`/agents/${slugify(t)}/`}>{t}</a></>)} · <a href={`/categories/${slugify(d.category)}/`}>{d.category}</a>)</span>: {d.description}</li>)}</ul></section>)}
+<p class="mut">Looking for the unusual ones? See <a href="/niche/">niche and surprising use cases</a>, or browse by <a href="/agents/">agent</a> and <a href="/categories/">category</a>.</p>
+</Base>
