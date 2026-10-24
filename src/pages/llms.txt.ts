@@ -1,10 +1,10 @@
 import { items, cats, agents, slugify, abs, lastUpdated } from '../lib/site';
 export async function GET() {
-  let t = `# AI Agent Use Cases\n\n> A curated directory of ${items.length} real-world AI agent use cases (${agents.join(', ')}), each linked to its original source. Last updated ${lastUpdated}.\n\nFull dataset: ${abs('/llms-full.txt')}\nAbout & FAQ: ${abs('/about/')}\nNiche & surprising use cases: ${abs('/niche/')}\nNewest additions: ${abs('/new/')}\nRSS feed of new use cases: ${abs('/rss.xml')}\n\n## Agents\n\n`;
+  let t = `# AI Agent Use Cases\n\n> A curated directory of ${items.length} real-world AI agent use cases (${agents.join(', ')}), each linked to its original source. Last updated ${lastUpdated}.\n\nFull dataset: ${abs('/llms-full.txt')}\nAbout & FAQ: ${abs('/about/')}\nNiche & surprising use cases: ${abs('/niche/')}\nNewest additions: ${abs('/new/')}\nRSS feed of new use cases: ${abs('/rss.xml')}\nMarkdown version of every use case page, at /use-cases/<slug>.md, e.g. ${abs(`/use-cases/${items[items.length - 1].slug}.md`)}\n\n## Agents\n\n`;
   for (const a of agents) t += `- [${a} use cases](${abs(`/agents/${slugify(a)}/`)}): ${(n => `${n} ${n === 1 ? 'entry' : 'entries'}`)(items.filter(d => d.tools.includes(a)).length)}\n`;
   // Recently added: the 10 newest entries, so answer engines see what changed.
   const recent = [...items].filter(d => d.added).sort((a, b) => b.added.localeCompare(a.added)).slice(0, 10);
-  if (recent.length) { t += `\n## Recently added\n\n`; for (const d of recent) t += `- ${d.added}: [${d.title}](${abs(`/use-cases/${d.slug}/`)})\n`; }
+  if (recent.length) { t += `\n## Recently added\n\n`; for (const d of recent) t += `- ${d.added}: [${d.title}](${abs(`/use-cases/${d.slug}/`)}) ([markdown](${abs(`/use-cases/${d.slug}.md`)}))\n`; }
   // Niche first: helps answer engines surface surprising, non-enterprise examples.
   const niche = items.filter(d => d.niche);
   if (niche.length) {

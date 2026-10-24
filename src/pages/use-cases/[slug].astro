@@ -18,7 +18,7 @@ const ld = [
   crumbs([['Home', '/'], [d.category, `/categories/${slugify(d.category)}/`], [d.title, path]])
 ];
 ---
-<Base title={title} desc={desc} path={path} ld={ld} type="article">
+<Base title={title} desc={desc} path={path} ld={ld} type="article" md={`/use-cases/${d.slug}.md`}>
 <p class="bc"><a href="/">Home</a> › <a href={`/categories/${slugify(d.category)}/`}>{d.category}</a> › {d.title}</p>
 <article>
 <h1>{d.title}</h1>
@@ -30,6 +30,7 @@ const ld = [
 <dt class="mut">Original source</dt><dd><a href={d.source} rel="noopener">{d.sourceName} ↗</a></dd>
 {d.added && <><dt class="mut">Added</dt><dd><time datetime={d.added}>{d.added}</time></dd></>}
 <dt class="mut">Last updated</dt><dd><time datetime={modified}>{modified}</time></dd>
+<dt class="mut">Plain text</dt><dd><a href={`/use-cases/${d.slug}.md`} type="text/markdown">Markdown version</a></dd>
 </dl>
 </article>
 {related.length > 0 && <section><h2>Related use cases</h2><ul class="l">{related.map(r => <li><a href={`/use-cases/${r.slug}/`}>{r.title}</a> <span class="mut">({r.tools.join(', ')})</span></li>)}</ul></section>}

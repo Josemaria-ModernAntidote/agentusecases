@@ -1978,5 +1978,70 @@
     "slug": "a-research-agent-prints-a-fact-checked-crypto-sheet-on-paper-every-morning",
     "niche": true,
     "added": "2026-10-23"
+  },
+  {
+    "title": "A holiday project turns a spare satellite dish into a radio-optical telescope with Codex",
+    "description": "Jan Hovora put a 62 x 56 cm satellite dish, an RTL-SDR and an RGB/IR camera on a spare Alt-Az mount near Prague, and with Codex added radio astronomy to his AstroHub software plus OpenCV code that scans targets, fits the radio signal and calibrates the dish against the camera. First target: a lunar eclipse in the Ku band.",
+    "category": "Research & Learning",
+    "tools": [
+      "OpenAI Codex"
+    ],
+    "source": "https://x.com/HovoraJan/status/2094685257437941884",
+    "sourceName": "@HovoraJan (X)",
+    "slug": "a-holiday-project-turns-a-spare-satellite-dish-into-a-radio-optical-telescope-with-codex",
+    "niche": true,
+    "added": "2026-10-24"
+  },
+  {
+    "title": "A Grok Bot given $1,000 designs, orders and teaches its owner to build its own robot body",
+    "description": "Evan Bacon, who works on Grok, gave his Grok Bot $1,000 to build itself a body. It modeled the parts in CAD, ordered 3D-printed pieces and servos to his apartment ($217.15 on the first order), made a Lego-style assembly instruction book, then called him to walk through the assembly and electronics.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/Baconbrix/status/2112576730804478374",
+    "sourceName": "@Baconbrix (X)",
+    "slug": "a-grok-bot-given-1-000-designs-orders-and-teaches-its-owner-to-build-its-own-robot-body",
+    "niche": true,
+    "added": "2026-10-24"
+  },
+  {
+    "title": "A self-described bad singer builds a karaoke pitch coach with Claude Code",
+    "description": "Fed up with a singing app full of cover versions, developer dsmurrell asked Claude Code to listen to Spotify and his microphone and compare pitches. That first Python script grew in about 10 days into OnKey, a free Mac app that learns a song's vocal line from Spotify, Apple Music or YouTube and scores you as you sing along.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://news.ycombinator.com/item?id=50195488",
+    "sourceName": "Show HN",
+    "slug": "a-self-described-bad-singer-builds-a-karaoke-pitch-coach-with-claude-code",
+    "niche": true,
+    "added": "2026-10-24"
+  },
+  {
+    "title": "A personal agent that tracks its own profit and loss and earned itself a Mac mini",
+    "description": "Matt Abate's open-source life agent, installed by pasting one sentence into Claude Code, keeps him on his daily routine, manages his finances and tracks its own profit and loss. When its P&L hit +$200 he bought it Claude Max; at +$1,600 he bought it a Mac mini.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://news.ycombinator.com/item?id=50180638",
+    "sourceName": "Show HN",
+    "slug": "a-personal-agent-that-tracks-its-own-profit-and-loss-and-earned-itself-a-mac-mini",
+    "niche": true,
+    "added": "2026-10-24"
+  },
+  {
+    "title": "A mom emails her son's agent to design the poster for her summer camp",
+    "description": "Tony Eriksson's mother needed a poster for a summer camp she is organizing. She emailed his Grok Bot a background image and the organization's guidelines, they worked on it together, and the bot emailed the finished poster back to her.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/AntoniEriksson/status/2113263584784318741",
+    "sourceName": "@AntoniEriksson (X)",
+    "slug": "a-mom-emails-her-son-s-agent-to-design-the-poster-for-her-summer-camp",
+    "niche": true,
+    "added": "2026-10-24"
   }
 ]
