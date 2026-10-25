@@ -2043,5 +2043,73 @@
     "slug": "a-mom-emails-her-son-s-agent-to-design-the-poster-for-her-summer-camp",
     "niche": true,
     "added": "2026-10-24"
+  },
+  {
+    "title": "A snail mail club's subscriber list kept straight by its own agent",
+    "description": "A wife's snail mail club kept growing, and tracking who was resubscribing, who was canceling, new sign-ups, mailing addresses and dates got mixed up. Her husband set up a Grok Bot dedicated to the club, and it now keeps the whole subscriber roster organized.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/Texas_Twins_Dad/status/2113628013573108160",
+    "sourceName": "@Texas_Twins_Dad (X)",
+    "slug": "a-snail-mail-club-s-subscriber-list-kept-straight-by-its-own-agent",
+    "niche": true,
+    "added": "2026-10-25"
+  },
+  {
+    "title": "Five coding agents stranded on an island for 7 days build a civilization",
+    "description": "Filipe put Claude Code, Codex, Hermes, Prime and OpenCode on one island, each owning a single resource, so every building needed trades. Codex walled itself in and spent 6 turns smashing out, Claude raided Hermes's lighthouse then handed the loot back, Hermes quietly planted 15 farms and won, and OpenCode built outside the safe zone and died of thirst.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Claude Code",
+      "OpenAI Codex",
+      "Hermes Agent"
+    ],
+    "source": "https://x.com/filicroval/status/2113614640517194035",
+    "sourceName": "@filicroval (X)",
+    "slug": "five-coding-agents-stranded-on-an-island-for-7-days-build-a-civilization",
+    "niche": true,
+    "added": "2026-10-25"
+  },
+  {
+    "title": "A husband's and wife's agents share one fitness dashboard and email each other to stay in sync",
+    "description": "Larry Fuqua's fitness bot built his plan and his dev bot hosted a dashboard on his home server. His bots made the dashboard support two users, published a template of the fitness bot, and emailed it to his wife's bots, which spun up a bot named Venus. Now the two households of bots email back and forth on their own to line up shared workouts.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/WizZifnab/status/2113058896310948089",
+    "sourceName": "@WizZifnab (X)",
+    "slug": "a-husband-s-and-wife-s-agents-share-one-fitness-dashboard-and-email-each-other-to-stay-in-sync",
+    "niche": true,
+    "added": "2026-10-25"
+  },
+  {
+    "title": "An agent turns an old Raspberry Pi and iPad into a home electricity monitor",
+    "description": "With power prices rising, @Hessamsh had Hermes Agent build a usage monitoring and analysis stack on an old Raspberry Pi 3 that talks over Bluetooth to the free government-funded Emerald device on his meter. The live dashboard runs on an old iPad Air 2, with a more detailed analytics view in a PC browser.",
+    "category": "Physical World",
+    "tools": [
+      "Hermes Agent"
+    ],
+    "source": "https://x.com/Hessamsh/status/2114164593585176908",
+    "sourceName": "@Hessamsh (X)",
+    "slug": "an-agent-turns-an-old-raspberry-pi-and-ipad-into-a-home-electricity-monitor",
+    "niche": true,
+    "added": "2026-10-25"
+  },
+  {
+    "title": "Agents find a way to get a $20 bathroom scale into Home Assistant with no extra hardware",
+    "description": "Told his $19.94 Etekcity Bluetooth scale needed a $15 ESP32 or the vendor's cloud, Trond Eirik Haavarstein sent his Grok Bot agents back for another way. They used the Bluetooth in the headless Mac mini next to the bathroom: Grok Build wrote a small ScaleReader, Claude Code reviewed it, and weight and impedance now flow into Home Assistant with a separate history for each of the 4 family members.",
+    "category": "Physical World",
+    "tools": [
+      "Grok Bot",
+      "Claude Code"
+    ],
+    "source": "https://x.com/xenappblog/status/2113704149669859444",
+    "sourceName": "@xenappblog (X)",
+    "slug": "agents-find-a-way-to-get-a-20-bathroom-scale-into-home-assistant-with-no-extra-hardware",
+    "niche": true,
+    "added": "2026-10-25"
   }
 ]

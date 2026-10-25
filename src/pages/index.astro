@@ -8,9 +8,12 @@ const desc = `A searchable directory of ${data.length} real AI agent use cases a
 const url = 'https://agent-uses.com/';
 const slugify = (s) => s.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 const ogImage = 'https://agent-uses.com/og.png';
+import { lastUpdated } from '../lib/site';
+const firstAdded = data.map(d => d.added).filter(Boolean).sort()[0] || lastUpdated;
 const ld = [
   { '@context':'https://schema.org','@type':'WebSite', name: 'AI Agent Use Cases', url: Astro.site ? new URL('/', Astro.site).href : 'https://agent-uses.com/', description: desc, potentialAction: { '@type':'SearchAction', target: { '@type':'EntryPoint', urlTemplate: (Astro.site ? new URL('/', Astro.site).href : 'https://agent-uses.com/') + '?q={search_term_string}' }, 'query-input':'required name=search_term_string' } },
   { '@context':'https://schema.org','@type':'Organization', name: 'AI Agent Use Cases', url: Astro.site ? new URL('/', Astro.site).href : 'https://agent-uses.com/', logo: ogImage },
+  { '@context':'https://schema.org','@type':'Dataset', name: 'AI Agent Use Cases dataset', url, description: `${data.length} real-world AI agent use cases across ${cats.length} categories and ${agents.length} agents (${agents.join(', ')}). Each entry has a title, description, category, agents used, date added and a link to its original public source.`, keywords: ['AI agents','AI agent use cases',...agents], isAccessibleForFree: true, creator: { '@type':'Organization', name: 'AI Agent Use Cases', url }, dateModified: lastUpdated, temporalCoverage: `${firstAdded}/${lastUpdated}`, variableMeasured: ['title','description','category','agents','niche','added','source'], distribution: [ { '@type':'DataDownload', encodingFormat: 'application/json', contentUrl: 'https://agent-uses.com/use-cases.json' }, { '@type':'DataDownload', encodingFormat: 'text/plain', contentUrl: 'https://agent-uses.com/llms-full.txt' }, { '@type':'DataDownload', encodingFormat: 'application/rss+xml', contentUrl: 'https://agent-uses.com/rss.xml' } ] },
   { '@context':'https://schema.org','@type':'ItemList', name: title, itemListElement: data.map((d,i)=>({'@type':'ListItem',position:i+1,name:d.title,url:'https://agent-uses.com/use-cases/'+d.slug+'/'})) }
 ];
 ---
@@ -19,7 +22,7 @@ const ld = [
 <title>{title}</title><meta name="description" content={desc}><link rel="canonical" href={url}>
 <meta property="og:type" content="website"><meta property="og:title" content={title}><meta property="og:description" content={desc}><meta property="og:url" content={url}><meta property="og:image" content={ogImage}><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content={title}><meta name="twitter:description" content={desc}><meta name="twitter:image" content={ogImage}>
-<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt"><link rel="alternate" type="application/rss+xml" href="/rss.xml" title="AI Agent Use Cases: new use cases">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt"><link rel="alternate" type="application/rss+xml" href="/rss.xml" title="AI Agent Use Cases: new use cases"><link rel="alternate" type="application/json" href="/use-cases.json" title="All use cases as JSON">
 <script type="application/ld+json" set:html={JSON.stringify(ld)} />
 <style is:global>
 :root{--bg:#0b0d12;--card:#141823;--line:#232a3a;--fg:#e8ecf4;--mut:#94a0b8;--acc:#7c5cff}
