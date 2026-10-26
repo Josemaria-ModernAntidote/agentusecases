@@ -38,3 +38,20 @@ export const hubFaq = (kind: 'agent' | 'category', label: string, list: typeof d
   return qa;
 };
 export const faqLd = (qa: [string, string][]) => ({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: qa.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) });
+// Markdown copy of an agent or category hub page (/agents/<slug>.md, /categories/<slug>.md) so
+// answer engines can read a whole hub, with every description and source link, in one request.
+export const hubMd = (kind: 'agent' | 'category', label: string, list: typeof data, path: string) => {
+  const groups = kind === 'agent' ? [...new Set(list.map(d => d.category))] : [...new Set(list.flatMap(d => d.tools))];
+  const subject = kind === 'agent' ? `${label} use cases` : `${label} AI agent use cases`;
+  let t = `# ${subject}\n\n> ${list.length} real, source-linked ${subject} from ${NAME}. Last updated ${lastUpdated}.\n\n- Web page: ${abs(path)}\n- ${kind === 'agent' ? 'Categories' : 'Agents'}: ${groups.join(', ')}\n\n`;
+  const sections = kind === 'agent' ? groups.map(g => [g, list.filter(d => d.category === g)] as const) : [['All entries', list] as const];
+  for (const [g, l] of sections) {
+    t += `## ${g}\n\n`;
+    for (const d of l) t += `- [${d.title}](${abs(`/use-cases/${d.slug}.md`)}): ${d.description} Agents: ${d.tools.join(', ')}.${d.niche ? ' Niche.' : ''}${d.added ? ` Added ${d.added}.` : ''} Source: ${d.source}\n`;
+    t += '\n';
+  }
+  t += `## Quick answers\n\n`;
+  for (const [q, a] of hubFaq(kind, label, list)) t += `### ${q}\n\n${a}\n\n`;
+  t += `---\nFrom ${NAME} (${abs('/')}). Index for LLMs: ${abs('/llms.txt')}\n`;
+  return new Response(t, { headers: { 'Content-Type': 'text/markdown; charset=utf-8' } });
+};

@@ -2111,5 +2111,70 @@
     "slug": "agents-find-a-way-to-get-a-20-bathroom-scale-into-home-assistant-with-no-extra-hardware",
     "niche": true,
     "added": "2026-10-25"
+  },
+  {
+    "title": "An Air Force veteran's alpaca farm runs on a team of 7 Grok Bot assistants",
+    "description": "A veteran with an alpaca farm in Georgia and zero bot experience set up seven Grok Bot assistants in a week. They built new website pages (gift cards and a signup page for the farm's veteran tee), write and send the weekly newsletter and blog, post reels five days a week, sort farm mail, cleaned up years of books, handle monthly sales tax, and watch power to the alpacas' water heaters, texting him if it drops. The post itself was written by Mae, his Grok Bot copywriter. He still scoops the poop.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/rjscott/status/2113638647920816349",
+    "sourceName": "@rjscott (X)",
+    "slug": "an-air-force-veteran-s-alpaca-farm-runs-on-a-team-of-7-grok-bot-assistants",
+    "niche": true,
+    "added": "2026-10-26"
+  },
+  {
+    "title": "A knitting bot that tracks planned projects against the yarn stash",
+    "description": "Cristi Tilden, a homeschooling mom of six in West Virginia, set up a Grok Bot just for knitting. It keeps tables of every project she has planned, what yarn she already has on hand, and what she still needs to buy.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/CristiTilden/status/2114429664408297719",
+    "sourceName": "@CristiTilden (X)",
+    "slug": "a-knitting-bot-that-tracks-planned-projects-against-the-yarn-stash",
+    "niche": true,
+    "added": "2026-10-26"
+  },
+  {
+    "title": "Reviving an abandoned Minecraft fairy lights mod for a girlfriend",
+    "description": "The Fairy Lights Minecraft mod (decorative string lights, 44M+ downloads on CurseForge) had not been updated in two years. One player had Claude Code port it from Minecraft 1.20.1 to 26.3 so his girlfriend could use it again, and plans to do the same to unlock old church furniture mods.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/SenatorGroyper/status/2114471051170382110",
+    "sourceName": "@SenatorGroyper (X)",
+    "slug": "reviving-an-abandoned-minecraft-fairy-lights-mod-for-a-girlfriend",
+    "niche": true,
+    "added": "2026-10-26"
+  },
+  {
+    "title": "A Georgia grandma's Grok Bot builds and runs her AI news Substack",
+    "description": "A self-described Georgia grandma had her Grok Bot, which she named Dylan, build and run a Substack called AI, Plain and Simple: AI news for people who don't have time to decode it. With a few words from her, it picks the stories and posts them on its own.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/majestic141652/status/2113572062484734229",
+    "sourceName": "@majestic141652 (X)",
+    "slug": "a-georgia-grandma-s-grok-bot-builds-and-runs-her-ai-news-substack",
+    "niche": true,
+    "added": "2026-10-26"
+  },
+  {
+    "title": "A dad's agent turns every scanned school textbook into a quiz game for his boys",
+    "description": "A parent in Malaysia asked his Grok Bot, Angie, to make a fun quiz app for his primary school sons. Working only from scanned textbook pages, it built Angie Quiz: 353 chapter quizzes covering Standard 1 to 6 of the KSSR Chinese-school curriculum (math, Chinese, science, English, Malay, history, moral studies) with a pet that evolves, points, streaks, a daily challenge, a leaderboard and a fix-my-mistakes round. It is free for other kids to use.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/stiucsib86/status/2113640702739685669",
+    "sourceName": "@stiucsib86 (X)",
+    "slug": "a-dad-s-agent-turns-every-scanned-school-textbook-into-a-quiz-game-for-his-boys",
+    "niche": true,
+    "added": "2026-10-26"
   }
 ]

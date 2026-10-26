@@ -11,10 +11,10 @@ const desc = clip(`${list.length} real ${c} use cases for AI agents including ${
 const qa = hubFaq('category', c, list);
 const ld = [itemList(`${c} AI agent use cases`, list), crumbs([['Home', '/'], ['Categories', '/categories/'], [c, path]]), faqLd(qa)];
 ---
-<Base title={title} desc={desc} path={path} ld={ld}>
+<Base title={title} desc={desc} path={path} ld={ld} md={`/categories/${slugify(c)}.md`}>
 <p class="bc"><a href="/">Home</a> › <a href="/categories/">Categories</a> › {c}</p>
 <h1>{c} AI agent use cases</h1>
-<p class="lead">There are <b>{list.length}</b> documented {c} use cases in this directory, covering {ag.length} agent{ag.length === 1 ? '' : 's'}: {ag.map((a, i) => <>{i ? ', ' : ''}<a href={`/agents/${slugify(a)}/`}>{a}</a></>)}. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>.</p>
+<p class="lead">There are <b>{list.length}</b> documented {c} use cases in this directory, covering {ag.length} agent{ag.length === 1 ? '' : 's'}: {ag.map((a, i) => <>{i ? ', ' : ''}<a href={`/agents/${slugify(a)}/`}>{a}</a></>)}. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>. <a href={`/categories/${slugify(c)}.md`} type="text/markdown">Markdown version</a>.</p>
 <ul class="l">{list.map(d => <li><a href={`/use-cases/${d.slug}/`}><b>{d.title}</b></a> <span class="mut">({d.tools.join(', ')})</span>: {d.description}</li>)}</ul>
 <section><h2>Quick answers</h2>{qa.map(([q, ans]) => <><h3>{q}</h3><p>{ans}</p></>)}</section>
 </Base>
