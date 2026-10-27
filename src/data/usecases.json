@@ -2176,5 +2176,71 @@
     "slug": "a-dad-s-agent-turns-every-scanned-school-textbook-into-a-quiz-game-for-his-boys",
     "niche": true,
     "added": "2026-10-26"
+  },
+  {
+    "title": "An Elders Quorum secretary hands his church calling's paperwork to a Grok Bot",
+    "description": "Travis Kimball, secretary of his ward's Elders Quorum, logged his Grok Bot into the Church of Jesus Christ of Latter-day Saints website and gave it the calling's admin work: a ministering interview sign-up sheet with personalized emails for each companionship, a class schedule and instructor rotation through April built from the October General Conference talks, a fireside flyer with curated invites and calendar invites, weekly lesson reminder emails, and a review of ministering assignments for new move-ins. For assignments it only drafts a template that the presidency then discusses. It still cannot put the schedule into the church's Library app, and the interviews themselves stay in person.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/traviskimball/status/2114424586754535671",
+    "sourceName": "@traviskimball (X)",
+    "slug": "an-elders-quorum-secretary-hands-his-church-calling-s-paperwork-to-a-grok-bot",
+    "niche": true,
+    "added": "2026-10-27"
+  },
+  {
+    "title": "A parent's Grok Bot turns FamilySearch records into audiobook stories about the kids' ancestors",
+    "description": "Cade Huskinson had his Grok Bot log into his FamilySearch genealogy account, and it now writes audiobook stories about his ancestors so his kids can learn their family heritage by listening.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/HuskinsonCade/status/2114445633482527079",
+    "sourceName": "@HuskinsonCade (X)",
+    "slug": "a-parent-s-grok-bot-turns-familysearch-records-into-audiobook-stories-about-the-kids-ancestors",
+    "niche": true,
+    "added": "2026-10-27"
+  },
+  {
+    "title": "A Grok Bot installs Inkscape to draw plans for a modular Irish dance floor with built-in pickups",
+    "description": "Spencer Ingram in Boise, Idaho asked his Grok Bot whether it could use Inkscape. It downloaded Inkscape itself and turned his requirements into SVG drawings for a woodworking project: a three-layer, interlocking, modular Irish dance floor with piezo pickups and a buffer.",
+    "category": "Physical World",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/ingram3000/status/2114753765639381268",
+    "sourceName": "@ingram3000 (X)",
+    "slug": "a-grok-bot-installs-inkscape-to-draw-plans-for-a-modular-irish-dance-floor-with-built-in-pickups",
+    "niche": true,
+    "added": "2026-10-27"
+  },
+  {
+    "title": "A Georgia horse farm's Grok Bot makes a $7 Christmas activity book to sell",
+    "description": "John Klacynski, an engineer living on a Georgia horse farm, saw a post suggesting people make a Christmas activity book in Canva and sell it for $7, so he had his Grok Bot make one with a horse and farm theme, \"since that's our life\". The result, Christmas on the Farm: A Horse Lover's Activity Book, is 24 printable pages of coloring, mazes, word searches and puzzles with answer keys for kids ages 4 to 9, sold on Gumroad for $7.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/JohnKlacynski/status/2113957164083519965",
+    "sourceName": "@JohnKlacynski (X)",
+    "slug": "a-georgia-horse-farm-s-grok-bot-makes-a-7-christmas-activity-book-to-sell",
+    "niche": true,
+    "added": "2026-10-27"
+  },
+  {
+    "title": "A skill that turns Claude Code or Codex into a careful genealogist for former Soviet archives",
+    "description": "ex-USSR Kinship Research is a free, MIT-licensed agent skill that makes Claude Code or Codex research family history across the 15 former Soviet republics and the Russian Empire: church books, civil records, military, deportation and repression files. It resolves each event to the province or parish as it existed at the time, builds name-variant matrices in pre-reform Russian, Ukrainian, Polish, Romanian, German and Yiddish, and tags every claim as hypothesis, single-source, corroborated or contradicted, with an audit script that checks the evidence before a final report. The instructions are in Russian but it replies in the user's language, and it carries privacy rules for living people and minors.",
+    "category": "Research & Learning",
+    "tools": [
+      "Claude Code",
+      "OpenAI Codex"
+    ],
+    "source": "https://github.com/DenisSergeevitch/ex-ussr-kinship-research",
+    "sourceName": "DenisSergeevitch/ex-ussr-kinship-research (GitHub)",
+    "slug": "a-skill-that-turns-claude-code-or-codex-into-a-careful-genealogist-for-former-soviet-archives",
+    "niche": true,
+    "added": "2026-10-27"
   }
 ]

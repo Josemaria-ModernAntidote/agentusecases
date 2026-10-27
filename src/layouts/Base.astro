@@ -1,7 +1,7 @@
 ---
 import Analytics from '../components/Analytics.astro';
 import { NAME, abs, lastUpdated } from '../lib/site';
-const { title, desc, path, ld = [], type = 'website', noindex = false, md } = Astro.props;
+const { title, desc, path, ld = [], type = 'website', noindex = false, md, feed } = Astro.props;
 const url = abs(path); const og = abs('/og.png');
 ---
 <html lang="en"><head>
@@ -10,7 +10,7 @@ const url = abs(path); const og = abs('/og.png');
 <meta name="robots" content={noindex ? 'noindex,follow' : 'index,follow,max-image-preview:large'}>
 <meta property="og:site_name" content={NAME}><meta property="og:type" content={type}><meta property="og:title" content={title}><meta property="og:description" content={desc}><meta property="og:url" content={url}><meta property="og:image" content={og}><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AI Agent Use Cases">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content={title}><meta name="twitter:description" content={desc}><meta name="twitter:image" content={og}>
-{md && <link rel="alternate" type="text/markdown" href={md} title="Markdown version">}<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" href="/rss.xml" title="AI Agent Use Cases: new use cases">
+{md && <link rel="alternate" type="text/markdown" href={md} title="Markdown version">}<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" href="/rss.xml" title="AI Agent Use Cases: new use cases">{feed && <link rel="alternate" type="application/rss+xml" href={feed[0]} title={feed[1]}>}
 <script type="application/ld+json" set:html={JSON.stringify(ld)} />
 <style is:global>
 :root{--bg:#0b0d12;--card:#141823;--line:#232a3a;--fg:#e8ecf4;--mut:#94a0b8;--acc:#7c5cff}

@@ -55,3 +55,15 @@ export const hubMd = (kind: 'agent' | 'category', label: string, list: typeof da
   t += `---\nFrom ${NAME} (${abs('/')}). Index for LLMs: ${abs('/llms.txt')}\n`;
   return new Response(t, { headers: { 'Content-Type': 'text/markdown; charset=utf-8' } });
 };
+// RSS 2.0 feed builder shared by the site-wide feed (/rss.xml) and the per-agent and per-category
+// hub feeds (/agents/<slug>/rss.xml, /categories/<slug>/rss.xml), so readers and answer engines can
+// follow only the agent or topic they care about.
+const xesc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const rfc = (d: string) => new Date(`${d}T12:00:00Z`).toUTCString();
+export const rss = (title: string, desc: string, page: string, self: string, list: typeof data, n = 50) => {
+  const sorted = [...list].map((d, i) => ({ d, i })).sort((a, b) => (b.d.added || '').localeCompare(a.d.added || '') || a.i - b.i).slice(0, n).map(r => r.d);
+  const built = sorted[0]?.added || lastUpdated;
+  const body = sorted.map(d => `<item><title>${xesc(d.title)}</title><link>${abs(`/use-cases/${d.slug}/`)}</link><guid isPermaLink="true">${abs(`/use-cases/${d.slug}/`)}</guid><pubDate>${rfc(d.added || lastUpdated)}</pubDate><category>${xesc(d.category)}</category>${d.tools.map(t => `<category>${xesc(t)}</category>`).join('')}<description>${xesc(`${d.description} Agents: ${d.tools.join(', ')}. Source: ${d.source}`)}</description></item>`).join('\n');
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>${xesc(title)}</title><link>${abs(page)}</link><atom:link href="${abs(self)}" rel="self" type="application/rss+xml"/><description>${xesc(desc)}</description><language>en</language><lastBuildDate>${rfc(built)}</lastBuildDate>\n${body}\n</channel></rss>\n`;
+  return new Response(xml, { headers: { 'Content-Type': 'application/rss+xml; charset=utf-8' } });
+};
