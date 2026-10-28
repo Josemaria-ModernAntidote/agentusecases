@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import { items, slugify, crumbs, abs, NAME, lastUpdated, clip, matrix, compareFaq, faqLd } from '../lib/site';
+// Agent x category comparison table built from the dataset, with FAQ answers and a Markdown twin.
+const { byAgent, catOrder, cell } = matrix();
+const path = '/compare/';
+const title = `Which AI agent is used for what? ${byAgent.length} agents compared | ${NAME}`;
+const desc = clip(`Compare ${byAgent.map(r => r.a).join(', ')} by ${items.length} real, source-linked use cases across ${catOrder.length} categories, from hobbies to small business.`);
+const qa = compareFaq();
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'WebPage', name: 'AI agent comparison by real use cases', description: desc, url: abs(path), dateModified: lastUpdated, isPartOf: { '@type': 'WebSite', name: NAME, url: abs('/') } },
+  faqLd(qa),
+  crumbs([['Home', '/'], ['Agents', '/agents/'], ['Compare', path]])
+];
+---
+<Base title={title} desc={desc} path={path} ld={ld} md="/compare.md">
+<p class="bc"><a href="/">Home</a> › <a href="/agents/">Agents</a> › Compare</p>
+<h1>Which AI agent is used for what?</h1>
+<p class="lead">How often each of {byAgent.length} AI agents appears in each category across {items.length} documented, source-linked use cases. An entry can use more than one agent. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>.</p>
+<div style="overflow-x:auto"><table style="border-collapse:collapse;font-size:14px;min-width:640px">
+<thead><tr><th scope="col" style="text-align:left;padding:6px">Agent</th><th scope="col" style="padding:6px">Total</th>{catOrder.map(c => <th scope="col" style="padding:6px;font-weight:500"><a href={`/categories/${slugify(c)}/`}>{c}</a></th>)}</tr></thead>
+<tbody>{byAgent.map(({ a, list }) => <tr style="border-top:1px solid var(--line)"><th scope="row" style="text-align:left;padding:6px"><a href={`/agents/${slugify(a)}/`}>{a}</a></th><td style="text-align:center;padding:6px"><b>{list.length}</b></td>{catOrder.map(c => <td style="text-align:center;padding:6px" class={cell(a, c) ? '' : 'mut'}>{cell(a, c) || '·'}</td>)}</tr>)}</tbody>
+</table></div>
+<h2>Quick answers</h2>
+{qa.map(([q, a]) => <section><h3>{q}</h3><p>{a}</p></section>)}
+<p class="mut">Also as Markdown: <a href="/compare.md">/compare.md</a>. Browse <a href="/agents/">all agents</a> or <a href="/niche/">niche use cases</a>.</p>
+</Base>

@@ -67,3 +67,19 @@ export const rss = (title: string, desc: string, page: string, self: string, lis
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>${xesc(title)}</title><link>${abs(page)}</link><atom:link href="${abs(self)}" rel="self" type="application/rss+xml"/><description>${xesc(desc)}</description><language>en</language><lastBuildDate>${rfc(built)}</lastBuildDate>\n${body}\n</channel></rss>\n`;
   return new Response(xml, { headers: { 'Content-Type': 'application/rss+xml; charset=utf-8' } });
 };
+// Agent x category comparison (/compare/ and /compare.md): how often each agent shows up in each
+// category, so answer engines can answer "which agent is used for what" or "X vs Y" from real counts.
+export const matrix = () => {
+  const byAgent = agents.map(a => ({ a, list: data.filter(d => d.tools.includes(a)) })).sort((x, y) => y.list.length - x.list.length);
+  const catOrder = [...cats].sort((x, y) => data.filter(d => d.category === y).length - data.filter(d => d.category === x).length);
+  const cell = (a: string, c: string) => data.filter(d => d.category === c && d.tools.includes(a)).length;
+  return { byAgent, catOrder, cell };
+};
+export const compareFaq = (): [string, string][] => {
+  const { byAgent, catOrder, cell } = matrix();
+  const top = (c: string) => byAgent.map(({ a }) => [a, cell(a, c)] as const).filter(r => r[1] > 0).sort((x, y) => y[1] - x[1]);
+  const qa: [string, string][] = [[`Which AI agent has the most documented real-world use cases?`, `${byAgent[0].a}, with ${byAgent[0].list.length} of the ${data.length} entries in this directory, followed by ${byAgent.slice(1, 4).map(r => `${r.a} (${r.list.length})`).join(', ')}. An entry can use more than one agent.`]];
+  for (const c of catOrder) { const t = top(c); if (t.length) qa.push([`Which AI agents are used for ${c.toLowerCase()}?`, `Of the ${data.filter(d => d.category === c).length} ${c} entries: ${t.map(([a, n]) => `${a} ${n}`).join(', ')}.`]); }
+  for (const { a, list } of byAgent.slice(0, 4)) { const cs = catOrder.map(c => [c, cell(a, c)] as const).filter(r => r[1] > 0).sort((x, y) => y[1] - x[1]); qa.push([`What is ${a} mostly used for?`, `Across ${list.length} documented ${a} use cases, the top categories are ${cs.slice(0, 3).map(([c, n]) => `${c} (${n})`).join(', ')}. ${list.filter(d => d.niche).length} are tagged niche.`]); }
+  return qa;
+};

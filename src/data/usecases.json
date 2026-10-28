@@ -2242,5 +2242,70 @@
     "slug": "a-skill-that-turns-claude-code-or-codex-into-a-careful-genealogist-for-former-soviet-archives",
     "niche": true,
     "added": "2026-10-27"
+  },
+  {
+    "title": "A Texas bass fishing mom's Grok Bot draws hazard maps for her high school anglers",
+    "description": "Wendy Bowman built a Grok Bot for her Texas High School Bass Association team and named it \"Bass Fishing Bob\". Before a tournament it made easy-to-read waypoint maps in case the fishfinder stopped working, and warned about stumps and an old bridge under the surface because the lake was 2 feet low. She sent the maps to the guys after practice, then added fishing license and boat ramp skills after the next trip. The shared bot covers weather-based bait plans, waypoint files and sunlight-readable lake maps.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/TeslaTakesOver/status/2113967532486836702",
+    "sourceName": "@TeslaTakesOver (X)",
+    "slug": "a-texas-bass-fishing-mom-s-grok-bot-draws-hazard-maps-for-her-high-school-anglers",
+    "niche": true,
+    "added": "2026-10-28"
+  },
+  {
+    "title": "Next Bird: a Grok Bot that reads eBird sightings to find birds you haven't photographed yet",
+    "description": "Forrest built Next Bird, a Grok Bot that uses Cornell's eBird API and recent sightings to tell him where to go nearby for a species he wants, with map links. He used it to hunt for sandhill cranes after a game, and the next day posted photos of a spot it found that he says he would probably never have found on his own. The published bot also flags rare birds, shows reference photos and can send a daily morning report.",
+    "category": "Physical World",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/typicalfo/status/2114066924153757718",
+    "sourceName": "@typicalfo (X)",
+    "slug": "next-bird-a-grok-bot-that-reads-ebird-sightings-to-find-birds-you-haven-t-photographed-yet",
+    "niche": true,
+    "added": "2026-10-28"
+  },
+  {
+    "title": "A choir singer has his Grok Bot build a pocket practice piano",
+    "description": "Kent C. Dodds was at choir and needed to plunk out a couple of notes, so he had his Grok Bot build Pocket Piano, a phone web app hosted on Kody with a custom domain. You pick your singing part, play notes and chords, install it as a PWA and use it offline. He says the appeal is that he can customize it to be exactly what he wants.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/kentcdodds/status/2114432861613043730",
+    "sourceName": "@kentcdodds (X)",
+    "slug": "a-choir-singer-has-his-grok-bot-build-a-pocket-practice-piano",
+    "niche": true,
+    "added": "2026-10-28"
+  },
+  {
+    "title": "A Vivino MCP lets a Grok Bot pick wine from the local shop by your taste",
+    "description": "Oliver, a 21-year-old in Copenhagen, spent a weekend building an MCP server for Vivino from his grandparents' sofa so his Grok Bot would know his wine taste profile. The next night he asked it to pick a wine from his local shop: it used his location to check what the shop had in stock, then chose a Crémant based on wines he had rated before, to go with truffle chips and Good Will Hunting with his girlfriend.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/TheFoundersAsc/status/2114618201224949835",
+    "sourceName": "@TheFoundersAsc (X)",
+    "slug": "a-vivino-mcp-lets-a-grok-bot-pick-wine-from-the-local-shop-by-your-taste",
+    "niche": true,
+    "added": "2026-10-28"
+  },
+  {
+    "title": "Hallucinote: a hobbyist wires Claude Code into Ableton Live as a songwriting partner, not a song generator",
+    "description": "Brooks Talley's hobby project Hallucinote connects Claude Code to Ableton Live for the whole songwriting cycle: ideas, harmony, rhythm with microtiming, arrangement, mixing. Songs live in git with a decision log, Live is used for rendering and MIDI capture, and Claude critiques melody and harmony against the writer's stated goals and analyzes mixes for clipping and muddy frequencies. He says he is trying hard not to build a Suno: he wants an assistant that asks where the vocals will fit and handles chores like trying routes from D minor to F# Phrygian.",
+    "category": "Creative & Building",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://news.ycombinator.com/item?id=49271123",
+    "sourceName": "Show HN",
+    "slug": "hallucinote-a-hobbyist-wires-claude-code-into-ableton-live-as-a-songwriting-partner-not-a-song-generator",
+    "niche": true,
+    "added": "2026-10-28"
   }
 ]
