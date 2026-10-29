@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import { items, slugify, crumbs, abs, NAME, lastUpdated, clip, bySource, sourcesFaq, faqLd } from '../lib/site';
+// Every entry grouped by the kind of source it links to (posts, repos, blogs, press,
+// vendor case studies), with FAQ answers and a Markdown twin at /sources.md.
+const groups = bySource().filter(g => g.list.length);
+const path = '/sources/';
+const title = `Where AI agent use cases come from: ${items.length} entries by source type | ${NAME}`;
+const desc = clip(`${items.length} real AI agent use cases grouped by source: posts on X, GitHub, Hacker News, personal blogs, news and vendor case studies. Every entry links to its original source.`);
+const qa = sourcesFaq();
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'AI agent use cases by source type', description: desc, url: abs(path), dateModified: lastUpdated, isPartOf: { '@type': 'WebSite', name: NAME, url: abs('/') },
+    hasPart: groups.map(g => ({ '@type': 'ItemList', name: g.label, description: g.blurb, numberOfItems: g.list.length, itemListElement: g.list.map((d, i) => ({ '@type': 'ListItem', position: i + 1, name: d.title, url: abs(`/use-cases/${d.slug}/`) })) })) },
+  faqLd(qa),
+  crumbs([['Home', '/'], ['Sources', path]])
+];
+---
+<Base title={title} desc={desc} path={path} ld={ld} md="/sources.md">
+<p class="bc"><a href="/">Home</a> › Sources</p>
+<h1>Where these AI agent use cases come from</h1>
+<p class="lead">All {items.length} entries grouped by the kind of public source they link to, so you can tell community reports from vendor case studies and press. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>.</p>
+<ul class="l">{groups.map(g => <li><a href={`#${g.key}`}>{g.label}</a>: {g.list.length}</li>)}</ul>
+<h2>Quick answers</h2>
+{qa.map(([q, a]) => <section><h3>{q}</h3><p>{a}</p></section>)}
+{groups.map(g => <section id={g.key}><h2>{g.label} ({g.list.length})</h2><p class="mut">{g.blurb}</p><ul class="l">{g.list.map(d => <li><a href={`/use-cases/${d.slug}/`}><b>{d.title}</b></a> <span class="mut">({d.tools.map((t, i) => <>{i ? ', ' : ''}<a href={`/agents/${slugify(t)}/`}>{t}</a></>)} · <a href={`/categories/${slugify(d.category)}/`}>{d.category}</a>)</span>. Source: <a href={d.source} rel="nofollow noopener">{d.sourceName || new URL(d.source).hostname}</a></li>)}</ul></section>)}
+<p class="mut">Also as Markdown: <a href="/sources.md">/sources.md</a>. See also <a href="/compare/">which agent is used for what</a>.</p>
+</Base>

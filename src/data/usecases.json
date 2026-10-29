@@ -2307,5 +2307,70 @@
     "slug": "hallucinote-a-hobbyist-wires-claude-code-into-ableton-live-as-a-songwriting-partner-not-a-song-generator",
     "niche": true,
     "added": "2026-10-28"
+  },
+  {
+    "title": "A plumber's Grok Bot answers his voicemail and texts, replacing a $500 a month answering service",
+    "description": "Brian Roemmele set up a Grok Bot front desk for a plumber friend who wished it could answer his Google Voice voicemail and text messages. In its first week the bot handled 100 calls: it scheduled appointments, sent texts and emails, and dealt with 18 emergencies. The plumber had been paying about $500 a month for a message service that kept losing messages. The setup reads each text or voicemail, rates its urgency, drafts a reply that waits for approval, and offers only open slots from the calendar.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/BrianRoemmele/status/2115137540890263705",
+    "sourceName": "@BrianRoemmele (X)",
+    "slug": "a-plumber-s-grok-bot-answers-his-voicemail-and-texts-replacing-a-500-a-month-answering-service",
+    "niche": true,
+    "added": "2026-10-29"
+  },
+  {
+    "title": "A racer's Grok Bot emails the county assessor to pull his phone number, and the office calls back",
+    "description": "Ronnie Campbell, who describes himself as a racer, ran a published Grok Bot that gets your number removed from spam call lists. The next morning he was woken by a call from the Rutherford County assessor's office. The woman on the line said he had emailed her boss the night before; he told her it was actually his Grok Bot. She was calling to confirm his number had been removed. He admits he has no idea what the email said.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/driver84and26/status/2114974264537321503",
+    "sourceName": "@driver84and26 (X)",
+    "slug": "a-racer-s-grok-bot-emails-the-county-assessor-to-pull-his-phone-number-and-the-office-calls-back",
+    "niche": true,
+    "added": "2026-10-29"
+  },
+  {
+    "title": "A shop's Hermes Agent pages the owner's son with every speaker and the receipt printer",
+    "description": "Melih installed Hermes Agent at his uncle's shop to manage orders. One day his uncle was out and could not reach his son, so he asked the agent to \"send him a signal\". The agent announced \"CALL YOUR DAD\" through every speaker in the shop three or four times and also printed a receipt telling the son to call his dad.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Hermes Agent"
+    ],
+    "source": "https://x.com/meialtin/status/2115760935134441947",
+    "sourceName": "@meialtin (X)",
+    "slug": "a-shop-s-hermes-agent-pages-the-owner-s-son-with-every-speaker-and-the-receipt-printer",
+    "niche": true,
+    "added": "2026-10-29"
+  },
+  {
+    "title": "A Grok Bot revives a dusty 3D printer through a MacBook with a broken screen",
+    "description": "X user @S_Padival connected a Grok Bot to a 3D printer that had been collecting dust, using a MacBook Pro with a broken screen as the go-between. The bot updated the printer to an open source firmware and takes snapshots through the MacBook's camera to check on prints. The next step is a HomeKit smart plug so the bot can switch the printer on and off itself.",
+    "category": "Physical World",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/S_Padival/status/2114853349040492837",
+    "sourceName": "@S_Padival (X)",
+    "slug": "a-grok-bot-revives-a-dusty-3d-printer-through-a-macbook-with-a-broken-screen",
+    "niche": true,
+    "added": "2026-10-29"
+  },
+  {
+    "title": "A family's open enrollment handed to the accountant bot on a dad's Grok Bot team",
+    "description": "Darryl Kay used to spend an evening on benefits PDFs and guessing at open enrollment. This year he gave it to Matt, the accountant bot on his Grok Bot team. Matt compared the vision tiers against how his family actually uses them, worked out exactly when the upgrade only breaks even, and helped him skip pet insurance in favor of a simple vet savings fund. One chat, decisions made.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/SrCaptainThrawn/status/2115478482394177851",
+    "sourceName": "@SrCaptainThrawn (X)",
+    "slug": "a-family-s-open-enrollment-handed-to-the-accountant-bot-on-a-dad-s-grok-bot-team",
+    "niche": true,
+    "added": "2026-10-29"
   }
 ]

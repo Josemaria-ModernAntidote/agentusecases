@@ -83,3 +83,35 @@ export const compareFaq = (): [string, string][] => {
   for (const { a, list } of byAgent.slice(0, 4)) { const cs = catOrder.map(c => [c, cell(a, c)] as const).filter(r => r[1] > 0).sort((x, y) => y[1] - x[1]); qa.push([`What is ${a} mostly used for?`, `Across ${list.length} documented ${a} use cases, the top categories are ${cs.slice(0, 3).map(([c, n]) => `${c} (${n})`).join(', ')}. ${list.filter(d => d.niche).length} are tagged niche.`]); }
   return qa;
 };
+// Source types (/sources/ and /sources.md): every entry grouped by the kind of public source it
+// links to, so readers and answer engines can tell community reports (posts, repos, blogs)
+// apart from vendor case studies and press coverage, and cite the right kind of evidence.
+const VENDOR = ['cognition.ai', 'devin.ai', 'claude.com', 'anthropic.com', 'openai.com', 'cursor.com', 'x.ai', 'hermes-agent.nousresearch.com', 'manus.im'];
+const PRESS = ['thedrum.com', 'gizmodo.com', 'inman.com', 'bbc.co.uk', 'theverge.com', 'newclawtimes.com'];
+export const sourceTypes = [
+  { key: 'x', label: 'Posts on X', blurb: 'Reports posted on X, mostly by the people who set up or use the agent.' },
+  { key: 'github', label: 'GitHub repositories', blurb: 'Open source projects, skills and curated lists with code or setup notes.' },
+  { key: 'hn', label: 'Hacker News (Show HN)', blurb: 'Projects their builders posted to Hacker News for discussion.' },
+  { key: 'blog', label: 'Blogs and newsletters', blurb: 'Write-ups on personal sites, small company blogs, Medium and Substack.' },
+  { key: 'press', label: 'News and media', blurb: 'Stories reported by journalists and publications.' },
+  { key: 'vendor', label: 'Vendor case studies and docs', blurb: 'Customer stories, guides and docs published by the companies that make the agents.' },
+] as const;
+export const sourceType = (u: string) => {
+  let h = ''; try { h = new URL(u).hostname.replace(/^www\./, ''); } catch {}
+  if (h === 'x.com' || h === 'twitter.com') return 'x';
+  if (h === 'github.com') return 'github';
+  if (h === 'news.ycombinator.com') return 'hn';
+  if (VENDOR.includes(h)) return 'vendor';
+  if (PRESS.includes(h)) return 'press';
+  return 'blog';
+};
+export const bySource = () => sourceTypes.map(s => ({ ...s, list: data.filter(d => sourceType(d.source) === s.key) }));
+export const sourcesFaq = (): [string, string][] => {
+  const g = bySource(); const n = (k: string) => g.find(x => x.key === k)!.list.length;
+  const firstHand = n('x') + n('github') + n('hn') + n('blog');
+  return [
+    ['Where do these AI agent use cases come from?', `All ${data.length} entries link to a public source: ${g.filter(x => x.list.length).map(x => `${x.label} (${x.list.length})`).join(', ')}.`],
+    ['How many come from the community rather than vendor marketing?', `${firstHand} of ${data.length} come from community sources (posts on X, GitHub, Hacker News, blogs and newsletters). ${n('vendor')} are vendor case studies or docs and ${n('press')} are press stories.`],
+    ['Which source type has the most niche examples?', (() => { const r = g.map(x => [x.label, x.list.filter(d => d.niche).length] as const).sort((a, b) => b[1] - a[1]); return `${r[0][0]}, with ${r[0][1]} niche entries, followed by ${r.slice(1, 3).map(([l, c]) => `${l} (${c})`).join(' and ')}.`; })()],
+  ];
+};
