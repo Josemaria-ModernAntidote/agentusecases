@@ -2372,5 +2372,70 @@
     "slug": "a-family-s-open-enrollment-handed-to-the-accountant-bot-on-a-dad-s-grok-bot-team",
     "niche": true,
     "added": "2026-10-29"
+  },
+  {
+    "title": "A son's Grok Bot project-manages his 70-something parents' self-service coffee shop in Korea",
+    "description": "X user @Texas_Twins_Dad's parents, both over 70, are opening a fully automated self-service coffee shop in Korea, and he couldn't travel to help. So he created a project manager bot on his Grok Bot team and asked it to plan everything from A to Z. It listed every permit, license and class his parents need, emailed contractors from its own address for quotes and picked the best replies, built a private website with an interactive 3D blueprint of the store at exact measurements so the family can move furniture around, and found well-priced equipment that fits the space. The project is still in progress, with the bot in charge.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/Texas_Twins_Dad/status/2115079685977550989",
+    "sourceName": "@Texas_Twins_Dad (X)",
+    "slug": "a-son-s-grok-bot-project-manages-his-70-something-parents-self-service-coffee-shop-in-korea",
+    "niche": true,
+    "added": "2026-10-30"
+  },
+  {
+    "title": "A 40-truck crew boss has his Grok Bot audit every morning's truck GPS before the first job",
+    "description": "Brett Brownlee runs 40 trucks. Every morning his Grok Bot pulls the truck GPS data from Service Autopilot, his field service software: when each ignition turns on, when it leaves the yard, QuikTrip stops, and first arrival at a job. One crew burned 110 minutes of paid time the day before reaching its first job, and now he can tell whether that is a systems problem or just bleeding time.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/Brettbrownlee22/status/2115927625223086257",
+    "sourceName": "@Brettbrownlee22 (X)",
+    "slug": "a-40-truck-crew-boss-has-his-grok-bot-audit-every-morning-s-truck-gps-before-the-first-job",
+    "niche": true,
+    "added": "2026-10-30"
+  },
+  {
+    "title": "A retro hobbyist hacks MAME arcade ROMs with Claude Code until Rastan is beatable",
+    "description": "Keith (@northgiddings), who has 25 years in software, spent a few days using Claude Code for MAME arcade ROM experiments. His second hack was for Rastan: the easy dip switch setting now gives a permanent fire sword and much better armor. The result, in his words: he can get past level 1 now.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/northgiddings/status/2116004569394147729",
+    "sourceName": "@northgiddings (X)",
+    "slug": "a-retro-hobbyist-hacks-mame-arcade-roms-with-claude-code-until-rastan-is-beatable",
+    "niche": true,
+    "added": "2026-10-30"
+  },
+  {
+    "title": "A former Army aviator codes an AI instructor pilot and carrier landing officer for DCS with Claude Code",
+    "description": "A former Army aviation officer (@S2Steercos) used Claude Code and a Microsoft neural net to build an AI instructor pilot and LSO, the landing signal officer who talks pilots down onto a carrier, inside the flight sim DCS. He worked out the autopilot modes (HSEL, BALT, TACAN coupling) together with the ILS and auto throttle, and the jet is now successfully trapping on the boat.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/S2Steercos/status/2115866249011806439",
+    "sourceName": "@S2Steercos (X)",
+    "slug": "a-former-army-aviator-codes-an-ai-instructor-pilot-and-carrier-landing-officer-for-dcs-with-claude-code",
+    "niche": true,
+    "added": "2026-10-30"
+  },
+  {
+    "title": "A dad's Grok Bot cleans up the kids' road-trip Fire tablet and builds them a dashboard",
+    "description": "David Chachanko's daughters' Fire tablet, the one the family uses on road trips, was packed with barely any storage left. While others showed off Grok Bots fixing smart TVs, he had his clean up the tablet and build a kid dashboard: hold-to-open Netflix plus a few tap and swipe games. His own estimate is that it should keep them busy for about 5 minutes.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/DavidChachanko/status/2115858691970810152",
+    "sourceName": "@DavidChachanko (X)",
+    "slug": "a-dad-s-grok-bot-cleans-up-the-kids-road-trip-fire-tablet-and-builds-them-a-dashboard",
+    "niche": true,
+    "added": "2026-10-30"
   }
 ]

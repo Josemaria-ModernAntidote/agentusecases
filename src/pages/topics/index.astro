@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro';
+import { items, topics, topicItems, crumbs, abs, NAME, lastUpdated, clip } from '../../lib/site';
+// Cross-category topic hubs, so a search like "AI agents for farming" lands on one page.
+const rows = topics.map(t => ({ t, n: topicItems(t).length })).filter(r => r.n >= 3).sort((a, b) => b.n - a.n);
+const path = '/topics/';
+const desc = clip(`Real AI agent use cases grouped by topic: ${rows.map(r => r.t.name.toLowerCase()).join(', ')}. Every entry links to its original source.`);
+const ld = [crumbs([['Home', '/'], ['Topics', path]]), { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'AI agent use cases by topic', description: desc, url: abs(path), dateModified: lastUpdated, isPartOf: { '@type': 'WebSite', name: NAME, url: abs('/') }, mainEntity: { '@type': 'ItemList', numberOfItems: rows.length, itemListElement: rows.map((r, i) => ({ '@type': 'ListItem', position: i + 1, name: r.t.q, url: abs(`/topics/${r.t.slug}/`) })) } }];
+---
+<Base title={`AI agent use cases by topic (${rows.length} topics) | ${NAME}`} desc={desc} path={path} ld={ld} md="/topics.md">
+<p class="bc"><a href="/">Home</a> › Topics</p>
+<h1>Browse AI agent use cases by topic</h1>
+<p class="lead">Themes that cut across categories, drawn from the {items.length} entries in this directory. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>. <a href="/topics.md" type="text/markdown">Markdown version</a>.</p>
+<ul class="l">{rows.map(r => <li><a href={`/topics/${r.t.slug}/`}><b>{r.t.q}</b></a> ({r.n}): {r.t.blurb}</li>)}</ul>
+</Base>

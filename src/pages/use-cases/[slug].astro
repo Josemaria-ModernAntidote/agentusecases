@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { items, slugify, crumbs, abs, lastUpdated, NAME, clip, relatedTo } from '../../lib/site';
+import { items, slugify, crumbs, abs, lastUpdated, NAME, clip, relatedTo, topicsFor, topicItems } from '../../lib/site';
 export function getStaticPaths() { return items.map(d => ({ params: { slug: d.slug }, props: { d } })); }
 const { d } = Astro.props;
 const by = d.tools.join(', ');
@@ -8,6 +8,7 @@ const title = `${d.title} - ${by} use case | ${NAME}`;
 const desc = clip(d.description);
 const path = `/use-cases/${d.slug}/`;
 const related = relatedTo(d);
+const tps = topicsFor(d).filter(t => topicItems(t).length >= 3);
 const modified = d.updated ?? d.added ?? lastUpdated;
 const sameCat = items.filter(x => x.category === d.category);
 const ci = sameCat.findIndex(x => x.slug === d.slug);
@@ -26,6 +27,7 @@ const ld = [
 <dl>
 <dt class="mut">Agent(s)</dt><dd>{d.tools.map(t => <a class="tag" href={`/agents/${slugify(t)}/`}>{t}</a>)}</dd>
 {d.niche && <><dt class="mut">Tag</dt><dd>Niche</dd></>}
+{tps.length > 0 && <><dt class="mut">Topics</dt><dd>{tps.map(t => <a class="tag" href={`/topics/${t.slug}/`}>{t.name}</a>)}</dd></>}
 <dt class="mut">Category</dt><dd><a href={`/categories/${slugify(d.category)}/`}>{d.category}</a></dd>
 <dt class="mut">Original source</dt><dd><a href={d.source} rel="noopener">{d.sourceName} ↗</a></dd>
 {d.added && <><dt class="mut">Added</dt><dd><time datetime={d.added}>{d.added}</time></dd></>}

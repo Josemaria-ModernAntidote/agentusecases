@@ -115,3 +115,32 @@ export const sourcesFaq = (): [string, string][] => {
     ['Which source type has the most niche examples?', (() => { const r = g.map(x => [x.label, x.list.filter(d => d.niche).length] as const).sort((a, b) => b[1] - a[1]); return `${r[0][0]}, with ${r[0][1]} niche entries, followed by ${r.slice(1, 3).map(([l, c]) => `${l} (${c})`).join(' and ')}.`; })()],
   ];
 };
+// Topic hubs (/topics/<slug>/): cross-category themes people actually search for, such as
+// "AI agents for farming" or "AI agents for kids". Membership is matched on each entry's title and
+// description, so new entries join the right topics automatically; `skip` lists slug prefixes of
+// entries that match a keyword but are not really about the topic.
+type Topic = { slug: string; name: string; q: string; blurb: string; re: RegExp; skip?: string[] };
+export const topics: Topic[] = [
+  { slug: 'kids-and-parenting', name: 'Kids and parenting', q: 'AI agents for parents and kids', blurb: 'Parents using agents for school logistics, homework, learning games and family life.', re: /\b(kids?|kid's|children|daughters'?|seven-year-old|8-year-old|homework|school|textbooks?)\b/i },
+  { slug: 'farming-and-gardening', name: 'Farming and gardening', q: 'AI agents for farming and gardening', blurb: 'Farms, greenhouses, gardens and beehives run or helped by AI agents.', re: /\b(farms?|farm's|farmer|gardens?|garden beds|greenhouse|seedlings|tomato plant|fertilizer|beehive|alpaca)\b/i, skip: ['five-coding-agents-stranded'] },
+  { slug: '3d-printing', name: '3D printing', q: 'AI agents for 3D printing', blurb: 'Agents that design, watch over or revive 3D printers and printed parts.', re: /3d[- ]print|3d printer/i },
+  { slug: 'smart-home-and-diy-hardware', name: 'Smart home and DIY hardware', q: 'AI agents for smart home and DIY hardware', blurb: 'Raspberry Pis, ESP32s, e-ink screens, Home Assistant and other hardware wired to an agent.', re: /home assistant|homekit|raspberry pi|pi zero|esp32|e-ink|smart plug|energy meter|electricity monitor|arduino|\bpico\b/i },
+  { slug: 'cars-and-trucks', name: 'Cars and trucks', q: 'AI agents for cars and trucks', blurb: 'Buying cars, reading car networks, racing and running truck fleets with an agent.', re: /\b(cars?|car's|cybertruck|dealers?|dealership|citro[eë]n|racer|trucks)\b/i, skip: ['trippy-', 'realtor-'] },
+  { slug: 'food-and-drink', name: 'Food and drink', q: 'AI agents for restaurants, food and drink', blurb: 'Restaurants, coffee and tea shops, barbecue, home brewing and wine.', re: /\b(restaurants?|coffee shop|bubble tea|brisket|bbq|brew|wine|bakery)\b/i, skip: ['trippy-'] },
+  { slug: 'music', name: 'Music', q: 'AI agents for music', blurb: 'Practice tools, songwriting partners and record collections built with agents.', re: /\b(music|piano|karaoke|ableton|songwriting|singer|choir|bandcamp|record store)\b/i, skip: ['ai-video-editing'] },
+  { slug: 'games-and-gaming', name: 'Games and gaming', q: 'AI agents for games and gaming', blurb: 'Board games, fantasy leagues, ROM hacks, flight sims and games made for kids.', re: /\b(video game|games?|gaming|minecraft|dungeon master|arcade|pinball|fantasy football|board game|pok[eé]mon|flight sim|DCS)\b/i, skip: ['next-bird'] },
+  { slug: 'animals-and-nature', name: 'Animals and nature', q: 'AI agents for animals, pets and nature', blurb: 'Pets, livestock, bees, birds, fish and reef tanks.', re: /\b(pets?|dogs?|alpacas?|horse farm|horses|birds?|ebird|bass fishing|reef tank|beehive|bees)\b/i, skip: ['a-90s-pinball', 'a-dad-s-agent-turns-every-scanned'] },
+  { slug: 'radio-and-astronomy', name: 'Radio and astronomy', q: 'AI agents for ham radio and astronomy', blurb: 'Ham radio, LoRaWAN, Morse code, telescopes and exoplanet hunting.', re: /\b(ham radio|FT8|LoRaWAN|telescope|exoplanets?|satellite dish|morse)\b/i },
+  { slug: 'trades-and-field-service', name: 'Trades and field service', q: 'AI agents for tradespeople', blurb: 'Plumbers, HVAC techs, machine shops, auto repair and crews in trucks.', re: /\b(plumber|plumbing|hvac|tradies|machine shop|auto repair|field service|40 trucks|dryer)\b/i },
+];
+export const topicItems = (t: Topic) => data.filter(d => t.re.test(`${d.title} ${d.description}`) && !(t.skip ?? []).some(s => d.slug.startsWith(s)));
+export const topicsFor = (d: (typeof data)[number]) => topics.filter(t => topicItems(t).some(x => x.slug === d.slug));
+export const topicFaq = (t: Topic, list: typeof data): [string, string][] => {
+  const ag = [...new Set(list.flatMap(d => d.tools))]; const cs = [...new Set(list.map(d => d.category))]; const recent = newest(list);
+  const counts = ag.map(a => [a, list.filter(d => d.tools.includes(a)).length] as const).sort((x, y) => y[1] - x[1]);
+  const qa: [string, string][] = [[`What are real examples of ${t.q}?`, `This directory lists ${list.length} documented examples of ${t.q}, across ${cs.length} ${cs.length === 1 ? 'category' : 'categories'} (${cs.join(', ')}). Examples: ${names(list)}.`]];
+  qa.push([`Which AI agents are used for ${t.name.toLowerCase()}?`, `${counts.map(([a, n]) => `${a} (${n})`).join(', ')}.`]);
+  if (recent[0]) qa.push([`What is the newest example?`, `"${recent[0].title}", added on ${recent[0].added}.`]);
+  qa.push([`Are these examples real?`, `Yes. Every entry links to its original public source, such as a post on X, a blog or a GitHub repository, and entries without a public source are not listed.`]);
+  return qa;
+};

@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+import { topics, topicItems, topicFaq, faqLd, slugify, crumbs, abs, NAME, lastUpdated, clip } from '../../lib/site';
+export function getStaticPaths() { return topics.filter(t => topicItems(t).length >= 3).map(t => ({ params: { topic: t.slug }, props: { t } })); }
+const { t } = Astro.props;
+const list = topicItems(t);
+const ag = [...new Set(list.flatMap(d => d.tools))];
+const path = `/topics/${t.slug}/`;
+const title = `${t.q}: ${list.length} real use cases | ${NAME}`;
+const desc = clip(`${list.length} real examples of ${t.q}, using ${ag.join(', ')}. ${t.blurb} Each links to its source.`);
+const qa = topicFaq(t, list);
+const others = topics.filter(o => o.slug !== t.slug && topicItems(o).length >= 3);
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'CollectionPage', name: t.q, description: desc, url: abs(path), dateModified: lastUpdated, isPartOf: { '@type': 'WebSite', name: NAME, url: abs('/') }, about: t.name, mainEntity: { '@type': 'ItemList', numberOfItems: list.length, itemListElement: list.map((d, i) => ({ '@type': 'ListItem', position: i + 1, name: d.title, url: abs(`/use-cases/${d.slug}/`) })) } },
+  faqLd(qa),
+  crumbs([['Home', '/'], ['Topics', '/topics/'], [t.name, path]])
+];
+---
+<Base title={title} desc={desc} path={path} ld={ld} md={`/topics/${t.slug}.md`}>
+<p class="bc"><a href="/">Home</a> › <a href="/topics/">Topics</a> › {t.name}</p>
+<h1>{t.q}</h1>
+<p class="lead">{t.blurb} There are <b>{list.length}</b> documented examples here, using {ag.map((a, i) => <>{i ? ', ' : ''}<a href={`/agents/${slugify(a)}/`}>{a}</a></>)}. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>. <a href={`/topics/${t.slug}.md`} type="text/markdown">Markdown version</a>.</p>
+<ul class="l">{list.map(d => <li><a href={`/use-cases/${d.slug}/`}><b>{d.title}</b></a> <span class="mut">({d.tools.join(', ')} · <a href={`/categories/${slugify(d.category)}/`}>{d.category}</a>)</span>: {d.description}</li>)}</ul>
+<section><h2>Quick answers</h2>{qa.map(([q, ans]) => <><h3>{q}</h3><p>{ans}</p></>)}</section>
+<p class="mut">Other topics: {others.map((o, i) => <>{i ? ' · ' : ''}<a href={`/topics/${o.slug}/`}>{o.name}</a></>)}</p>
+</Base>
