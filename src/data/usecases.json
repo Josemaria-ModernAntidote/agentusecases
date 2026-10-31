@@ -2437,5 +2437,84 @@
     "slug": "a-dad-s-grok-bot-cleans-up-the-kids-road-trip-fire-tablet-and-builds-them-a-dashboard",
     "niche": true,
     "added": "2026-10-30"
+  },
+  {
+    "title": "A gardener's Grok Bot warns her off a yellowjacket nest hiding in an old vole hole",
+    "description": "Dawn Casey-Rowe, who grows her own food, was tearing out a rotting raised bed to install a new Birdies bed when a couple of yellowjackets flew out of the old vole hole and circled her face. She asked her Grok Bot to assess whether it might be a new nest. Its answer: yes, stop immediately before the drilling causes a swarm. She is allergic, so she was very grateful.",
+    "category": "Physical World",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/runningdmc/status/2116163879130562869",
+    "sourceName": "@runningdmc (X)",
+    "slug": "a-gardener-s-grok-bot-warns-her-off-a-yellowjacket-nest-hiding-in-an-old-vole-hole",
+    "niche": true,
+    "added": "2026-10-31"
+  },
+  {
+    "title": "A Grok Bot labels a family's Tesla trips as business or personal for an IRS mileage log",
+    "description": "Eric Mann uses Manifest, which turns the trips a Tesla already records into an IRS-ready mileage log, together with his Mileage Keeper Grok Bot template. The bot sorts unknown trips as business or personal using the family's calendars, emails and other details it knows. In a couple of months it has tracked more than $700 worth of business-mile deductions on their Model Y and Cybertruck.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/ericdmann/status/2116161821292040479",
+    "sourceName": "@ericdmann (X)",
+    "slug": "a-grok-bot-labels-a-family-s-tesla-trips-as-business-or-personal-for-an-irs-mileage-log",
+    "niche": true,
+    "added": "2026-10-31"
+  },
+  {
+    "title": "Clipper, a Grok Bot that clips digital grocery coupons and redeems rewards points",
+    "description": "Software developer Jaxon Wright finalized a Grok Bot named Clipper that saves money on grocery shopping by automatically clipping digital coupons, redeeming rewards points and more. It is part of his Bot Catalog, so people who copy Clipper can opt in to the improvements he makes later.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/jxn_w/status/2116001740881379717",
+    "sourceName": "@jxn_w (X)",
+    "slug": "clipper-a-grok-bot-that-clips-digital-grocery-coupons-and-redeems-rewards-points",
+    "niche": true,
+    "added": "2026-10-31"
+  },
+  {
+    "title": "A 9 to 5 worker runs a handyman company and a woodworking company on the side with a Grok Bot",
+    "description": "Brandon Dupuis says most people use Grok Bot for software businesses, but he uses his to run two physical side businesses, a handyman company and a woodworking company, while working a normal 9 to 5. In his words it would definitely not be possible without the bot, and he pitches it to every service business owner as the end of worrying about back end admin.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/serialquesting/status/2115514493094760869",
+    "sourceName": "@serialquesting (X)",
+    "slug": "a-9-to-5-worker-runs-a-handyman-company-and-a-woodworking-company-on-the-side-with-a-grok-bot",
+    "niche": true,
+    "added": "2026-10-31"
+  },
+  {
+    "title": "A creator's OpenClaw mini PC turns an SD card of talking-head footage into six DaVinci Resolve rough cuts",
+    "description": "Naaackers pops the SD card into a dedicated Ubuntu mini PC where OpenClaw drives Claude Code. From 40 minutes of single-camera footage (5 files, 60 GB) it copied his DaVinci folder template for each video, split his two mics onto separate mono tracks, cut silences, repeats and mistakes, added captions and exported six timelines as .drb files, synced to his Mac. It took 1 hour 46 minutes and about 8% of a week's usage on a $20 a month plan. He rates it 9/10, though it cut some lines he wanted to keep.",
+    "category": "Creative & Building",
+    "tools": [
+      "OpenClaw",
+      "Claude Code"
+    ],
+    "source": "https://x.com/Naaackers/status/2114719253261660532",
+    "sourceName": "@Naaackers (X)",
+    "slug": "a-creator-s-openclaw-mini-pc-turns-an-sd-card-of-talking-head-footage-into-six-davinci-resolve-rough-cuts",
+    "niche": true,
+    "added": "2026-10-31"
+  },
+  {
+    "title": "Claude Code rebuilds a couple's TV home screen with no ads and a shared drawing board",
+    "description": "Samraaj Bath vibecoded his TV with Claude Code: a new home screen with no ads, a shared drawing board he and his wife can both use, and an AI assistant built in. His 88 second demo video drew more than 3,000 likes.",
+    "category": "Personal Life",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/samraaj/status/2114770776411041933",
+    "sourceName": "@samraaj (X)",
+    "slug": "claude-code-rebuilds-a-couple-s-tv-home-screen-with-no-ads-and-a-shared-drawing-board",
+    "niche": true,
+    "added": "2026-10-31"
   }
 ]

@@ -1,0 +1,36 @@
+---
+import Base from '../../layouts/Base.astro';
+import { slugify, crumbs, abs, NAME, lastUpdated, clip, faqLd, itemList, vsPairs, vsData, vsFaq } from '../../lib/site';
+// Head-to-head page for two agents, built only from the dataset: category counts, entries that use
+// both, and a few examples unique to each side, with FAQ answers and a Markdown twin.
+export function getStaticPaths() { return vsPairs().map(p => ({ params: { pair: p.slug }, props: p })); }
+const { a, b, slug } = Astro.props;
+const { la, lb, both, onlyA, onlyB, rows } = vsData(a, b);
+const path = `/compare/${slug}/`;
+const title = `${a} vs ${b}: ${la.length + lb.length - both.length} real use cases compared | ${NAME}`;
+const desc = clip(`${a} vs ${b} compared by real, source-linked use cases: ${la.length} for ${a}, ${lb.length} for ${b}, ${both.length} using both, by category.`);
+const qa = vsFaq(a, b);
+const recent = (l: typeof la, n = 8) => [...l].sort((x, y) => (y.added || '').localeCompare(x.added || '')).slice(0, n);
+const others = vsPairs().filter(p => p.slug !== slug && (p.a === a || p.b === a || p.a === b || p.b === b));
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'WebPage', name: `${a} vs ${b} use cases`, description: desc, url: abs(path), dateModified: lastUpdated, about: [{ '@type': 'SoftwareApplication', name: a, applicationCategory: 'AI agent' }, { '@type': 'SoftwareApplication', name: b, applicationCategory: 'AI agent' }], isPartOf: { '@type': 'WebSite', name: NAME, url: abs('/') } },
+  itemList(`${a} vs ${b} use cases`, [...new Set([...la, ...lb])]),
+  faqLd(qa),
+  crumbs([['Home', '/'], ['Compare', '/compare/'], [`${a} vs ${b}`, path]])
+];
+---
+<Base title={title} desc={desc} path={path} ld={ld} md={`/compare/${slug}.md`}>
+<p class="bc"><a href="/">Home</a> › <a href="/compare/">Compare</a> › {a} vs {b}</p>
+<h1>{a} vs {b}: what people actually use them for</h1>
+<p class="lead">A comparison built from real, source-linked entries, not benchmarks: <a href={`/agents/${slugify(a)}/`}>{a}</a> appears in <b>{la.length}</b> use cases and <a href={`/agents/${slugify(b)}/`}>{b}</a> in <b>{lb.length}</b>{both.length ? <>, and <b>{both.length}</b> use both</> : ''}. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>. <a href={`/compare/${slug}.md`} type="text/markdown">Markdown version</a>.</p>
+<h2>By category</h2>
+<div style="overflow-x:auto"><table style="border-collapse:collapse;font-size:14px;min-width:360px">
+<thead><tr><th scope="col" style="text-align:left;padding:6px">Category</th><th scope="col" style="padding:6px">{a}</th><th scope="col" style="padding:6px">{b}</th></tr></thead>
+<tbody>{rows.map(r => <tr style="border-top:1px solid var(--line)"><th scope="row" style="text-align:left;padding:6px;font-weight:500"><a href={`/categories/${slugify(r.c)}/`}>{r.c}</a></th><td style="text-align:center;padding:6px" class={r.na ? '' : 'mut'}>{r.na || '·'}</td><td style="text-align:center;padding:6px" class={r.nb ? '' : 'mut'}>{r.nb || '·'}</td></tr>)}</tbody>
+</table></div>
+{both.length > 0 && <section><h2>Using {a} and {b} together</h2><ul class="l">{both.map(d => <li><a href={`/use-cases/${d.slug}/`}><b>{d.title}</b></a>: {d.description}</li>)}</ul></section>}
+<section><h2>Recent {a} examples</h2><ul class="l">{recent(onlyA).map(d => <li><a href={`/use-cases/${d.slug}/`}><b>{d.title}</b></a> <span class="mut">({d.category})</span></li>)}</ul><p><a href={`/agents/${slugify(a)}/`}>All {la.length} {a} use cases</a></p></section>
+<section><h2>Recent {b} examples</h2><ul class="l">{recent(onlyB).map(d => <li><a href={`/use-cases/${d.slug}/`}><b>{d.title}</b></a> <span class="mut">({d.category})</span></li>)}</ul><p><a href={`/agents/${slugify(b)}/`}>All {lb.length} {b} use cases</a></p></section>
+<section><h2>Quick answers</h2>{qa.map(([q, ans]) => <><h3>{q}</h3><p>{ans}</p></>)}</section>
+<p class="mut">More head-to-heads: {others.map((p, i) => <>{i ? ' · ' : ''}<a href={`/compare/${p.slug}/`}>{p.a} vs {p.b}</a></>)}. Or see the <a href="/compare/">full agent by category table</a>.</p>
+</Base>

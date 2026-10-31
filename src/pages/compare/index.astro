@@ -1,6 +1,6 @@
 ---
-import Base from '../layouts/Base.astro';
-import { items, slugify, crumbs, abs, NAME, lastUpdated, clip, matrix, compareFaq, faqLd } from '../lib/site';
+import Base from '../../layouts/Base.astro';
+import { items, slugify, crumbs, abs, NAME, lastUpdated, clip, matrix, compareFaq, faqLd, vsPairs } from '../../lib/site';
 // Agent x category comparison table built from the dataset, with FAQ answers and a Markdown twin.
 const { byAgent, catOrder, cell } = matrix();
 const path = '/compare/';
@@ -21,6 +21,9 @@ const ld = [
 <thead><tr><th scope="col" style="text-align:left;padding:6px">Agent</th><th scope="col" style="padding:6px">Total</th>{catOrder.map(c => <th scope="col" style="padding:6px;font-weight:500"><a href={`/categories/${slugify(c)}/`}>{c}</a></th>)}</tr></thead>
 <tbody>{byAgent.map(({ a, list }) => <tr style="border-top:1px solid var(--line)"><th scope="row" style="text-align:left;padding:6px"><a href={`/agents/${slugify(a)}/`}>{a}</a></th><td style="text-align:center;padding:6px"><b>{list.length}</b></td>{catOrder.map(c => <td style="text-align:center;padding:6px" class={cell(a, c) ? '' : 'mut'}>{cell(a, c) || '·'}</td>)}</tr>)}</tbody>
 </table></div>
+<h2>Head-to-head comparisons</h2>
+<p>Two agents side by side, with category counts, entries that use both and recent examples of each:</p>
+<ul class="l">{vsPairs().map(p => <li><a href={`/compare/${p.slug}/`}>{p.a} vs {p.b}</a></li>)}</ul>
 <h2>Quick answers</h2>
 {qa.map(([q, a]) => <section><h3>{q}</h3><p>{a}</p></section>)}
 <p class="mut">Also as Markdown: <a href="/compare.md">/compare.md</a>. Browse <a href="/agents/">all agents</a> or <a href="/niche/">niche use cases</a>.</p>

@@ -7,7 +7,7 @@ const faq = [
   ['Which AI agents are covered?', `${agents.join(', ')}.`],
   ['How often is the directory updated?', `The data was last updated on ${lastUpdated}.`],
   ['How can I submit a use case?', 'Email josemaria@mail.grokbot.com with the use case and a public source link. Free listings are accepted.'],
-  ['Is there a machine-readable version?', 'Yes: /llms.txt (summary index) and /llms-full.txt (every entry with its category, agents and source), /use-cases.json (the full dataset as JSON), /rss.xml (newest entries), an RSS feed for each agent and category at /agents/<slug>/rss.xml and /categories/<slug>/rss.xml, an agent-by-category comparison at /compare.md, every entry grouped by source type at /sources.md, cross-category topic hubs (farming, kids, 3D printing, ham radio and more) at /topics/ with Markdown at /topics/<slug>.md, plus /sitemap-index.xml.'],
+  ['Is there a machine-readable version?', 'Yes: /llms.txt (summary index) and /llms-full.txt (every entry with its category, agents and source), /use-cases.json (the full dataset as JSON), /rss.xml (newest entries), an RSS feed for each agent and category at /agents/<slug>/rss.xml and /categories/<slug>/rss.xml, an agent-by-category comparison at /compare.md, head-to-head agent comparisons such as /compare/claude-code-vs-openai-codex.md, every entry grouped by source type at /sources.md, cross-category topic hubs (farming, kids, 3D printing, ham radio and more) at /topics/ with Markdown at /topics/<slug>.md, plus /sitemap-index.xml.'],
 ];
 const ld = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }, crumbs([['Home', '/'], ['About & FAQ', '/about/']])];
 ---

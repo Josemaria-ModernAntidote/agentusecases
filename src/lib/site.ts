@@ -131,7 +131,7 @@ export const topics: Topic[] = [
   { slug: 'games-and-gaming', name: 'Games and gaming', q: 'AI agents for games and gaming', blurb: 'Board games, fantasy leagues, ROM hacks, flight sims and games made for kids.', re: /\b(video game|games?|gaming|minecraft|dungeon master|arcade|pinball|fantasy football|board game|pok[eé]mon|flight sim|DCS)\b/i, skip: ['next-bird'] },
   { slug: 'animals-and-nature', name: 'Animals and nature', q: 'AI agents for animals, pets and nature', blurb: 'Pets, livestock, bees, birds, fish and reef tanks.', re: /\b(pets?|dogs?|alpacas?|horse farm|horses|birds?|ebird|bass fishing|reef tank|beehive|bees)\b/i, skip: ['a-90s-pinball', 'a-dad-s-agent-turns-every-scanned'] },
   { slug: 'radio-and-astronomy', name: 'Radio and astronomy', q: 'AI agents for ham radio and astronomy', blurb: 'Ham radio, LoRaWAN, Morse code, telescopes and exoplanet hunting.', re: /\b(ham radio|FT8|LoRaWAN|telescope|exoplanets?|satellite dish|morse)\b/i },
-  { slug: 'trades-and-field-service', name: 'Trades and field service', q: 'AI agents for tradespeople', blurb: 'Plumbers, HVAC techs, machine shops, auto repair and crews in trucks.', re: /\b(plumber|plumbing|hvac|tradies|machine shop|auto repair|field service|40 trucks|dryer)\b/i },
+  { slug: 'trades-and-field-service', name: 'Trades and field service', q: 'AI agents for tradespeople', blurb: 'Plumbers, HVAC techs, machine shops, auto repair and crews in trucks.', re: /\b(plumber|plumbing|hvac|tradies|machine shop|auto repair|field service|40 trucks|dryer|handyman|woodworking)\b/i },
 ];
 export const topicItems = (t: Topic) => data.filter(d => t.re.test(`${d.title} ${d.description}`) && !(t.skip ?? []).some(s => d.slug.startsWith(s)));
 export const topicsFor = (d: (typeof data)[number]) => topics.filter(t => topicItems(t).some(x => x.slug === d.slug));
@@ -142,5 +142,31 @@ export const topicFaq = (t: Topic, list: typeof data): [string, string][] => {
   qa.push([`Which AI agents are used for ${t.name.toLowerCase()}?`, `${counts.map(([a, n]) => `${a} (${n})`).join(', ')}.`]);
   if (recent[0]) qa.push([`What is the newest example?`, `"${recent[0].title}", added on ${recent[0].added}.`]);
   qa.push([`Are these examples real?`, `Yes. Every entry links to its original public source, such as a post on X, a blog or a GitHub repository, and entries without a public source are not listed.`]);
+  return qa;
+};
+// Head-to-head agent pages (/compare/<a>-vs-<b>/ and .md): "Claude Code vs OpenAI Codex" style
+// queries answered from real, source-linked entries instead of marketing claims. Only agents with
+// at least 5 entries are paired, so every page has enough examples on both sides.
+export const vsAgents = () => agents.map(a => ({ a, n: data.filter(d => d.tools.includes(a)).length })).filter(r => r.n >= 5).sort((x, y) => y.n - x.n).map(r => r.a);
+export const vsPairs = () => { const v = vsAgents(); const out: { a: string; b: string; slug: string }[] = []; v.forEach((a, i) => v.slice(i + 1).forEach(b => out.push({ a, b, slug: `${slugify(a)}-vs-${slugify(b)}` }))); return out; };
+export const vsData = (a: string, b: string) => {
+  const la = data.filter(d => d.tools.includes(a)), lb = data.filter(d => d.tools.includes(b));
+  const both = data.filter(d => d.tools.includes(a) && d.tools.includes(b));
+  const onlyA = la.filter(d => !d.tools.includes(b)), onlyB = lb.filter(d => !d.tools.includes(a));
+  const rows = [...cats].map(c => ({ c, na: la.filter(d => d.category === c).length, nb: lb.filter(d => d.category === c).length })).filter(r => r.na || r.nb).sort((x, y) => (y.na + y.nb) - (x.na + x.nb));
+  return { la, lb, both, onlyA, onlyB, rows };
+};
+const pct = (n: number, t: number) => t ? Math.round((100 * n) / t) : 0;
+export const vsFaq = (a: string, b: string): [string, string][] => {
+  const { la, lb, both, rows } = vsData(a, b);
+  const topOf = (k: 'na' | 'nb') => [...rows].filter(r => r[k]).sort((x, y) => y[k] - x[k]).slice(0, 3).map(r => `${r.c} (${r[k]})`).join(', ');
+  const leanA = rows.filter(r => r.na > r.nb).map(r => r.c), leanB = rows.filter(r => r.nb > r.na).map(r => r.c);
+  const qa: [string, string][] = [
+    [`${a} vs ${b}: which has more real-world use cases?`, `In this directory ${a} appears in ${la.length} documented use cases and ${b} in ${lb.length}, out of ${data.length} total. ${both.length ? `${both.length} ${both.length === 1 ? 'entry uses' : 'entries use'} both together.` : 'No entry uses both together yet.'}`],
+    [`What do people use ${a} for compared with ${b}?`, `${a}'s top categories are ${topOf('na')}. ${b}'s top categories are ${topOf('nb')}.${leanA.length ? ` ${a} shows up more often in ${leanA.join(', ')}.` : ''}${leanB.length ? ` ${b} shows up more often in ${leanB.join(', ')}.` : ''}`],
+    [`Which is used more for niche and personal projects, ${a} or ${b}?`, `${la.filter(d => d.niche).length} of ${a}'s ${la.length} entries (${pct(la.filter(d => d.niche).length, la.length)}%) are tagged niche, meaning individuals, hobbies, small operators or odd experiments, versus ${lb.filter(d => d.niche).length} of ${b}'s ${lb.length} (${pct(lb.filter(d => d.niche).length, lb.length)}%).`],
+  ];
+  if (both.length) qa.push([`Do people use ${a} and ${b} together?`, `Yes, in ${both.length} documented ${both.length === 1 ? 'case' : 'cases'}, for example ${names(both, 2)}.`]);
+  qa.push([`Where do these numbers come from?`, `They are counts of real, source-linked entries in ${NAME}, not benchmarks. Every entry links to a public post, repository or write-up, and an entry can use more than one agent.`]);
   return qa;
 };
