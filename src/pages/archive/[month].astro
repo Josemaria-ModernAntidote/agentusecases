@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+import { months, monthFaq, faqLd, slugify, crumbs, abs, NAME, clip } from '../../lib/site';
+// One page per month: every entry added that month, grouped by day, with FAQPage JSON-LD.
+export function getStaticPaths() { const ms = months(); return ms.map((m, i) => ({ params: { month: m.ym }, props: { m, newer: ms[i - 1], older: ms[i + 1] } })); }
+const { m, newer, older } = Astro.props;
+const list = m.list; const days = [...new Set(list.map(d => d.added))].reverse();
+const path = `/archive/${m.ym}/`;
+const modified = list[list.length - 1].added;
+const title = `AI agent use cases added in ${m.name} (${list.length}) | ${NAME}`;
+const desc = clip(`All ${list.length} real AI agent use cases added in ${m.name}, grouped by day, from ${[...new Set(list.flatMap(d => d.tools))].slice(0, 5).join(', ')} and more. Each links to its source.`);
+const qa = monthFaq(m.name, list);
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'CollectionPage', name: `AI agent use cases added in ${m.name}`, description: desc, url: abs(path), datePublished: list[0].added, dateModified: modified, temporalCoverage: m.ym, isPartOf: { '@type': 'WebSite', name: NAME, url: abs('/') }, mainEntity: { '@type': 'ItemList', numberOfItems: list.length, itemListElement: list.map((d, i) => ({ '@type': 'ListItem', position: i + 1, name: d.title, url: abs(`/use-cases/${d.slug}/`) })) } },
+  faqLd(qa),
+  crumbs([['Home', '/'], ['Archive', '/archive/'], [m.name, path]])
+];
+---
+<Base title={title} desc={desc} path={path} ld={ld} md={`/archive/${m.ym}.md`}>
+<p class="bc"><a href="/">Home</a> › <a href="/archive/">Archive</a> › {m.name}</p>
+<h1>AI agent use cases added in {m.name}</h1>
+<p class="lead"><b>{list.length}</b> real use cases were added in {m.name}, newest first. Last entry added <time datetime={modified}>{modified}</time>. <a href={`/archive/${m.ym}.md`} type="text/markdown">Markdown version</a>.</p>
+{days.map(day => <section><h2><time datetime={day}>{day}</time></h2><ul class="l">{list.filter(d => d.added === day).map(d => <li><a href={`/use-cases/${d.slug}/`}><b>{d.title}</b></a> <span class="mut">({d.tools.map((t, i) => <>{i ? ', ' : ''}<a href={`/agents/${slugify(t)}/`}>{t}</a></>)} · <a href={`/categories/${slugify(d.category)}/`}>{d.category}</a>)</span>: {d.description}</li>)}</ul></section>)}
+<section><h2>Quick answers</h2>{qa.map(([q, ans]) => <><h3>{q}</h3><p>{ans}</p></>)}</section>
+<p class="mut">{newer && <><a href={`/archive/${newer.ym}/`}>Newer: {newer.name}</a> · </>}{older && <><a href={`/archive/${older.ym}/`}>Older: {older.name}</a> · </>}<a href="/archive/">All months</a></p>
+</Base>

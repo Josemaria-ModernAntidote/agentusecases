@@ -20,5 +20,5 @@ const ld = [
 <h1>New AI agent use cases</h1>
 <p class="lead">The <b>{list.length}</b> most recently added use cases, newest first. New real examples are added most days, each linked to its original public source. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>. Follow along with the <a href="/rss.xml">RSS feed</a>.</p>
 {days.map(day => <section><h2><time datetime={day}>{day}</time></h2><ul class="l">{list.filter(d => d.added === day).map(d => <li><a href={`/use-cases/${d.slug}/`}><b>{d.title}</b></a> <span class="mut">({d.tools.map((t, i) => <>{i ? ', ' : ''}<a href={`/agents/${slugify(t)}/`}>{t}</a></>)} · <a href={`/categories/${slugify(d.category)}/`}>{d.category}</a>)</span>: {d.description}</li>)}</ul></section>)}
-<p class="mut">Looking for the unusual ones? See <a href="/niche/">niche and surprising use cases</a>, or browse by <a href="/agents/">agent</a> and <a href="/categories/">category</a>.</p>
+<p class="mut">Looking for the unusual ones? See <a href="/niche/">niche and surprising use cases</a>, browse the <a href="/archive/">monthly archive</a>, or browse by <a href="/agents/">agent</a> and <a href="/categories/">category</a>.</p>
 </Base>

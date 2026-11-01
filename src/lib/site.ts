@@ -124,7 +124,7 @@ export const topics: Topic[] = [
   { slug: 'kids-and-parenting', name: 'Kids and parenting', q: 'AI agents for parents and kids', blurb: 'Parents using agents for school logistics, homework, learning games and family life.', re: /\b(kids?|kid's|children|daughters'?|seven-year-old|8-year-old|homework|school|textbooks?)\b/i },
   { slug: 'farming-and-gardening', name: 'Farming and gardening', q: 'AI agents for farming and gardening', blurb: 'Farms, greenhouses, gardens and beehives run or helped by AI agents.', re: /\b(farms?|farm's|farmer|gardens?|garden beds|greenhouse|seedlings|tomato plant|fertilizer|beehive|alpaca)\b/i, skip: ['five-coding-agents-stranded'] },
   { slug: '3d-printing', name: '3D printing', q: 'AI agents for 3D printing', blurb: 'Agents that design, watch over or revive 3D printers and printed parts.', re: /3d[- ]print|3d printer/i },
-  { slug: 'smart-home-and-diy-hardware', name: 'Smart home and DIY hardware', q: 'AI agents for smart home and DIY hardware', blurb: 'Raspberry Pis, ESP32s, e-ink screens, Home Assistant and other hardware wired to an agent.', re: /home assistant|homekit|raspberry pi|pi zero|esp32|e-ink|smart plug|energy meter|electricity monitor|arduino|\bpico\b/i },
+  { slug: 'smart-home-and-diy-hardware', name: 'Smart home and DIY hardware', q: 'AI agents for smart home and DIY hardware', blurb: 'Raspberry Pis, ESP32s, e-ink screens, Home Assistant and other hardware wired to an agent.', re: /home assistant|homekit|loxone|raspberry pi|pi zero|esp32|e-ink|smart plug|energy meter|electricity monitor|arduino|\bpico\b/i },
   { slug: 'cars-and-trucks', name: 'Cars and trucks', q: 'AI agents for cars and trucks', blurb: 'Buying cars, reading car networks, racing and running truck fleets with an agent.', re: /\b(cars?|car's|cybertruck|dealers?|dealership|citro[eë]n|racer|trucks)\b/i, skip: ['trippy-', 'realtor-'] },
   { slug: 'food-and-drink', name: 'Food and drink', q: 'AI agents for restaurants, food and drink', blurb: 'Restaurants, coffee and tea shops, barbecue, home brewing and wine.', re: /\b(restaurants?|coffee shop|bubble tea|brisket|bbq|brew|wine|bakery)\b/i, skip: ['trippy-'] },
   { slug: 'music', name: 'Music', q: 'AI agents for music', blurb: 'Practice tools, songwriting partners and record collections built with agents.', re: /\b(music|piano|karaoke|ableton|songwriting|singer|choir|bandcamp|record store)\b/i, skip: ['ai-video-editing'] },
@@ -169,4 +169,23 @@ export const vsFaq = (a: string, b: string): [string, string][] => {
   if (both.length) qa.push([`Do people use ${a} and ${b} together?`, `Yes, in ${both.length} documented ${both.length === 1 ? 'case' : 'cases'}, for example ${names(both, 2)}.`]);
   qa.push([`Where do these numbers come from?`, `They are counts of real, source-linked entries in ${NAME}, not benchmarks. Every entry links to a public post, repository or write-up, and an entry can use more than one agent.`]);
   return qa;
+};
+// Monthly archives (/archive/ and /archive/<yyyy-mm>/): every entry grouped by the month it was
+// added, so "AI agent use cases October 2026" searches and answer engines get a stable, dated page
+// per month that never changes once the month is over.
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+export const monthName = (ym: string) => `${MONTHS[Number(ym.slice(5, 7)) - 1]} ${ym.slice(0, 4)}`;
+export const months = () => [...new Set(data.filter(d => d.added).map(d => d.added.slice(0, 7)))].sort().reverse()
+  .map(ym => ({ ym, name: monthName(ym), list: data.filter(d => d.added?.startsWith(ym)).sort((a, b) => a.added.localeCompare(b.added)) }));
+export const monthFaq = (name: string, list: typeof data): [string, string][] => {
+  const ag = [...new Set(list.flatMap(d => d.tools))].map(a => [a, list.filter(d => d.tools.includes(a)).length] as const).sort((x, y) => y[1] - x[1]);
+  const cs = [...new Set(list.map(d => d.category))].map(c => [c, list.filter(d => d.category === c).length] as const).sort((x, y) => y[1] - x[1]);
+  const days = [...new Set(list.map(d => d.added))];
+  const niche = list.filter(d => d.niche);
+  return [
+    [`How many AI agent use cases were added in ${name}?`, `${list.length} real, source-linked use cases were added in ${name}, across ${days.length} ${days.length === 1 ? 'day' : 'days'} (first ${days[0]}, latest ${days[days.length - 1]}).`],
+    [`Which AI agents appeared most in ${name}?`, `${ag.slice(0, 4).map(([a, n]) => `${a} (${n})`).join(', ')}. In total ${ag.length} ${ag.length === 1 ? 'agent appears' : 'different agents appear'}.`],
+    [`What kinds of use cases were added in ${name}?`, `By category: ${cs.slice(0, 5).map(([c, n]) => `${c} (${n})`).join(', ')}. ${niche.length} of ${list.length} are tagged niche, meaning individuals, hobbies, small operators or odd experiments.`],
+    [`What were some of the newest use cases in ${name}?`, `${list.slice(-3).reverse().map(d => `"${d.title}"`).join('; ')}.`],
+  ];
 };

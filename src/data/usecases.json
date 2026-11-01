@@ -2516,5 +2516,85 @@
     "slug": "claude-code-rebuilds-a-couple-s-tv-home-screen-with-no-ads-and-a-shared-drawing-board",
     "niche": true,
     "added": "2026-10-31"
+  },
+  {
+    "title": "A paddleboarding treasure hunter's Grok Bot dates six old bottles pulled from the River Avon",
+    "description": "Patricia Broadhurst named her Grok Bot Sloth, after The Goonies. Before each outing it researches the place, then reads the embossing on every find, dates it with an honest confidence level, logs it as FIND-001 and up, and reminds her about the Treasure Act and landowner permission. Her first trip, paddleboarding up the Avon to Rock Mill Weir in Warwick, turned up bottles spanning about 70 years of local drinks.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/Patricia_Brdhst/status/2116216226460627375",
+    "sourceName": "@Patricia_Brdhst (X)",
+    "slug": "a-paddleboarding-treasure-hunter-s-grok-bot-dates-six-old-bottles-pulled-from-the-river-avon",
+    "niche": true,
+    "added": "2026-11-01"
+  },
+  {
+    "title": "A wife asks for a below-zero alert, so her husband builds a Loxone config language Claude Code can write",
+    "description": "Christoph Neumüller's wife wanted a notification from their Loxone smart home when it drops below freezing. Instead of clicking it together, he started Lox Logic, an open source Rust language that compiles to Loxone Config so the house logic can live in Git and be edited by AI. 169 pull requests later, Claude Code can add the alert for him.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/discostu105/status/2116594924351262760",
+    "sourceName": "@discostu105 (X)",
+    "slug": "a-wife-asks-for-a-below-zero-alert-so-her-husband-builds-a-loxone-config-language-claude-code-can-write",
+    "niche": true,
+    "added": "2026-11-01"
+  },
+  {
+    "title": "A Verge editor who can't code turns a $50 ESP32 pendant into a homemade Muse Charm with Claude Code",
+    "description": "Instead of buying Meta's Muse Charm, Sean Hollister bought a $50 Waveshare ESP32-S3 pendant and pointed Claude at Meta's open source Muse gadget code. Over a few Claude Code sessions it added spoken replies, a conversation history page, a remote shutter for his phone camera, a batch of avatars and a Tamagotchi-style pet game. He has no coding experience and keeps the device on guest Wi-Fi.",
+    "category": "Creative & Building",
+    "tools": [
+      "Claude Code",
+      "Meta Muse"
+    ],
+    "source": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
+    "sourceName": "The Verge",
+    "slug": "a-verge-editor-who-can-t-code-turns-a-50-esp32-pendant-into-a-homemade-muse-charm-with-claude-code",
+    "niche": true,
+    "added": "2026-11-01"
+  },
+  {
+    "title": "A first hardware project: an ESP32 soil sensor that charts when a houseplant needs water",
+    "description": "Wanting to learn hardware, Santi asked Claude for a project, bought the ESP32, moisture sensor and cables it listed on Mercado Libre, and sent it photos of his wiring to learn what each pin does. Claude Code wrote the C++ the board runs, flashed with arduino-cli, and every 15 minutes it posts a reading to a small web chart. Watering the plant made the line jump. The post drew over 1,000 likes.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code",
+      "Claude"
+    ],
+    "source": "https://x.com/santtiagom_/status/2116635618620952906",
+    "sourceName": "@santtiagom_ (X)",
+    "slug": "a-first-hardware-project-an-esp32-soil-sensor-that-charts-when-a-houseplant-needs-water",
+    "niche": true,
+    "added": "2026-11-01"
+  },
+  {
+    "title": "First Litter: a dog owner's Claude Code app for her pregnant dog and the puppies that followed",
+    "description": "Chloe Sin Yin built First Litter with Claude Code to help her look after her dog through pregnancy and then care for the litter. Colin Charles shared screenshots of it as an example of a personal app made by someone who needs taste more than technical skill.",
+    "category": "Personal Life",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/bytebot/status/2116448363168334145",
+    "sourceName": "@bytebot (X)",
+    "slug": "first-litter-a-dog-owner-s-claude-code-app-for-her-pregnant-dog-and-the-puppies-that-followed",
+    "niche": true,
+    "added": "2026-11-01"
+  },
+  {
+    "title": "A 3D open-pit mine blast built with Claude Code to train crews before they stand on a real bench",
+    "description": "A creator built an interactive 3D model of an open-pit blast with Claude Code: a 15 m bench with 24 holes, run from dozer to drill rig to charging to firing in 5x slow motion. Every number on screen comes from the model, such as 17 m holes for a clean floor break, 650 kg of emulsion under 6 m of stemming, and 17 ms delays between holes. The stated use is training new crews and explaining blast plans.",
+    "category": "Research & Learning",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/0xRoboAI/status/2116168248769307047",
+    "sourceName": "@0xRoboAI (X)",
+    "slug": "a-3d-open-pit-mine-blast-built-with-claude-code-to-train-crews-before-they-stand-on-a-real-bench",
+    "niche": true,
+    "added": "2026-11-01"
   }
 ]

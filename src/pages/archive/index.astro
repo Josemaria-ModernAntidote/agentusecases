@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro';
+import { items, months, crumbs, abs, NAME, lastUpdated, clip } from '../../lib/site';
+// Index of the monthly archives.
+const ms = months();
+const path = '/archive/';
+const desc = clip(`Every real AI agent use case in the directory, grouped by the month it was added: ${ms.map(m => `${m.name} (${m.list.length})`).join(', ')}.`);
+const ld = [crumbs([['Home', '/'], ['Archive', path]]), { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'AI agent use cases by month', description: desc, url: abs(path), dateModified: lastUpdated, isPartOf: { '@type': 'WebSite', name: NAME, url: abs('/') }, mainEntity: { '@type': 'ItemList', numberOfItems: ms.length, itemListElement: ms.map((m, i) => ({ '@type': 'ListItem', position: i + 1, name: `AI agent use cases added in ${m.name}`, url: abs(`/archive/${m.ym}/`) })) } }];
+---
+<Base title={`AI agent use cases by month (${ms.length} months) | ${NAME}`} desc={desc} path={path} ld={ld} md="/archive.md">
+<p class="bc"><a href="/">Home</a> › Archive</p>
+<h1>AI agent use cases by month</h1>
+<p class="lead">All {items.length} entries, grouped by the month they were added to the directory. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>. <a href="/archive.md" type="text/markdown">Markdown version</a>. For the very latest, see <a href="/new/">new use cases</a>.</p>
+<ul class="l">{ms.map(m => <li><a href={`/archive/${m.ym}/`}><b>AI agent use cases added in {m.name}</b></a> ({m.list.length} entries, {m.list.filter(d => d.niche).length} niche)</li>)}</ul>
+</Base>
