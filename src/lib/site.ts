@@ -126,7 +126,7 @@ export const topics: Topic[] = [
   { slug: '3d-printing', name: '3D printing', q: 'AI agents for 3D printing', blurb: 'Agents that design, watch over or revive 3D printers and printed parts.', re: /3d[- ]print|3d printer/i },
   { slug: 'smart-home-and-diy-hardware', name: 'Smart home and DIY hardware', q: 'AI agents for smart home and DIY hardware', blurb: 'Raspberry Pis, ESP32s, e-ink screens, Home Assistant and other hardware wired to an agent.', re: /home assistant|homekit|loxone|raspberry pi|pi zero|esp32|e-ink|smart plug|energy meter|electricity monitor|arduino|\bpico\b/i },
   { slug: 'cars-and-trucks', name: 'Cars and trucks', q: 'AI agents for cars and trucks', blurb: 'Buying cars, reading car networks, racing and running truck fleets with an agent.', re: /\b(cars?|car's|cybertruck|dealers?|dealership|citro[eë]n|racer|trucks)\b/i, skip: ['trippy-', 'realtor-'] },
-  { slug: 'food-and-drink', name: 'Food and drink', q: 'AI agents for restaurants, food and drink', blurb: 'Restaurants, coffee and tea shops, barbecue, home brewing and wine.', re: /\b(restaurants?|coffee shop|bubble tea|brisket|bbq|brew|wine|bakery)\b/i, skip: ['trippy-'] },
+  { slug: 'food-and-drink', name: 'Food and drink', q: 'AI agents for restaurants, food and drink', blurb: 'Restaurants, coffee and tea shops, barbecue, home brewing and wine.', re: /\b(restaurants?|coffee shop|bubble tea|brisket|bbq|brew|wine|bakery|sourdough)\b/i, skip: ['trippy-'] },
   { slug: 'music', name: 'Music', q: 'AI agents for music', blurb: 'Practice tools, songwriting partners and record collections built with agents.', re: /\b(music|piano|karaoke|ableton|songwriting|singer|choir|bandcamp|record store)\b/i, skip: ['ai-video-editing'] },
   { slug: 'games-and-gaming', name: 'Games and gaming', q: 'AI agents for games and gaming', blurb: 'Board games, fantasy leagues, ROM hacks, flight sims and games made for kids.', re: /\b(video game|games?|gaming|minecraft|dungeon master|arcade|pinball|fantasy football|board game|pok[eé]mon|flight sim|DCS)\b/i, skip: ['next-bird'] },
   { slug: 'animals-and-nature', name: 'Animals and nature', q: 'AI agents for animals, pets and nature', blurb: 'Pets, livestock, bees, birds, fish and reef tanks.', re: /\b(pets?|dogs?|alpacas?|horse farm|horses|birds?|ebird|bass fishing|reef tank|beehive|bees)\b/i, skip: ['a-90s-pinball', 'a-dad-s-agent-turns-every-scanned'] },
@@ -189,3 +189,45 @@ export const monthFaq = (name: string, list: typeof data): [string, string][] =>
     [`What were some of the newest use cases in ${name}?`, `${list.slice(-3).reverse().map(d => `"${d.title}"`).join('; ')}.`],
   ];
 };
+// Statistics (/stats/ and /stats.md): citable, dated numbers about the directory (share of entries
+// per agent and category, growth by week, niche share, source mix, multi-agent setups), each written
+// as a full sentence with a stable anchor so answer engines can quote one fact and link straight to it.
+export const share = (n: number, t = data.length) => n && pct(n, t) < 1 ? '<1%' : `${pct(n, t)}%`;
+export const stats = () => {
+  const total = data.length;
+  const dated = data.filter(d => d.added).map(d => d.added).sort();
+  const first = dated[0], last = dated[dated.length - 1];
+  const day = (s: string) => new Date(`${s}T00:00:00Z`).getTime();
+  const minus = (s: string, n: number) => new Date(day(s) - n * 864e5).toISOString().slice(0, 10);
+  const since = (from: string) => data.filter(d => d.added && d.added > from);
+  const last7 = since(minus(last, 7)), last30 = since(minus(last, 30));
+  const byAgent = agents.map(a => ({ a, n: data.filter(d => d.tools.includes(a)).length, n7: last7.filter(d => d.tools.includes(a)).length })).sort((x, y) => y.n - x.n);
+  const byCat = [...cats].map(c => ({ c, n: data.filter(d => d.category === c).length })).sort((x, y) => y.n - x.n);
+  const niche = data.filter(d => d.niche).length;
+  const multi = data.filter(d => d.tools.length > 1);
+  const src = bySource().filter(g => g.list.length);
+  // Weekly growth: cumulative count at the end of each week (Sunday) since the first entry.
+  const weeks: { end: string; added: number; total: number }[] = [];
+  for (let e = minus(first, -((7 - new Date(day(first)).getUTCDay()) % 7)); ; e = minus(e, -7)) {
+    const start = minus(e, 7); const added = dated.filter(a => a > start && a <= e).length;
+    weeks.push({ end: e > last ? last : e, added, total: dated.filter(a => a <= e).length });
+    if (e >= last) break;
+  }
+  const risers = [...byAgent].filter(r => r.n7).sort((x, y) => y.n7 - x.n7).slice(0, 4);
+  const span = Math.round((day(last) - day(first)) / 864e5) + 1;
+  const facts: { id: string; q: string; a: string }[] = [
+    { id: 'total', q: 'How many real AI agent use cases are documented?', a: `As of ${last}, ${NAME} lists ${total} real, source-linked AI agent use cases across ${agents.length} agents and ${cats.length} categories, collected since ${first}.` },
+    { id: 'growth', q: 'How fast is the directory growing?', a: `${last7.length} use cases were added in the 7 days to ${last}${last30.length < total ? ` and ${last30.length} in the 30 days to ${last}` : ''}. Over ${span} days since ${first} the directory has averaged ${(total / span).toFixed(1)} new entries a day.` },
+    { id: 'top-agent', q: 'Which AI agent appears in the most use cases?', a: `${byAgent[0].a} appears in ${byAgent[0].n} of ${total} entries (${share(byAgent[0].n)}), followed by ${byAgent.slice(1, 4).map(r => `${r.a} with ${r.n} (${share(r.n)})`).join(', ')}.` },
+    { id: 'momentum', q: 'Which AI agents gained the most new use cases in the last 7 days?', a: `In the 7 days to ${last}: ${risers.map(r => `${r.a} ${r.n7}`).join(', ')}.` },
+    { id: 'top-category', q: 'What are AI agents most used for?', a: `The largest categories are ${byCat.slice(0, 3).map(r => `${r.c} (${r.n}, ${share(r.n)})`).join(', ')}. The smallest is ${byCat[byCat.length - 1].c} with ${byCat[byCat.length - 1].n}.` },
+    { id: 'niche', q: 'How many use cases are personal, hobby or small operator projects rather than enterprise?', a: `${niche} of ${total} (${share(niche)}) are tagged niche, meaning individuals, hobbies, small operators or odd experiments.` },
+    { id: 'multi-agent', q: 'How often do people combine more than one AI agent?', a: `${multi.length} of ${total} entries (${share(multi.length)}) use two or more agents together, for example ${names(newest(multi), 2)}.` },
+    { id: 'sources', q: 'Where is the evidence for these use cases published?', a: `${src.map(g => `${g.label} ${g.list.length} (${share(g.list.length)})`).join(', ')}.` },
+  ];
+  return { total, first, last, byAgent, byCat, weeks, facts, niche, multi };
+};
+// CSV copy of the dataset (/use-cases.csv) for spreadsheets, notebooks and dataset crawlers.
+const csvCell = (v: unknown) => { const s = String(v ?? ''); return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
+export const csv = () => [['title', 'description', 'category', 'agents', 'niche', 'added', 'url', 'source', 'source_name'].join(','),
+  ...data.map(d => [d.title, d.description, d.category, d.tools.join('; '), d.niche ? 'yes' : 'no', d.added || '', abs(`/use-cases/${d.slug}/`), d.source, d.sourceName].map(csvCell).join(','))].join('\n') + '\n';

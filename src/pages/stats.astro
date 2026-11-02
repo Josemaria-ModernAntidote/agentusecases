@@ -1,0 +1,36 @@
+---
+import Base from '../layouts/Base.astro';
+import { slugify, crumbs, abs, NAME, lastUpdated, clip, stats, faqLd, share } from '../lib/site';
+// Citable statistics with stable #anchors, a weekly growth table, Dataset and FAQPage JSON-LD,
+// and a Markdown twin at /stats.md.
+const s = stats();
+const path = '/stats/';
+const title = `AI agent use case statistics (${s.last}): ${s.total} real examples by agent, category and growth | ${NAME}`;
+const desc = clip(`Statistics on ${s.total} real, source-linked AI agent use cases: share by agent and category, weekly growth, niche share and multi-agent setups. Updated ${s.last}.`);
+const pc = (n: number) => share(n, s.total);
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'Dataset', name: 'AI agent use case statistics', description: desc, url: abs(path), dateModified: lastUpdated, temporalCoverage: `${s.first}/${s.last}`, isAccessibleForFree: true, creator: { '@type': 'Organization', name: NAME, url: abs('/') },
+    variableMeasured: ['use cases per agent', 'use cases per category', 'use cases added per week', 'niche share', 'multi-agent share'],
+    distribution: [{ '@type': 'DataDownload', encodingFormat: 'text/markdown', contentUrl: abs('/stats.md') }, { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: abs('/use-cases.csv') }, { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: abs('/use-cases.json') }] },
+  faqLd(s.facts.map(f => [f.q, f.a] as [string, string])),
+  crumbs([['Home', '/'], ['Statistics', path]])
+];
+---
+<Base title={title} desc={desc} path={path} ld={ld} md="/stats.md">
+<p class="bc"><a href="/">Home</a> › Statistics</p>
+<h1>AI agent use case statistics</h1>
+<p class="lead">Counts from {s.total} real, source-linked entries in this directory, not surveys or vendor claims. Updated <time datetime={lastUpdated}>{lastUpdated}</time>. Every number links to an anchor you can cite.</p>
+<h2>Key numbers</h2>
+{s.facts.map(f => <section id={f.id}><h3><a href={`#${f.id}`} style="text-decoration:none">{f.q}</a></h3><p>{f.a}</p></section>)}
+<h2 id="by-agent">Use cases by agent</h2>
+<table><thead><tr><th align="left">Agent</th><th>Entries</th><th>Share</th><th>Added in last 7 days</th></tr></thead><tbody>{s.byAgent.map(r => <tr><td><a href={`/agents/${slugify(r.a)}/`}>{r.a}</a></td><td align="center">{r.n}</td><td align="center">{pc(r.n)}</td><td align="center">{r.n7}</td></tr>)}</tbody></table>
+<p class="mut">An entry can use more than one agent, so shares add up to more than 100%.</p>
+<h2 id="by-category">Use cases by category</h2>
+<table><thead><tr><th align="left">Category</th><th>Entries</th><th>Share</th></tr></thead><tbody>{s.byCat.map(r => <tr><td><a href={`/categories/${slugify(r.c)}/`}>{r.c}</a></td><td align="center">{r.n}</td><td align="center">{pc(r.n)}</td></tr>)}</tbody></table>
+<h2 id="growth">Growth by week</h2>
+<table><thead><tr><th align="left">Week ending</th><th>Added</th><th>Running total</th></tr></thead><tbody>{s.weeks.map(w => <tr><td>{w.end}</td><td align="center">{w.added}</td><td align="center">{w.total}</td></tr>)}</tbody></table>
+<h2 id="cite">How to cite</h2>
+<p>{NAME}, "AI agent use case statistics", {abs(path)}, updated {lastUpdated}. Raw data: <a href="/use-cases.csv">/use-cases.csv</a> and <a href="/use-cases.json">/use-cases.json</a>.</p>
+<p class="mut">Also as Markdown: <a href="/stats.md">/stats.md</a>. See also <a href="/compare/">which agent is used for what</a>, <a href="/sources/">entries by source type</a> and the <a href="/archive/">monthly archive</a>.</p>
+<style>table{border-collapse:collapse;width:100%;font-size:14px;margin:8px 0}th,td{border-bottom:1px solid var(--line);padding:6px 8px}</style>
+</Base>

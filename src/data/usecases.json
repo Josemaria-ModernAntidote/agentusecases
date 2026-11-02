@@ -2596,5 +2596,84 @@
     "slug": "a-3d-open-pit-mine-blast-built-with-claude-code-to-train-crews-before-they-stand-on-a-real-bench",
     "niche": true,
     "added": "2026-11-01"
+  },
+  {
+    "title": "A mom's OpenClaw agent designs a Halloween pumpkin craft and a Codex agent sends it to the family 3D printer",
+    "description": "PJ Standley's wife planned a Halloween pumpkin craft for their kids with Betty, her OpenClaw agent. Betty made the templates, and his OpenAI Codex agent sent them to the family's Bambu Lab 3D printer. The result in the photo is a printed pumpkin-shaped frame filled with orange tissue paper, glowing on a sunny window. The kids loved it.",
+    "category": "Personal Life",
+    "tools": [
+      "OpenClaw",
+      "OpenAI Codex"
+    ],
+    "source": "https://x.com/ArkStabler/status/2116542720583880837",
+    "sourceName": "@ArkStabler (X)",
+    "slug": "a-mom-s-openclaw-agent-designs-a-halloween-pumpkin-craft-and-a-codex-agent-sends-it-to-the-family-3d-printer",
+    "niche": true,
+    "added": "2026-11-02"
+  },
+  {
+    "title": "A cheap Bluetooth greenhouse thermometer gets its own CLI so the family OpenClaw says when the plants need something",
+    "description": "Andy's wife needed a new thermometer for her greenhouse. He picked a cheap Bluetooth one because it was hackable, wrote a command line tool for it, and now the household OpenClaw agent sends them alerts when something in the greenhouse needs doing. His new rule for buying gadgets: how hackable is it.",
+    "category": "Physical World",
+    "tools": [
+      "OpenClaw"
+    ],
+    "source": "https://x.com/awkward_andyy/status/2116854173568475169",
+    "sourceName": "@awkward_andyy (X)",
+    "slug": "a-cheap-bluetooth-greenhouse-thermometer-gets-its-own-cli-so-the-family-openclaw-says-when-the-plants-need-something",
+    "niche": true,
+    "added": "2026-11-02"
+  },
+  {
+    "title": "A goat herder spends the extra daylight saving hour with his Grok Bot team planning spring planting, a pond and a glamping site",
+    "description": "Darin, a goat herder, chicken keeper, gardener and permaculture food forester, used the extra hour from the November clock change to have his team of Grok Bots plan spring planting on the farm, read elevation maps to work out where a pond should go, and brainstorm a glamping site on the west pasture. All over a single cup of coffee.",
+    "category": "Physical World",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/DarinRMcClure/status/2116861879863652367",
+    "sourceName": "@DarinRMcClure (X)",
+    "slug": "a-goat-herder-spends-the-extra-daylight-saving-hour-with-his-grok-bot-team-planning-spring-planting-a-pond-and-a-glamping-site",
+    "niche": true,
+    "added": "2026-11-02"
+  },
+  {
+    "title": "A retired military vet's Grok Bot boating assistant keeps the maintenance log, parts lists and vessel papers",
+    "description": "Jim Aggie, a retired Air Force and Navy veteran, built a Grok Bot that tracks his boat's maintenance and repairs, parts lists, vessel documentation and cruising plans, and gives step-by-step repair help using the boat's real specs. He published it as a free Boating Assistant template that other boat owners can copy.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/jimaggie/status/2116201344142921851",
+    "sourceName": "@jimaggie (X)",
+    "slug": "a-retired-military-vet-s-grok-bot-boating-assistant-keeps-the-maintenance-log-parts-lists-and-vessel-papers",
+    "niche": true,
+    "added": "2026-11-02"
+  },
+  {
+    "title": "A hobby photographer's Grok Bot finds photo contests and checks the rules before she enters a shot of an 1850s chapel",
+    "description": "Melissa, a nurse, former Navy hospital corpsman and hobby photographer in Madison, Mississippi, had her Grok Bot find photography contests and check their entry rules. She then entered a black and white contest with her photo of the Chapel of the Cross, an 1850s church, with sun rays coming through the trees.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/ReconBailey/status/2116615024827388187",
+    "sourceName": "@ReconBailey (X)",
+    "slug": "a-hobby-photographer-s-grok-bot-finds-photo-contests-and-checks-the-rules-before-she-enters-a-shot-of-an-1850s-chapel",
+    "niche": true,
+    "added": "2026-11-02"
+  },
+  {
+    "title": "Flour Hour: a home baker's Claude Code app that schedules a 20-hour sourdough backwards from dinner time",
+    "description": "Sourdough takes about 20 hours from start to finish, so Yanina Trekhleb, tired of setting a dozen alarms, built Flour Hour in about three hours of conversation with Claude Code, describing what she wanted like a client. Pick one of 22 recipes (classic and same-day sourdough, focaccia, bagels, croissants, brioche, discard pancakes), set a start time or the time you want to eat, and it lists every step with exact timestamps.",
+    "category": "Personal Life",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://news.ycombinator.com/item?id=46628132",
+    "sourceName": "Show HN",
+    "slug": "flour-hour-a-home-baker-s-claude-code-app-that-schedules-a-20-hour-sourdough-backwards-from-dinner-time",
+    "niche": true,
+    "added": "2026-11-02"
   }
 ]
