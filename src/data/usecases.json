@@ -2675,5 +2675,57 @@
     "slug": "flour-hour-a-home-baker-s-claude-code-app-that-schedules-a-20-hour-sourdough-backwards-from-dinner-time",
     "niche": true,
     "added": "2026-11-02"
+  },
+  {
+    "title": "A Maldon gardener's Grok Bot, Monty, that plans spring sowing for heavy clay and takes garden jobs by text",
+    "description": "David H has a heavy-clay garden in Maldon, Essex and only an hour or two at weekends, so he kept losing track of what to sow and when. He asked his Grok Bot gardener, Monty, for a spring planting list; it came back with 19 plants picked for his soil, and he now ticks off garden jobs by text.",
+    "category": "Physical World",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/DavidHicky/status/2117490607144714330",
+    "sourceName": "X",
+    "slug": "a-maldon-gardener-s-grok-bot-monty-that-plans-spring-sowing-for-heavy-clay-and-takes-garden-jobs-by-text",
+    "niche": true,
+    "added": "2026-11-03"
+  },
+  {
+    "title": "A Santa Barbara Burger Week map built with Claude Code in one session",
+    "description": "Santa Barbara Burger Week has about 40 restaurants each selling a $10 burger, but the local paper only published a list. Sam Gutentag built a clustered Leaflet map of every participating spot with Claude Code in a single one-hour session: one index.html, vanilla JS and a plain data file on GitHub Pages.",
+    "category": "Small Business",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://news.ycombinator.com/item?id=46964754",
+    "sourceName": "Show HN",
+    "slug": "a-santa-barbara-burger-week-map-built-with-claude-code-in-one-session",
+    "niche": true,
+    "added": "2026-11-03"
+  },
+  {
+    "title": "A dad photographs his kid's pegboard sketch, and Codex turns it into 3D-printable pegs in five minutes",
+    "description": "Instead of spending an hour in Fusion 360, a parent pasted a photo of the rough pegboard sketch he drew with his kid Oli into Codex, gave it two numbers (holes 40mm apart, pegs 8mm wide), and five minutes later the 3D printer was heating up. A second board is going on the front door instead of a wreath so visitors have something to play with.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Codex"
+    ],
+    "source": "https://news.ycombinator.com/item?id=47580910",
+    "sourceName": "Show HN",
+    "slug": "a-dad-photographs-his-kid-s-pegboard-sketch-and-codex-turns-it-into-3d-printable-pegs-in-five-minutes",
+    "niche": true,
+    "added": "2026-11-03"
+  },
+  {
+    "title": "Silta: a self-hosted family assistant on Matrix that runs on Claude Code for the whole family",
+    "description": "Dmitry Markin runs Silta, one Matrix account serving him, his family and close friends, each on their own Claude subscription through Claude Code. It answers everyday questions, does web research delivered as PDFs, runs scheduled monitoring tasks, and writes its own compaction summaries so it keeps a running picture of each person across context limits.",
+    "category": "Personal Life",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://news.ycombinator.com/item?id=49920621",
+    "sourceName": "Show HN",
+    "slug": "silta-a-self-hosted-family-assistant-on-matrix-that-runs-on-claude-code-for-the-whole-family",
+    "niche": true,
+    "added": "2026-11-03"
   }
 ]
