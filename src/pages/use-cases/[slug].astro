@@ -15,7 +15,7 @@ const ci = sameCat.findIndex(x => x.slug === d.slug);
 const prev = sameCat.length > 1 ? sameCat[(ci - 1 + sameCat.length) % sameCat.length] : null;
 const next = sameCat.length > 2 ? sameCat[(ci + 1) % sameCat.length] : null;
 const ld = [
-  { '@context': 'https://schema.org', '@type': 'Article', headline: d.title, description: d.description, url: abs(path), ...(d.added ? { datePublished: d.added } : {}), dateModified: modified, mainEntityOfPage: { '@type': 'WebPage', '@id': abs(path) }, author: { '@type': 'Organization', name: NAME, url: abs('/') }, image: abs('/og.png'), articleSection: d.category, keywords: [...d.tools, d.category].join(', '), about: d.tools.map(t => ({ '@type': 'SoftwareApplication', name: t, applicationCategory: 'AI agent' })), isBasedOn: d.source, citation: d.source, publisher: { '@type': 'Organization', name: NAME, url: abs('/') } },
+  { '@context': 'https://schema.org', '@type': 'Article', headline: d.title, description: d.description, url: abs(path), ...(d.added ? { datePublished: d.added } : {}), dateModified: modified, mainEntityOfPage: { '@type': 'WebPage', '@id': abs(path) }, author: { '@type': 'Organization', name: NAME, url: abs('/') }, image: abs('/og.png'), articleSection: d.category, keywords: [...d.tools, d.category].join(', '), about: d.tools.map(t => ({ '@type': 'SoftwareApplication', name: t, applicationCategory: 'AI agent', url: abs(`/agents/${slugify(t)}/`) })), isPartOf: { '@type': 'CollectionPage', name: `${d.category} AI agent use cases`, url: abs(`/categories/${slugify(d.category)}/`) }, isBasedOn: d.source, citation: d.source, publisher: { '@type': 'Organization', name: NAME, url: abs('/') } },
   crumbs([['Home', '/'], [d.category, `/categories/${slugify(d.category)}/`], [d.title, path]])
 ];
 ---

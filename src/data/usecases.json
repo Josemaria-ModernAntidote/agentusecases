@@ -1,5 +1,44 @@
 [
   {
+    "title": "A grandfather has Claude draw CNC-ready plywood panels with puzzle joints for his grandson's kayak",
+    "description": "David DeWitt, a former CS professor building a Chesapeake 14 kayak from plans for his 9-year-old grandson, typed the panel offsets into a spreadsheet and asked Claude to produce DXF files for the bottom and side panels. He checked them by hand in QCAD, had Claude shrink them to 95% scale for 3 mm plywood, then asked it to split each panel and add puzzle joints. Before drawing the joints Claude asked what router bit the local CNC operator would use. The four DXF files went to the CNC shop and the cut joints fit perfectly.",
+    "category": "Physical World",
+    "tools": [
+      "Claude"
+    ],
+    "source": "https://forum.clcboats.com/t/claude-does-puzzle-joints/72512",
+    "sourceName": "CLC Boats Builder's Forum",
+    "slug": "a-grandfather-has-claude-draw-cnc-ready-plywood-panels-with-puzzle-joints-for-his-grandson",
+    "niche": true,
+    "added": "2026-11-04"
+  },
+  {
+    "title": "A DJ one-shots a Winamp-skinned beatmatching school with coding agents",
+    "description": "A developer who learned to DJ on turntables built bit-cheer, a browser app for learning to beatmatch, as a fully vibe-coded experiment: one prompt per feature or bug fix, no human code review, only using the app and reporting problems back to the agent. The agents wrote an Elm front end and a Rust audio engine compiled to WebAssembly, two decks that can wear any classic Winamp skin, five practice modes from kick matching to drifting BPMs by ear, a coach that rates each run, and an 8-lesson learning path. Claude did most of the skin rendering.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Claude"
+    ],
+    "source": "https://news.ycombinator.com/item?id=50325252",
+    "sourceName": "Show HN",
+    "slug": "a-dj-one-shots-a-winamp-skinned-beatmatching-school-with-coding-agents",
+    "niche": true,
+    "added": "2026-11-04"
+  },
+  {
+    "title": "A Codex agent writes a daily Torah study brief, source sheet and lesson plan and publishes it",
+    "description": "Zohar Atkins has a Codex agent that, every day except Shabbat, uses the Yochai wiki to research a section of the weekly Torah reading and produce a research brief, a guided source sheet and a lesson plan, then ships the result as a webpage. It does the same for the daily page of Talmud in the daf yomi cycle, using a research skill built around his own study method.",
+    "category": "Research & Learning",
+    "tools": [
+      "OpenAI Codex"
+    ],
+    "source": "https://x.com/ZoharAtkins/status/2117899536936960371",
+    "sourceName": "X (@ZoharAtkins)",
+    "slug": "a-codex-agent-writes-a-daily-torah-study-brief-source-sheet-and-lesson-plan-and-publishes",
+    "niche": true,
+    "added": "2026-11-04"
+  },
+  {
     "title": "A ham radio operator gets Claude Code to run his IC-9700 and make FT8 contacts on autopilot",
     "description": "Polish ham SQ5CBA asked Claude Code one evening whether his Icom IC-9700 could be driven from a browser. In about an hour and a half it wrote a panel on his home server that speaks Icom's undocumented network protocol, learned from the open-source wfview code, with analog-style power, SWR and S-meters, memory channels, push-to-talk from the laptop with several safety cutoffs, a band waterfall, and FT8 without WSJT-X. An AUTOMAT button calls CQ and answers stations on its own, and logs every contact to QRZ.com. The next day the panel made two FT8 contacts on 2 m by itself, after they found the 2 m preamp was off. He wrote none of the roughly 2,850 lines of code, and he stays the licensed operator responsible for every transmission.",
     "category": "Hobbies & Games",
@@ -2707,7 +2746,7 @@
     "description": "Instead of spending an hour in Fusion 360, a parent pasted a photo of the rough pegboard sketch he drew with his kid Oli into Codex, gave it two numbers (holes 40mm apart, pegs 8mm wide), and five minutes later the 3D printer was heating up. A second board is going on the front door instead of a wreath so visitors have something to play with.",
     "category": "Hobbies & Games",
     "tools": [
-      "Codex"
+      "OpenAI Codex"
     ],
     "source": "https://news.ycombinator.com/item?id=47580910",
     "sourceName": "Show HN",
