@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "astro build",
+    "build": "astro build && node scripts/redirect-trailing-slash.mjs",
     "dev": "astro dev",
     "preview": "astro preview"
   },
