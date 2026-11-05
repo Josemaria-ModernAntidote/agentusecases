@@ -14,6 +14,7 @@ export async function GET({ props }: { props: { d: (typeof items)[number] } }) {
   t += `- Original source: [${d.sourceName}](${d.source})\n`;
   if (d.added) t += `- Added: ${d.added}\n`;
   t += `- Last updated: ${modified}\n- Web page: ${page}\n`;
+  t += `\n## Cite this use case\n\n${NAME}. (${(d.added ?? modified).slice(0, 4)}). ${d.title}. Retrieved from ${page} (original source: ${d.source})\n`;
   const rel = relatedTo(d);
   if (rel.length) { t += `\n## Related use cases\n\n`; for (const r of rel) t += `- [${r.title}](${abs(`/use-cases/${r.slug}.md`)}) (${r.tools.join(', ')})\n`; }
   t += `\n---\nFrom ${NAME} (${abs('/')}), a directory of real AI agent use cases, each linked to its public source. Index for LLMs: ${abs('/llms.txt')}\n`;

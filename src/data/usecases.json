@@ -2766,5 +2766,70 @@
     "slug": "silta-a-self-hosted-family-assistant-on-matrix-that-runs-on-claude-code-for-the-whole-family",
     "niche": true,
     "added": "2026-11-03"
+  },
+  {
+    "title": "Papageno: a dad's Claude Code build turns his garden's bird songs into a sticker album for his 7-year-old",
+    "description": "Rainer Bracharz in Wilhelmsburg, Lower Austria, had Claude Code plan, write, deploy and debug Papageno: a roof microphone on a Raspberry Pi running BirdNET, a phone app for collecting birds on walks, an e-ink display in the dining room with the bird of the day, and a cube that plays each call. Since late August it has logged 95 species and over 38,000 detections, with more than 30,000 lines of agent-written code; a second model and his own checks caught wrong rare birds and bad bird facts.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://www.bracharz.com/en/insights/vogelstimmen-album-ki-agent/",
+    "sourceName": "Blog (bracharz.com)",
+    "slug": "papageno-a-dad-s-claude-code-build-turns-his-garden-s-bird-songs-into-a-sticker-album-for-his-7-year-old",
+    "niche": true,
+    "added": "2026-11-05"
+  },
+  {
+    "title": "A local coffee shop's weekly newsletter run by a Hermes agent from photos dropped in Telegram",
+    "description": "JC Rodriguez set up a newsletter for a local coffee shop where staff just drop photos into a Telegram chat and a Hermes Agent drafts and schedules the issue in beehiiv. Send it an event flyer and it creates a beehiiv product, an automated follow-up series, and mentions the event in every issue until it happens. He puts the cost at under $5 a month and five minutes of the owners' time.",
+    "category": "Small Business",
+    "tools": [
+      "Hermes Agent"
+    ],
+    "source": "https://x.com/Lettrcrafter/status/2118192490750595323",
+    "sourceName": "X (@Lettrcrafter)",
+    "slug": "a-local-coffee-shop-s-weekly-newsletter-run-by-a-hermes-agent-from-photos-dropped-in-telegram",
+    "niche": true,
+    "added": "2026-11-05"
+  },
+  {
+    "title": "From the driver's seat: Tesla's Grok hands a voter-roll removal form to a home Grok Bot, which prints it",
+    "description": "On Election Day, Phil Trubey asked his Tesla's Grok how to take his daughter, who moved out of state, off the local voter rolls. Instead of listening to directions to the form, he asked it to have his Grok Bot download the form onto his desktop Mac and print it. When he got home from the drive, the form was waiting on the printer.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/PTrubey/status/2117794283264803028",
+    "sourceName": "X (@PTrubey)",
+    "slug": "from-the-driver-s-seat-tesla-s-grok-hands-a-voter-roll-removal-form-to-a-home-grok-bot-which-prints-it",
+    "niche": true,
+    "added": "2026-11-05"
+  },
+  {
+    "title": "A house that texts you when the power goes out, built with Claude Code and a GSM module",
+    "description": "A maker built a small circuit with a microcontroller, a GSM module, a SIM card and a backup battery, with Claude Code helping write the logic. When mains power drops it sends an SMS over the mobile network, so it works even with the home router dead, and it texts again when power returns. Suggested uses: watching the circuit for a freezer, aquarium or home server while away.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/Psalteric/status/2118080372885918117",
+    "sourceName": "X (@Psalteric)",
+    "slug": "a-house-that-texts-you-when-the-power-goes-out-built-with-claude-code-and-a-gsm-module",
+    "niche": true,
+    "added": "2026-11-05"
+  },
+  {
+    "title": "Uploading a home insurance declarations page so Grok Bot can shop for the same coverage cheaper",
+    "description": "Clay Russell uploaded this year's homeowner's insurance declarations page to Grok Bot and had it shop for equal coverage at a lower price. He says it found a policy that saved him $1,000 a year.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/clayrussell/status/2117598541841633329",
+    "sourceName": "X (@clayrussell)",
+    "slug": "uploading-a-home-insurance-declarations-page-so-grok-bot-can-shop-for-the-same-coverage-cheaper",
+    "niche": true,
+    "added": "2026-11-05"
   }
 ]
