@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { items, slugify, crumbs, itemList, abs, NAME, lastUpdated, clip } from '../lib/site';
+import { items, slugify, crumbs, itemList, abs, NAME, lastUpdated, clip, faqLd } from '../lib/site';
 // Fresh-content landing page: the newest entries grouped by the day they were added, so
 // "new AI agent use cases" searches and answer engines have one page that always shows what changed.
 const dated = [...items].filter(d => d.added).sort((a, b) => b.added.localeCompare(a.added));
@@ -9,16 +9,26 @@ const days = [...new Set(list.map(d => d.added))];
 const path = '/new/';
 const title = `New AI agent use cases, latest additions (${lastUpdated}) | ${NAME}`;
 const desc = clip(`The ${list.length} newest real AI agent use cases added to the directory, grouped by date. Latest update ${lastUpdated}. Every entry links to its original public source.`);
+const newestDay = days[0];
+const newestCount = newestDay ? list.filter(d => d.added === newestDay).length : 0;
+const faq: [string, string][] = [
+  ['Where can I find the newest AI agent use cases?', `This page lists the ${list.length} most recently added real, source-linked AI agent use cases in the directory, grouped by the day they were added. The latest update was ${lastUpdated}.`],
+  ['How often are new use cases added?', `New verified examples are added most days. The newest day on this page is ${newestDay || lastUpdated}, with ${newestCount} ${newestCount === 1 ? 'entry' : 'entries'}.`],
+  ['How can I follow new additions?', 'Subscribe to the RSS feed at /rss.xml, or the JSON Feed at /feed.json. Every use case page also has a Markdown copy at /use-cases/<slug>.md.'],
+  ['Are these examples real?', 'Yes. Every entry links to its original public source, such as a post on X, a blog or a GitHub repository, and entries without a public source are not listed.'],
+];
 const ld = [
   { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'New AI agent use cases', description: desc, url: abs(path), dateModified: lastUpdated, isPartOf: { '@type': 'WebSite', name: NAME, url: abs('/') } },
   itemList('New AI agent use cases', list),
+  faqLd(faq),
   crumbs([['Home', '/'], ['New', path]])
 ];
 ---
 <Base title={title} desc={desc} path={path} ld={ld}>
 <p class="bc"><a href="/">Home</a> › New</p>
 <h1>New AI agent use cases</h1>
-<p class="lead">The <b>{list.length}</b> most recently added use cases, newest first. New real examples are added most days, each linked to its original public source. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>. Follow along with the <a href="/rss.xml">RSS feed</a>.</p>
+<p class="lead">The <b>{list.length}</b> most recently added use cases, newest first. New real examples are added most days, each linked to its original public source. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>. Follow along with the <a href="/rss.xml">RSS feed</a> or the <a href="/feed.json">JSON Feed</a>.</p>
 {days.map(day => <section><h2><time datetime={day}>{day}</time></h2><ul class="l">{list.filter(d => d.added === day).map(d => <li><a href={`/use-cases/${d.slug}/`}><b>{d.title}</b></a> <span class="mut">({d.tools.map((t, i) => <>{i ? ', ' : ''}<a href={`/agents/${slugify(t)}/`}>{t}</a></>)} · <a href={`/categories/${slugify(d.category)}/`}>{d.category}</a>)</span>: {d.description}</li>)}</ul></section>)}
+<section id="faq"><h2>FAQ</h2><dl>{faq.map(([q, a]) => <><dt>{q}</dt><dd>{a}</dd></>)}</dl></section>
 <p class="mut">Looking for the unusual ones? See <a href="/niche/">niche and surprising use cases</a>, browse the <a href="/archive/">monthly archive</a>, or browse by <a href="/agents/">agent</a> and <a href="/categories/">category</a>.</p>
 </Base>

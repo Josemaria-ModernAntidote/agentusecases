@@ -2831,5 +2831,72 @@
     "slug": "uploading-a-home-insurance-declarations-page-so-grok-bot-can-shop-for-the-same-coverage-cheaper",
     "niche": true,
     "added": "2026-11-05"
+  },
+  {
+    "title": "A dad builds a pretend-play cash register with six arcade buttons and a receipt printer for his kids",
+    "description": "u/Nuenni's kids kept repeating six pretend-play games (supermarket, ice cream shop, restaurant, taxi, cinema, table reservation), so he built a real register from six arcade buttons, a thermal receipt printer and a Raspberry Pi Zero. With zero prior wiring experience, he had Claude Code write the six receipt generators and the GPIO wiring over SSH on the Pi itself. Claude Code diagnosed a dead-button RuntimeError by abandoning RPi.GPIO interrupt edge detection for a 20 ms poll loop, then fixed giant double-width receipts by reading the installed python-escpos source and discovering that set() only resets size when a size flag is True. A secret two-button combo prints a coffee order for his wife. Open source as LePetitCafe with a browser demo.",
+    "category": "Personal Life",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://www.reddit.com/r/ClaudeCode/comments/1vumt4z/i_built_a_hardware_project_for_my_kids_entirely/",
+    "sourceName": "Reddit (r/ClaudeCode)",
+    "slug": "a-dad-builds-a-pretend-play-cash-register-with-six-arcade-buttons-and-a-receipt-printer-for-his-kids",
+    "niche": true,
+    "added": "2026-11-06"
+  },
+  {
+    "title": "Pointify: retro analog voltmeters on the desk that twitch for Claude rate limits and Claude Code token burn",
+    "description": "luftaquila got tired of refreshing claude.ai/settings/usage, so he wired up to seven 91C4 DC analog voltmeters as Pointify. A Tauri desktop app on macOS, Windows or Linux drives a $0.15 CH32X033F8P6 RISC-V board over USB, and each needle can show Claude's 5-hour or weekly limit, Claude Code's daily tokens and cost from local logs, or CPU, GPU, memory, disk and network. He vibe-coded the Rust firmware, the app and an OpenSCAD 3D-printable housing with Claude Code (PCB layout excepted). Firmware, gerbers, BOM, STLs and a gauge-face generator are open source and open hardware.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://github.com/luftaquila/pointify",
+    "sourceName": "GitHub (luftaquila/pointify)",
+    "slug": "pointify-retro-analog-voltmeters-on-the-desk-that-twitch-for-claude-rate-limits-and-claude-code-token-burn",
+    "niche": true,
+    "added": "2026-11-06"
+  },
+  {
+    "title": "A $35 Waveshare AMOLED desk panel that lights orange when Claude Code needs you",
+    "description": "Kenny Abarca Coto bought a Waveshare ESP32-S3-Touch-AMOLED-2.16 after seeing a Codex meeting countdown panel, then had Claude Code write almost all of the firmware and hooks. The 480x480 panel goes orange on Notification and PermissionRequest, blue while thinking, and green when a turn finishes, and a second app counts down to the next Google Calendar meeting with a chime a minute before. Claude Code talked to the device over USB, flashed firmware, tuned volume to 35%, and debug-printed glyph metrics over HTTP when text failed to render. A Python hook in ~/.claude/hooks POSTs to the panel over mDNS as claude-notify.local and must not block more than a second if the panel is unplugged.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://kennyabarcacoto.com/post/claude-code-amoled-arduino-device",
+    "sourceName": "kennyabarcacoto.com",
+    "slug": "a-35-waveshare-amoled-desk-panel-that-lights-orange-when-claude-code-needs-you",
+    "niche": true,
+    "added": "2026-11-06"
+  },
+  {
+    "title": "Casey gives Hermes, Claude and Codex one shared DeskFarm workstation so they stop taking his screen",
+    "description": "Casey (mylifenthestack) was stuck watching TikTok while computer-use agents drove his PC mouse and keyboard. He asked his agents to carve one permanent Shared Workstation out of DeskFarm on his always-on Linux box: a Linux desktop with a signed-in Chrome-style browser, text editor and password-manager autofill. Hermes, the Claude desktop app and the Codex desktop app all got the same remote screenshot/click/type tools pointed at that box instead of his screen. He watches them live in another window, can take over for logins, and only one agent holds the workstation at a time. Coding stays on his PC; browser errands go to the shared desk. A blank-workstation order-form test eventually passed entirely with ordinary clicks after an automation layer stopped swallowing the file picker.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Hermes Agent",
+      "Claude",
+      "OpenAI Codex"
+    ],
+    "source": "https://x.com/mylifenthestack/status/2118541189938819387",
+    "sourceName": "X (@mylifenthestack)",
+    "slug": "casey-gives-hermes-claude-and-codex-one-shared-deskfarm-workstation-so-they-stop-taking-his-screen",
+    "niche": true,
+    "added": "2026-11-06"
+  },
+  {
+    "title": "Hans: a local AI beaver on a Raspberry Pi 5 that answers on a screen with no internet",
+    "description": "vlady (@vlady_nyz), who says they have no clue about hardware, built Hans with Claude Code: a small AI beaver you type to on a keyboard that answers on a screen. It runs Gemma 4 entirely offline on a Raspberry Pi 5, with no internet and no cloud. The MVP was posted with a demo video on 2026-10-20 and later picked up by Tinker News as an offline Raspberry Pi local-AI build.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/vlady_nyz/status/2112615641702408508",
+    "sourceName": "X (@vlady_nyz)",
+    "slug": "hans-a-local-ai-beaver-on-a-raspberry-pi-5-that-answers-on-a-screen-with-no-internet",
+    "niche": true,
+    "added": "2026-11-06"
   }
 ]

@@ -36,4 +36,12 @@ Allow: /
 User-agent: xAI-Bot
 Allow: /
 
+
+# Machine-readable indexes for answer engines (also linked from every page footer / about)
+# Full plain-text index: https://agent-uses.com/llms.txt
+# Full plain-text dataset: https://agent-uses.com/llms-full.txt
+# JSON dataset: https://agent-uses.com/use-cases.json
+# CSV dataset: https://agent-uses.com/use-cases.csv
+# JSON Feed: https://agent-uses.com/feed.json
+# RSS: https://agent-uses.com/rss.xml
 Sitemap: https://agent-uses.com/sitemap-index.xml
