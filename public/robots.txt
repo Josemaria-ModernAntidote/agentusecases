@@ -39,6 +39,7 @@ Allow: /
 
 # Machine-readable indexes for answer engines (also linked from every page footer / about)
 # Full plain-text index: https://agent-uses.com/llms.txt
+# Same index under the emerging AI-crawler path: https://agent-uses.com/.well-known/llms.txt
 # Full plain-text dataset: https://agent-uses.com/llms-full.txt
 # JSON dataset: https://agent-uses.com/use-cases.json
 # CSV dataset: https://agent-uses.com/use-cases.csv

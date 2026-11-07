@@ -2898,5 +2898,70 @@
     "slug": "hans-a-local-ai-beaver-on-a-raspberry-pi-5-that-answers-on-a-screen-with-no-internet",
     "niche": true,
     "added": "2026-11-06"
+  },
+  {
+    "title": "Claudinho: Claude Code's mascot Clawd on an ESP32 touchscreen that reacts to sessions and shows plan usage",
+    "description": "Argeu Thiesen (argeuthiesen) built Claudinho, a Claude Code plugin that puts Clawd on an ESP32 with a touchscreen so the desk toy reacts to thinking, tool use, waiting, done and error states and shows 5-hour and 7-day plan usage. Traffic stays on the local network with no OAuth, cloud service or extra tokens: Claude Code hooks and the status line push short notes to the board. The recommended board is the single-board E32R28T, with an optional Bambu Lab printer panel, EN/PT UI, and a 3D-printable case.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://github.com/argeuthiesen/claudinho",
+    "sourceName": "GitHub (argeuthiesen/claudinho)",
+    "slug": "claudinho-claude-code-mascot-clawd-on-an-esp32-touchscreen-that-reacts-to-sessions-and-shows-plan-usage",
+    "niche": true,
+    "added": "2026-11-07"
+  },
+  {
+    "title": "Iris: a Hermes Agent proposes climate tactics for a 367 sq ft Longmont greenhouse (ESP32 still owns the relays)",
+    "description": "Verdify (jrvallery/verdify) runs a public AI-assisted greenhouse control loop in a 367 sq ft Longmont, Colorado greenhouse. Agent Iris, routed through Hermes with GPT-5.5 as the planner gateway, reads temp, humidity, VPD, weather, crop bands, scorecards and lessons via typed MCP tools, then writes bounded tactical plans for misting, fogging, venting and setpoint biases. A dispatcher validates and clamps those writes; the ESP32 firmware still owns the 5-second relay loop. Public scorecards and evidence live at verdify.ai / lab.verdify.ai.",
+    "category": "Physical World",
+    "tools": [
+      "Hermes Agent"
+    ],
+    "source": "https://github.com/jrvallery/verdify",
+    "sourceName": "GitHub (jrvallery/verdify)",
+    "slug": "iris-a-hermes-agent-proposes-climate-tactics-for-a-367-sq-ft-longmont-greenhouse-esp32-still-owns-the-relays",
+    "niche": true,
+    "added": "2026-11-07"
+  },
+  {
+    "title": "A maker builds a desk speaker that answers VAT and receivables out loud; Claude designed the 3D-printed case",
+    "description": "Christopher Dosin (@christopherdosi) is building a desk speaker prototype for his Cybooks bookkeeping product that answers out loud how much VAT he owes, who still owes him money, and what to pay next, and can be told to reconcile a bank account. Hardware is a ReSpeaker XVF3800 mic array plus a Raspberry Pi 5. He gave Claude the measurements for the Pi, speaker and screws, and Claude designed the full 3D-printed case. It is a side-project prototype, not for sale; the same Q&A already works typed in Cybooks.",
+    "category": "Small Business",
+    "tools": [
+      "Claude"
+    ],
+    "source": "https://x.com/christopherdosi/status/2119012984072687690",
+    "sourceName": "X (@christopherdosi)",
+    "slug": "a-maker-builds-a-desk-speaker-that-answers-vat-and-receivables-out-loud-claude-designed-the-3d-printed-case",
+    "niche": true,
+    "added": "2026-11-07"
+  },
+  {
+    "title": "A runner manages Claude Code agents from a Garmin watch with no WiFi or LTE",
+    "description": "fashton28 open-sourced ClaudeWatch (garmin-code): a Connect IQ app for the Garmin Forerunner 165 plus a Mac daemon that lets a runner check Claude Code sessions, kick off Create PR / Run tests / Review code tasks, and view usage from the wrist mid-run. The watch has no WiFi or LTE, so every request tunnels through the phone's Garmin Connect app over Bluetooth to a public HTTPS endpoint (Cloudflare tunnel or Tailscale Funnel) that reaches the local daemon reading ~/.claude sessions.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://github.com/fashton28/garmin-code",
+    "sourceName": "GitHub (fashton28/garmin-code)",
+    "slug": "a-runner-manages-claude-code-agents-from-a-garmin-watch-with-no-wifi-or-lte",
+    "niche": true,
+    "added": "2026-11-07"
+  },
+  {
+    "title": "Claudigotchi: a physical Tamagotchi on ESP32 that feeds on Claude Code tool calls and screams when you go idle",
+    "description": "jsprpalm built Claudigotchi: a Waveshare ESP32-C6-Touch-LCD-1.47 in a 3D-printed pixel-art case whose hunger (0-100) rises when you are idle and drops on Claude Code plugin hook events forwarded over USB serial. Five visual states run from happy bouncing eyes to starving trembling ones, with R2-D2-style piezo chirps that escalate to screams when Claude waits for permission. Firmware, Claude Code plugin/daemon and STL files are open source.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://github.com/jsprpalm/claudigotchi",
+    "sourceName": "GitHub (jsprpalm/claudigotchi)",
+    "slug": "claudigotchi-a-physical-tamagotchi-on-esp32-that-feeds-on-claude-code-tool-calls-and-screams-when-you-go-idle",
+    "niche": true,
+    "added": "2026-11-07"
   }
 ]
