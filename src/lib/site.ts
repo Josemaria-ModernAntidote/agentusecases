@@ -87,11 +87,13 @@ export const compareFaq = (): [string, string][] => {
 // links to, so readers and answer engines can tell community reports (posts, repos, blogs)
 // apart from vendor case studies and press coverage, and cite the right kind of evidence.
 const VENDOR = ['cognition.ai', 'devin.ai', 'claude.com', 'anthropic.com', 'openai.com', 'cursor.com', 'x.ai', 'hermes-agent.nousresearch.com', 'manus.im'];
+const FORUM = ['reddit.com', 'old.reddit.com', 'hackster.io'];
 const PRESS = ['thedrum.com', 'gizmodo.com', 'inman.com', 'bbc.co.uk', 'theverge.com', 'newclawtimes.com'];
 export const sourceTypes = [
   { key: 'x', label: 'Posts on X', blurb: 'Reports posted on X, mostly by the people who set up or use the agent.' },
   { key: 'github', label: 'GitHub repositories', blurb: 'Open source projects, skills and curated lists with code or setup notes.' },
   { key: 'hn', label: 'Hacker News (Show HN)', blurb: 'Projects their builders posted to Hacker News for discussion.' },
+  { key: 'forum', label: 'Reddit and community forums', blurb: 'First-hand posts on Reddit, maker sites like Hackster.io and hobby forums.' },
   { key: 'blog', label: 'Blogs and newsletters', blurb: 'Write-ups on personal sites, small company blogs, Medium and Substack.' },
   { key: 'press', label: 'News and media', blurb: 'Stories reported by journalists and publications.' },
   { key: 'vendor', label: 'Vendor case studies and docs', blurb: 'Customer stories, guides and docs published by the companies that make the agents.' },
@@ -101,17 +103,23 @@ export const sourceType = (u: string) => {
   if (h === 'x.com' || h === 'twitter.com') return 'x';
   if (h === 'github.com') return 'github';
   if (h === 'news.ycombinator.com') return 'hn';
+  if (FORUM.includes(h) || h.startsWith('forum.') || h.endsWith('.reddit.com')) return 'forum';
   if (VENDOR.includes(h)) return 'vendor';
   if (PRESS.includes(h)) return 'press';
   return 'blog';
 };
+// Typed schema.org node for an entry's original source, so answer engines can see whether a
+// claim rests on a social post, a forum thread, a code repo, a blog, press or a vendor page.
+const SOURCE_LD: Record<string, string> = { x: 'SocialMediaPosting', github: 'SoftwareSourceCode', hn: 'DiscussionForumPosting', forum: 'DiscussionForumPosting', blog: 'BlogPosting', press: 'NewsArticle', vendor: 'WebPage' };
+export const sourceLabel = (u: string) => sourceTypes.find(s => s.key === sourceType(u))!.label;
+export const sourceLd = (d: { source: string; sourceName: string }) => ({ '@type': SOURCE_LD[sourceType(d.source)] ?? 'CreativeWork', name: d.sourceName, url: d.source });
 export const bySource = () => sourceTypes.map(s => ({ ...s, list: data.filter(d => sourceType(d.source) === s.key) }));
 export const sourcesFaq = (): [string, string][] => {
   const g = bySource(); const n = (k: string) => g.find(x => x.key === k)!.list.length;
-  const firstHand = n('x') + n('github') + n('hn') + n('blog');
+  const firstHand = n('x') + n('github') + n('hn') + n('forum') + n('blog');
   return [
     ['Where do these AI agent use cases come from?', `All ${data.length} entries link to a public source: ${g.filter(x => x.list.length).map(x => `${x.label} (${x.list.length})`).join(', ')}.`],
-    ['How many come from the community rather than vendor marketing?', `${firstHand} of ${data.length} come from community sources (posts on X, GitHub, Hacker News, blogs and newsletters). ${n('vendor')} are vendor case studies or docs and ${n('press')} are press stories.`],
+    ['How many come from the community rather than vendor marketing?', `${firstHand} of ${data.length} come from community sources (posts on X, GitHub, Hacker News, Reddit and community forums, blogs and newsletters). ${n('vendor')} are vendor case studies or docs and ${n('press')} are press stories.`],
     ['Which source type has the most niche examples?', (() => { const r = g.map(x => [x.label, x.list.filter(d => d.niche).length] as const).sort((a, b) => b[1] - a[1]); return `${r[0][0]}, with ${r[0][1]} niche entries, followed by ${r.slice(1, 3).map(([l, c]) => `${l} (${c})`).join(' and ')}.`; })()],
   ];
 };

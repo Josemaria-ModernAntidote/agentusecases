@@ -2963,5 +2963,58 @@
     "slug": "claudigotchi-a-physical-tamagotchi-on-esp32-that-feeds-on-claude-code-tool-calls-and-screams-when-you-go-idle",
     "niche": true,
     "added": "2026-11-07"
+  },
+  {
+    "title": "A landscape contractor turns his North Carolina attic into a satellite ground station with Claude Code",
+    "description": "Tommy Lather, a landscape contractor who says he is no engineer, filled his attic with SDR receivers and homemade antennas (a copper V-dipole for METEOR weather satellites, a QFH, M2 eggbeaters for the ISS) plus an ESP32-controlled 8-port antenna switch. He built Starlab, the Python software that runs it, pairing with Claude Code: it tracks every receiver's RF chain, predicts METEOR and ISS passes and books them on the right SDR, records raw IQ, decodes METEOR images through SatDump, and posts results to Slack and passes to Google Calendar. ISS SSTV decoding is in progress, and the end goal is an agent on his DGX Spark that flips the antenna switch and scans on its own. The repo is public.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://www.hackster.io/tommy-lather/starlab-observatory-6b2d6f",
+    "sourceName": "Hackster.io (Tommy Lather)",
+    "slug": "a-landscape-contractor-turns-his-north-carolina-attic-into-a-satellite-ground-station-with-claude-code",
+    "niche": true,
+    "added": "2026-11-08"
+  },
+  {
+    "title": "A parent has a kid write the spec for a pretend phone, and Claude Code builds it on an M5Stack Tab5",
+    "description": "Maruta (@marurur), posting in Japanese, says kids want something phone-like, but a real phone is too early and phone-style toys get boring fast. So the child wrote a design document for the apps they wanted, Claude Code read it, and implemented the apps on an M5Stack Tab5 touchscreen. It was a huge hit at home: he named it the family's toy of the year for 2026. The post drew around 6,000 likes and a long Hatena Bookmark discussion in Japan.",
+    "category": "Personal Life",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/marurur/status/2118127326072602681",
+    "sourceName": "X (@marurur)",
+    "slug": "a-parent-has-a-kid-write-the-spec-for-a-pretend-phone-and-claude-code-builds-it-on-an-m5stack-tab5",
+    "niche": true,
+    "added": "2026-11-08"
+  },
+  {
+    "title": "A dad builds a chore-paying Tamagotchi on an M5Stack FIRE so his 5-year-old gets into pyjamas faster",
+    "description": "A Reddit dad (u/Sendicate) who says he is not a dev wanted his five-year-old to get dressed faster, so he built a Tamagotchi on an M5Stack FIRE. Claude scoped the game, he did the planning in Codex, and Claude Code built it overnight. The kids got 90s Game Boy style characters that look like them, 15 mini games (penalty kicks, a maths game, a tilt-to-eat-fish shark game using the accelerometer) and coins earned for real chores like putting dishes away or beating a 60-second get-dressed timer, spent in an in-game store.",
+    "category": "Personal Life",
+    "tools": [
+      "Claude Code",
+      "OpenAI Codex"
+    ],
+    "source": "https://www.reddit.com/r/M5Stack/comments/1w34t2b/i_built_a_tamagotchi_for_my_5_yo_kid_to_help_him/",
+    "sourceName": "Reddit (r/M5Stack)",
+    "slug": "a-dad-builds-a-chore-paying-tamagotchi-on-an-m5stack-fire-so-his-5-year-old-gets-into-pyjamas-faster",
+    "niche": true,
+    "added": "2026-11-08"
+  },
+  {
+    "title": "Nous Girl: a StackChan desk robot with a Hermes Agent brain that dances, DJs, shows memes and sends email",
+    "description": "Alex C. (@alexcovo_eth) built a Nous Girl tribute on an M5Stack StackChan (CoreS3, ESP32-S3) for fun: a little desk robot that talks, listens, makes faces, dances, plays music, has DJ and rave modes, shows memes and can send email. The open-source firmware is xiaozhi-based; first boot can use the official xiaozhi cloud with no server, while a self-hosted server adds the extras and a Hermes Agent brain for memory and skills. Voice uses Gradium TTS, Ollama can supply a local LLM, and the repo includes the robot's SOUL.MD persona notes.",
+    "category": "Physical World",
+    "tools": [
+      "Hermes Agent"
+    ],
+    "source": "https://x.com/alexcovo_eth/status/2115689635158307269",
+    "sourceName": "X (@alexcovo_eth)",
+    "slug": "nous-girl-a-stackchan-desk-robot-with-a-hermes-agent-brain-that-dances-djs-shows-memes-and-sends-email",
+    "niche": true,
+    "added": "2026-11-08"
   }
 ]
