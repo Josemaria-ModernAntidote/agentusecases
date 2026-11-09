@@ -3016,5 +3016,45 @@
     "slug": "nous-girl-a-stackchan-desk-robot-with-a-hermes-agent-brain-that-dances-djs-shows-memes-and-sends-email",
     "niche": true,
     "added": "2026-11-08"
+  },
+  {
+    "title": "A smart-home tinkerer lets Claude Code drive his iPhone to delete 170 dead devices from the Alexa app, one tap at a time",
+    "description": "Marcos Placona moved his Philips Hue bulbs into Zigbee2MQTT and found Home Assistant had been exposing 129 devices to Alexa for years, from radiator valve Identify buttons to a tumble dryer child lock. Fixing Home Assistant took minutes, but the iOS Alexa app has no bulk delete. He installed the phone-harness plugin from the Hermes plugin catalog, paired iPhone Mirroring on a Mac mini and let Claude Code, chatting through T3, screenshot the phone, read the text and tap. The rules that made it work were boring: only touch rows marked unresponsive, only delete if the settings page says via Home Assistant, never touch an Echo, log every deletion and skip anything unsure. Once settled it removed a device about every 10 seconds; the surprise was roughly 52 million tokens, mostly from him asking for progress updates.",
+    "category": "Personal Life",
+    "tools": [
+      "Claude Code",
+      "Hermes Agent"
+    ],
+    "source": "https://x.com/marcos_placona/status/2119544264686223516",
+    "sourceName": "X (@marcos_placona)",
+    "slug": "a-smart-home-tinkerer-lets-claude-code-drive-his-iphone-to-delete-170-dead-devices-from-the-alexa-app-one-tap-at-a-time",
+    "niche": true,
+    "added": "2026-11-09"
+  },
+  {
+    "title": "When a Raspberry Pi SD card dies, Claude Code ports a home LED message board to a cheap ESP32 with over-the-air updates",
+    "description": "A maker in Japan (@mtsnrtkhr) had a home LED scrolling sign running on a Raspberry Pi until its SD card failed. Instead of rebuilding the Pi, Claude Code looked into it, said the board could run on an ESP32 with C++ code, rewrote the original Python logic for the microcontroller and even added OTA (over-the-air) updates. He says the whole fix cost about the price of the SD card.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/mtsnrtkhr/status/2119459315543318722",
+    "sourceName": "X (@mtsnrtkhr)",
+    "slug": "when-a-raspberry-pi-sd-card-dies-claude-code-ports-a-home-led-message-board-to-a-cheap-esp32-with-over-the-air-updates",
+    "niche": true,
+    "added": "2026-11-09"
+  },
+  {
+    "title": "MousePods: Claude Code helps unlock AirPods 3 head tracking on Linux so your head moves the mouse",
+    "description": "A developer wanted to use AirPods 3 motion sensors as a mouse on Linux, but the sensors never showed up. Working with Claude Code as a pair engineer in one afternoon, Claude ran the Bluetooth probes and about 300 failed attempts, sent background agents through LibrePods, a Wireshark dissector, clone firmware and iOS framework pseudocode, and found the cause: at Linux's default L2CAP MTU of 672 the sensors are not announced at all, but at 2582 (the value iOS uses) they appear. The open-source result documents Apple's RemoteHID protocol, includes a desktop app and tests, and community contributors have since added head tracking for sim racing games under Proton.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://github.com/starman-tech/mousepods",
+    "sourceName": "GitHub (starman-tech/mousepods)",
+    "slug": "mousepods-claude-code-helps-unlock-airpods-3-head-tracking-on-linux-so-your-head-moves-the-mouse",
+    "niche": true,
+    "added": "2026-11-09"
   }
 ]
