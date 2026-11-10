@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { items, agents, cats, slugify, crumbs, itemList, NAME, lastUpdated, clip, hubFaq, faqLd } from '../../lib/site';
+import { items, agents, cats, slugify, crumbs, itemList, NAME, lastUpdated, clip, hubFaq, faqLd, AGENT_INFO, agentLd } from '../../lib/site';
 export function getStaticPaths() { return agents.map(a => ({ params: { agent: slugify(a) }, props: { a } })); }
 const { a } = Astro.props;
 const list = items.filter(d => d.tools.includes(a));
@@ -9,12 +9,14 @@ const path = `/agents/${slugify(a)}/`;
 const title = `${a} use cases: ${list.length} real examples | ${NAME}`;
 const desc = clip(`${list.length} real, source-linked ${a} use cases across ${lc.join(', ')}.`);
 const qa = hubFaq('agent', a, list);
-const ld = [itemList(`${a} use cases`, list), crumbs([['Home', '/'], ['Agents', '/agents/'], [a, path]]), faqLd(qa)];
+const info = AGENT_INFO[a];
+const ld = [itemList(`${a} use cases`, list), crumbs([['Home', '/'], ['Agents', '/agents/'], [a, path]]), faqLd(qa), ...(agentLd(a) ? [agentLd(a)] : [])];
 ---
 <Base title={title} desc={desc} path={path} ld={ld} md={`/agents/${slugify(a)}.md`} feed={[`/agents/${slugify(a)}/rss.xml`, `${a} use cases RSS feed`]}>
 <p class="bc"><a href="/">Home</a> › <a href="/agents/">Agents</a> › {a}</p>
 <h1>{a} use cases</h1>
 <p class="lead">This directory lists <b>{list.length}</b> documented {a} use case{list.length === 1 ? '' : 's'} across {lc.length} categor{lc.length === 1 ? 'y' : 'ies'} ({lc.join(', ')}), each linked to its original public source. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>. <a href={`/agents/${slugify(a)}.md`} type="text/markdown">Markdown version</a> · <a href={`/agents/${slugify(a)}/rss.xml`} type="application/rss+xml">RSS feed</a>.</p>
+{info && <p id="what-is"><b>What is {a}?</b> {a} is {info.what}. Made by {info.maker}. <a href={info.url} rel="noopener">Official page ↗</a></p>}
 {lc.map(c => <section><h2><a href={`/categories/${slugify(c)}/`}>{c}</a></h2><ul class="l">{list.filter(d => d.category === c).map(d => <li><a href={`/use-cases/${d.slug}/`}><b>{d.title}</b></a>: {d.description}</li>)}</ul></section>)}
 <section><h2>Quick answers</h2>{qa.map(([q, ans]) => <><h3>{q}</h3><p>{ans}</p></>)}</section>
 </Base>

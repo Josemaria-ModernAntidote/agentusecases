@@ -23,6 +23,27 @@ export const relatedTo = (d: (typeof data)[number], n = 6) => {
 export const abs = (p: string) => new URL(p, SITE).href;
 export const crumbs = (list: [string, string][]) => ({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: list.map(([name, p], i) => ({ '@type': 'ListItem', position: i + 1, name, item: abs(p) })) });
 export const itemList = (name: string, list: typeof data) => ({ '@context': 'https://schema.org', '@type': 'ItemList', name, numberOfItems: list.length, itemListElement: list.map((d, i) => ({ '@type': 'ListItem', position: i + 1, name: d.title, url: abs(`/use-cases/${d.slug}/`) })) });
+// Short, factual "What is <agent>?" profiles (maker plus official page, checked 2026-11-10) so answer
+// engines get a definition next to the real examples. Shown on agent hubs, /agents/, hub Markdown,
+// llms.txt and as SoftwareApplication JSON-LD. Unknown agents simply get no profile.
+export const AGENT_INFO: Record<string, { maker: string; what: string; url: string }> = {
+  'Claude Code': { maker: 'Anthropic', what: "Anthropic's agentic coding tool for the terminal and IDE; it reads a codebase, edits files and runs commands", url: 'https://claude.com/product/claude-code' },
+  'OpenClaw': { maker: 'OpenClaw (open source)', what: 'an open-source personal AI assistant that runs on your own machine and works from WhatsApp, Telegram or other chat apps', url: 'https://openclaw.ai/' },
+  'Grok Bot': { maker: 'xAI', what: "xAI's always-on AI teammates that each have their own computer and use it the way a person does", url: 'https://x.ai/bot' },
+  'Hermes Agent': { maker: 'Nous Research', what: "Nous Research's free, open-source AI agent with memory and skills, for Mac, Windows and Linux", url: 'https://hermes-agent.nousresearch.com/' },
+  'OpenAI Codex': { maker: 'OpenAI', what: "OpenAI's coding agent, including an open-source version that runs in your terminal", url: 'https://github.com/openai/codex' },
+  'Claude': { maker: 'Anthropic', what: "Anthropic's AI assistant for work, which can hand off tasks, build decks, spreadsheets and prototypes, and run scheduled tasks", url: 'https://claude.com/product/overview' },
+  'Devin': { maker: 'Cognition', what: 'an autonomous AI software engineer that runs parallel coding agents in the cloud', url: 'https://devin.ai/' },
+  'Cursor': { maker: 'Anysphere', what: 'an AI code editor whose agents turn ideas into code and take handed-off tasks', url: 'https://cursor.com/' },
+  'Meta Muse': { maker: 'Meta', what: "Meta's personal AI agent, launched in September 2026, that runs on its own secure virtual machine and works across connected apps, free with a usage limit", url: 'https://ai.meta.com/muse/' },
+  'Manus': { maker: 'Manus', what: 'a general-purpose AI agent that executes tasks and automates workflows rather than only answering', url: 'https://manus.im/' },
+  'Gemini': { maker: 'Google', what: "Google's AI assistant for writing, planning, research and other tasks", url: 'https://gemini.google.com/' },
+  'Claude Cowork': { maker: 'Anthropic', what: 'an Anthropic agent for knowledge work that you can start at your desk, check from your phone and schedule to run daily, weekly or monthly', url: 'https://claude.com/product/cowork' },
+  'ChatGPT': { maker: 'OpenAI', what: "OpenAI's AI assistant", url: 'https://chatgpt.com/' },
+  'Claude Agent SDK': { maker: 'Anthropic', what: "Anthropic's SDK for building production AI agents with Claude Code as a library", url: 'https://code.claude.com/docs/en/agent-sdk/overview' },
+};
+export const agentWhat = (a: string) => { const i = AGENT_INFO[a]; return i ? `${a} is ${i.what}. Made by ${i.maker}. Official page: ${i.url}` : ''; };
+export const agentLd = (a: string) => { const i = AGENT_INFO[a]; return i ? { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: a, description: `${a} is ${i.what}.`, applicationCategory: 'AI agent', url: abs(`/agents/${slugify(a)}/`), sameAs: i.url, creator: { '@type': 'Organization', name: i.maker } } : null; };
 // Hub page Q&A: short, factual answers built from the data so answer engines can quote a hub
 // (an agent or a category) directly. Rendered on the page and emitted as FAQPage JSON-LD.
 const newest = (list: typeof data) => [...list].filter(d => d.added).sort((a, b) => b.added.localeCompare(a.added));
@@ -31,7 +52,9 @@ export const hubFaq = (kind: 'agent' | 'category', label: string, list: typeof d
   const other = kind === 'agent' ? [...new Set(list.map(d => d.category))] : [...new Set(list.flatMap(d => d.tools))];
   const niche = newest(list.filter(d => d.niche)); const recent = newest(list);
   const subject = kind === 'agent' ? `${label} use cases` : `${label} AI agent use cases`;
-  const qa: [string, string][] = [[`What are real examples of ${subject}?`, `This directory lists ${list.length} documented ${subject}, ${kind === 'agent' ? 'in' : 'using'} ${other.length} ${kind === 'agent' ? (other.length === 1 ? 'category' : 'categories') : (other.length === 1 ? 'agent' : 'agents')} (${other.join(', ')}). Recent examples: ${names(recent)}.`]];
+  const qa: [string, string][] = [];
+  if (kind === 'agent' && AGENT_INFO[label]) qa.push([`What is ${label}?`, agentWhat(label)]);
+  qa.push([`What are real examples of ${subject}?`, `This directory lists ${list.length} documented ${subject}, ${kind === 'agent' ? 'in' : 'using'} ${other.length} ${kind === 'agent' ? (other.length === 1 ? 'category' : 'categories') : (other.length === 1 ? 'agent' : 'agents')} (${other.join(', ')}). Recent examples: ${names(recent)}.`]);
   if (niche.length) qa.push([`What are the most unusual ${subject}?`, `${niche.length} of the ${list.length} are tagged niche, meaning individuals, hobbies, small operators or odd experiments rather than enterprise demos. For example: ${names(niche)}.`]);
   if (recent[0]) qa.push([`When was the newest ${subject.replace(/s$/, '')} added?`, `The newest one, "${recent[0].title}", was added on ${recent[0].added}.`]);
   qa.push([`Where do these examples come from?`, `Every entry links to its original public source, such as a post on X, a blog, a GitHub repository or a published case study. Entries without a public source are not listed.`]);
@@ -44,6 +67,7 @@ export const hubMd = (kind: 'agent' | 'category', label: string, list: typeof da
   const groups = kind === 'agent' ? [...new Set(list.map(d => d.category))] : [...new Set(list.flatMap(d => d.tools))];
   const subject = kind === 'agent' ? `${label} use cases` : `${label} AI agent use cases`;
   let t = `# ${subject}\n\n> ${list.length} real, source-linked ${subject} from ${NAME}. Last updated ${lastUpdated}.\n\n- Web page: ${abs(path)}\n- ${kind === 'agent' ? 'Categories' : 'Agents'}: ${groups.join(', ')}\n\n`;
+  if (kind === 'agent' && AGENT_INFO[label]) t += `## What is ${label}?\n\n${agentWhat(label)}\n\n`;
   const sections = kind === 'agent' ? groups.map(g => [g, list.filter(d => d.category === g)] as const) : [['All entries', list] as const];
   for (const [g, l] of sections) {
     t += `## ${g}\n\n`;

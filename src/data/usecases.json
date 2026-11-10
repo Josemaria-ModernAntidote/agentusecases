@@ -3056,5 +3056,71 @@
     "slug": "mousepods-claude-code-helps-unlock-airpods-3-head-tracking-on-linux-so-your-head-moves-the-mouse",
     "niche": true,
     "added": "2026-11-09"
+  },
+  {
+    "title": "A Tesla owner's Grok Bot spots a $222.20 coffee shop typo on his card and gets him a $200 refund (plus a croissant)",
+    "description": "While his car was driving itself, Omar Ouqfi asked Grok Bot to review his credit card account for anything he might have missed. It flagged a $222.20 charge at a coffee shop from the previous February that was most likely a typo for $22.20, which he had not noticed because he paid by tap. Grok Bot found the email address of that specific location and drafted a message with all the details. The next day the owner wrote back apologizing and confirming the error, and when he went to pick up the $200 refund the owner offered him a coffee and an almond croissant.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/OmarOuqfi/status/2119172921813815684",
+    "sourceName": "X (@OmarOuqfi)",
+    "slug": "a-tesla-owner-s-grok-bot-spots-a-222-20-coffee-shop-typo-on-his-card-and-gets-him-a-200-refund-plus-a-croissant",
+    "niche": true,
+    "added": "2026-11-10"
+  },
+  {
+    "title": "Cat House: a Hermes agent called Hermesa keeps a Ukrainian couple's family budget, learning from 100 hand-labeled payments",
+    "description": "Danylo Vorvul and his wife run their shared budget, Cat House, in the open-source Actual app, with his own scripts pulling transactions from five bank accounts every day. He labeled 100 transactions by hand and his Hermes Agent, Hermesa, labeled the rest from his logic. For payments it does not recognize it searches the web and the map, so a local Ukrainian grocery shop gets found on a map and filed under Groceries; anything still unclear goes into an Obsidian note for a weekly review. Every confirmed answer becomes an Actual rule (194 so far), a second agent messages him on Telegram only when they are over plan, and a monthly agent drafts next month's budget and reminds him about family gifts.",
+    "category": "Personal Life",
+    "tools": [
+      "Hermes Agent"
+    ],
+    "source": "https://x.com/DanyloVorvul/status/2119040306381222329",
+    "sourceName": "X (@DanyloVorvul, article)",
+    "slug": "cat-house-a-hermes-agent-called-hermesa-keeps-a-ukrainian-couple-s-family-budget-learning-from-100-hand-labeled-payments",
+    "niche": true,
+    "added": "2026-11-10"
+  },
+  {
+    "title": "Mas Oller: a family vineyard in Catalonia logs sulfur treatments by voice note to a Hermes agent and gets nightly vine infection risk",
+    "description": "Mas Oller is a family farm in the Baix Penedès with a vineyard, vegetable garden and fruit trees shared by several families who did not want another app. Barcelona consultant Hug Prat set up a Hermes agent with its own Discord server and a channel per area. The farm's Ecowitt weather station feeds Home Assistant and InfluxDB (736,005 data points), and every night it computes four agronomic indicators, including infection risk for the vines. Emilio, who looks after the vineyard, sends a voice note in Catalan like \"today I treated the five rows with sulfur, two kilos\" and it is logged with date, product and author; a leaf photo gets two model opinions on pests. It tracks 153 Merlot vines, splits shared expenses between families and runs locally.",
+    "category": "Physical World",
+    "tools": [
+      "Hermes Agent"
+    ],
+    "source": "https://hugoprat.com/en/projects/farm-run-in-catalan/",
+    "sourceName": "Hug Prat (project write-up)",
+    "slug": "mas-oller-a-family-vineyard-in-catalonia-logs-sulfur-treatments-by-voice-note-to-a-hermes-agent-and-gets-nightly-vine-infection-risk",
+    "niche": true,
+    "added": "2026-11-10"
+  },
+  {
+    "title": "A holiday rental host roots three LG TVs so they greet each guest by name in 6 languages, built with Claude Code",
+    "description": "Kevin Theo's three LG TVs in his holiday rental now greet each guest by name in six languages with a WiFi QR code, the weather and local tips, running on the TVs themselves after rooting them with the webOS Homebrew project (LG no longer updates that firmware). After each stay a Raspberry Pi resets each TV in 2 to 3 minutes and logs out of Netflix, YouTube and Prime Video; Netflix stayed logged in until its hidden PlayReady store was wiped too. Claude Code wrote the code while Codex and other models reviewed it, and the public version got 38 review findings, 29 confirmed and fixed with a failing test first. He keeps the rooted TVs on a network guests cannot reach and open-sourced the template.",
+    "category": "Small Business",
+    "tools": [
+      "Claude Code",
+      "OpenAI Codex"
+    ],
+    "source": "https://x.com/kevintheo/status/2119721007988593136",
+    "sourceName": "X (@kevintheo)",
+    "slug": "a-holiday-rental-host-roots-three-lg-tvs-so-they-greet-each-guest-by-name-in-6-languages-built-with-claude-code",
+    "niche": true,
+    "added": "2026-11-10"
+  },
+  {
+    "title": "A Redditor has Claude Code build a 3D sailing sim, then makes frontier AI models race boats in it",
+    "description": "A Reddit user had Claude Code write essentially all of a sailing simulator, including boat physics, wind, 3D water and coastline, and the harness that lets AI models sail, while he directed and checked the results. Every five seconds each model gets 23 raw numbers (heading, speed, wind, where the next mark is) and sets its own helm and sails with no sailing tips, and the sim pauses while a model thinks so slow ones are not punished. Opus, GPT-6 Astra, Gemini 4 Argon and, for fun, the small Qwen3.5-9B raced; he reports Gemini 4 Argon won at $0.78 per run versus $3.58 for GPT-6 Astra.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://www.reddit.com/r/ClaudeAI/comments/1xpij9t/i_built_a_sailing_sim_with_claude_code_and_made/",
+    "sourceName": "Reddit (r/ClaudeAI)",
+    "slug": "a-redditor-has-claude-code-build-a-3d-sailing-sim-then-makes-frontier-ai-models-race-boats-in-it",
+    "niche": true,
+    "added": "2026-11-10"
   }
 ]
