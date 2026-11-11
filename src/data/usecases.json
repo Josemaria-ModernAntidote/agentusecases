@@ -3122,5 +3122,70 @@
     "slug": "a-redditor-has-claude-code-build-a-3d-sailing-sim-then-makes-frontier-ai-models-race-boats-in-it",
     "niche": true,
     "added": "2026-11-10"
+  },
+  {
+    "title": "A family's Grok Bot runs the logistics of a week-long Tesla road trip from Munich to Disneyland Paris, calling the hotel gate after 10 p.m.",
+    "description": "Felipe Salazar made Grok Bot the full-time travel assistant for a week driving Munich, Nancy, Reims, Disneyland Paris, Paris and Colmar with his wife, an 8-year-old and a baby. It built one live day-by-day page with the route, Supercharger stops and links, and emailed his wife plans and lodging shortlists in Spanish (she booked from them). Weeks earlier it had emailed the Nancy hotel in French and learned reception closes at 21:00, so when the family arrived after 10 p.m. to a shut gate, Grok in the Tesla called the night staff with the number the bot had saved. It also booked a Michelin-listed brasserie in Reims in French with a high chair, pushed the time back twice, arranged a key-safe check-in in Colmar after a rainy delay, and checked his inbox twice a day, pinging him only for decisions.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/PipeSalazar/status/2120296660714598788",
+    "sourceName": "X (@PipeSalazar)",
+    "slug": "a-family-s-grok-bot-runs-the-logistics-of-a-week-long-tesla-road-trip-from-munich-to-disneyland-paris-calling-the-hotel-gate-after-10-p-m",
+    "niche": true,
+    "added": "2026-11-11"
+  },
+  {
+    "title": "A salon owner's Grok Bot turns unplayable .DAV CCTV footage of a vandal into a slowed, zoomed clip, and the culprit comes forward",
+    "description": "Someone ripped the sign off Michael Fenech's wife's beauty salon on a Saturday evening, and the building owner sent CCTV footage in a .DAV format her iPhone could not play. She gave the file to her Grok Bot chief of staff with one prompt asking it to make the video watchable, slow it down, zoom in and enhance it. The bot converted it to MP4, kept the original untouched as evidence, slowed it to half speed and zoomed in on the moment of the damage, producing a clip they could share with police. After they posted it on social media, the person responsible came forward, admitted it and offered to fix the sign.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/Michael_Fenech_/status/2120237053661098066",
+    "sourceName": "X (@Michael_Fenech_)",
+    "slug": "a-salon-owner-s-grok-bot-turns-unplayable-dav-cctv-footage-of-a-vandal-into-a-slowed-zoomed-clip-and-the-culprit-comes-forward",
+    "niche": true,
+    "added": "2026-11-11"
+  },
+  {
+    "title": "A man rebuilds the horse chestnut tree outside his 1984 Riga apartment as a browser game with Claude Code",
+    "description": "Robert Ioffe grew up on the third floor of a grey building at 78 Engelsa iela in Riga, Latvia, looking out at a horse chestnut taller than the building. With Claude Code he rebuilt the place as Kashtan, a single HTML file in Three.js where you can walk the gravel road, climb the tree, lie under it at night or sit at his old window, and watch it go through the seasons: snow, white candles in May, birds in summer, chestnuts falling in October. His room is there with light-blue wallpaper, an Elektronika calculator and Uspensky's \"Post Machine\" book, which links to his Post Machine simulator. The tree, textures, rain, icicles and music are all generated in code, and the neighbourhood cat still turns up.",
+    "category": "Creative & Building",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/RobertIoffe/status/2120199237455728741",
+    "sourceName": "X (@RobertIoffe)",
+    "slug": "a-man-rebuilds-the-horse-chestnut-tree-outside-his-1984-riga-apartment-as-a-browser-game-with-claude-code",
+    "niche": true,
+    "added": "2026-11-11"
+  },
+  {
+    "title": "A dad's Grok Bot phones three doctor's offices to check they take his new insurance and what shots his kids need to register",
+    "description": "During his company's open enrollment, X user @Conner173 picked a new insurance plan with Grok Bot's help but did not know which local clinics would accept it. His agent called the top three doctor's offices itself, worked its way through a phone directory, and talked with a live office clerk for 4 minutes to confirm the insurance was accepted and which vaccinations his children would need to register as new patients; he listened to the call recording afterward. The same week he set up a Home and Garden agent that helped him pick lawn products for shady dirt patches while standing in Lowe's and troubleshoot his outdoor flood lights, plus a \"Coach K\" agent that plans at-home youth basketball drills for his son.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/Conner173/status/2119896705378185275",
+    "sourceName": "X (@Conner173)",
+    "slug": "a-dad-s-grok-bot-phones-three-doctor-s-offices-to-check-they-take-his-new-insurance-and-what-shots-his-kids-need-to-register",
+    "niche": true,
+    "added": "2026-11-11"
+  },
+  {
+    "title": "A dad's Grok Bot catches a family phone plan about to auto-renew, logs in, and cuts the bill by $120 a year",
+    "description": "X user @Texas_Twins_Dad got a heads-up from Grok Bot that his family phone plan was about to auto-renew, and told it to log in and look into it. It found both lines paying for 23GB while he had used 10.5GB that cycle and his wife 14GB, compared every plan and looked for extra discounts, then recommended a 17GB 12-month plan, dropping each line from $75 to $60 every 3 months. He approved and the bot made the change in the carrier account itself, saving about $120 a year.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/Texas_Twins_Dad/status/2119933000116822379",
+    "sourceName": "X (@Texas_Twins_Dad)",
+    "slug": "a-dad-s-grok-bot-catches-a-family-phone-plan-about-to-auto-renew-logs-in-and-cuts-the-bill-by-120-a-year",
+    "niche": true,
+    "added": "2026-11-11"
   }
 ]

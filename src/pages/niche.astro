@@ -14,7 +14,7 @@ const ld = [
   crumbs([['Home', '/'], ['Niche and surprising', path]])
 ];
 ---
-<Base title={title} desc={desc} path={path} ld={ld}>
+<Base title={title} desc={desc} path={path} ld={ld} md="/niche.md">
 <p class="bc"><a href="/">Home</a> › Niche and surprising</p>
 <h1>Niche and surprising AI agent use cases</h1>
 <p class="lead">These <b>{list.length}</b> entries are the unusual ones: real people using {ag.map((a, i) => <>{i ? ', ' : ''}<a href={`/agents/${slugify(a)}/`}>{a}</a></>)} for hobbies, family life, farms and small shops, hardware hacks and odd experiments, not enterprise demos. Every one links to its original public source. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>.</p>
