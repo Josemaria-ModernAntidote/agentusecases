@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>AI Agent Use Cases</ShortName>
+  <Description>Search real AI agent use cases (Claude Code, Grok Bot, OpenClaw, Hermes Agent, Codex and more), each linked to its original source.</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Language>en</Language>
+  <Url type="text/html" method="get" template="https://agent-uses.com/?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://agent-uses.com/opensearch.xml"/>
+  <moz:SearchForm>https://agent-uses.com/</moz:SearchForm>
+</OpenSearchDescription>

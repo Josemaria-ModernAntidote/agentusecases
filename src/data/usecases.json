@@ -3187,5 +3187,84 @@
     "slug": "a-dad-s-grok-bot-catches-a-family-phone-plan-about-to-auto-renew-logs-in-and-cuts-the-bill-by-120-a-year",
     "niche": true,
     "added": "2026-11-11"
+  },
+  {
+    "title": "A man's Grok Bot phones the Mexican Consulate every day to snag a dual citizenship appointment",
+    "description": "X user @DevinSoto needed a dual citizenship appointment at the Mexican Consulate, but there were no openings and the only way to catch one was to call every day and ask. He handed the daily call to his Grok Bot, which phoned the consulate and asked about scheduling on his behalf. As he put it, \"I don't think the guy even noticed.\"",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/DevinSoto/status/2120690234279268562",
+    "sourceName": "X (@DevinSoto)",
+    "slug": "a-man-s-grok-bot-phones-the-mexican-consulate-every-day-to-snag-a-dual-citizenship-appointment",
+    "niche": true,
+    "added": "2026-11-12"
+  },
+  {
+    "title": "Hermes-Ride puts a Hermes agent inside a motorcycle helmet, with lean angle, speed and G-force as live context",
+    "description": "Martin Lo built Hermes-Ride, a hands-free voice companion for motorcycle riders, as a Hermes Agent plugin. The phone sits on the handlebar mount with a black screen, the helmet headset is the mic and speaker, and saying \"Hey Hermes\" wakes the agent. Wake-word detection and voice activity run on the phone, and the agent hears where you are and how you are riding: speed, heading, lean angle, G and what happened since you last asked. Settings change by simply asking the agent while parked. He demoed it on a real ride.",
+    "category": "Physical World",
+    "tools": [
+      "Hermes Agent"
+    ],
+    "source": "https://github.com/martyllmaccs-hash/Hermes-Ride-hackathon",
+    "sourceName": "GitHub (martyllmaccs-hash/Hermes-Ride-hackathon)",
+    "slug": "hermes-ride-puts-a-hermes-agent-inside-a-motorcycle-helmet-with-lean-angle-speed-and-g-force-as-live-context",
+    "niche": true,
+    "added": "2026-11-12"
+  },
+  {
+    "title": "A creator who doesn't know Blender takes a $15 commission and has Claude Code build the whole animated ramen shop in Python",
+    "description": "X user @NeoNudoAI took a paid commission without knowing Blender: a cozy Japanese ramen shop with a cat chef, his grandma-cat wife as the waitress, falling sakura petals, and a 20-second animation with original music. Claude Code built the entire scene by writing Blender Python. The commission paid $15.",
+    "category": "Creative & Building",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/NeoNudoAI/status/2120855314623046055",
+    "sourceName": "X (@NeoNudoAI)",
+    "slug": "a-creator-who-doesn-t-know-blender-takes-a-15-commission-and-has-claude-code-build-the-whole-animated-ramen-sh",
+    "niche": true,
+    "added": "2026-11-12"
+  },
+  {
+    "title": "A $3 Arduino and Claude Code turn a laptop into a scan tool for a 1994 Jeep Cherokee with no OBD2 port",
+    "description": "Muhammad Zulali's 1994 Jeep Cherokee XJ has no OBD2 port and no scan tool that works with it. He wired three pins of the diagnostic plug to a $3 Arduino Nano and let Claude Code and Codex work on the engine computer for about a week. The agents worked out the protocol, read fault codes and live engine data, logged a full drive, ran the fuel pump on command and even ran code inside the engine computer. He open sourced it as xj-scanner, with an AGENTS.md so a coding agent can walk any 1991 to 1995 Jeep owner through the hookup with a multimeter, and he is upfront that he is not a mechanic and one night drive went wrong.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code",
+      "OpenAI Codex"
+    ],
+    "source": "https://github.com/MZULALI/xj-scanner",
+    "sourceName": "GitHub (MZULALI/xj-scanner)",
+    "slug": "a-3-arduino-and-claude-code-turn-a-laptop-into-a-scan-tool-for-a-1994-jeep-cherokee-with-no-obd2-port",
+    "niche": true,
+    "added": "2026-11-12"
+  },
+  {
+    "title": "A midwife who paid developers $40,000 for an app she didn't like builds her own pregnancy village with Grok Bot",
+    "description": "Charlotte Williams trained as an NHS midwife, delivered more than 1,000 babies, then moved to the US and started My Bump My Baby, bringing ultrasound into the home. After paying one developer $10,000 and a company just over $30,000 and still having no app she liked, she built her own CRM and a 72-page website with AI, and says Grok Bot helped build My Bump Hub, a pregnancy village connecting moms, doulas and midwives. She told the story on The Founder Catalyst podcast.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/MyBumpHub/status/2120168968132456788",
+    "sourceName": "X (@MyBumpHub)",
+    "slug": "a-midwife-who-paid-developers-40-000-for-an-app-she-didn-t-like-builds-her-own-pregnancy-village-with-grok-bot",
+    "niche": true,
+    "added": "2026-11-12"
+  },
+  {
+    "title": "Hermes Pocket: a handheld LoRa radio that keeps talking to a Raspberry Pi agent after the phone loses service",
+    "description": "Artem Kiriya built Hermes Pocket, a touchscreen handheld that reaches his Raspberry Pi hosted Hermes Agent over LoRa radio instead of cell data. When his phone lost service, the connection to his agent did not. The handheld sends short authenticated requests to a USB radio companion, a bridge hands them to a native Hermes gateway plugin, and replies are trimmed for the low-bandwidth link. It handles chat, notes and controls for the home music player, and music commands never become model prompts.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Hermes Agent"
+    ],
+    "source": "https://github.com/AgentMadeThis/hermes-pocket",
+    "sourceName": "GitHub (AgentMadeThis/hermes-pocket)",
+    "slug": "hermes-pocket-a-handheld-lora-radio-that-keeps-talking-to-a-raspberry-pi-agent-after-the-phone-loses-service",
+    "niche": true,
+    "added": "2026-11-12"
   }
 ]

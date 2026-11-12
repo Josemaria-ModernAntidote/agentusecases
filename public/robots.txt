@@ -45,4 +45,5 @@ Allow: /
 # CSV dataset: https://agent-uses.com/use-cases.csv
 # JSON Feed: https://agent-uses.com/feed.json
 # RSS: https://agent-uses.com/rss.xml
+# Site search (OpenSearch): https://agent-uses.com/opensearch.xml
 Sitemap: https://agent-uses.com/sitemap-index.xml
