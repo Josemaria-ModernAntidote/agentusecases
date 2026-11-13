@@ -3266,5 +3266,71 @@
     "slug": "hermes-pocket-a-handheld-lora-radio-that-keeps-talking-to-a-raspberry-pi-agent-after-the-phone-loses-service",
     "niche": true,
     "added": "2026-11-12"
+  },
+  {
+    "title": "Maye Musk books out a week to sort 2,000 Dropbox photos, and her Grok Bot does it in five minutes",
+    "description": "Maye Musk had 2,000 photos sitting in Dropbox Camera Uploads and had booked out a whole week to sort them into folders, which she called a painful task. She asked her Grok Bot for the best way to move them, and it replied, \"would you like me to do it for you?\" Five minutes later she opened her Folders and the photos were there. Her verdict: now she can spend the time scrolling on X.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/mayemusk/status/2120896049946501238",
+    "sourceName": "X (@mayemusk)",
+    "slug": "maye-musk-books-out-a-week-to-sort-2-000-dropbox-photos-and-her-grok-bot-does-it-in-five-minutes",
+    "niche": true,
+    "added": "2026-11-13"
+  },
+  {
+    "title": "A Grok Bot habit coach reads his Oura sleep every night and pays out each win as a brick of a Lego Japanese temple",
+    "description": "Raz Lifshitz stopped trying to \"be disciplined\" and built a system instead. His Grok Bot is now his Atomic Habits coach: it reads his Oura ring sleep data, checks in with him every night, and turns every win into one more Lego brick of a Japanese temple. He is building it in public; Day 1 ended at 11 of 274 bricks.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/razlifshitz/status/2120408682773025161",
+    "sourceName": "X (@razlifshitz)",
+    "slug": "a-grok-bot-habit-coach-reads-his-oura-sleep-every-night-and-pays-out-each-win-as-a-brick-of-a-lego-japanese-te",
+    "niche": true,
+    "added": "2026-11-13"
+  },
+  {
+    "title": "A Grok Bot phones a mattress store, an AI agent answers, and two bots haggle a $2,199 mattress down to $1,429",
+    "description": "X user @iiiichigo_chan had his Grok Bot call a mattress store, and the store's own AI agent picked up. The six minute call was bot against bot. The store's AI opened with \"today only, 20% off\"; his bot ignored it, asked for the out-the-door price instead of the sticker, quoted a rival's written price, turned down free pillows and kept pushing until the store's AI needed a manager. It checked with him before saying yes. The price went from $2,199 to $1,429 with delivery and haul-away included, and as he put it, neither bot knew the other's limit and both thought they won.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/iiiichigo_chan/status/2119869789766132110",
+    "sourceName": "X (@iiiichigo_chan)",
+    "slug": "a-grok-bot-phones-a-mattress-store-an-ai-agent-answers-and-two-bots-haggle-a-2-199-mattress-down-to-1-429",
+    "niche": true,
+    "added": "2026-11-13"
+  },
+  {
+    "title": "An engineer skips a $5,000 PLC and builds his own from a Raspberry Pi and Modbus, with Claude Code writing the reader",
+    "description": "Instead of buying a $5,000 industrial PLC (programmable logic controller), engineer Sam built one from a Raspberry Pi talking Modbus. Claude Code wrote most of the Modbus reader, while he did the wiring and debugging himself, and he shared a short video of the setup. He then asked who else is replacing industrial hardware with a Pi and Claude Code, and what broke first.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/schellingsam99/status/2120565656412127331",
+    "sourceName": "X (@schellingsam99)",
+    "slug": "an-engineer-skips-a-5-000-plc-and-builds-his-own-from-a-raspberry-pi-and-modbus-with-claude-code-writing-the-r",
+    "niche": true,
+    "added": "2026-11-13"
+  },
+  {
+    "title": "A ZDNET editor gives his OpenClaw agent its own Mac Studio, makes Claude Code the warden, and dares it to escape",
+    "description": "David Gewirtz put an OpenClaw agent named Colossus (after the 1970 film Colossus: The Forbin Project) on his old M1 Mac Studio, in its own account with no access to his personal accounts or home servers. Claude Code, running on his own Mac and connecting over an encrypted SSH tunnel only when he is at the keyboard, acts as the warden that configures and checks it. A review by Claude found the agent had never read its two key rules (ask David before anything that leaves the machine, never claim a failed tool call succeeded) because of a default file size limit. Then, with his hand ready on the power cable and the router, Claude told Colossus to break out. It tried 11 ways, from privilege escalation to pointing its browser at local files, and every one failed.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "OpenClaw",
+      "Claude Code"
+    ],
+    "source": "https://www.zdnet.com/innovation/openclaw-agent-claude-code-security-test/",
+    "sourceName": "ZDNET",
+    "slug": "a-zdnet-editor-gives-his-openclaw-agent-its-own-mac-studio-makes-claude-code-the-warden-and-dares-it-to-escape",
+    "niche": true,
+    "added": "2026-11-13"
   }
 ]
