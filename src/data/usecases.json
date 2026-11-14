@@ -3332,5 +3332,71 @@
     "slug": "a-zdnet-editor-gives-his-openclaw-agent-its-own-mac-studio-makes-claude-code-the-warden-and-dares-it-to-escape",
     "niche": true,
     "added": "2026-11-13"
+  },
+  {
+    "title": "A Cybertruck owner and his Grok Bot design a dinosaur \"Extinction Edition\" wrap and preview it on the truck's own screen",
+    "description": "With the Cybertruck winding down, its owner wanted to turn his Foundation Edition into an \"Extinction Edition\": a one-color satin black cut-vinyl overlay with an asteroid, dinosaurs and lettering that leaves most of the stainless bare. He dictated the idea to his Grok Bot, Hal, on the drive to work, had it make a to-scale panel outline he could print on letter paper and sketch on, then went through rounds of layouts on Tesla's official custom-wrap template. One lesson: a pale silver base rendered almost white in the truck (it \"looked like a refrigerator\"), so they switched to hex 686B6D. The PNG loaded first try from a Wraps folder on the truck's drive via Toybox, Paint Shop, Wraps, and Hal even added hidden Easter eggs like a mosquito in amber for the vinyl version.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/PossumsWalker/status/2120682915679924489",
+    "sourceName": "X (@PossumsWalker)",
+    "slug": "a-cybertruck-owner-and-his-grok-bot-design-a-dinosaur-extinction-edition-wrap-and-preview-it-on-the-trucks-own",
+    "niche": true,
+    "added": "2026-11-14"
+  },
+  {
+    "title": "A husband's Grok Bot watches Resy every 15 minutes and lands a 5 PM table for his wife's birthday, then reminds him about flowers",
+    "description": "The week before his wife's birthday, the restaurant she wanted only had a 9 PM table and they needed a table for four around 5. Russ Bartels had his Grok Bot, Lorrain, dig through his email for gift and dinner ideas based on past orders and trips, check walk-in options and set up a Resy watch that checked every 15 minutes. The day before the birthday it found a 5 PM table and sent him the link, which he booked himself. The next morning it reminded him to order flowers.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/RussBartels/status/2121030343926989026",
+    "sourceName": "X (@RussBartels)",
+    "slug": "a-husbands-grok-bot-watches-resy-every-15-minutes-and-lands-a-5-pm-table-for-his-wifes-birthday-then-reminds-h",
+    "niche": true,
+    "added": "2026-11-14"
+  },
+  {
+    "title": "A man sends his Grok Bot shopping: Home Depot and Amazon block it, Walmart lets it right in",
+    "description": "When The Jake Buzz had his Grok Bot assistant shop for him, Home Depot and Amazon blocked it while Walmart let it in. His post drew more than a hundred replies, and a follow-up listed other sites he found blocking or restricting assistant bots, including United, Delta, Booking, eBay, Target and Yelp, with Chase and Schwab refusing to let one log in at all. His take: the first big store that lets the bots shop wins.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/thejakebuzz/status/2120976180383977526",
+    "sourceName": "X (@thejakebuzz)",
+    "slug": "a-man-sends-his-grok-bot-shopping-home-depot-and-amazon-block-it-walmart-lets-it-right-in",
+    "niche": true,
+    "added": "2026-11-14"
+  },
+  {
+    "title": "A churchgoer builds his own video switcher and camera tracking software for his church with Claude Code and Codex",
+    "description": "Braden Ballestero is building custom video switcher and camera tracking software for his church, using Claude Code and OpenAI Codex. He shared a short clip of it running and said Codex helped a little, but Claude Code is what made the camera movements smooth.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code",
+      "OpenAI Codex"
+    ],
+    "source": "https://x.com/ballestero_a1/status/2121291192642285918",
+    "sourceName": "X (@ballestero_a1)",
+    "slug": "a-churchgoer-builds-his-own-video-switcher-and-camera-tracking-software-for-his-church-with-claude-code-and-codex",
+    "niche": true,
+    "added": "2026-11-14"
+  },
+  {
+    "title": "\"I asked Claude Code to order my dinner\": it phones a real restaurant, and he picks up the food 20 minutes later",
+    "description": "Using Smitline, an open-source MCP server he and a friend started at an OpenAI hackathon in Montreal (they won), Lourd Arun Raj asked Claude Code to order his dinner. It placed a real phone call to a restaurant near him, said upfront that it was an AI and that the call was recorded, and agreed a pickup time. He collected the food 20 minutes later. The developers say the call took 89 seconds and cost 11 cents, and the post became the top post of the day on r/ClaudeCode.",
+    "category": "Personal Life",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/Arun131/status/2120886826093158889",
+    "sourceName": "X (@Arun131)",
+    "slug": "i-asked-claude-code-to-order-my-dinner-it-phones-a-real-restaurant-and-he-picks-up-the-food-20-minutes-later",
+    "niche": true,
+    "added": "2026-11-14"
   }
 ]
