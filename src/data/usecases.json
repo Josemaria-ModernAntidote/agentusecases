@@ -3398,5 +3398,70 @@
     "slug": "i-asked-claude-code-to-order-my-dinner-it-phones-a-real-restaurant-and-he-picks-up-the-food-20-minutes-later",
     "niche": true,
     "added": "2026-11-14"
+  },
+  {
+    "title": "A Grok Bot turns a dad's Costco receipts into a searchable purchase history after the ice maker breaks",
+    "description": "When the family's ice maker broke, @wirelyss's dad was opening Costco receipts on the website one PDF at a time to work out when they bought it. She gave her Grok Bot, which she calls Señor Inteligente, that one job. She says it logged in, found the receipt, and built a searchable database of his whole Costco purchase history that picks up new receipts every week, and it can even spot sales on things he has bought before.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/wirelyss/status/2121123687860519039",
+    "sourceName": "X (@wirelyss)",
+    "slug": "a-grok-bot-turns-a-dad-s-costco-receipts-into-a-searchable-purchase-history-after-the-ice-maker-breaks",
+    "niche": true,
+    "added": "2026-11-15"
+  },
+  {
+    "title": "A shared Grok Bot becomes a 72-year-old dad's scam checker and stops a fake bank call mid-conversation",
+    "description": "After a fake bank caller nearly got a six-digit code from his 72-year-old dad, @kursormaxx shared a Grok Bot with his parents and gave it one rule: anyone asking for money, gift cards, codes or passwords gets checked with the bot first. It knows the family and that banks never call for codes. He says that when the next fake fraud agent called, his dad typed to the bot during the call and was told within seconds not to give the code and to hang up, while the bot texted his daughter. He counts three scam attempts on his parents that month, worth $4,840, none paid, and posted the prompt he used.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/kursormaxx/status/2121546564392910849",
+    "sourceName": "X (@kursormaxx)",
+    "slug": "a-shared-grok-bot-becomes-a-72-year-old-dad-s-scam-checker-and-stops-a-fake-bank-call-mid-conversation",
+    "niche": true,
+    "added": "2026-11-15"
+  },
+  {
+    "title": "A Grok Bot traces a New Zealand family line back to an 1841 emigrant ship and finds a 1938 wedding photo in Te Papa's archive",
+    "description": "Before a trip to Marden in Kent, where her father's family started, Raewyn Sleeman asked her Grok Bot to trace her exact line, which was hard because every generation reused the same names. She says it followed the family from Nicholas Benge, who sailed from England on the Katherine Stewart Forbes in 1841, through Wellington butchers to her dad, then found her aunt's 1938 wedding in old New Zealand newspapers, with her father as the page boy, and the wedding photo in Te Papa's archive, which she had never seen.",
+    "category": "Research & Learning",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/DrRaewynSleeman/status/2121549508962033868",
+    "sourceName": "X (@DrRaewynSleeman)",
+    "slug": "a-grok-bot-traces-a-new-zealand-family-line-back-to-an-1841-emigrant-ship-and-finds-a-1938-wedding-photo-in-te-papa-s-archive",
+    "niche": true,
+    "added": "2026-11-15"
+  },
+  {
+    "title": "A custom packaging shop's Grok Bot runs a workshop wall display on a Raspberry Pi 4 and an old Epson projector",
+    "description": "Nile McMillion, who runs a custom packaging business and used to build rocket engines, put a projector up in his shop that cycles through the live order queue, to-do list, calendar, finances and doorbell camera. He says his Grok Bot set it up with an API, so the crew can get his attention when they need something and he can push instructions or a web page (like a Starship launch) to the big screen from his phone. It all runs on a Raspberry Pi 4 and an old Epson projector.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/NileMcmillion/status/2121791353373835451",
+    "sourceName": "X (@NileMcmillion)",
+    "slug": "a-custom-packaging-shop-s-grok-bot-runs-a-workshop-wall-display-on-a-raspberry-pi-4-and-an-old-epson-projector",
+    "niche": true,
+    "added": "2026-11-15"
+  },
+  {
+    "title": "A first-year greenhouse tomato farmer in Japan gets a morning to-do list from Claude Code built from his farm logs",
+    "description": "A winter and spring greenhouse tomato farmer in Japan, who started farming in 2026 and logs his growing with IoT climate control, Claude Code and Obsidian, now has Claude Code send him a to-do list every morning. He says it reads his farm logs, shipping plans and work calendar and picks the day's tasks based on how both the greenhouse and he are doing, so he stops forgetting things.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/usi355/status/2121570813786964444",
+    "sourceName": "X (@usi355)",
+    "slug": "a-first-year-greenhouse-tomato-farmer-in-japan-gets-a-morning-to-do-list-from-claude-code-built-from-his-farm-logs",
+    "niche": true,
+    "added": "2026-11-15"
   }
 ]

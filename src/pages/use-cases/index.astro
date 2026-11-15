@@ -1,0 +1,23 @@
+---
+import Base from '../../layouts/Base.astro';
+import { items, slugify, crumbs, itemList, abs, NAME, lastUpdated, clip } from '../../lib/site';
+// A to Z index of every entry, so the parent of every /use-cases/<slug>/ URL is a real page, not a 404.
+const list = [...items].sort((a, b) => a.title.replace(/^[^a-z0-9]+/i, '').localeCompare(b.title.replace(/^[^a-z0-9]+/i, ''), 'en', { sensitivity: 'base' }));
+const letter = d => { const c = d.title.replace(/^[^a-z0-9]+/i, '').charAt(0).toUpperCase(); return /[A-Z]/.test(c) ? c : '#'; };
+const letters = [...new Set(list.map(letter))];
+const path = '/use-cases/';
+const title = `All ${list.length} AI agent use cases, A to Z | ${NAME}`;
+const desc = clip(`Every real AI agent use case in the directory, ${list.length} in all, listed A to Z with its agent, category and date added. Each entry links to its original public source.`);
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'All AI agent use cases, A to Z', description: desc, url: abs(path), dateModified: lastUpdated, isPartOf: { '@type': 'WebSite', name: NAME, url: abs('/') } },
+  itemList('All AI agent use cases, A to Z', list),
+  crumbs([['Home', '/'], ['All use cases', path]])
+];
+---
+<Base title={title} desc={desc} path={path} ld={ld} md="/use-cases.md">
+<p class="bc"><a href="/">Home</a> › All use cases</p>
+<h1>All AI agent use cases, A to Z</h1>
+<p class="lead">Every one of the <b>{list.length}</b> real AI agent use cases in the directory, in alphabetical order, with its agent, category and the date it was added. Each entry page links to the original public source. Also browse by <a href="/agents/">agent</a>, <a href="/categories/">category</a>, <a href="/topics/">topic</a>, <a href="/archive/">month</a> or the <a href="/new/">newest additions</a>. Last updated <time datetime={lastUpdated}>{lastUpdated}</time>.</p>
+<p class="mut">Jump to: {letters.map((l, i) => <>{i ? ' · ' : ''}<a href={`#${l === '#' ? 'num' : l.toLowerCase()}`}>{l}</a></>)}</p>
+{letters.map(l => <section id={l === '#' ? 'num' : l.toLowerCase()}><h2>{l}</h2><ul class="l">{list.filter(d => letter(d) === l).map(d => <li><a href={`/use-cases/${d.slug}/`}>{d.title}</a> <span class="mut">({d.tools.join(', ')} · <a href={`/categories/${slugify(d.category)}/`}>{d.category}</a> · {d.added})</span></li>)}</ul></section>)}
+</Base>
