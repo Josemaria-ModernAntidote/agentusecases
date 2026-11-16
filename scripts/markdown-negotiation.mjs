@@ -19,10 +19,12 @@ if (existsSync(f)) {
     { src: '^/$', has: [md], dest: '/llms.txt', headers: { Vary: 'Accept' } },
     { src: hub, headers: { Vary: 'Accept', Link: '</$1/$2.md>; rel="alternate"; type="text/markdown"' }, continue: true },
     { src: top, headers: { Vary: 'Accept', Link: '</$1.md>; rel="alternate"; type="text/markdown"' }, continue: true },
-    { src: '^/$', headers: { Vary: 'Accept', Link: '</llms.txt>; rel="alternate"; type="text/plain"' }, continue: true },
+    { src: '^/$', headers: { Vary: 'Accept', Link: '</llms.txt>; rel="alternate"; type="text/plain", </.well-known/api-catalog>; rel="api-catalog"' }, continue: true },
+    // RFC 9727 API catalog: serve the extensionless file with its linkset media type.
+    { src: '^/\\.well-known/api-catalog/?$', headers: { 'Content-Type': 'application/linkset+json; profile="https://www.rfc-editor.org/info/rfc9727"', 'Access-Control-Allow-Origin': '*' }, continue: true },
   ];
   const at = c.routes.findIndex(r => r.handle === 'filesystem');
-  c.routes = c.routes.filter(r => !(r.has || []).some(h => h.value === md.value) && !(r.headers?.Vary === 'Accept'));
+  c.routes = c.routes.filter(r => !(r.has || []).some(h => h.value === md.value) && !(r.headers?.Vary === 'Accept') && !/api-catalog/.test(r.src || ''));
   c.routes.splice(c.routes.findIndex(r => r.handle === 'filesystem'), 0, ...routes);
   writeFileSync(f, JSON.stringify(c, null, 2));
   console.log(`markdown negotiation: ${dirs.length} hub dirs, ${pages.length} top pages (filesystem at ${at})`);

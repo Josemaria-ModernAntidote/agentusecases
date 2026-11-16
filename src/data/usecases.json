@@ -3463,5 +3463,70 @@
     "slug": "a-first-year-greenhouse-tomato-farmer-in-japan-gets-a-morning-to-do-list-from-claude-code-built-from-his-farm-logs",
     "niche": true,
     "added": "2026-11-15"
+  },
+  {
+    "title": "A 14-year-old's Grok Bot designs its own typeface, Ultron Sans, and ships it under an open font license",
+    "description": "Arjun Shah, a 14-year-old builder in the Bay Area, sent his Grok Bot, which he named Ultron, a link to the Ductus font editor and told it to make its own font. He says it wrote a script to generate every stroke, drew them into the editor and exported a real font file with 62 glyphs (A to Z, a to z and 0 to 9). The lowercase a leans a little, and it decided to keep it. It then built a site to show the font off and made the launch video, and Ultron Sans is free under the SIL Open Font License.",
+    "category": "Creative & Building",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/arjunkshah21/status/2122303167581106444",
+    "sourceName": "X (@arjunkshah21)",
+    "slug": "a-14-year-old-s-grok-bot-designs-its-own-typeface-ultron-sans-and-ships-it-under-an-open-font-license",
+    "niche": true,
+    "added": "2026-11-16"
+  },
+  {
+    "title": "A broken TV remote replaced in five minutes by a Grok Bot web remote for an LG TV, hosted on a Raspberry Pi",
+    "description": "When Harman, a software developer in Australia, broke his TV remote one night, he asked his Grok Bot for a replacement instead of buying one. He says that five minutes later it had built a new remote as a web page that runs 24/7 on his Raspberry Pi and sits on his iPhone home screen. His screenshot shows an LG webOS remote with power, input, volume, channel and arrow keys, a pointer mode, a keyboard and one-tap buttons for Netflix, Prime Video, Disney+, Stan, LG Channels and YouTube.",
+    "category": "Physical World",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/MrHarmanz/status/2122287819800637680",
+    "sourceName": "X (@MrHarmanz)",
+    "slug": "a-broken-tv-remote-replaced-in-five-minutes-by-a-grok-bot-web-remote-for-an-lg-tv-hosted-on-a-raspberry-pi",
+    "niche": true,
+    "added": "2026-11-16"
+  },
+  {
+    "title": "A Grok Bot gets a daughter's coat back from a UK motorway services by finding the manager's mobile number",
+    "description": "Louis Harwood's daughter left her coat at a motorway services on a Friday evening, and the family only noticed an hour down the road. He says his Grok Bot found the manager's mobile number and wrote the text, so all he did was hit send: no customer service lines and no lost property form. They picked the coat up on the way back through the next day.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/louis_harwood/status/2122235100217643048",
+    "sourceName": "X (@louis_harwood)",
+    "slug": "a-grok-bot-gets-a-daughter-s-coat-back-from-a-uk-motorway-services-by-finding-the-manager-s-mobile-number",
+    "niche": true,
+    "added": "2026-11-16"
+  },
+  {
+    "title": "A dad with no Blender skills uses Claude Code to make Roblox hair matching his daughter's real haircut",
+    "description": "Matt Burnett, a software engineer and girl dad in Portland, made custom hair for his daughter's Roblox avatar, modeled on her real haircut and colored brightly, two days after she joined Roblox. He says he has no idea what he is doing in Blender and does not even know how to reset the center, so the whole thing was done by Claude Code, and he posted a video of the result.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/_mawburn/status/2122201790053790011",
+    "sourceName": "X (@_mawburn)",
+    "slug": "a-dad-with-no-blender-skills-uses-claude-code-to-make-roblox-hair-matching-his-daughter-s-real-haircut",
+    "niche": true,
+    "added": "2026-11-16"
+  },
+  {
+    "title": "Codex builds a cozy fishing game with 200 fish for a Pimoroni PicoSystem handheld and automates its flashing over USB",
+    "description": "Danny Prevoznik built a cozy fishing game for his Pimoroni PicoSystem handheld, using OpenAI Codex to write all the software remotely on his Raspberry Pi 5 over Tailscale. Updating the firmware meant physically holding X while powering on to enter recovery mode, so Codex wrote a script that does it over USB, and the whole build and flash process now runs headlessly. The game has 200 fish, 10 regions and a village aquarium, and he shared the flashing script for other PicoSystem owners.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "OpenAI Codex"
+    ],
+    "source": "https://x.com/DanielPrevoznik/status/2122143601140416860",
+    "sourceName": "X (@DanielPrevoznik)",
+    "slug": "codex-builds-a-cozy-fishing-game-with-200-fish-for-a-pimoroni-picosystem-handheld-and-automates-its-flashing-over-usb",
+    "niche": true,
+    "added": "2026-11-16"
   }
 ]
