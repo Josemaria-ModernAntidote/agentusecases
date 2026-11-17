@@ -3528,5 +3528,70 @@
     "slug": "codex-builds-a-cozy-fishing-game-with-200-fish-for-a-pimoroni-picosystem-handheld-and-automates-its-flashing-over-usb",
     "niche": true,
     "added": "2026-11-16"
+  },
+  {
+    "added": "2026-11-17",
+    "category": "Personal Life",
+    "description": "Kyle Inserra asked his Grok Bot to sort out a firewood order. It called three local delivery services, compared their prices, picked the cheapest, and talked the seller into delivering for free and throwing in kindling, all by phone without him making a call.",
+    "niche": true,
+    "slug": "a-grok-bot-phones-three-firewood-delivery-services-finds-the-best-price-and-negotiates-free-delivery-plus-kindling",
+    "source": "https://x.com/KyleInserra/status/2121663044430225510",
+    "sourceName": "X (@KyleInserra)",
+    "title": "A Grok Bot phones three firewood delivery services, finds the best price and negotiates free delivery plus kindling",
+    "tools": [
+      "Grok Bot"
+    ]
+  },
+  {
+    "added": "2026-11-17",
+    "category": "Physical World",
+    "description": "A father who posts as Texas Twins Dad is building a small sphere-shaped voice gadget for talking to his Grok Bot, and the bot itself wrote the software. He reports 410 automated tests, pairing and encryption, low-power firmware that fixed an overheating problem, a \"Hey Grok\" wake word you can interrupt mid-answer, and logic that relocates a button when an app update moves it. A follow-up post adds a retrained wake word to cut false triggers, a custom audio driver, Wi-Fi reset and recovery, and switching between bots during a call.",
+    "niche": true,
+    "slug": "a-dad-s-grok-bot-writes-the-software-for-a-homemade-grok-bot-sphere-voice-device-from-wake-word-to-low-power-firmware",
+    "source": "https://x.com/Texas_Twins_Dad/status/2121469115982397547",
+    "sourceName": "X (@Texas_Twins_Dad)",
+    "title": "A dad's Grok Bot writes the software for a homemade Grok Bot Sphere voice device, from wake word to low-power firmware",
+    "tools": [
+      "Grok Bot"
+    ]
+  },
+  {
+    "added": "2026-11-17",
+    "category": "Hobbies & Games",
+    "description": "Antilitist built a free, open-source save editor for Geoplanetical with a crew of Grok Bots. It edits a country's cash, approval, stability, party money, military arsenal and parliament in .gsav files, and always writes a new numbered file so the original save is never overwritten. When game update 1.1.3 broke the Money tab, version 1.1 fixed it. The code is on GitHub as an unofficial fan tool.",
+    "niche": true,
+    "slug": "a-gamer-and-a-crew-of-grok-bots-ship-an-open-source-save-editor-for-the-geopolitics-game-geoplanetical",
+    "source": "https://github.com/Antilitist/geoplanetical-save-editor",
+    "sourceName": "GitHub (Antilitist/geoplanetical-save-editor)",
+    "title": "A gamer and a crew of Grok Bots ship an open-source save editor for the geopolitics game Geoplanetical",
+    "tools": [
+      "Grok Bot"
+    ]
+  },
+  {
+    "added": "2026-11-17",
+    "category": "Personal Life",
+    "description": "X user Sam (@fallmysteries) wanted specific personalized stockings from Bronner's CHRISTmas Wonderland, the giant Christmas store in Frankenmuth, Michigan. The Grok Bot searched the store's site, then phoned and described the stockings to a rep. They turned out to be discontinued, but the rep emailed the next best options, saving more than 30 minutes of holiday legwork.",
+    "niche": true,
+    "slug": "a-grok-bot-calls-bronner-s-christmas-wonderland-about-personalized-christmas-stockings-and-gets-the-rep-to-email-alternatives",
+    "source": "https://x.com/fallmysteries/status/2122670180337598855",
+    "sourceName": "X (@fallmysteries)",
+    "title": "A Grok Bot calls Bronner's CHRISTmas Wonderland about personalized Christmas stockings and gets the rep to email alternatives",
+    "tools": [
+      "Grok Bot"
+    ]
+  },
+  {
+    "added": "2026-11-17",
+    "category": "Personal Life",
+    "description": "Justin Dishion's Grok Bot, which he runs as a chief of staff, read his Duke Energy bill, compared every fixed-rate gas supplier in Ohio, checked each contract for hidden fees, and filled out the switch form, then waited for his OK before submitting. He estimates the savings at about $360 a year, more than the cost of his subscription.",
+    "niche": true,
+    "slug": "a-grok-bot-reads-a-duke-energy-bill-compares-every-fixed-rate-gas-supplier-in-ohio-and-cuts-the-bill-about-360-a-year",
+    "source": "https://x.com/JustinDishion/status/2121769871406977249",
+    "sourceName": "X (@JustinDishion)",
+    "title": "A Grok Bot reads a Duke Energy bill, compares every fixed-rate gas supplier in Ohio and cuts the bill about $360 a year",
+    "tools": [
+      "Grok Bot"
+    ]
   }
 ]
