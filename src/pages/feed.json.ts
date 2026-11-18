@@ -13,6 +13,7 @@ export async function GET() {
       id: abs(`/use-cases/${d.slug}/`),
       url: abs(`/use-cases/${d.slug}/`),
       external_url: d.source,
+      image: abs(`/og/${d.slug}.png`),
       title: d.title,
       content_text: `${d.description} Agents: ${d.tools.join(', ')}. Source: ${d.source}`,
       summary: d.description,

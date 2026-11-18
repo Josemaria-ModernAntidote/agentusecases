@@ -3593,5 +3593,70 @@
     "tools": [
       "Grok Bot"
     ]
+  },
+  {
+    "added": "2026-11-18",
+    "category": "Research & Learning",
+    "description": "Dean Berris, a principal software engineer, runs the open-source Testimony Project, which writes Christian doctrinal arguments (such as justification by faith alone) as lists of sourced premises and has the Lean 4 proof assistant check what follows from each one. Claude Code writes the Lean code and the prose citing scholars, the Bible and the Church Fathers, and Berris recorded an hour-long YouTube session showing how he reviews its output. Claude is listed as the repo's top contributor.",
+    "niche": true,
+    "slug": "an-engineer-uses-claude-code-to-write-christian-arguments-from-scripture-as-lean-4-proofs-that-a-machine-checks-premise-by-premise",
+    "source": "https://x.com/deanberris/status/2121631081074245976",
+    "sourceName": "X (@deanberris)",
+    "title": "An engineer uses Claude Code to write Christian arguments from Scripture as Lean 4 proofs that a machine checks premise by premise",
+    "tools": [
+      "Claude Code"
+    ]
+  },
+  {
+    "added": "2026-11-18",
+    "category": "Physical World",
+    "description": "GitHub user hernandp bought an HP LaserJet 1005 in the early 2000s, and HP dropped driver support in the Windows XP era. He dug it out from under dirt and spiderwebs at his parents' house, fitted a new toner cartridge and made mechanical fixes so he and his girlfriend could do toner-transfer printing of a benteveo bird. Then he had Codex write a C++20 Windows 11 x64 driver from web specs and the open ZjStream protocol. Project Benteveo prints text, bitmaps and multi-page documents.",
+    "niche": true,
+    "slug": "a-man-rescues-his-early-2000s-hp-laserjet-1005-from-his-parents-house-and-has-codex-write-it-a-windows-11-driver",
+    "source": "https://github.com/hernandp/OpenHPZJS1005-x64-drv",
+    "sourceName": "GitHub (hernandp/OpenHPZJS1005-x64-drv)",
+    "title": "A man rescues his early-2000s HP LaserJet 1005 from his parents' house and has Codex write it a Windows 11 driver",
+    "tools": [
+      "OpenAI Codex"
+    ]
+  },
+  {
+    "added": "2026-11-18",
+    "category": "Personal Life",
+    "description": "The sauna Mitchell Wright had bought went on sale for less than he paid. His Grok Bot emailed the seller about a refund, and when nobody replied it phoned them and secured $1,511 back.",
+    "niche": true,
+    "slug": "a-grok-bot-chases-a-price-drop-on-a-home-sauna-emails-the-seller-then-calls-and-gets-a-1-511-refund",
+    "source": "https://x.com/mitchellwright/status/2122425656013427044",
+    "sourceName": "X (@mitchellwright)",
+    "title": "A Grok Bot chases a price drop on a home sauna, emails the seller, then calls and gets a $1,511 refund",
+    "tools": [
+      "Grok Bot"
+    ]
+  },
+  {
+    "added": "2026-11-18",
+    "category": "Hobbies & Games",
+    "description": "Matt Maximo built a WoW Forever addon so his Hermes Agent has context about his character. Asked how to level cooking, the agent replied that he should buy the meat so he would not have to farm the Raptors where he died the night before.",
+    "niche": true,
+    "slug": "a-world-of-warcraft-addon-feeds-a-player-s-character-to-his-hermes-agent-which-then-gives-in-game-advice-like-a-guildmate",
+    "source": "https://x.com/Mattmaximo/status/2122467826510238070",
+    "sourceName": "X (@Mattmaximo)",
+    "title": "A World of Warcraft addon feeds a player's character to his Hermes Agent, which then gives in-game advice like a guildmate",
+    "tools": [
+      "Hermes Agent"
+    ]
+  },
+  {
+    "added": "2026-11-18",
+    "category": "Small Business",
+    "description": "Roushan, a founder in Jharkhand, launched PedaGhar, selling Classic Milk Peda freshly made in Deoghar, Jharkhand. With no ads, Grok helped build the website and schedule its social posts, every order lands in a tracker sheet with an email alert, a Grok Bot routine checks for new orders 10 times a day, and it generates receipts. He handles WhatsApp chats, cooking, packing and shipping himself; the first order, 1 kg of peda, went to West Bengal.",
+    "niche": true,
+    "slug": "a-one-person-milk-peda-shop-in-deoghar-india-runs-its-orders-on-a-grok-bot-and-ships-its-first-kilo-of-sweets-to-west-bengal",
+    "source": "https://x.com/RoushanStartup/status/2122632038897602860",
+    "sourceName": "X (@RoushanStartup)",
+    "title": "A one-person milk peda shop in Deoghar, India, runs its orders on a Grok Bot and ships its first kilo of sweets to West Bengal",
+    "tools": [
+      "Grok Bot"
+    ]
   }
 ]

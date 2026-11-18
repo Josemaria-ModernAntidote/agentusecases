@@ -8,9 +8,11 @@ import { execSync } from 'node:child_process';
 // build time teaches crawlers to ignore lastmod, so we avoid that.
 const data = JSON.parse(readFileSync(new URL('./src/data/usecases.json', import.meta.url), 'utf8'));
 const added = new Map(data.filter(d => d.added).map(d => [d.slug, d.added]));
+// Each use case page lists its preview card (/og/<slug>.png) as an image sitemap entry.
+const titles = new Map(data.map(d => [d.slug, d.title]));
 let dataUpdated = new Date().toISOString().slice(0, 10);
 try { dataUpdated = execSync('git log -1 --format=%cs -- src/data/usecases.json', { encoding: 'utf8' }).trim() || dataUpdated; } catch {}
 // A finished monthly archive (/archive/<yyyy-mm>/) keeps the date of its last entry.
 const monthLast = ym => [...added.values()].filter(a => a.startsWith(ym)).sort().pop();
 const lastmodFor = url => { const m = url.match(/\/use-cases\/([^/]+)\/?$/); if (m) return added.get(m[1]) || dataUpdated; const a = url.match(/\/archive\/(\d{4}-\d{2})\/?$/); return (a && monthLast(a[1])) || dataUpdated; };
-export default defineConfig({ site: 'https://agent-uses.com', trailingSlash: 'ignore', output: 'static', redirects: { '/agents/codex': '/agents/openai-codex/', '/agents/codex.md': '/agents/openai-codex.md', '/agents/codex/rss.xml': '/agents/openai-codex/rss.xml' }, adapter: vercel(), integrations: [sitemap({ filter: p => !p.includes('/api/'), changefreq: 'weekly', serialize: item => ({ ...item, lastmod: lastmodFor(item.url) }) })] });
+export default defineConfig({ site: 'https://agent-uses.com', trailingSlash: 'ignore', output: 'static', redirects: { '/agents/codex': '/agents/openai-codex/', '/agents/codex.md': '/agents/openai-codex.md', '/agents/codex/rss.xml': '/agents/openai-codex/rss.xml' }, adapter: vercel(), integrations: [sitemap({ filter: p => !p.includes('/api/'), changefreq: 'weekly', serialize: item => { const m = item.url.match(/\/use-cases\/([^/]+)\/?$/); return { ...item, lastmod: lastmodFor(item.url), ...(m && added.has(m[1]) ? { img: [{ url: `https://agent-uses.com/og/${m[1]}.png`, title: titles.get(m[1]) }] } : {}) }; } })] });
