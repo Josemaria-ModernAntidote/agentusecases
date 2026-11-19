@@ -3658,5 +3658,71 @@
     "tools": [
       "Grok Bot"
     ]
+  },
+  {
+    "added": "2026-11-19",
+    "category": "Personal Life",
+    "description": "Nick, a San Francisco software engineer, had his Grok Bot call contractors for bids. It negotiated with each one, came back with a pick and a price, then booked his choice on a day it knew he would be home. He did not make a single phone call.",
+    "niche": true,
+    "slug": "a-software-engineer-in-san-francisco-has-his-grok-bot-phone-contractors-for-bids-negotiate-with-each-and-book-the-winner-on-a-day-he-is-home",
+    "source": "https://x.com/thecsguy/status/2122828378478887268",
+    "sourceName": "X (@thecsguy)",
+    "title": "A software engineer in San Francisco has his Grok Bot phone contractors for bids, negotiate with each, and book the winner on a day he is home",
+    "tools": [
+      "Grok Bot"
+    ]
+  },
+  {
+    "added": "2026-11-19",
+    "category": "Research & Learning",
+    "description": "Philipp, learning Thai in Bangkok and struggling with reading and forgotten vocab, built a little Swift app: he marks the words he does not know and they go straight into his Grok Bot tutor's queue. He tried Grok Bot alone first, but state did not persist between pages and the loop felt clunky.",
+    "niche": true,
+    "slug": "an-expat-learning-thai-in-bangkok-built-a-small-swift-app-that-sends-every-word-he-does-not-know-into-his-grok-bot-tutor-s-review-queue",
+    "source": "https://x.com/philippmolinero/status/2123376318595375109",
+    "sourceName": "X (@philippmolinero)",
+    "title": "An expat learning Thai in Bangkok built a small Swift app that sends every word he does not know into his Grok Bot tutor's review queue",
+    "tools": [
+      "Grok Bot"
+    ]
+  },
+  {
+    "added": "2026-11-19",
+    "category": "Personal Life",
+    "description": "Antilitist, a 20-year USAF veteran in Idaho, says Grok Bot is how he got approved for VA Vocational Rehabilitation and Employment (VR&E). His Grok Bot crew then built a VA Claims Helper bot that anyone can copy, walking veterans step by step in plain words through claims, buddy statements and personal statements.",
+    "niche": true,
+    "slug": "a-retired-disabled-air-force-veteran-s-grok-bot-crew-built-a-shareable-va-claims-helper-that-walks-other-vets-through-claims-and-buddy-statements",
+    "source": "https://x.com/Antilitist/status/2122773661342159122",
+    "sourceName": "X (@Antilitist)",
+    "title": "A retired, disabled Air Force veteran's Grok Bot crew built a shareable VA Claims Helper that walks other vets through claims and buddy statements",
+    "tools": [
+      "Grok Bot"
+    ]
+  },
+  {
+    "added": "2026-11-19",
+    "category": "Personal Life",
+    "description": "A Greenville, SC dad with 18 years of lifting made Jenny, a Grok Bot team member, his personal trainer. She built his program in a Google Sheet, adjusts target reps from his reps-in-reserve on each set, pre-fills each day's weights, sends a morning briefing, and checks Apple Health data for trends and recovery. He says he has never been this consistent with progressive overload.",
+    "niche": true,
+    "slug": "a-40-year-old-dad-replaced-his-lifting-notepad-with-a-grok-bot-trainer-named-jenny-that-adjusts-reps-by-rir-and-reads-his-apple-health-recovery",
+    "source": "https://x.com/TheDadBodActual/status/2123068266440425523",
+    "sourceName": "X (@TheDadBodActual)",
+    "title": "A 40-year-old dad replaced his lifting notepad with a Grok Bot trainer named Jenny that adjusts reps by RIR and reads his Apple Health recovery",
+    "tools": [
+      "Grok Bot"
+    ]
+  },
+  {
+    "added": "2026-11-19",
+    "category": "Weird & Experimental",
+    "description": "token-tv puts characters on a GeekMagic SmallTV clock over local Wi-Fi with no firmware flashing. Clawd raises a hand when Claude Code needs attention and bows when a turn ends; in Arcade mode Codex rains code to grow flowers, and the garden fills out as it spends more tokens, keeping usage limits in sight.",
+    "niche": true,
+    "slug": "tokentv-turns-a-roughly-5-aliexpress-desk-clock-into-pixel-pets-that-react-to-claude-code-and-codex-growing-a-garden-as-tokens-are-spent",
+    "source": "https://github.com/click6067-ship-it/token-tv",
+    "sourceName": "GitHub (click6067-ship-it/token-tv)",
+    "title": "TokenTV turns a roughly $5 AliExpress desk clock into pixel pets that react to Claude Code and Codex, growing a garden as tokens are spent",
+    "tools": [
+      "Claude Code",
+      "Codex"
+    ]
   }
 ]

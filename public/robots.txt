@@ -61,4 +61,6 @@ Allow: /
 # JSON Feed: https://agent-uses.com/feed.json
 # RSS: https://agent-uses.com/rss.xml
 # Site search (OpenSearch): https://agent-uses.com/opensearch.xml
+# Markdown twin of every page: https://agent-uses.com/sitemap-markdown.xml
 Sitemap: https://agent-uses.com/sitemap-index.xml
+Sitemap: https://agent-uses.com/sitemap-markdown.xml

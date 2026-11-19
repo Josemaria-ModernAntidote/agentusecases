@@ -18,6 +18,7 @@ export async function GET() {
     ['/stats.md', 'text/markdown', 'Citable statistics by agent, category and week in Markdown'],
     ['/opensearch.xml', 'application/opensearchdescription+xml', 'OpenSearch description of site search (/?q=<term>)'],
     ['/sitemap-index.xml', 'application/xml', 'XML sitemap of every page'],
+    ['/sitemap-markdown.xml', 'application/xml', 'XML sitemap of every Markdown version (use cases, hubs, indexes) with lastmod'],
   ];
   const linkset = [
     { anchor: cat, item: eps.map(([p, type, title]) => ({ href: abs(p), type, title })), 'service-doc': [doc, about] },
