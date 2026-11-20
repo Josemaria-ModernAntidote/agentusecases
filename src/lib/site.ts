@@ -4,6 +4,10 @@ export const SITE = 'https://agent-uses.com';
 export const NAME = 'AI Agent Use Cases';
 export const slugify = (s: string) => s.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 export const items = data;
+// Guard against agent-name aliases splitting one agent into two hubs (e.g. "Codex" next to
+// "OpenAI Codex" made a stray 1-entry /agents/codex/ hub on 2026-11-19). Fail the build instead.
+const ALIASES: Record<string, string> = { 'Codex': 'OpenAI Codex', 'Hermes': 'Hermes Agent', 'Grok bot': 'Grok Bot', 'GrokBot': 'Grok Bot', 'Openclaw': 'OpenClaw', 'Claude code': 'Claude Code' };
+for (const d of data) for (const t of d.tools) if (ALIASES[t]) throw new Error(`usecases.json: "${d.slug}" lists agent "${t}"; use "${ALIASES[t]}"`);
 export const cats = [...new Set(data.map(d => d.category))];
 export const agents = [...new Set(data.flatMap(d => d.tools))];
 let updated = new Date().toISOString().slice(0, 10);

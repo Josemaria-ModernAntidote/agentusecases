@@ -3722,7 +3722,74 @@
     "title": "TokenTV turns a roughly $5 AliExpress desk clock into pixel pets that react to Claude Code and Codex, growing a garden as tokens are spent",
     "tools": [
       "Claude Code",
-      "Codex"
+      "OpenAI Codex"
+    ]
+  },
+  {
+    "added": "2026-11-20",
+    "category": "Small Business",
+    "description": "The day before her surgery, the hospital pushed it back two weeks, so every client booked after her planned recovery had to move. Her Grok Bot read each client's past appointments in Google Calendar, learned the day and time they usually come in, and offered each one a slot that fit on WhatsApp. Her husband says it would have taken at least a full day by hand. It now reminds the next day's clients every evening. She is not a tech person; she runs a salon.",
+    "niche": true,
+    "slug": "a-nail-salon-owner-s-grok-bot-rebooked-almost-70-clients-in-about-an-hour-after-her-surgery-date-moved-two-weeks",
+    "source": "https://x.com/ShuiCohen/status/2122744219592786291",
+    "sourceName": "X (@ShuiCohen)",
+    "title": "A nail salon owner's Grok Bot rebooked almost 70 clients in about an hour after her surgery date moved two weeks",
+    "tools": [
+      "Grok Bot"
+    ]
+  },
+  {
+    "added": "2026-11-20",
+    "category": "Personal Life",
+    "description": "Dirk Kok in South Africa asked Grok Bot to help fight a declined claim. It read the decline email and the policy, said he would need photographic evidence, searched his photos and researched how disputes like this are won. A camera still was too blurry, so it logged into the security camera system itself, found the exact 10 seconds where the wall falls in the storm, clipped the video, flagged details the insurer had missed and helped draft the dispute.",
+    "niche": true,
+    "slug": "after-an-insurer-declined-a-storm-claim-for-a-fallen-boundary-wall-grok-bot-logged-into-his-security-cameras-and-found-the-10-seconds-it-came-down",
+    "source": "https://x.com/dirkkok/status/2122912323010490698",
+    "sourceName": "X (@dirkkok)",
+    "title": "After an insurer declined a storm claim for a fallen boundary wall, Grok Bot logged into his security cameras and found the 10 seconds it came down",
+    "tools": [
+      "Grok Bot"
+    ]
+  },
+  {
+    "added": "2026-11-20",
+    "category": "Creative & Building",
+    "description": "Tessera is an open-source (MIT) macro deck built from one 7-inch ESP32-P4 board such as the GUITION JC1060P470C, with 18 touch keys, live PC gauges, a sound mixer and a printed desk console, no soldering. Its agents screen shows Claude Code's permission questions so you tap Allow or Deny on the desk, and shows what Claude Code, Codex and ZCode are doing and in which project. It never approves on its own: with no answer in 25 seconds, Claude Code falls back to its normal dialog.",
+    "niche": true,
+    "slug": "tessera-turns-a-7-inch-esp32-p4-touchscreen-into-a-diy-stream-deck-with-a-panel-that-answers-claude-code-s-permission-prompts",
+    "source": "https://github.com/catorendal-a11y/tessera-deck",
+    "sourceName": "GitHub (catorendal-a11y/tessera-deck)",
+    "title": "Tessera turns a 7-inch ESP32-P4 touchscreen into a DIY Stream Deck with a panel that answers Claude Code's permission prompts",
+    "tools": [
+      "Claude Code",
+      "OpenAI Codex"
+    ]
+  },
+  {
+    "added": "2026-11-20",
+    "category": "Physical World",
+    "description": "Rangel Koli, a Syracuse, NY developer, built a wake-word voice agent on a Hermes agent that runs on a 1 GB Raspberry Pi. Say \"Hey John\" and it hears, thinks and talks back while an on-screen orb changes color at each step. In his demo he asks the time in India, has it read his grocery list, then has it add two milks.",
+    "niche": true,
+    "slug": "a-hey-john-voice-assistant-built-on-hermes-agent-runs-on-a-raspberry-pi-with-just-1-gb-of-ram",
+    "source": "https://x.com/rangelkoli10/status/2123247360377806849",
+    "sourceName": "X (@rangelkoli10)",
+    "title": "A \"Hey John\" voice assistant built on Hermes Agent runs on a Raspberry Pi with just 1 GB of RAM",
+    "tools": [
+      "Hermes Agent"
+    ]
+  },
+  {
+    "added": "2026-11-20",
+    "category": "Small Business",
+    "description": "A Denver product manager says this is how he and his girlfriend run their store: his Grok Bot checks the live sites, files GitHub issues and verifies the fixes, while Claude Code picks up the issues, ships pull requests with tests and makes the Squarespace changes in the browser. In his words, the bot finds the problems and Claude Code fixes them.",
+    "niche": true,
+    "slug": "a-couple-runs-their-squarespace-store-with-grok-bot-finding-the-problems-and-claude-code-fixing-them",
+    "source": "https://x.com/josheyxyz/status/2123182250892427545",
+    "sourceName": "X (@josheyxyz)",
+    "title": "A couple runs their Squarespace store with Grok Bot finding the problems and Claude Code fixing them",
+    "tools": [
+      "Grok Bot",
+      "Claude Code"
     ]
   }
 ]

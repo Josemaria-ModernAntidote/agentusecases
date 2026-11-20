@@ -20,6 +20,7 @@ export async function GET() {
       added: d.added || null,
       url: abs(`/use-cases/${d.slug}/`),
       markdown: abs(`/use-cases/${d.slug}.md`),
+      json: abs(`/use-cases/${d.slug}.json`),
       source: d.source,
       sourceName: d.sourceName,
     })),

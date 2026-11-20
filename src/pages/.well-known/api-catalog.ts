@@ -8,6 +8,7 @@ export async function GET() {
   const about = { href: abs('/about/'), type: 'text/html', title: 'About and FAQ' };
   const eps: [string, string, string][] = [
     ['/use-cases.json', 'application/json', `Full dataset as JSON: ${items.length} use cases with title, description, category, agents, date added and source URL`],
+    [`/use-cases/${items[items.length - 1].slug}.json`, 'application/json', 'One use case as JSON (pattern /use-cases/<slug>.json): title, description, agents, category, source, citation and related entries'],
     ['/use-cases.csv', 'text/csv', 'Full dataset as CSV, one row per use case'],
     ['/feed.json', 'application/feed+json', 'JSON Feed 1.1 of every use case, newest first'],
     ['/rss.xml', 'application/rss+xml', 'RSS feed of new use cases'],
