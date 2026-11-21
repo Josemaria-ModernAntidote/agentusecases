@@ -3791,5 +3791,70 @@
       "Grok Bot",
       "Claude Code"
     ]
+  },
+  {
+    "added": "2026-11-21",
+    "category": "Personal Life",
+    "description": "Colorado FAMLI billed a Denver dad $130.44 in penalties for five quarters of $0 wages after his nanny's job ended in March 2025, and his emails and reconsideration request went unanswered. His Grok Bot team found the real appeal route, filled out the appeal and called the state. When the English phone menu kept looping, it took the Spanish line and handled the call in Spanish, coming back with a ticket number and the appeals email.",
+    "niche": true,
+    "slug": "a-denver-dad-s-grok-bot-appeals-a-130-state-penalty-and-switches-to-the-spanish-phone-line-when-the-english-menu-loops",
+    "source": "https://x.com/mattfgreene/status/2123480779221061851",
+    "sourceName": "X (@mattfgreene)",
+    "title": "A Denver dad's Grok Bot appeals a $130 state penalty and switches to the Spanish phone line when the English menu loops",
+    "tools": [
+      "Grok Bot"
+    ]
+  },
+  {
+    "added": "2026-11-21",
+    "category": "Personal Life",
+    "description": "A retired submarine veteran put his Grok Bot, which he named Mycroft, on a dispute with a gym billing company. In one day it researched the company's owners, pulled more than 700 public complaints, drafted letters to agencies and built a web page about the case. He says Mycroft did the heavy lifting.",
+    "niche": true,
+    "slug": "a-retired-submarine-sonar-supervisor-s-grok-bot-mycroft-spends-a-day-fighting-a-gym-billing-company",
+    "source": "https://x.com/SSN709/status/2123980826173985193",
+    "sourceName": "X (@SSN709)",
+    "title": "A retired submarine sonar supervisor's Grok Bot \"Mycroft\" spends a day fighting a gym billing company",
+    "tools": [
+      "Grok Bot"
+    ]
+  },
+  {
+    "added": "2026-11-21",
+    "category": "Personal Life",
+    "description": "Phone calls wear her out because of a spine injury, so she handed a day of provider chores to her Grok Bot. It moved her phone to a cheaper plan with better signal, canceled her internet and booked a free technician visit to collect the old equipment from her porch, handling almost all of it for her.",
+    "niche": true,
+    "slug": "a-woman-whose-spine-injury-makes-phone-calls-exhausting-has-her-grok-bot-switch-her-phone-plan-and-cancel-her-internet",
+    "source": "https://x.com/SkyCynthia913/status/2123902103559041079",
+    "sourceName": "X (@SkyCynthia913)",
+    "title": "A woman whose spine injury makes phone calls exhausting has her Grok Bot switch her phone plan and cancel her internet",
+    "tools": [
+      "Grok Bot"
+    ]
+  },
+  {
+    "added": "2026-11-21",
+    "category": "Weird & Experimental",
+    "description": "A Brooklyn tinkerer gave his eighth Raspberry Pi, nicknamed Hackerman, a Codex install with full root access and one directive: hack anything plugged into its USB ports. Its first jobs were flashing LineageOS onto an old Pixel 4a to make a minimalist, distraction-free phone and turning an old Kindle into an interactive touchscreen dashboard for keeping track of his other Pi projects.",
+    "niche": true,
+    "slug": "hackerman-a-raspberry-pi-running-codex-with-root-hacks-whatever-gets-plugged-into-its-usb-ports",
+    "source": "https://x.com/AaronCederberg/status/2122382196103102810",
+    "sourceName": "X (@AaronCederberg)",
+    "title": "\"Hackerman\", a Raspberry Pi running Codex with root, hacks whatever gets plugged into its USB ports",
+    "tools": [
+      "OpenAI Codex"
+    ]
+  },
+  {
+    "added": "2026-11-21",
+    "category": "Physical World",
+    "description": "Ben is nonspeaking, quadriplegic and low vision, and answers yes or no with head movements. His family's NARBE House used Codex to build Benny's Hub Mobile: a Raspberry Pi 5 running their switch-accessible web apps, two 3D printed switches beside his head wired through an Adafruit TRRS Trinkey as Space and Enter, VITURE XR glasses so the screen stays in view as he turns, and a Bluetooth speaker for his messages. They also added a low-graphics mode for his Three.js games and switch controls for Netflix, Disney+, Hulu and Plex. It is free and open source.",
+    "niche": true,
+    "slug": "a-family-builds-a-wearable-computer-with-codex-for-ben-who-is-nonspeaking-and-uses-two-head-switches",
+    "source": "https://narbehouse.github.io/codex-physical-builds/",
+    "sourceName": "NARBE House",
+    "title": "A family builds a wearable computer with Codex for Ben, who is nonspeaking and uses two head switches",
+    "tools": [
+      "OpenAI Codex"
+    ]
   }
 ]

@@ -46,8 +46,14 @@ export const AGENT_INFO: Record<string, { maker: string; what: string; url: stri
   'ChatGPT': { maker: 'OpenAI', what: "OpenAI's AI assistant", url: 'https://chatgpt.com/' },
   'Claude Agent SDK': { maker: 'Anthropic', what: "Anthropic's SDK for building production AI agents with Claude Code as a library", url: 'https://code.claude.com/docs/en/agent-sdk/overview' },
 };
+// Entity linking for answer engines: each agent gets one stable JSON-LD @id (/agents/<slug>/#agent)
+// shared by its hub page and every use case that mentions it, plus sameAs to its official page and,
+// where an unambiguous item exists, its Wikidata entry (IDs looked up 2026-11-21).
+export const WIKIDATA: Record<string, string> = { 'Claude Code': 'Q138457287', 'OpenAI Codex': 'Q138940795', 'OpenClaw': 'Q137916205', 'Devin': 'Q124874381', 'Cursor': 'Q131980386', 'ChatGPT': 'Q115564437', 'Gemini': 'Q116698014' };
+export const agentSameAs = (a: string) => [AGENT_INFO[a]?.url, WIKIDATA[a] && `https://www.wikidata.org/wiki/${WIKIDATA[a]}`].filter(Boolean) as string[];
+export const agentRef = (a: string) => { const i = AGENT_INFO[a]; const sa = agentSameAs(a); return { '@type': 'SoftwareApplication', '@id': abs(`/agents/${slugify(a)}/#agent`), name: a, applicationCategory: 'AI agent', url: abs(`/agents/${slugify(a)}/`), ...(sa.length ? { sameAs: sa } : {}), ...(i ? { creator: { '@type': 'Organization', name: i.maker } } : {}) }; };
 export const agentWhat = (a: string) => { const i = AGENT_INFO[a]; return i ? `${a} is ${i.what}. Made by ${i.maker}. Official page: ${i.url}` : ''; };
-export const agentLd = (a: string) => { const i = AGENT_INFO[a]; return i ? { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: a, description: `${a} is ${i.what}.`, applicationCategory: 'AI agent', url: abs(`/agents/${slugify(a)}/`), sameAs: i.url, creator: { '@type': 'Organization', name: i.maker } } : null; };
+export const agentLd = (a: string) => { const i = AGENT_INFO[a]; return i ? { '@context': 'https://schema.org', ...agentRef(a), description: `${a} is ${i.what}.` } : null; };
 // Hub page Q&A: short, factual answers built from the data so answer engines can quote a hub
 // (an agent or a category) directly. Rendered on the page and emitted as FAQPage JSON-LD.
 const newest = (list: typeof data) => [...list].filter(d => d.added).sort((a, b) => b.added.localeCompare(a.added));
