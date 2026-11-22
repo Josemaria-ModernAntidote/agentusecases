@@ -26,3 +26,8 @@ export const POST: APIRoute = async ({ request }) => {
 };
 const json = (b: unknown, status = 200) =>
   new Response(JSON.stringify(b), { status, headers: { 'Content-Type': 'application/json' } });
+// Any other method (e.g. a crawler's GET) used to fall through to Astro's 404 lookup, which
+// fetches the prerendered page over localhost inside the function and crashed it with a 500
+// (FUNCTION_INVOCATION_FAILED). Answer 405 instead.
+export const ALL: APIRoute = async () =>
+  new Response(JSON.stringify({ ok: false, error: 'Use POST with an email field.' }), { status: 405, headers: { 'Content-Type': 'application/json', Allow: 'POST' } });

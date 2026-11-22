@@ -3504,17 +3504,18 @@
     "added": "2026-11-16"
   },
   {
-    "title": "A dad with no Blender skills uses Claude Code to make Roblox hair matching his daughter's real haircut",
-    "description": "Matt Burnett, a software engineer and girl dad in Portland, made custom hair for his daughter's Roblox avatar, modeled on her real haircut and colored brightly, two days after she joined Roblox. He says he has no idea what he is doing in Blender and does not even know how to reset the center, so the whole thing was done by Claude Code, and he posted a video of the result.",
+    "title": "A girl dad who didn't want to buy a Roblox skin has Claude Code rig a Creative Commons 3D model as his own avatar",
+    "description": "Matt Burnett, a software engineer and girl dad in Portland, Oregon, got pulled into Roblox when his daughter started playing. Rather than buy a skin for his own avatar, he found a Creative Commons 3D model and had Claude Code rig it, running on Sonnet 5.5 at medium effort, then posted a video of the result.",
     "category": "Hobbies & Games",
     "tools": [
       "Claude Code"
     ],
-    "source": "https://x.com/_mawburn/status/2122201790053790011",
+    "source": "https://x.com/_mawburn/status/2121447884826751433",
     "sourceName": "X (@_mawburn)",
-    "slug": "a-dad-with-no-blender-skills-uses-claude-code-to-make-roblox-hair-matching-his-daughter-s-real-haircut",
+    "slug": "a-girl-dad-who-didn-t-want-to-buy-a-roblox-skin-has-claude-code-rig-a-creative-commons-3d-model-as-his-own-avatar",
     "niche": true,
-    "added": "2026-11-16"
+    "added": "2026-11-16",
+    "updated": "2026-11-22"
   },
   {
     "title": "Codex builds a cozy fishing game with 200 fish for a Pimoroni PicoSystem handheld and automates its flashing over USB",
@@ -3856,5 +3857,83 @@
     "tools": [
       "OpenAI Codex"
     ]
+  },
+  {
+    "title": "A side-hustle sports card shop's Grok Bot bookkeeper refuses to close 6 of 122 stale sales, and one hold saves a live eBay listing",
+    "description": "Ryan Hanley runs Badass Breaks, a sports card business on the side, with a team of Grok Bots. Asked to close 122 paid but unshipped Whatnot and eBay sales from October 31 or earlier, Ledger, the bot that keeps the books, took a backup first, matched on the full SKU plus the order id and held six. One looked like a sold $2.79 Shohei Ohtani card that was still listed, but Bay, the bot that works eBay, found the live listing was a different card, a Giancarlo Stanton, sharing only the short shop number BAB2055. Ending listings by that number would have taken down a good one. All 122 were closed by that night, with missing fees left blank instead of guessed.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/rhanley/status/2124148775962734769",
+    "sourceName": "X (@rhanley)",
+    "slug": "a-side-hustle-sports-card-shop-s-grok-bot-bookkeeper-refuses-to-close-6-of-122-stale-sales-and-one-hold-saves-a-live-ebay-listing",
+    "niche": true,
+    "added": "2026-11-22"
+  },
+  {
+    "title": "A bootstrapped 3D printing manufacturer drops its sales tax service and has a Grok Bot file 16 of 17 state returns",
+    "description": "Tyler Parkerson, founder of UglaForge, a bootstrapped additive manufacturing business in Melbourne, Florida, stopped paying a sales tax service and let his Grok Bot agent take over. It filed and paid 16 of his 17 October state returns, each one a $75 fee he no longer pays. When the Tennessee Department of Revenue needed to speak with him, the agent called them and transferred the call to his phone.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/tylerwp/status/2123900164683284627",
+    "sourceName": "X (@tylerwp)",
+    "slug": "a-bootstrapped-3d-printing-manufacturer-drops-its-sales-tax-service-and-has-a-grok-bot-file-16-of-17-state-returns",
+    "niche": true,
+    "added": "2026-11-22"
+  },
+  {
+    "title": "3D PrintBot: a maker's Grok Bot slices, starts and watches home FDM prints, and pauses the printer when it spots spaghetti",
+    "description": "A maker in Vietnam built 3D PrintBot, a free Grok Bot that runs a printer on the home network from chat. It talks to Elegoo, Bambu Lab, Klipper/Moonraker, OctoPrint and PrusaLink printers, reads temperatures and the current layer, looks up each brand's error codes, suggests PLA, PETG, ABS, ASA or TPU, finds models on Printables, MakerWorld and Thingiverse while checking the license, and slices with Bambu Studio, Orca or PrusaSlicer to quote filament weight and print time. It only starts a print after approval, and while printing it watches the camera: on spaghetti, a part leaving the bed or the nozzle printing into air, it pauses the printer and sends a photo with the reason.",
+    "category": "Physical World",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/tonthat_baotoan/status/2124030439790915764",
+    "sourceName": "X (@tonthat_baotoan)",
+    "slug": "3d-printbot-a-maker-s-grok-bot-slices-starts-and-watches-home-fdm-prints-and-pauses-the-printer-when-it-spots-spaghetti",
+    "niche": true,
+    "added": "2026-11-22"
+  },
+  {
+    "title": "Claude Code recovers 476 lost photos and videos from an iPhone broken on a 2021 Colorado motorcycle trip",
+    "description": "Jeff Deehan, a commercial real estate developer from East Lansing, Michigan, broke his iPhone in 2021 on a motorcycle adventure in Colorado and lost 476 photos and videos he calls priceless. In November 2026 he hacked the old phone with Claude Code and recovered all of them, including a picture of a dirty minibike outside the Prada store in Aspen with a gift for his wife strapped to it.",
+    "category": "Personal Life",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/Jeffdeehan/status/2123529819178840164",
+    "sourceName": "X (@Jeffdeehan)",
+    "slug": "claude-code-recovers-476-lost-photos-and-videos-from-an-iphone-broken-on-a-2021-colorado-motorcycle-trip",
+    "niche": true,
+    "added": "2026-11-22"
+  },
+  {
+    "title": "Claude Code turns a $42 ESP32 touchscreen into a Christmas game advent calendar, and builds its own simulator to test it",
+    "description": "Aneesha Bakharia gave Claude Code (Opus 5.5) a US$42 Waveshare ESP32-S3-Touch-AMOLED-2.16, a link to its docs and an idea: a Christmas tree with numbered presents, each unwrapping a game played a different way. Finding no simulator, it built one, screenshotted the games and fixed what it saw, deployed to the device from the command line, then asked her whether Santa moved the wrong way when she tilted it (he did). The calendar has Memory, a tilt Maze, a piano that teaches a carol, a button Sled game and Presents Breakout, plus falling snow, a volume control and an \"elk mode\" for opening presents early. She plans to give the device away as a gift.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://aieternaut.substack.com/p/using-ai-to-make-an-xmas-advent-calendar",
+    "sourceName": "AI Eternaut (Aneesha Bakharia)",
+    "slug": "claude-code-turns-a-42-esp32-touchscreen-into-a-christmas-game-advent-calendar-and-builds-its-own-simulator-to-test-it",
+    "niche": true,
+    "added": "2026-11-22"
+  },
+  {
+    "title": "A dumb stationary bike gets a Bluetooth cadence sensor and, after one night with Claude Code, its own cycling app",
+    "description": "Solo app developer Hunter Alexander bought a basic stationary bike for his wife and added a Bluetooth cadence sensor. With his Android phone plugged in, he told Claude Code to connect to the sensor through the phone, build a probe app to test it, research the market and then build a cycling app with at least 10 features, trails from around the world and easy ride sharing. It worked for about an hour and produced Open Cycle, which is not in any app store and which he says he may open source.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/HADeveloper_/status/2123884321782071356",
+    "sourceName": "X (@HADeveloper_)",
+    "slug": "a-dumb-stationary-bike-gets-a-bluetooth-cadence-sensor-and-after-one-night-with-claude-code-its-own-cycling-app",
+    "niche": true,
+    "added": "2026-11-22"
   }
 ]

@@ -23,12 +23,15 @@ if (existsSync(f)) {
     { src: '^/$', headers: { Vary: 'Accept', Link: '</llms.txt>; rel="alternate"; type="text/plain", </.well-known/api-catalog>; rel="api-catalog"' }, continue: true },
     // RFC 9727 API catalog: serve the extensionless file with its linkset media type.
     { src: '^/\\.well-known/api-catalog/?$', headers: { 'Content-Type': 'application/linkset+json; profile="https://www.rfc-editor.org/info/rfc9727"', 'Access-Control-Allow-Origin': '*' }, continue: true },
+    // MCP discovery: Server Card (extensionless, at /mcp/server-card and the legacy .well-known path) and AI Catalog media types.
+    { src: '^/(mcp/server-card|\\.well-known/mcp/server-card\\.json)/?$', headers: { 'Content-Type': 'application/mcp-server-card+json', 'Access-Control-Allow-Origin': '*', 'Cache-Control': 'public, max-age=3600' }, continue: true },
+    { src: '^/\\.well-known/ai-catalog\\.json$', headers: { 'Content-Type': 'application/ai-catalog+json', 'Access-Control-Allow-Origin': '*', 'Cache-Control': 'public, max-age=3600' }, continue: true },
     // CORS for machine-readable files (dataset, per-entry JSON, Markdown, llms.txt, feeds, sitemaps)
     // so browser-based agents and tools can fetch them cross-origin. HTML pages are left alone.
     { src: cors, headers: { 'Access-Control-Allow-Origin': '*' }, continue: true },
   ];
   const at = c.routes.findIndex(r => r.handle === 'filesystem');
-  c.routes = c.routes.filter(r => !(r.has || []).some(h => h.value === md.value) && !(r.headers?.Vary === 'Accept') && !/api-catalog/.test(r.src || '') && r.src !== cors);
+  c.routes = c.routes.filter(r => !(r.has || []).some(h => h.value === md.value) && !(r.headers?.Vary === 'Accept') && !/api-catalog|server-card|ai-catalog/.test(r.src || '') && r.src !== cors);
   c.routes.splice(c.routes.findIndex(r => r.handle === 'filesystem'), 0, ...routes);
   writeFileSync(f, JSON.stringify(c, null, 2));
   console.log(`markdown negotiation: ${dirs.length} hub dirs, ${pages.length} top pages (filesystem at ${at})`);

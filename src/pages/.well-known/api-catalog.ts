@@ -19,6 +19,8 @@ export async function GET() {
     ['/stats.md', 'text/markdown', 'Citable statistics by agent, category and week in Markdown'],
     ['/opensearch.xml', 'application/opensearchdescription+xml', 'OpenSearch description of site search (/?q=<term>)'],
     ['/sitemap-index.xml', 'application/xml', 'XML sitemap of every page'],
+    ['/mcp', 'application/json', 'Read-only MCP server (Streamable HTTP, JSON-RPC over POST, no auth): tools search_use_cases, get_use_case, latest_use_cases, list_agents'],
+    ['/mcp/server-card', 'application/mcp-server-card+json', 'MCP Server Card (SEP-2127) for the /mcp endpoint, also listed in /.well-known/ai-catalog.json'],
     ['/sitemap-markdown.xml', 'application/xml', 'XML sitemap of every Markdown version (use cases, hubs, indexes) with lastmod'],
   ];
   const linkset = [
