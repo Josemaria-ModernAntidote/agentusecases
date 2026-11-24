@@ -2557,17 +2557,18 @@
     "added": "2026-10-31"
   },
   {
-    "title": "A paddleboarding treasure hunter's Grok Bot dates six old bottles pulled from the River Avon",
-    "description": "Patricia Broadhurst named her Grok Bot Sloth, after The Goonies. Before each outing it researches the place, then reads the embossing on every find, dates it with an honest confidence level, logs it as FIND-001 and up, and reminds her about the Treasure Act and landowner permission. Her first trip, paddleboarding up the Avon to Rock Mill Weir in Warwick, turned up bottles spanning about 70 years of local drinks.",
+    "title": "A novice treasure hunter's Grok Bot, named Sloth after The Goonies, researches local history and identifies her finds",
+    "description": "Patricia Broadhurst grew up dreaming of Goonies-style adventures and now calls herself a novice treasure hunter and explorer. She named her Grok Bot Sloth, after the film's legendary character, and gave it a job: research local history, identify her finds, investigate the stories behind each object, document her adventures and build an interactive map of her discoveries. Her long-term goal is a personal treasure hunting atlas of photographs, locations, research and finds, perhaps a book one day.",
     "category": "Hobbies & Games",
     "tools": [
       "Grok Bot"
     ],
-    "source": "https://x.com/Patricia_Brdhst/status/2116216226460627375",
-    "sourceName": "@Patricia_Brdhst (X)",
+    "source": "https://x.com/Patricia_Brdhst/status/2115753932517445873",
+    "sourceName": "Patricia Broadhurst (@Patricia_Brdhst) on X",
     "slug": "a-paddleboarding-treasure-hunter-s-grok-bot-dates-six-old-bottles-pulled-from-the-river-avon",
     "niche": true,
-    "added": "2026-11-01"
+    "added": "2026-11-01",
+    "updated": "2026-11-24"
   },
   {
     "title": "A wife asks for a below-zero alert, so her husband builds a Loxone config language Claude Code can write",
@@ -3426,19 +3427,6 @@
     "added": "2026-11-15"
   },
   {
-    "title": "A Grok Bot traces a New Zealand family line back to an 1841 emigrant ship and finds a 1938 wedding photo in Te Papa's archive",
-    "description": "Before a trip to Marden in Kent, where her father's family started, Raewyn Sleeman asked her Grok Bot to trace her exact line, which was hard because every generation reused the same names. She says it followed the family from Nicholas Benge, who sailed from England on the Katherine Stewart Forbes in 1841, through Wellington butchers to her dad, then found her aunt's 1938 wedding in old New Zealand newspapers, with her father as the page boy, and the wedding photo in Te Papa's archive, which she had never seen.",
-    "category": "Research & Learning",
-    "tools": [
-      "Grok Bot"
-    ],
-    "source": "https://x.com/DrRaewynSleeman/status/2121549508962033868",
-    "sourceName": "X (@DrRaewynSleeman)",
-    "slug": "a-grok-bot-traces-a-new-zealand-family-line-back-to-an-1841-emigrant-ship-and-finds-a-1938-wedding-photo-in-te-papa-s-archive",
-    "niche": true,
-    "added": "2026-11-15"
-  },
-  {
     "title": "A custom packaging shop's Grok Bot runs a workshop wall display on a Raspberry Pi 4 and an old Epson projector",
     "description": "Nile McMillion, who runs a custom packaging business and used to build rocket engines, put a projector up in his shop that cycles through the live order queue, to-do list, calendar, finances and doorbell camera. He says his Grok Bot set it up with an API, so the crew can get his attention when they need something and he can push instructions or a web page (like a Starship launch) to the big screen from his phone. It all runs on a Raspberry Pi 4 and an old Epson projector.",
     "category": "Small Business",
@@ -3935,5 +3923,83 @@
     "slug": "a-dumb-stationary-bike-gets-a-bluetooth-cadence-sensor-and-after-one-night-with-claude-code-its-own-cycling-app",
     "niche": true,
     "added": "2026-11-22"
+  },
+  {
+    "title": "Hermes Agent helps a dad build his son a \"Ticket Monstre\" Pokedex that turns anything it sees into a printed monster receipt",
+    "description": "Board game designer Thibaud Zamora wanted a real Pokedex for his son, so he had Hermes Agent design both the hardware and the software: an ESP32 with a camera in a low-cost 3D-printed case, plus custom code that runs the YOLO11n vision model locally on the device. Point it at something, press the button and a receipt slides out of the box's mouth with a \"Monstre Sauvage\": a person became Persflam, a fire type with 100 HP, attacks like \"Coup de Chaud\" (the opponent takes off their sweater), a weakness to watering cans and a line saying it loves being photographed but hates the flash. He published the STL files, code and parts list on GitHub and said he had always wanted to make his own electronic device and now he can.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Hermes Agent"
+    ],
+    "source": "https://x.com/thibaudz/status/2124534729898701233",
+    "sourceName": "Thibaud Zamora (@thibaudz) on X",
+    "slug": "hermes-agent-helps-a-dad-build-his-son-a-ticket-monstre-pokedex-that-turns-anything-it-sees-into-a-printed-monster-receipt",
+    "niche": true,
+    "added": "2026-11-24"
+  },
+  {
+    "title": "Grok Bot phones the Ohio workers' comp bureau for a Letter ID that weeks of staff emails never got, then pays the invoice and the fine",
+    "description": "Costa Kapothanasis's company had an Ohio workers' compensation invoice that could only be paid in the portal with a Letter ID it did not have. An admin was asked to call the Ohio BWC for it but sent email after email instead, nothing got resolved, and a fine arrived for the unpaid invoice. He handed the job to his Grok Bot, which called the bureau, got the Letter ID, paid the invoice along with the fine and sent him the call recording. He said it was obvious the woman on the line had no idea she was talking to an AI.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/CostaKapo/status/2123797519419273464",
+    "sourceName": "Costa Kapothanasis (@CostaKapo) on X",
+    "slug": "grok-bot-phones-the-ohio-workers-comp-bureau-for-a-letter-id-that-weeks-of-staff-emails-never-got-then-pays-the-invoice-and-the-fine",
+    "niche": true,
+    "added": "2026-11-24"
+  },
+  {
+    "title": "A dad uses Grok Bot to make the kid-friendly video on how the Algonquin people made fire that his son's homework needed",
+    "description": "Sergio's son had a school assignment on how the Algonquin people made fire, and the two of them could not find a short video explaining it at a kid's level. So he made a roughly 70-second explainer with Grok Bot, then uploaded it to YouTube so other kids with the same assignment can learn from it too.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/SergioCollects/status/2124563476752338947",
+    "sourceName": "Sergio (@SergioCollects) on X",
+    "slug": "a-dad-uses-grok-bot-to-make-the-kid-friendly-video-on-how-the-algonquin-people-made-fire-that-his-son-s-homework-needed",
+    "niche": true,
+    "added": "2026-11-24"
+  },
+  {
+    "title": "Grok Bot calls the car rental help line from a delayed flight so the reservation survives a missed two-hour grace period",
+    "description": "After hours in the gate area of an extremely delayed flight, Reuben realized only once on board that he would land well past his rental pickup time and miss the two-hour grace period. He had his Grok Bot call the rental company's help line. After some confusion from the agent, the bot cleared things up, added his flight details to the reservation and confirmed the car would be waiting and ready when he landed.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/therookiehacker/status/2123627093011386548",
+    "sourceName": "Reuben (@therookiehacker) on X",
+    "slug": "grok-bot-calls-the-car-rental-help-line-from-a-delayed-flight-so-the-reservation-survives-a-missed-two-hour-grace-period",
+    "niche": true,
+    "added": "2026-11-24"
+  },
+  {
+    "title": "Claude Code ray-traces the spinning black hole at the center of our galaxy in raw WebGL2 and checks its shadow against the textbook answer",
+    "description": "Gabriele Bolognese gave Claude Code (Opus 5.5 at xhigh effort) a physics brief: a spinning Kerr black hole with the mass and distance of Sagittarius A*, every pixel an exact light path traced backward from the camera on the GPU, a thin accretion disk with a flaring hot spot and a virtual Event Horizon Telescope watching through the night. With no libraries (raw WebGL2, canvas 2D and 7 Web Workers) it worked alone for 179 minutes over 262 turns, wrote 4,316 lines and cost $113.94 at API prices. The rendered shadow came out at 51.167 microarcseconds, 0.000196% off Bardeen's analytic curve. The hard part was 32-bit floats: rays bounced off nothing until it re-projected the radial velocity, and it cut the planned 40,960 rays per frame to about 8,192 to fit his laptop's integrated GPU.",
+    "category": "Research & Learning",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/bologabriele/status/2124080596049613283",
+    "sourceName": "Gabriele Bolognese (@bologabriele) on X",
+    "slug": "claude-code-ray-traces-the-spinning-black-hole-at-the-center-of-our-galaxy-in-raw-webgl2-and-checks-its-shadow-against-the-textbook-answer",
+    "niche": true,
+    "added": "2026-11-24"
+  },
+  {
+    "title": "A small business owner has Grok Bot read every insurance policy overnight and it finds premiums rated on $900K of sales that never happened",
+    "description": "Benjamin Haberman had his Grok Bot read all of his business insurance policies in one evening. It found that his auditable liability policy had been rated on about $900,000 more in sales than the business actually did, which he expects to come back as a refund, and that his workers' comp policy estimated payroll at four times reality and was left at \"no change\" on audit, while the renewal still went up about 12%. Now the bot is shopping every line of coverage for him. His verdict: it did in one night what his broker never did.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/benjhaberman/status/2123619661421908470",
+    "sourceName": "Benjamin Haberman (@benjhaberman) on X",
+    "slug": "a-small-business-owner-has-grok-bot-read-every-insurance-policy-overnight-and-it-finds-premiums-rated-on-900k-of-sales-that-never-happened",
+    "niche": true,
+    "added": "2026-11-24"
   }
 ]

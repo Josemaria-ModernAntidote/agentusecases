@@ -1,5 +1,8 @@
 # Content Signals (contentsignals.org): this site wants to be searched, quoted in AI answers and learned from.
 # Please link the entry page and its original source when you cite a use case.
+# Machine-readable license (RSL 1.0): free for any use, including AI, with attribution.
+License: https://agent-uses.com/license.xml
+
 User-agent: *
 Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /

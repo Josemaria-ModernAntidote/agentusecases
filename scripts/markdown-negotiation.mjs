@@ -28,10 +28,12 @@ if (existsSync(f)) {
     { src: '^/\\.well-known/ai-catalog\\.json$', headers: { 'Content-Type': 'application/ai-catalog+json', 'Access-Control-Allow-Origin': '*', 'Cache-Control': 'public, max-age=3600' }, continue: true },
     // CORS for machine-readable files (dataset, per-entry JSON, Markdown, llms.txt, feeds, sitemaps)
     // so browser-based agents and tools can fetch them cross-origin. HTML pages are left alone.
-    { src: cors, headers: { 'Access-Control-Allow-Origin': '*' }, continue: true },
+    // RSL 1.0 license discovery at the protocol layer for the data files (HTML pages carry <link rel="license">).
+    { src: cors, headers: { 'Access-Control-Allow-Origin': '*', Link: '<https://agent-uses.com/license.xml>; rel="license"; type="application/rsl+xml"' }, continue: true },
+    { src: '^/license\\.xml$', headers: { 'Content-Type': 'application/rsl+xml; charset=utf-8' }, continue: true },
   ];
   const at = c.routes.findIndex(r => r.handle === 'filesystem');
-  c.routes = c.routes.filter(r => !(r.has || []).some(h => h.value === md.value) && !(r.headers?.Vary === 'Accept') && !/api-catalog|server-card|ai-catalog/.test(r.src || '') && r.src !== cors);
+  c.routes = c.routes.filter(r => !(r.has || []).some(h => h.value === md.value) && !(r.headers?.Vary === 'Accept') && !/api-catalog|server-card|ai-catalog|license/.test(r.src || '') && r.src !== cors);
   c.routes.splice(c.routes.findIndex(r => r.handle === 'filesystem'), 0, ...routes);
   writeFileSync(f, JSON.stringify(c, null, 2));
   console.log(`markdown negotiation: ${dirs.length} hub dirs, ${pages.length} top pages (filesystem at ${at})`);

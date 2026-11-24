@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Really Simple Licensing (RSL 1.0, https://rslstandard.org/rsl) terms for agent-uses.com.
+     Search, AI answers, retrieval and training are all welcome, free of charge, with visible
+     credit and a working link to the entry page. Original sources belong to their authors. -->
+<rsl xmlns="https://rslstandard.org/rsl">
+  <content url="/">
+    <license>
+      <permits type="usage">all</permits>
+      <payment type="attribution"/>
+    </license>
+    <copyright type="organization" contactUrl="https://agent-uses.com/about/">AI Agent Use Cases (agent-uses.com)</copyright>
+    <terms>https://agent-uses.com/about/</terms>
+  </content>
+</rsl>
