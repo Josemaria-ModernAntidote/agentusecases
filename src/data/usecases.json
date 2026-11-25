@@ -4001,5 +4001,83 @@
     "slug": "a-small-business-owner-has-grok-bot-read-every-insurance-policy-overnight-and-it-finds-premiums-rated-on-900k-of-sales-that-never-happened",
     "niche": true,
     "added": "2026-11-24"
+  },
+  {
+    "title": "A Dutch couple's 10-year-old Roomba loses iRobot's cloud, so Grok Bot finds it on the home network and builds them a local control app",
+    "description": "Martin van Son in Schagen, the Netherlands, had a 10-year-old Roomba named Fred that went dumb when iRobot dropped support and the app went dark. He asked his Grok Bot to fix it. The agent found the robot vacuum on the home network and built him and his wife a small web app that controls it locally, with no cloud in the loop. Fred now cleans just as he did when the cloud still worked, so an old appliance stayed out of the bin.",
+    "category": "Physical World",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/DutchMartin/status/2124780290774323513",
+    "sourceName": "Martin van Son (@DutchMartin) on X",
+    "slug": "a-dutch-couple-s-10-year-old-roomba-loses-irobot-s-cloud-so-grok-bot-finds-it-on-the-home-network-and-builds-them-a-local-control-app",
+    "niche": true,
+    "added": "2026-11-25"
+  },
+  {
+    "title": "A $1,131.60 airline refund vanishes onto a Chase Travel virtual card the owner never had, and Grok Bot traces it and calls to get it back",
+    "description": "Benjamin Ignacio in Tampa Bay canceled a family trip, but American Airlines sent the $1,131.60 refund to a Chase Travel virtual card he never had, so the money never showed up. His Grok Bot dug up the refund emails, matched the ticket numbers to the booking, phoned Chase Travel for him and handed him the call once a human rep picked up. The refund is on its way back to him.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/benjammin_sol/status/2124561629899636837",
+    "sourceName": "Benjamin Ignacio (@benjammin_sol) on X",
+    "slug": "a-1-131-60-airline-refund-vanishes-onto-a-chase-travel-virtual-card-the-owner-never-had-and-grok-bot-traces-it-and-calls-to-get-it-back",
+    "niche": true,
+    "added": "2026-11-25"
+  },
+  {
+    "title": "A London dad's free kids learning site gets its first paperback, a 110-page maths games book Grok Bot wrote, designed and set up for print",
+    "description": "Ömer Çelik runs learnwith.games, free maths and English games for UK primary school children with no sign-up, ads or cookies, on Cloudflare's free tier. His Grok Bot published a real 110-page paperback on Amazon with 40 pencil-and-paper maths games, every answer checked in code, plus its cover and Amazon A+ pages for 5 countries. The same bot built 1,200+ pages of games, a US K to 6 version, 159 free printables, a Stripe shop of printable packs that helps pay for the free site, Pinterest pins, short videos and a promo video for the book. His part, he says, is mostly saying yes and pressing Post.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/omercelik/status/2124506911164727773",
+    "sourceName": "Ömer Çelik (@omercelik) on X",
+    "slug": "a-london-dad-s-free-kids-learning-site-gets-its-first-paperback-a-110-page-maths-games-book-grok-bot-wrote-designed-and-set-up-for-print",
+    "niche": true,
+    "added": "2026-11-25"
+  },
+  {
+    "title": "GROK BOT HERO: a collector makes a playable game for his ModRetro Chromatic handheld with his Grok Bot, Carty G",
+    "description": "Joe (@CardCaptain), a trading card collector and retro handheld fan, built a game for his ModRetro Chromatic, a modern Game Boy style console, with Grok 4.7 and his Grok Bot named Carty G. In GROK BOT HERO you dodge enemies, collect silicon chips to power up, and pick up electrons to fire at enemies. He posted a video of it running on the real handheld.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/CardCaptain/status/2111538662651625798",
+    "sourceName": "Joe (@CardCaptain) on X",
+    "slug": "grok-bot-hero-a-collector-makes-a-playable-game-for-his-modretro-chromatic-handheld-with-his-grok-bot-carty-g",
+    "niche": true,
+    "added": "2026-11-25"
+  },
+  {
+    "title": "Claude Code finds IKEA's own 3D model of a saucier and designs a stronger replacement handle for a home 3D printer",
+    "description": "Borodutch in Vancouver kept an IKEA saucier because stainless steel is basically indestructible, but its replaceable handle broke and the pan was a hassle to use. He prompted Claude Code (through T3 Code) to fix it. The agent identified the exact pan, found the 3D models IKEA publishes for it, modeled a replacement handle with fewer moving parts, and sent it to his 3D printer, the latest of his experiments with giving an AI a 3D printer.",
+    "category": "Physical World",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://x.com/backmeupplz/status/2124552238609858770",
+    "sourceName": "borodutch (@backmeupplz) on X",
+    "slug": "claude-code-finds-ikea-s-own-3d-model-of-a-saucier-and-designs-a-stronger-replacement-handle-for-a-home-3d-printer",
+    "niche": true,
+    "added": "2026-11-25"
+  },
+  {
+    "title": "PopkaPhone: Claude Code helps turn a 6-year-old Pixel 5 with no video out into a Linux desktop it streams to a monitor, a Mac, a tablet and a TV",
+    "description": "Slava Kalachev (PopaSpinka) wrote a from-scratch shell for the Google Pixel 5 on Ubuntu Touch together with Claude Code: its own display driver, Wayland compositor and keyboard, plus a windowed desktop with Files, a browser, Terminal and a system monitor. The phone has no video output, so it compresses the desktop with its hardware video encoder and sends it to a Raspberry Pi 5 dock driving an HDMI monitor, or to a Mac window, an Android tablet and an Android TV at once, moving between cable and Wi-Fi without a break. It also runs Android apps in windows, NES and PlayStation emulators and Windows games through Wine and Box64. He froze the project on 22 November 2026 and published it on GitHub under the MIT license.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://github.com/PopaSpinka/PopkaPhone",
+    "sourceName": "PopaSpinka/PopkaPhone on GitHub",
+    "slug": "popkaphone-claude-code-helps-turn-a-6-year-old-pixel-5-with-no-video-out-into-a-linux-desktop-it-streams-to-a-monitor-a-mac-a-tablet-and-a-tv",
+    "niche": true,
+    "added": "2026-11-25"
   }
 ]

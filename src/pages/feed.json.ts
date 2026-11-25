@@ -1,4 +1,4 @@
-import { items, NAME, abs, lastUpdated } from '../lib/site';
+import { items, NAME, abs, lastUpdated, WEBSUB_HUB } from '../lib/site';
 // JSON Feed 1.1 of every use case, newest first: a structured, machine-readable feed for readers, aggregators and AI crawlers.
 export async function GET() {
   const sorted = [...items].map((d, i) => ({ d, i })).sort((a, b) => (b.d.added || '').localeCompare(a.d.added || '') || b.i - a.i).map(r => r.d);
@@ -9,6 +9,7 @@ export async function GET() {
     feed_url: abs('/feed.json'),
     description: `Real AI agent use cases, each linked to its original source. ${items.length} entries, newest first. Last updated ${lastUpdated}.`,
     language: 'en',
+    hubs: [{ type: 'WebSub', url: WEBSUB_HUB }],
     items: sorted.map(d => ({
       id: abs(`/use-cases/${d.slug}/`),
       url: abs(`/use-cases/${d.slug}/`),

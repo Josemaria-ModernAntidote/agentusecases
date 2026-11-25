@@ -14,6 +14,9 @@ if (existsSync(f)) {
   const pages = ['new', 'niche', 'stats', 'archive', 'compare', 'sources', 'topics', 'use-cases'].filter(p => existsSync(`${root}/${p}.md`));
   const hub = `^/(${dirs.join('|')})/([^/.]+)/?$`, top = `^/(${pages.join('|')})/?$`;
   const cors = '^/(.*\\.(json|md|txt|csv|xml)|\\.well-known/llms\\.txt)$';
+  // WebSub discovery at the protocol layer: every feed advertises its hub and canonical self URL
+  // (the feeds also carry them in-document: atom:link in RSS, hubs in the JSON Feed).
+  const feeds = '^/((agents|categories)/[^/]+/rss\\.xml|rss\\.xml|feed\\.json)$';
   const routes = [
     { src: hub, has: [md], dest: '/$1/$2.md', headers: { Vary: 'Accept' } },
     { src: top, has: [md], dest: '/$1.md', headers: { Vary: 'Accept' } },
@@ -30,10 +33,11 @@ if (existsSync(f)) {
     // so browser-based agents and tools can fetch them cross-origin. HTML pages are left alone.
     // RSL 1.0 license discovery at the protocol layer for the data files (HTML pages carry <link rel="license">).
     { src: cors, headers: { 'Access-Control-Allow-Origin': '*', Link: '<https://agent-uses.com/license.xml>; rel="license"; type="application/rsl+xml"' }, continue: true },
+    { src: feeds, headers: { Link: '<https://pubsubhubbub.appspot.com/>; rel="hub", <https://agent-uses.com/$1>; rel="self", <https://agent-uses.com/license.xml>; rel="license"; type="application/rsl+xml"' }, continue: true },
     { src: '^/license\\.xml$', headers: { 'Content-Type': 'application/rsl+xml; charset=utf-8' }, continue: true },
   ];
   const at = c.routes.findIndex(r => r.handle === 'filesystem');
-  c.routes = c.routes.filter(r => !(r.has || []).some(h => h.value === md.value) && !(r.headers?.Vary === 'Accept') && !/api-catalog|server-card|ai-catalog|license/.test(r.src || '') && r.src !== cors);
+  c.routes = c.routes.filter(r => !(r.has || []).some(h => h.value === md.value) && !(r.headers?.Vary === 'Accept') && !/api-catalog|server-card|ai-catalog|license/.test(r.src || '') && r.src !== cors && r.src !== feeds);
   c.routes.splice(c.routes.findIndex(r => r.handle === 'filesystem'), 0, ...routes);
   writeFileSync(f, JSON.stringify(c, null, 2));
   console.log(`markdown negotiation: ${dirs.length} hub dirs, ${pages.length} top pages (filesystem at ${at})`);
