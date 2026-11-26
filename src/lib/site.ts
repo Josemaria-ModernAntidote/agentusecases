@@ -149,7 +149,29 @@ export const sourceType = (u: string) => {
 // claim rests on a social post, a forum thread, a code repo, a blog, press or a vendor page.
 const SOURCE_LD: Record<string, string> = { x: 'SocialMediaPosting', github: 'SoftwareSourceCode', hn: 'DiscussionForumPosting', forum: 'DiscussionForumPosting', blog: 'BlogPosting', press: 'NewsArticle', vendor: 'WebPage' };
 export const sourceLabel = (u: string) => sourceTypes.find(s => s.key === sourceType(u))!.label;
-export const sourceLd = (d: { source: string; sourceName: string }) => ({ '@type': SOURCE_LD[sourceType(d.source)] ?? 'CreativeWork', name: d.sourceName, url: d.source });
+// Who published the original source, derived from its URL (X handle, GitHub owner, Medium or
+// Reddit user), so the entry credits a person or account and answer engines can attribute the
+// claim to its first-hand author, not to this directory. null when the URL does not name one.
+const ORG_AUTHORS = new Set(['nousresearch', 'lerobothf']);
+export const sourceAuthor = (d: { source: string; sourceName: string }): { name: string; handle: string; url: string; type: 'Person' | 'Organization' } | null => {
+  let u: URL; try { u = new URL(d.source); } catch { return null; }
+  const h = u.hostname.replace(/^www\./, ''), seg = u.pathname.split('/').filter(Boolean);
+  const mk = (handle: string, url: string, name?: string) => ({ name: name || handle, handle, url, type: (ORG_AUTHORS.has(handle.replace(/^@/, '').toLowerCase()) ? 'Organization' : 'Person') as 'Person' | 'Organization' });
+  if ((h === 'x.com' || h === 'twitter.com') && seg[1] === 'status' && seg[0] !== 'i') {
+    const at = `@${seg[0]}`;
+    // X handles are [A-Za-z0-9_] only, so the handle needs no regex escaping.
+    const m = d.sourceName.match(new RegExp(`^(.+?)\\s*\\(${at}\\)`, 'i'));
+    const name = m && !/^x$/i.test(m[1].trim()) ? m[1].trim() : at;
+    return mk(at, `https://x.com/${seg[0]}`, name);
+  }
+  if (h === 'github.com' && seg[0]) return mk(seg[0], `https://github.com/${seg[0]}`);
+  if (h === 'medium.com' && seg[0]?.startsWith('@')) return mk(seg[0], `https://medium.com/${seg[0]}`);
+  if (h.endsWith('.medium.com') && h !== 'medium.com') { const n = h.split('.')[0]; return mk(n, `https://${h}/`); }
+  if (h.endsWith('reddit.com') && (seg[0] === 'user' || seg[0] === 'u') && seg[1]) return mk(`u/${seg[1]}`, `https://www.reddit.com/user/${seg[1]}/`);
+  return null;
+};
+const authorLd = (a: NonNullable<ReturnType<typeof sourceAuthor>>) => ({ '@type': a.type, name: a.name, ...(a.name !== a.handle ? { alternateName: a.handle } : {}), url: a.url, sameAs: a.url });
+export const sourceLd = (d: { source: string; sourceName: string }) => { const a = sourceAuthor(d); return { '@type': SOURCE_LD[sourceType(d.source)] ?? 'CreativeWork', name: d.sourceName, url: d.source, ...(a ? { author: authorLd(a) } : {}) }; };
 export const bySource = () => sourceTypes.map(s => ({ ...s, list: data.filter(d => sourceType(d.source) === s.key) }));
 export const sourcesFaq = (): [string, string][] => {
   const g = bySource(); const n = (k: string) => g.find(x => x.key === k)!.list.length;

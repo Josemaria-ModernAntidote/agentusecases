@@ -1,4 +1,4 @@
-import { items, slugify, abs, lastUpdated, NAME, relatedTo, sourceType, sourceLabel } from '../../lib/site';
+import { items, slugify, abs, lastUpdated, NAME, relatedTo, sourceType, sourceLabel, sourceAuthor } from '../../lib/site';
 // Plain Markdown copy of every use case page at /use-cases/<slug>.md (the llms.txt convention):
 // answer engines and agents get the facts and the source link without HTML, nav or scripts.
 // Each HTML page points here with <link rel="alternate" type="text/markdown">.
@@ -12,6 +12,7 @@ export async function GET({ props }: { props: { d: (typeof items)[number] } }) {
   t += `- Category: [${d.category}](${abs(`/categories/${slugify(d.category)}/`)})\n`;
   if (d.niche) t += `- Tag: Niche (individuals, hobbies, small operators or odd experiments)\n`;
   t += `- Original source: [${d.sourceName}](${d.source})\n`;
+  const au = sourceAuthor(d); if (au) t += `- Original author: [${au.name}${au.name !== au.handle ? ` (${au.handle})` : ''}](${au.url})\n`;
   t += `- Source type: [${sourceLabel(d.source)}](${abs(`/sources/#${sourceType(d.source)}`)})\n`;
   if (d.added) t += `- Added: ${d.added}\n`;
   t += `- Last updated: ${modified}\n- Web page: ${page}\n`;

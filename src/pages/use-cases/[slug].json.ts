@@ -1,4 +1,4 @@
-import { items, slugify, abs, lastUpdated, NAME, relatedTo, sourceType, sourceLabel } from '../../lib/site';
+import { items, slugify, abs, lastUpdated, NAME, relatedTo, sourceType, sourceLabel, sourceAuthor } from '../../lib/site';
 // One small JSON document per use case at /use-cases/<slug>.json, so an agent or answer engine
 // that needs a single entry (to cite it, check its source or show a card) can fetch a few hundred
 // bytes instead of the whole dataset or the HTML page. Linked from each page with
@@ -19,7 +19,7 @@ export async function GET({ props }: { props: { d: (typeof items)[number] } }) {
     url: page,
     markdown: abs(`/use-cases/${d.slug}.md`),
     image: abs(`/og/${d.slug}.png`),
-    source: { url: d.source, name: d.sourceName, type: sourceType(d.source), typeLabel: sourceLabel(d.source) },
+    source: { url: d.source, name: d.sourceName, type: sourceType(d.source), typeLabel: sourceLabel(d.source), author: sourceAuthor(d) },
     citation: `${NAME}. (${(d.added ?? modified).slice(0, 4)}). ${d.title}. Retrieved from ${page} (original source: ${d.source})`,
     related: relatedTo(d).map(r => ({ title: r.title, url: abs(`/use-cases/${r.slug}/`), json: abs(`/use-cases/${r.slug}.json`) })),
     dataset: abs('/use-cases.json'),
