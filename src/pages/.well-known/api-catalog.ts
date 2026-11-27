@@ -17,6 +17,7 @@ export async function GET() {
     ['/use-cases.md', 'text/markdown', 'Every use case A to Z in Markdown'],
     ['/new.md', 'text/markdown', 'Newest additions in Markdown, grouped by day added'],
     ['/stats.md', 'text/markdown', 'Citable statistics by agent, category and week in Markdown'],
+    ['/authors.md', 'text/markdown', 'Every credited original author (X, GitHub, Reddit, Medium) with all the use cases they reported, in Markdown'],
     ['/opensearch.xml', 'application/opensearchdescription+xml', 'OpenSearch description of site search (/?q=<term>)'],
     ['/sitemap-index.xml', 'application/xml', 'XML sitemap of every page'],
     ['/mcp', 'application/json', 'Read-only MCP server (Streamable HTTP, JSON-RPC over POST, no auth): tools search_use_cases, get_use_case, latest_use_cases, list_agents'],

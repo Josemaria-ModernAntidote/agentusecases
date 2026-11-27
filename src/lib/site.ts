@@ -170,7 +170,27 @@ export const sourceAuthor = (d: { source: string; sourceName: string }): { name:
   if (h.endsWith('reddit.com') && (seg[0] === 'user' || seg[0] === 'u') && seg[1]) return mk(`u/${seg[1]}`, `https://www.reddit.com/user/${seg[1]}/`);
   return null;
 };
-const authorLd = (a: NonNullable<ReturnType<typeof sourceAuthor>>) => ({ '@type': a.type, name: a.name, ...(a.name !== a.handle ? { alternateName: a.handle } : {}), url: a.url, sameAs: a.url });
+// Authors index (/authors/ and /authors.md): every first-hand author credited by an entry, with
+// one stable JSON-LD @id each (/authors/#<anchor>) shared by the index and every entry's
+// isBasedOn.author, so answer engines can tie each person to all the use cases they reported.
+export const authorAnchor = (a: { handle: string }) => slugify(a.handle.replace(/^@/, '')) || 'author';
+export const authorId = (a: { handle: string }) => abs(`/authors/#${authorAnchor(a)}`);
+export const authorLd = (a: NonNullable<ReturnType<typeof sourceAuthor>>) => ({ '@type': a.type, '@id': authorId(a), name: a.name, ...(a.name !== a.handle ? { alternateName: a.handle } : {}), url: a.url, sameAs: a.url });
+export const byAuthor = () => {
+  const m = new Map<string, { a: NonNullable<ReturnType<typeof sourceAuthor>>; list: typeof data }>();
+  for (const d of data) { const a = sourceAuthor(d); if (!a) continue; const k = authorAnchor(a); const g = m.get(k); if (g) { g.list.push(d); if (g.a.name === g.a.handle && a.name !== a.handle) g.a = a; } else m.set(k, { a, list: [d] }); }
+  return [...m.entries()].map(([anchor, g]) => ({ anchor, ...g })).sort((x, y) => y.list.length - x.list.length || x.a.name.localeCompare(y.a.name, 'en', { sensitivity: 'base' }));
+};
+export const authorsFaq = (): [string, string][] => {
+  const g = byAuthor(), credited = g.reduce((n, x) => n + x.list.length, 0), multi = g.filter(x => x.list.length > 1);
+  const kinds = (['x', 'github', 'forum', 'blog'] as const).map(k => [k, g.filter(x => sourceType(x.list[0].source) === k).length] as const).filter(r => r[1] > 0);
+  const label: Record<string, string> = { x: 'X accounts', github: 'GitHub owners', forum: 'Reddit users', blog: 'Medium writers' };
+  return [
+    ['Who reported these AI agent use cases?', `${credited} of the ${data.length} entries name a first-hand author in their source URL: ${g.length} different people and accounts (${kinds.map(([k, n]) => `${n} ${label[k]}`).join(', ')}). The rest come from blogs, press, Hacker News or vendor pages that do not name an author in the URL.`],
+    ['Who has the most entries?', multi.length ? `${multi.slice(0, 5).map(x => `${x.a.name} (${x.list.length})`).join(', ')}. ${multi.length} authors appear more than once.` : 'No author appears more than once yet.'],
+    ['How is an author identified?', 'From the source URL only: the X handle of a post, the owner of a GitHub repo, a Medium author or a Reddit user. Each links to that public profile, under the display name the source shows.'],
+  ];
+};
 export const sourceLd = (d: { source: string; sourceName: string }) => { const a = sourceAuthor(d); return { '@type': SOURCE_LD[sourceType(d.source)] ?? 'CreativeWork', name: d.sourceName, url: d.source, ...(a ? { author: authorLd(a) } : {}) }; };
 export const bySource = () => sourceTypes.map(s => ({ ...s, list: data.filter(d => sourceType(d.source) === s.key) }));
 export const sourcesFaq = (): [string, string][] => {

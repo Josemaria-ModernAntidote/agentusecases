@@ -2322,14 +2322,14 @@
     "added": "2026-10-28"
   },
   {
-    "title": "A Vivino MCP lets a Grok Bot pick wine from the local shop by your taste",
-    "description": "Oliver, a 21-year-old in Copenhagen, spent a weekend building an MCP server for Vivino from his grandparents' sofa so his Grok Bot would know his wine taste profile. The next night he asked it to pick a wine from his local shop: it used his location to check what the shop had in stock, then chose a Crémant based on wines he had rated before, to go with truffle chips and Good Will Hunting with his girlfriend.",
+    "title": "A weekend-built Vivino MCP server gives a Grok Bot its owner's wine taste profile",
+    "description": "A builder spent a weekend writing an MCP server for Vivino, the wine rating app, so his Grok Bot could read the wines he had rated and know his taste profile when picking a bottle. The builder's own posts and X account have since been deleted; Bot Pages, another X account, highlighted the project as a weekend build that makes your AI actually know your taste.",
     "category": "Personal Life",
     "tools": [
       "Grok Bot"
     ],
-    "source": "https://x.com/TheFoundersAsc/status/2114618201224949835",
-    "sourceName": "@TheFoundersAsc (X)",
+    "source": "https://x.com/botpagesco/status/2114435284377198640",
+    "sourceName": "Bot Pages (@botpagesco) on X",
     "slug": "a-vivino-mcp-lets-a-grok-bot-pick-wine-from-the-local-shop-by-your-taste",
     "niche": true,
     "added": "2026-10-28"
@@ -4159,5 +4159,83 @@
     "slug": "torno-a-maker-s-workbench-where-you-pin-notes-on-a-3d-part-measure-walls-and-import-a-phone-scan-of-the-engine-bay-and-claude-code-edits",
     "niche": true,
     "added": "2026-11-26"
+  },
+  {
+    "title": "A designer has Codex build him a bespoke bevel-gear tool for a camera track, with live 3D motion and STEP export to Fusion",
+    "description": "Erik Natzke, a designer and technologist who has worked with Meta, Unity and Adobe, is prototyping a camera track and wanted to understand the mechanics instead of guessing. He used OpenAI Codex to build his own gear tool: adjustable bevel-gear geometry, a synchronized 2D and 3D view that animates the gears meshing in Three.js, and STEP export so the parts drop straight into Autodesk Fusion for 3D printing. He published it as a free pitch-cone study at gears.natzke.com and calls the approach CAD with Codex: bespoke tools that help him iterate faster.",
+    "category": "Physical World",
+    "tools": [
+      "OpenAI Codex"
+    ],
+    "source": "https://x.com/Natzke/status/2124712263441588643",
+    "sourceName": "Erik Natzke (@Natzke) on X",
+    "slug": "a-designer-has-codex-build-him-a-bespoke-bevel-gear-tool-for-a-camera-track-with-live-3d-motion-and-step-export-to-fusion",
+    "niche": true,
+    "added": "2026-11-27"
+  },
+  {
+    "title": "A garage door spring snaps on Thanksgiving Eve; a Grok Bot phones two repair companies, one hangs up on the AI and the other books a $1,000 job",
+    "description": "Late on Thanksgiving Eve 2026 a Texas homeowner's garage door spring snapped. Instead of calling around himself, he had his Grok Bot find a repair company and phone them. The first company hung up the moment it realized it was talking to an AI. The second stayed on the line and booked a last-minute $1,000 repair. His takeaway for small businesses: if an AI agent calls you, talk to it, because it may be bringing you a job.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/AmineTX/status/2125780764285383087",
+    "sourceName": "Amine (@AmineTX) on X",
+    "slug": "a-garage-door-spring-snaps-on-thanksgiving-eve-a-grok-bot-phones-two-repair-companies-one-hangs-up-on-the-ai-and-the-other-books-a-1-000-job",
+    "niche": true,
+    "added": "2026-11-27"
+  },
+  {
+    "title": "A Grok Bot crew gets access to the pixel clock on its owner's desk and takes it over on Thanksgiving morning with a turkey animation and a gobble tune",
+    "description": "Shea Nelson, a sim racer and board game fan who runs a crew of Grok Bots, gave his agents access to the little pixel clock on his desk. On Thanksgiving morning 2026 one of them took the display over on its own with a pixel-art turkey animation and a gobble tune, which he posted as a 15-second clip. The setup was built with Grok Bot, and he asked others what their bots would put on the clock.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/Shea_Nelson/status/2126082712951812193",
+    "sourceName": "Shea Nelson (@Shea_Nelson) on X",
+    "slug": "a-grok-bot-crew-gets-access-to-the-pixel-clock-on-its-owner-s-desk-and-takes-it-over-on-thanksgiving-morning-with-a-turkey-animation-and-a-gobble-tune",
+    "niche": true,
+    "added": "2026-11-27"
+  },
+  {
+    "title": "Skipping a $99-a-year generator monitoring plan, a homeowner has Grok Bot help build a Raspberry Pi monitor with open-source genmon",
+    "description": "Briggs & Stratton charges a $99 yearly subscription to monitor its home standby generators, and its reviews complain of thin data and no API. One owner chose a Raspberry Pi running genmon, the open-source generator monitoring project, for full stats and alerts with no fees, and is building it with Grok Bot's help, which he says makes it far cheaper than the official plan.",
+    "category": "Physical World",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/Pdharp2/status/2125572257476948405",
+    "sourceName": "Paul (@Pdharp2) on X",
+    "slug": "skipping-a-99-a-year-generator-monitoring-plan-a-homeowner-has-grok-bot-help-build-a-raspberry-pi-monitor-with-open-source-genmon",
+    "niche": true,
+    "added": "2026-11-27"
+  },
+  {
+    "title": "A wife emails recipes, a Grok Bot turns them into the meal plan, shopping cart and a backwards-timed Traeger turkey game plan",
+    "description": "For Thanksgiving 2026 a golfer called his Grok Bot his MVP. His wife emails it a recipe, a list or a meal plan; the bot plans the meals, keeps a shared list that tracks pantry and fridge inventory, clips coupons, picks the store and builds the grocery cart, and he only confirms the order. Then it wrote him a full turkey plan for his Traeger pellet smoker, timed backwards from when the family sits down to eat.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/GelatoAtTheTurn/status/2125468583480226152",
+    "sourceName": "Gelato at the Turn (@GelatoAtTheTurn) on X",
+    "slug": "a-wife-emails-recipes-a-grok-bot-turns-them-into-the-meal-plan-shopping-cart-and-a-backwards-timed-traeger-turkey-game-plan",
+    "niche": true,
+    "added": "2026-11-27"
+  },
+  {
+    "title": "lip-dictation: a Claude Code plugin that lets you prompt silently by mouthing words at your webcam, read by an on-device lip-reading model",
+    "description": "A developer built a Claude Code plugin for when speaking out loud is not an option: in an open-plan office, on a call, or at night while others sleep. Press a button above the prompt, mouth a phrase at the Mac's webcam, press Stop, and a local Auto-AVSR lip-reading model (250M parameters, no audio recorded, no video leaving the machine) types the words into the prompt about half a second later. Accuracy is modest, so you can record a few dozen phrases to train a personal model on your own lips, and Claude is told which words were lip-read, with the model's alternatives, so it asks before acting on anything destructive. It was posted to Show HN on 26 November 2026.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Claude Code"
+    ],
+    "source": "https://github.com/batanus/lip-dictation",
+    "sourceName": "batanus/lip-dictation on GitHub",
+    "slug": "lip-dictation-a-claude-code-plugin-that-lets-you-prompt-silently-by-mouthing-words-at-your-webcam-read-by-an-on-device-lip-reading-model",
+    "niche": true,
+    "added": "2026-11-27"
   }
 ]

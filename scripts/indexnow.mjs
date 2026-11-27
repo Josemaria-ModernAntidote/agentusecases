@@ -13,7 +13,7 @@ const day = process.argv[2] || items.map(i => i.added).sort().at(-1);
 const fresh = items.filter(i => i.added === day);
 // Same rule as slugify() in src/lib/site.ts (& becomes "and"), so category URLs such as /categories/hobbies-and-games/ match the site.
 const slug = s => s.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const paths = new Set(['/', '/new/', '/niche/', '/use-cases/', '/stats/', '/sources/', '/llms.txt', '/llms-full.txt', `/archive/${day.slice(0, 7)}/`]);
+const paths = new Set(['/', '/new/', '/niche/', '/use-cases/', '/stats/', '/sources/', '/authors/', '/llms.txt', '/llms-full.txt', `/archive/${day.slice(0, 7)}/`]);
 for (const i of fresh) {
   paths.add(`/use-cases/${i.slug}/`);
   paths.add(`/categories/${slug(i.category)}/`);

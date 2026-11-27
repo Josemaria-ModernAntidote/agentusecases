@@ -11,7 +11,7 @@ if (existsSync(f)) {
   // Hubs whose every page /<dir>/<slug>/ has a twin at /<dir>/<slug>.md.
   const dirs = ['use-cases', 'agents', 'categories', 'compare', 'archive', 'topics'].filter(d => existsSync(`${root}/${d}`) && readdirSync(`${root}/${d}`).some(n => n.endsWith('.md')));
   // Top-level pages /<page>/ with a twin at /<page>.md.
-  const pages = ['new', 'niche', 'stats', 'archive', 'compare', 'sources', 'topics', 'use-cases'].filter(p => existsSync(`${root}/${p}.md`));
+  const pages = ['new', 'niche', 'stats', 'archive', 'compare', 'sources', 'topics', 'use-cases', 'authors'].filter(p => existsSync(`${root}/${p}.md`));
   const hub = `^/(${dirs.join('|')})/([^/.]+)/?$`, top = `^/(${pages.join('|')})/?$`;
   const cors = '^/(.*\\.(json|md|txt|csv|xml)|\\.well-known/llms\\.txt)$';
   // WebSub discovery at the protocol layer: every feed advertises its hub and canonical self URL
