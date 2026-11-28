@@ -19,6 +19,7 @@ export async function GET() {
       content_text: `${d.description} Agents: ${d.tools.join(', ')}. Source: ${d.source}`,
       summary: d.description,
       date_published: d.added ? `${d.added}T12:00:00Z` : undefined,
+      date_modified: (d as any).updated ? `${(d as any).updated}T12:00:00Z` : undefined,
       tags: [d.category, ...d.tools, ...(d.niche ? ['Niche'] : [])],
       _agent_uses: { category: d.category, agents: d.tools, niche: !!d.niche, source_name: d.sourceName, markdown: abs(`/use-cases/${d.slug}.md`) },
     })),

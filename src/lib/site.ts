@@ -316,5 +316,5 @@ export const stats = () => {
 };
 // CSV copy of the dataset (/use-cases.csv) for spreadsheets, notebooks and dataset crawlers.
 const csvCell = (v: unknown) => { const s = String(v ?? ''); return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
-export const csv = () => [['title', 'description', 'category', 'agents', 'niche', 'added', 'url', 'source', 'source_name'].join(','),
-  ...data.map(d => [d.title, d.description, d.category, d.tools.join('; '), d.niche ? 'yes' : 'no', d.added || '', abs(`/use-cases/${d.slug}/`), d.source, d.sourceName].map(csvCell).join(','))].join('\n') + '\n';
+export const csv = () => [['title', 'description', 'category', 'agents', 'niche', 'added', 'url', 'source', 'source_name', 'updated'].join(','),
+  ...data.map(d => [d.title, d.description, d.category, d.tools.join('; '), d.niche ? 'yes' : 'no', d.added || '', abs(`/use-cases/${d.slug}/`), d.source, d.sourceName, (d as any).updated || ''].map(csvCell).join(','))].join('\n') + '\n';

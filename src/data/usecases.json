@@ -75,7 +75,8 @@
     "sourceName": "@tarikmoody (X)",
     "slug": "a-radio-dj-turns-1200-bandcamp-purchases-into-a-walk-in-3d-record-store",
     "niche": true,
-    "added": "2026-10-21"
+    "added": "2026-10-21",
+    "updated": "2026-11-26"
   },
   {
     "title": "A son's agent fixes wrong prices on his parents' restaurant website and POS",
@@ -296,7 +297,8 @@
     "sourceName": "@Frank_SI_Lab (X)",
     "slug": "explain-snell-s-law-to-kids-with-an-archerfish-game",
     "niche": true,
-    "added": "2026-10-17"
+    "added": "2026-10-17",
+    "updated": "2026-11-26"
   },
   {
     "title": "Drive Amazon and Uber Eats from a Waydroid phone",
@@ -310,7 +312,8 @@
     "sourceName": "Jeff Nash (blog)",
     "slug": "drive-amazon-and-uber-eats-from-a-waydroid-phone",
     "niche": true,
-    "added": "2026-10-16"
+    "added": "2026-10-16",
+    "updated": "2026-10-17"
   },
   {
     "title": "Desk voice box from a Pi Zero and a 3D-printer display",
@@ -324,7 +327,8 @@
     "sourceName": "DrkPxl",
     "slug": "desk-voice-box-from-a-pi-zero-and-a-3d-printer-display",
     "niche": true,
-    "added": "2026-10-16"
+    "added": "2026-10-16",
+    "updated": "2026-10-17"
   },
   {
     "title": "OpenClaw builds a voice receptionist for tradies",
@@ -350,7 +354,8 @@
     "sourceName": "Show HN / pycoClaw",
     "slug": "openclaw-class-agents-that-self-program-an-esp32",
     "niche": true,
-    "added": "2026-10-16"
+    "added": "2026-10-16",
+    "updated": "2026-10-17"
   },
   {
     "title": "Let an agent haggle with car dealers for you",
@@ -573,7 +578,8 @@
     "sourceName": "@agentsplaybook (X)",
     "slug": "phone-camera-eye-for-a-hobby-robot-arm",
     "niche": true,
-    "added": "2026-10-14"
+    "added": "2026-10-14",
+    "updated": "2026-11-26"
   },
   {
     "title": "Revive a smart energy meter after its maker went bankrupt",
@@ -795,7 +801,8 @@
     "sourceName": "@yaroshidi (X)",
     "slug": "run-a-uae-perfume-shop-s-orders-and-books",
     "niche": true,
-    "added": "2026-10-14"
+    "added": "2026-10-14",
+    "updated": "2026-11-26"
   },
   {
     "title": "Vibe-code a flight sim to $1M ARR in 17 days",
@@ -939,7 +946,8 @@
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/daily-youtube-digest.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
     "slug": "daily-youtube-digest",
-    "added": "2026-10-13"
+    "added": "2026-10-13",
+    "updated": "2026-10-17"
   },
   {
     "title": "X Account Analysis",
@@ -975,7 +983,8 @@
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/x-twitter-automation.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
     "slug": "x-twitter-automation",
-    "added": "2026-10-13"
+    "added": "2026-10-13",
+    "updated": "2026-10-17"
   },
   {
     "title": "Goal-Driven Autonomous Tasks",
@@ -987,7 +996,8 @@
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/overnight-mini-app-builder.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
     "slug": "goal-driven-autonomous-tasks",
-    "added": "2026-10-13"
+    "added": "2026-10-13",
+    "updated": "2026-10-17"
   },
   {
     "title": "YouTube Content Pipeline",
@@ -1011,7 +1021,8 @@
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/content-factory.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
     "slug": "multi-agent-content-factory",
-    "added": "2026-10-13"
+    "added": "2026-10-13",
+    "updated": "2026-10-17"
   },
   {
     "title": "Autonomous Game Dev Pipeline",
@@ -1035,7 +1046,8 @@
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/podcast-production-pipeline.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
     "slug": "podcast-production-pipeline",
-    "added": "2026-10-13"
+    "added": "2026-10-13",
+    "updated": "2026-10-17"
   },
   {
     "title": "AI Video Editing via Chat",
@@ -1047,7 +1059,8 @@
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/ai-video-editing.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
     "slug": "ai-video-editing-via-chat",
-    "added": "2026-10-13"
+    "added": "2026-10-13",
+    "updated": "2026-10-17"
   },
   {
     "title": "n8n Workflow Orchestration",
@@ -1059,7 +1072,8 @@
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/n8n-workflow-orchestration.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
     "slug": "n8n-workflow-orchestration",
-    "added": "2026-10-13"
+    "added": "2026-10-13",
+    "updated": "2026-10-17"
   },
   {
     "title": "Self-Healing Home Server",
@@ -1083,7 +1097,8 @@
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/autonomous-project-management.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
     "slug": "autonomous-project-management",
-    "added": "2026-10-13"
+    "added": "2026-10-13",
+    "updated": "2026-10-17"
   },
   {
     "title": "Multi-Channel AI Customer Service",
@@ -1227,7 +1242,8 @@
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/aionui-cowork-desktop.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
     "slug": "openclaw-as-desktop-cowork",
-    "added": "2026-10-13"
+    "added": "2026-10-13",
+    "updated": "2026-10-17"
   },
   {
     "title": "Custom Morning Brief",
@@ -1239,7 +1255,8 @@
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/custom-morning-brief.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
     "slug": "custom-morning-brief",
-    "added": "2026-10-13"
+    "added": "2026-10-13",
+    "updated": "2026-10-17"
   },
   {
     "title": "Automated Meeting Notes & Action Items",
@@ -1251,7 +1268,8 @@
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/meeting-notes-action-items.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
     "slug": "automated-meeting-notes-action-items",
-    "added": "2026-10-13"
+    "added": "2026-10-13",
+    "updated": "2026-10-17"
   },
   {
     "title": "Habit Tracker & Accountability Coach",
@@ -1287,7 +1305,8 @@
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/event-guest-confirmation.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
     "slug": "event-guest-confirmation",
-    "added": "2026-10-13"
+    "added": "2026-10-13",
+    "updated": "2026-10-17"
   },
   {
     "title": "Phone Call Notifications",
@@ -1299,7 +1318,8 @@
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/phone-call-notifications.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
     "slug": "phone-call-notifications",
-    "added": "2026-10-13"
+    "added": "2026-10-13",
+    "updated": "2026-10-17"
   },
   {
     "title": "Local CRM Framework",
@@ -1311,7 +1331,8 @@
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/local-crm-framework.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
     "slug": "local-crm-framework",
-    "added": "2026-10-13"
+    "added": "2026-10-13",
+    "updated": "2026-10-17"
   },
   {
     "title": "AI Earnings Tracker",
@@ -1359,7 +1380,8 @@
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/pre-build-idea-validator.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
     "slug": "pre-build-idea-validator",
-    "added": "2026-10-13"
+    "added": "2026-10-13",
+    "updated": "2026-10-17"
   },
   {
     "title": "Semantic Memory Search",
@@ -1383,7 +1405,8 @@
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/arxiv-paper-reader.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
     "slug": "arxiv-paper-reader",
-    "added": "2026-10-13"
+    "added": "2026-10-13",
+    "updated": "2026-10-17"
   },
   {
     "title": "LaTeX Paper Writing",
@@ -1395,7 +1418,8 @@
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/latex-paper-writing.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
     "slug": "latex-paper-writing",
-    "added": "2026-10-13"
+    "added": "2026-10-13",
+    "updated": "2026-10-17"
   },
   {
     "title": "HF Papers Research Discovery",
@@ -1407,7 +1431,8 @@
     "source": "https://github.com/hesamsheikh/awesome-openclaw-usecases/blob/main/usecases/hf-papers-research-discovery.md",
     "sourceName": "awesome-openclaw-usecases (GitHub)",
     "slug": "hf-papers-research-discovery",
-    "added": "2026-10-13"
+    "added": "2026-10-13",
+    "updated": "2026-10-17"
   },
   {
     "title": "Polymarket Autopilot",
@@ -1977,7 +2002,8 @@
     "sourceName": "@Frank_SI_Lab (X)",
     "slug": "a-dad-s-agent-writes-two-kids-editions-of-the-news-every-morning",
     "niche": true,
-    "added": "2026-10-23"
+    "added": "2026-10-23",
+    "updated": "2026-11-26"
   },
   {
     "title": "An agent remembers the dentist address and sends it to the car's navigation",
@@ -2081,7 +2107,8 @@
     "sourceName": "@TonyEriksson (X)",
     "slug": "a-mom-emails-her-son-s-agent-to-design-the-poster-for-her-summer-camp",
     "niche": true,
-    "added": "2026-10-24"
+    "added": "2026-10-24",
+    "updated": "2026-11-26"
   },
   {
     "title": "A snail mail club's subscriber list kept straight by its own agent",
@@ -2332,7 +2359,8 @@
     "sourceName": "Bot Pages (@botpagesco) on X",
     "slug": "a-vivino-mcp-lets-a-grok-bot-pick-wine-from-the-local-shop-by-your-taste",
     "niche": true,
-    "added": "2026-10-28"
+    "added": "2026-10-28",
+    "updated": "2026-11-27"
   },
   {
     "title": "Hallucinote: a hobbyist wires Claude Code into Ableton Live as a songwriting partner, not a song generator",
@@ -2527,7 +2555,8 @@
     "sourceName": "@tinyinputs (X)",
     "slug": "a-9-to-5-worker-runs-a-handyman-company-and-a-woodworking-company-on-the-side-with-a-grok-bot",
     "niche": true,
-    "added": "2026-10-31"
+    "added": "2026-10-31",
+    "updated": "2026-11-26"
   },
   {
     "title": "A creator's OpenClaw mini PC turns an SD card of talking-head footage into six DaVinci Resolve rough cuts",
@@ -2635,7 +2664,8 @@
     "sourceName": "@0xR0b0 (X)",
     "slug": "a-3d-open-pit-mine-blast-built-with-claude-code-to-train-crews-before-they-stand-on-a-real-bench",
     "niche": true,
-    "added": "2026-11-01"
+    "added": "2026-11-01",
+    "updated": "2026-11-26"
   },
   {
     "title": "A mom's OpenClaw agent designs a Halloween pumpkin craft and a Codex agent sends it to the family 3D printer",
@@ -2753,7 +2783,8 @@
     "sourceName": "Show HN",
     "slug": "a-dad-photographs-his-kid-s-pegboard-sketch-and-codex-turns-it-into-3d-printable-pegs-in-five-minutes",
     "niche": true,
-    "added": "2026-11-03"
+    "added": "2026-11-03",
+    "updated": "2026-11-04"
   },
   {
     "title": "Silta: a self-hosted family assistant on Matrix that runs on Claude Code for the whole family",
@@ -3226,7 +3257,8 @@
     "sourceName": "X (@ShunFille)",
     "slug": "a-creator-who-doesn-t-know-blender-takes-a-15-commission-and-has-claude-code-build-the-whole-animated-ramen-sh",
     "niche": true,
-    "added": "2026-11-12"
+    "added": "2026-11-12",
+    "updated": "2026-11-26"
   },
   {
     "title": "A $3 Arduino and Claude Code turn a laptop into a scan tool for a 1994 Jeep Cherokee with no OBD2 port",
@@ -3476,7 +3508,8 @@
     "sourceName": "X (@Harmanz)",
     "slug": "a-broken-tv-remote-replaced-in-five-minutes-by-a-grok-bot-web-remote-for-an-lg-tv-hosted-on-a-raspberry-pi",
     "niche": true,
-    "added": "2026-11-16"
+    "added": "2026-11-16",
+    "updated": "2026-11-26"
   },
   {
     "title": "A Grok Bot gets a daughter's coat back from a UK motorway services by finding the manager's mobile number",
@@ -3516,335 +3549,337 @@
     "sourceName": "X (@prevoznik)",
     "slug": "codex-builds-a-cozy-fishing-game-with-200-fish-for-a-pimoroni-picosystem-handheld-and-automates-its-flashing-over-usb",
     "niche": true,
-    "added": "2026-11-16"
+    "added": "2026-11-16",
+    "updated": "2026-11-26"
   },
   {
-    "added": "2026-11-17",
-    "category": "Personal Life",
+    "title": "A Grok Bot phones three firewood delivery services, finds the best price and negotiates free delivery plus kindling",
     "description": "Kyle Inserra asked his Grok Bot to sort out a firewood order. It called three local delivery services, compared their prices, picked the cheapest, and talked the seller into delivering for free and throwing in kindling, all by phone without him making a call.",
-    "niche": true,
-    "slug": "a-grok-bot-phones-three-firewood-delivery-services-finds-the-best-price-and-negotiates-free-delivery-plus-kindling",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
     "source": "https://x.com/KyleInserra/status/2121663044430225510",
     "sourceName": "X (@KyleInserra)",
-    "title": "A Grok Bot phones three firewood delivery services, finds the best price and negotiates free delivery plus kindling",
-    "tools": [
-      "Grok Bot"
-    ]
+    "slug": "a-grok-bot-phones-three-firewood-delivery-services-finds-the-best-price-and-negotiates-free-delivery-plus-kindling",
+    "niche": true,
+    "added": "2026-11-17"
   },
   {
-    "added": "2026-11-17",
-    "category": "Physical World",
+    "title": "A dad's Grok Bot writes the software for a homemade Grok Bot Sphere voice device, from wake word to low-power firmware",
     "description": "A father who posts as Texas Twins Dad is building a small sphere-shaped voice gadget for talking to his Grok Bot, and the bot itself wrote the software. He reports 410 automated tests, pairing and encryption, low-power firmware that fixed an overheating problem, a \"Hey Grok\" wake word you can interrupt mid-answer, and logic that relocates a button when an app update moves it. A follow-up post adds a retrained wake word to cut false triggers, a custom audio driver, Wi-Fi reset and recovery, and switching between bots during a call.",
-    "niche": true,
-    "slug": "a-dad-s-grok-bot-writes-the-software-for-a-homemade-grok-bot-sphere-voice-device-from-wake-word-to-low-power-firmware",
+    "category": "Physical World",
+    "tools": [
+      "Grok Bot"
+    ],
     "source": "https://x.com/Texas_Twins_Dad/status/2121469115982397547",
     "sourceName": "X (@Texas_Twins_Dad)",
-    "title": "A dad's Grok Bot writes the software for a homemade Grok Bot Sphere voice device, from wake word to low-power firmware",
-    "tools": [
-      "Grok Bot"
-    ]
+    "slug": "a-dad-s-grok-bot-writes-the-software-for-a-homemade-grok-bot-sphere-voice-device-from-wake-word-to-low-power-firmware",
+    "niche": true,
+    "added": "2026-11-17"
   },
   {
-    "added": "2026-11-17",
-    "category": "Hobbies & Games",
+    "title": "A gamer and a crew of Grok Bots ship an open-source save editor for the geopolitics game Geoplanetical",
     "description": "Antilitist built a free, open-source save editor for Geoplanetical with a crew of Grok Bots. It edits a country's cash, approval, stability, party money, military arsenal and parliament in .gsav files, and always writes a new numbered file so the original save is never overwritten. When game update 1.1.3 broke the Money tab, version 1.1 fixed it. The code is on GitHub as an unofficial fan tool.",
-    "niche": true,
-    "slug": "a-gamer-and-a-crew-of-grok-bots-ship-an-open-source-save-editor-for-the-geopolitics-game-geoplanetical",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Grok Bot"
+    ],
     "source": "https://github.com/Antilitist/geoplanetical-save-editor",
     "sourceName": "GitHub (Antilitist/geoplanetical-save-editor)",
-    "title": "A gamer and a crew of Grok Bots ship an open-source save editor for the geopolitics game Geoplanetical",
-    "tools": [
-      "Grok Bot"
-    ]
+    "slug": "a-gamer-and-a-crew-of-grok-bots-ship-an-open-source-save-editor-for-the-geopolitics-game-geoplanetical",
+    "niche": true,
+    "added": "2026-11-17"
   },
   {
-    "added": "2026-11-17",
-    "category": "Personal Life",
+    "title": "A Grok Bot calls Bronner's CHRISTmas Wonderland about personalized Christmas stockings and gets the rep to email alternatives",
     "description": "X user Sam (@fallmysteries) wanted specific personalized stockings from Bronner's CHRISTmas Wonderland, the giant Christmas store in Frankenmuth, Michigan. The Grok Bot searched the store's site, then phoned and described the stockings to a rep. They turned out to be discontinued, but the rep emailed the next best options, saving more than 30 minutes of holiday legwork.",
-    "niche": true,
-    "slug": "a-grok-bot-calls-bronner-s-christmas-wonderland-about-personalized-christmas-stockings-and-gets-the-rep-to-email-alternatives",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
     "source": "https://x.com/fallmysteries/status/2122670180337598855",
     "sourceName": "X (@fallmysteries)",
-    "title": "A Grok Bot calls Bronner's CHRISTmas Wonderland about personalized Christmas stockings and gets the rep to email alternatives",
-    "tools": [
-      "Grok Bot"
-    ]
+    "slug": "a-grok-bot-calls-bronner-s-christmas-wonderland-about-personalized-christmas-stockings-and-gets-the-rep-to-email-alternatives",
+    "niche": true,
+    "added": "2026-11-17"
   },
   {
-    "added": "2026-11-17",
-    "category": "Personal Life",
+    "title": "A Grok Bot reads a Duke Energy bill, compares every fixed-rate gas supplier in Ohio and cuts the bill about $360 a year",
     "description": "Justin Dishion's Grok Bot, which he runs as a chief of staff, read his Duke Energy bill, compared every fixed-rate gas supplier in Ohio, checked each contract for hidden fees, and filled out the switch form, then waited for his OK before submitting. He estimates the savings at about $360 a year, more than the cost of his subscription.",
-    "niche": true,
-    "slug": "a-grok-bot-reads-a-duke-energy-bill-compares-every-fixed-rate-gas-supplier-in-ohio-and-cuts-the-bill-about-360-a-year",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
     "source": "https://x.com/JustinDishion/status/2121769871406977249",
     "sourceName": "X (@JustinDishion)",
-    "title": "A Grok Bot reads a Duke Energy bill, compares every fixed-rate gas supplier in Ohio and cuts the bill about $360 a year",
-    "tools": [
-      "Grok Bot"
-    ]
+    "slug": "a-grok-bot-reads-a-duke-energy-bill-compares-every-fixed-rate-gas-supplier-in-ohio-and-cuts-the-bill-about-360-a-year",
+    "niche": true,
+    "added": "2026-11-17"
   },
   {
-    "added": "2026-11-18",
-    "category": "Research & Learning",
-    "description": "Dean Berris, a principal software engineer, runs the open-source Testimony Project, which writes Christian doctrinal arguments (such as justification by faith alone) as lists of sourced premises and has the Lean 4 proof assistant check what follows from each one. Claude Code writes the Lean code and the prose citing scholars, the Bible and the Church Fathers, and Berris recorded an hour-long YouTube session showing how he reviews its output. Claude is listed as the repo's top contributor.",
-    "niche": true,
-    "slug": "an-engineer-uses-claude-code-to-write-christian-arguments-from-scripture-as-lean-4-proofs-that-a-machine-checks-premise-by-premise",
-    "source": "https://x.com/deanberris/status/2121631081074245976",
-    "sourceName": "X (@deanberris)",
     "title": "An engineer uses Claude Code to write Christian arguments from Scripture as Lean 4 proofs that a machine checks premise by premise",
+    "description": "Dean Berris, a principal software engineer, runs the open-source Testimony Project, which writes Christian doctrinal arguments (such as justification by faith alone) as lists of sourced premises and has the Lean 4 proof assistant check what follows from each one. Claude Code writes the Lean code and the prose citing scholars, the Bible and the Church Fathers, and Berris recorded an hour-long YouTube session showing how he reviews its output. Claude is listed as the repo's top contributor.",
+    "category": "Research & Learning",
     "tools": [
       "Claude Code"
-    ]
+    ],
+    "source": "https://x.com/deanberris/status/2121631081074245976",
+    "sourceName": "X (@deanberris)",
+    "slug": "an-engineer-uses-claude-code-to-write-christian-arguments-from-scripture-as-lean-4-proofs-that-a-machine-checks-premise-by-premise",
+    "niche": true,
+    "added": "2026-11-18"
   },
   {
-    "added": "2026-11-18",
-    "category": "Physical World",
+    "title": "A man rescues his early-2000s HP LaserJet 1005 from his parents' house and has Codex write it a Windows 11 driver",
     "description": "GitHub user hernandp bought an HP LaserJet 1005 in the early 2000s, and HP dropped driver support in the Windows XP era. He dug it out from under dirt and spiderwebs at his parents' house, fitted a new toner cartridge and made mechanical fixes so he and his girlfriend could do toner-transfer printing of a benteveo bird. Then he had Codex write a C++20 Windows 11 x64 driver from web specs and the open ZjStream protocol. Project Benteveo prints text, bitmaps and multi-page documents.",
-    "niche": true,
-    "slug": "a-man-rescues-his-early-2000s-hp-laserjet-1005-from-his-parents-house-and-has-codex-write-it-a-windows-11-driver",
+    "category": "Physical World",
+    "tools": [
+      "OpenAI Codex"
+    ],
     "source": "https://github.com/hernandp/OpenHPZJS1005-x64-drv",
     "sourceName": "GitHub (hernandp/OpenHPZJS1005-x64-drv)",
-    "title": "A man rescues his early-2000s HP LaserJet 1005 from his parents' house and has Codex write it a Windows 11 driver",
-    "tools": [
-      "OpenAI Codex"
-    ]
+    "slug": "a-man-rescues-his-early-2000s-hp-laserjet-1005-from-his-parents-house-and-has-codex-write-it-a-windows-11-driver",
+    "niche": true,
+    "added": "2026-11-18"
   },
   {
-    "added": "2026-11-18",
-    "category": "Personal Life",
+    "title": "A Grok Bot chases a price drop on a home sauna, emails the seller, then calls and gets a $1,511 refund",
     "description": "The sauna Mitchell Wright had bought went on sale for less than he paid. His Grok Bot emailed the seller about a refund, and when nobody replied it phoned them and secured $1,511 back.",
-    "niche": true,
-    "slug": "a-grok-bot-chases-a-price-drop-on-a-home-sauna-emails-the-seller-then-calls-and-gets-a-1-511-refund",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
     "source": "https://x.com/mitchellwright/status/2122425656013427044",
     "sourceName": "X (@mitchellwright)",
-    "title": "A Grok Bot chases a price drop on a home sauna, emails the seller, then calls and gets a $1,511 refund",
-    "tools": [
-      "Grok Bot"
-    ]
+    "slug": "a-grok-bot-chases-a-price-drop-on-a-home-sauna-emails-the-seller-then-calls-and-gets-a-1-511-refund",
+    "niche": true,
+    "added": "2026-11-18"
   },
   {
-    "added": "2026-11-18",
-    "category": "Hobbies & Games",
+    "title": "A World of Warcraft addon feeds a player's character to his Hermes Agent, which then gives in-game advice like a guildmate",
     "description": "Matt Maximo built a WoW Forever addon so his Hermes Agent has context about his character. Asked how to level cooking, the agent replied that he should buy the meat so he would not have to farm the Raptors where he died the night before.",
-    "niche": true,
-    "slug": "a-world-of-warcraft-addon-feeds-a-player-s-character-to-his-hermes-agent-which-then-gives-in-game-advice-like-a-guildmate",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Hermes Agent"
+    ],
     "source": "https://x.com/Mattmaximo/status/2122467826510238070",
     "sourceName": "X (@Mattmaximo)",
-    "title": "A World of Warcraft addon feeds a player's character to his Hermes Agent, which then gives in-game advice like a guildmate",
-    "tools": [
-      "Hermes Agent"
-    ]
+    "slug": "a-world-of-warcraft-addon-feeds-a-player-s-character-to-his-hermes-agent-which-then-gives-in-game-advice-like-a-guildmate",
+    "niche": true,
+    "added": "2026-11-18"
   },
   {
-    "added": "2026-11-18",
-    "category": "Small Business",
+    "title": "A one-person milk peda shop in Deoghar, India, runs its orders on a Grok Bot and ships its first kilo of sweets to West Bengal",
     "description": "Roushan, a founder in Jharkhand, launched PedaGhar, selling Classic Milk Peda freshly made in Deoghar, Jharkhand. With no ads, Grok helped build the website and schedule its social posts, every order lands in a tracker sheet with an email alert, a Grok Bot routine checks for new orders 10 times a day, and it generates receipts. He handles WhatsApp chats, cooking, packing and shipping himself; the first order, 1 kg of peda, went to West Bengal.",
-    "niche": true,
-    "slug": "a-one-person-milk-peda-shop-in-deoghar-india-runs-its-orders-on-a-grok-bot-and-ships-its-first-kilo-of-sweets-to-west-bengal",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
     "source": "https://x.com/RoushanStartup/status/2122632038897602860",
     "sourceName": "X (@RoushanStartup)",
-    "title": "A one-person milk peda shop in Deoghar, India, runs its orders on a Grok Bot and ships its first kilo of sweets to West Bengal",
-    "tools": [
-      "Grok Bot"
-    ]
+    "slug": "a-one-person-milk-peda-shop-in-deoghar-india-runs-its-orders-on-a-grok-bot-and-ships-its-first-kilo-of-sweets-to-west-bengal",
+    "niche": true,
+    "added": "2026-11-18"
   },
   {
-    "added": "2026-11-19",
-    "category": "Personal Life",
+    "title": "A software engineer in San Francisco has his Grok Bot phone contractors for bids, negotiate with each, and book the winner on a day he is home",
     "description": "Nick, a San Francisco software engineer, had his Grok Bot call contractors for bids. It negotiated with each one, came back with a pick and a price, then booked his choice on a day it knew he would be home. He did not make a single phone call.",
-    "niche": true,
-    "slug": "a-software-engineer-in-san-francisco-has-his-grok-bot-phone-contractors-for-bids-negotiate-with-each-and-book-the-winner-on-a-day-he-is-home",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
     "source": "https://x.com/thecsguy/status/2122828378478887268",
     "sourceName": "X (@thecsguy)",
-    "title": "A software engineer in San Francisco has his Grok Bot phone contractors for bids, negotiate with each, and book the winner on a day he is home",
-    "tools": [
-      "Grok Bot"
-    ]
+    "slug": "a-software-engineer-in-san-francisco-has-his-grok-bot-phone-contractors-for-bids-negotiate-with-each-and-book-the-winner-on-a-day-he-is-home",
+    "niche": true,
+    "added": "2026-11-19"
   },
   {
-    "added": "2026-11-19",
-    "category": "Research & Learning",
+    "title": "An expat learning Thai in Bangkok built a small Swift app that sends every word he does not know into his Grok Bot tutor's review queue",
     "description": "Philipp, learning Thai in Bangkok and struggling with reading and forgotten vocab, built a little Swift app: he marks the words he does not know and they go straight into his Grok Bot tutor's queue. He tried Grok Bot alone first, but state did not persist between pages and the loop felt clunky.",
-    "niche": true,
-    "slug": "an-expat-learning-thai-in-bangkok-built-a-small-swift-app-that-sends-every-word-he-does-not-know-into-his-grok-bot-tutor-s-review-queue",
+    "category": "Research & Learning",
+    "tools": [
+      "Grok Bot"
+    ],
     "source": "https://x.com/philippmolinero/status/2123376318595375109",
     "sourceName": "X (@philippmolinero)",
-    "title": "An expat learning Thai in Bangkok built a small Swift app that sends every word he does not know into his Grok Bot tutor's review queue",
-    "tools": [
-      "Grok Bot"
-    ]
+    "slug": "an-expat-learning-thai-in-bangkok-built-a-small-swift-app-that-sends-every-word-he-does-not-know-into-his-grok-bot-tutor-s-review-queue",
+    "niche": true,
+    "added": "2026-11-19"
   },
   {
-    "added": "2026-11-19",
-    "category": "Personal Life",
+    "title": "A retired, disabled Air Force veteran's Grok Bot crew built a shareable VA Claims Helper that walks other vets through claims and buddy statements",
     "description": "Antilitist, a 20-year USAF veteran in Idaho, says Grok Bot is how he got approved for VA Vocational Rehabilitation and Employment (VR&E). His Grok Bot crew then built a VA Claims Helper bot that anyone can copy, walking veterans step by step in plain words through claims, buddy statements and personal statements.",
-    "niche": true,
-    "slug": "a-retired-disabled-air-force-veteran-s-grok-bot-crew-built-a-shareable-va-claims-helper-that-walks-other-vets-through-claims-and-buddy-statements",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
     "source": "https://x.com/Antilitist/status/2122773661342159122",
     "sourceName": "X (@Antilitist)",
-    "title": "A retired, disabled Air Force veteran's Grok Bot crew built a shareable VA Claims Helper that walks other vets through claims and buddy statements",
-    "tools": [
-      "Grok Bot"
-    ]
+    "slug": "a-retired-disabled-air-force-veteran-s-grok-bot-crew-built-a-shareable-va-claims-helper-that-walks-other-vets-through-claims-and-buddy-statements",
+    "niche": true,
+    "added": "2026-11-19"
   },
   {
-    "added": "2026-11-19",
-    "category": "Personal Life",
+    "title": "A 40-year-old dad replaced his lifting notepad with a Grok Bot trainer named Jenny that adjusts reps by RIR and reads his Apple Health recovery",
     "description": "A Greenville, SC dad with 18 years of lifting made Jenny, a Grok Bot team member, his personal trainer. She built his program in a Google Sheet, adjusts target reps from his reps-in-reserve on each set, pre-fills each day's weights, sends a morning briefing, and checks Apple Health data for trends and recovery. He says he has never been this consistent with progressive overload.",
-    "niche": true,
-    "slug": "a-40-year-old-dad-replaced-his-lifting-notepad-with-a-grok-bot-trainer-named-jenny-that-adjusts-reps-by-rir-and-reads-his-apple-health-recovery",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
     "source": "https://x.com/TheDadBodActual/status/2123068266440425523",
     "sourceName": "X (@TheDadBodActual)",
-    "title": "A 40-year-old dad replaced his lifting notepad with a Grok Bot trainer named Jenny that adjusts reps by RIR and reads his Apple Health recovery",
-    "tools": [
-      "Grok Bot"
-    ]
+    "slug": "a-40-year-old-dad-replaced-his-lifting-notepad-with-a-grok-bot-trainer-named-jenny-that-adjusts-reps-by-rir-and-reads-his-apple-health-recovery",
+    "niche": true,
+    "added": "2026-11-19"
   },
   {
-    "added": "2026-11-19",
-    "category": "Weird & Experimental",
+    "title": "TokenTV turns a roughly $5 AliExpress desk clock into pixel pets that react to Claude Code and Codex, growing a garden as tokens are spent",
     "description": "token-tv puts characters on a GeekMagic SmallTV clock over local Wi-Fi with no firmware flashing. Clawd raises a hand when Claude Code needs attention and bows when a turn ends; in Arcade mode Codex rains code to grow flowers, and the garden fills out as it spends more tokens, keeping usage limits in sight.",
-    "niche": true,
-    "slug": "tokentv-turns-a-roughly-5-aliexpress-desk-clock-into-pixel-pets-that-react-to-claude-code-and-codex-growing-a-garden-as-tokens-are-spent",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Claude Code",
+      "OpenAI Codex"
+    ],
     "source": "https://github.com/click6067-ship-it/token-tv",
     "sourceName": "GitHub (click6067-ship-it/token-tv)",
-    "title": "TokenTV turns a roughly $5 AliExpress desk clock into pixel pets that react to Claude Code and Codex, growing a garden as tokens are spent",
-    "tools": [
-      "Claude Code",
-      "OpenAI Codex"
-    ]
+    "slug": "tokentv-turns-a-roughly-5-aliexpress-desk-clock-into-pixel-pets-that-react-to-claude-code-and-codex-growing-a-garden-as-tokens-are-spent",
+    "niche": true,
+    "added": "2026-11-19",
+    "updated": "2026-11-20"
   },
   {
-    "added": "2026-11-20",
-    "category": "Small Business",
+    "title": "A nail salon owner's Grok Bot rebooked almost 70 clients in about an hour after her surgery date moved two weeks",
     "description": "The day before her surgery, the hospital pushed it back two weeks, so every client booked after her planned recovery had to move. Her Grok Bot read each client's past appointments in Google Calendar, learned the day and time they usually come in, and offered each one a slot that fit on WhatsApp. Her husband says it would have taken at least a full day by hand. It now reminds the next day's clients every evening. She is not a tech person; she runs a salon.",
-    "niche": true,
-    "slug": "a-nail-salon-owner-s-grok-bot-rebooked-almost-70-clients-in-about-an-hour-after-her-surgery-date-moved-two-weeks",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
     "source": "https://x.com/ShuiCohen/status/2122744219592786291",
     "sourceName": "X (@ShuiCohen)",
-    "title": "A nail salon owner's Grok Bot rebooked almost 70 clients in about an hour after her surgery date moved two weeks",
-    "tools": [
-      "Grok Bot"
-    ]
+    "slug": "a-nail-salon-owner-s-grok-bot-rebooked-almost-70-clients-in-about-an-hour-after-her-surgery-date-moved-two-weeks",
+    "niche": true,
+    "added": "2026-11-20"
   },
   {
-    "added": "2026-11-20",
-    "category": "Personal Life",
+    "title": "After an insurer declined a storm claim for a fallen boundary wall, Grok Bot logged into his security cameras and found the 10 seconds it came down",
     "description": "Dirk Kok in South Africa asked Grok Bot to help fight a declined claim. It read the decline email and the policy, said he would need photographic evidence, searched his photos and researched how disputes like this are won. A camera still was too blurry, so it logged into the security camera system itself, found the exact 10 seconds where the wall falls in the storm, clipped the video, flagged details the insurer had missed and helped draft the dispute.",
-    "niche": true,
-    "slug": "after-an-insurer-declined-a-storm-claim-for-a-fallen-boundary-wall-grok-bot-logged-into-his-security-cameras-and-found-the-10-seconds-it-came-down",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
     "source": "https://x.com/dirkkok/status/2122912323010490698",
     "sourceName": "X (@dirkkok)",
-    "title": "After an insurer declined a storm claim for a fallen boundary wall, Grok Bot logged into his security cameras and found the 10 seconds it came down",
-    "tools": [
-      "Grok Bot"
-    ]
+    "slug": "after-an-insurer-declined-a-storm-claim-for-a-fallen-boundary-wall-grok-bot-logged-into-his-security-cameras-and-found-the-10-seconds-it-came-down",
+    "niche": true,
+    "added": "2026-11-20"
   },
   {
-    "added": "2026-11-20",
-    "category": "Creative & Building",
-    "description": "Tessera is an open-source (MIT) macro deck built from one 7-inch ESP32-P4 board such as the GUITION JC1060P470C, with 18 touch keys, live PC gauges, a sound mixer and a printed desk console, no soldering. Its agents screen shows Claude Code's permission questions so you tap Allow or Deny on the desk, and shows what Claude Code, Codex and ZCode are doing and in which project. It never approves on its own: with no answer in 25 seconds, Claude Code falls back to its normal dialog.",
-    "niche": true,
-    "slug": "tessera-turns-a-7-inch-esp32-p4-touchscreen-into-a-diy-stream-deck-with-a-panel-that-answers-claude-code-s-permission-prompts",
-    "source": "https://github.com/catorendal-a11y/tessera-deck",
-    "sourceName": "GitHub (catorendal-a11y/tessera-deck)",
     "title": "Tessera turns a 7-inch ESP32-P4 touchscreen into a DIY Stream Deck with a panel that answers Claude Code's permission prompts",
+    "description": "Tessera is an open-source (MIT) macro deck built from one 7-inch ESP32-P4 board such as the GUITION JC1060P470C, with 18 touch keys, live PC gauges, a sound mixer and a printed desk console, no soldering. Its agents screen shows Claude Code's permission questions so you tap Allow or Deny on the desk, and shows what Claude Code, Codex and ZCode are doing and in which project. It never approves on its own: with no answer in 25 seconds, Claude Code falls back to its normal dialog.",
+    "category": "Creative & Building",
     "tools": [
       "Claude Code",
       "OpenAI Codex"
-    ]
+    ],
+    "source": "https://github.com/catorendal-a11y/tessera-deck",
+    "sourceName": "GitHub (catorendal-a11y/tessera-deck)",
+    "slug": "tessera-turns-a-7-inch-esp32-p4-touchscreen-into-a-diy-stream-deck-with-a-panel-that-answers-claude-code-s-permission-prompts",
+    "niche": true,
+    "added": "2026-11-20"
   },
   {
-    "added": "2026-11-20",
-    "category": "Physical World",
-    "description": "Rangel Koli, a Syracuse, NY developer, built a wake-word voice agent on a Hermes agent that runs on a 1 GB Raspberry Pi. Say \"Hey John\" and it hears, thinks and talks back while an on-screen orb changes color at each step. In his demo he asks the time in India, has it read his grocery list, then has it add two milks.",
-    "niche": true,
-    "slug": "a-hey-john-voice-assistant-built-on-hermes-agent-runs-on-a-raspberry-pi-with-just-1-gb-of-ram",
-    "source": "https://x.com/rangelkoli10/status/2123247360377806849",
-    "sourceName": "X (@rangelkoli10)",
     "title": "A \"Hey John\" voice assistant built on Hermes Agent runs on a Raspberry Pi with just 1 GB of RAM",
+    "description": "Rangel Koli, a Syracuse, NY developer, built a wake-word voice agent on a Hermes agent that runs on a 1 GB Raspberry Pi. Say \"Hey John\" and it hears, thinks and talks back while an on-screen orb changes color at each step. In his demo he asks the time in India, has it read his grocery list, then has it add two milks.",
+    "category": "Physical World",
     "tools": [
       "Hermes Agent"
-    ]
+    ],
+    "source": "https://x.com/rangelkoli10/status/2123247360377806849",
+    "sourceName": "X (@rangelkoli10)",
+    "slug": "a-hey-john-voice-assistant-built-on-hermes-agent-runs-on-a-raspberry-pi-with-just-1-gb-of-ram",
+    "niche": true,
+    "added": "2026-11-20"
   },
   {
-    "added": "2026-11-20",
-    "category": "Small Business",
-    "description": "A Denver product manager says this is how he and his girlfriend run their store: his Grok Bot checks the live sites, files GitHub issues and verifies the fixes, while Claude Code picks up the issues, ships pull requests with tests and makes the Squarespace changes in the browser. In his words, the bot finds the problems and Claude Code fixes them.",
-    "niche": true,
-    "slug": "a-couple-runs-their-squarespace-store-with-grok-bot-finding-the-problems-and-claude-code-fixing-them",
-    "source": "https://x.com/josheyxyz/status/2123182250892427545",
-    "sourceName": "X (@josheyxyz)",
     "title": "A couple runs their Squarespace store with Grok Bot finding the problems and Claude Code fixing them",
+    "description": "A Denver product manager says this is how he and his girlfriend run their store: his Grok Bot checks the live sites, files GitHub issues and verifies the fixes, while Claude Code picks up the issues, ships pull requests with tests and makes the Squarespace changes in the browser. In his words, the bot finds the problems and Claude Code fixes them.",
+    "category": "Small Business",
     "tools": [
       "Grok Bot",
       "Claude Code"
-    ]
+    ],
+    "source": "https://x.com/josheyxyz/status/2123182250892427545",
+    "sourceName": "X (@josheyxyz)",
+    "slug": "a-couple-runs-their-squarespace-store-with-grok-bot-finding-the-problems-and-claude-code-fixing-them",
+    "niche": true,
+    "added": "2026-11-20"
   },
   {
-    "added": "2026-11-21",
-    "category": "Personal Life",
+    "title": "A Denver dad's Grok Bot appeals a $130 state penalty and switches to the Spanish phone line when the English menu loops",
     "description": "Colorado FAMLI billed a Denver dad $130.44 in penalties for five quarters of $0 wages after his nanny's job ended in March 2025, and his emails and reconsideration request went unanswered. His Grok Bot team found the real appeal route, filled out the appeal and called the state. When the English phone menu kept looping, it took the Spanish line and handled the call in Spanish, coming back with a ticket number and the appeals email.",
-    "niche": true,
-    "slug": "a-denver-dad-s-grok-bot-appeals-a-130-state-penalty-and-switches-to-the-spanish-phone-line-when-the-english-menu-loops",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
     "source": "https://x.com/mattfgreene/status/2123480779221061851",
     "sourceName": "X (@mattfgreene)",
-    "title": "A Denver dad's Grok Bot appeals a $130 state penalty and switches to the Spanish phone line when the English menu loops",
-    "tools": [
-      "Grok Bot"
-    ]
+    "slug": "a-denver-dad-s-grok-bot-appeals-a-130-state-penalty-and-switches-to-the-spanish-phone-line-when-the-english-menu-loops",
+    "niche": true,
+    "added": "2026-11-21"
   },
   {
-    "added": "2026-11-21",
-    "category": "Personal Life",
+    "title": "A retired submarine sonar supervisor's Grok Bot \"Mycroft\" spends a day fighting a gym billing company",
     "description": "A retired submarine veteran put his Grok Bot, which he named Mycroft, on a dispute with a gym billing company. In one day it researched the company's owners, pulled more than 700 public complaints, drafted letters to agencies and built a web page about the case. He says Mycroft did the heavy lifting.",
-    "niche": true,
-    "slug": "a-retired-submarine-sonar-supervisor-s-grok-bot-mycroft-spends-a-day-fighting-a-gym-billing-company",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
     "source": "https://x.com/SSN709/status/2123980826173985193",
     "sourceName": "X (@SSN709)",
-    "title": "A retired submarine sonar supervisor's Grok Bot \"Mycroft\" spends a day fighting a gym billing company",
-    "tools": [
-      "Grok Bot"
-    ]
+    "slug": "a-retired-submarine-sonar-supervisor-s-grok-bot-mycroft-spends-a-day-fighting-a-gym-billing-company",
+    "niche": true,
+    "added": "2026-11-21"
   },
   {
-    "added": "2026-11-21",
-    "category": "Personal Life",
+    "title": "A woman whose spine injury makes phone calls exhausting has her Grok Bot switch her phone plan and cancel her internet",
     "description": "Phone calls wear her out because of a spine injury, so she handed a day of provider chores to her Grok Bot. It moved her phone to a cheaper plan with better signal, canceled her internet and booked a free technician visit to collect the old equipment from her porch, handling almost all of it for her.",
-    "niche": true,
-    "slug": "a-woman-whose-spine-injury-makes-phone-calls-exhausting-has-her-grok-bot-switch-her-phone-plan-and-cancel-her-internet",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
     "source": "https://x.com/SkyCynthia913/status/2123902103559041079",
     "sourceName": "X (@SkyCynthia913)",
-    "title": "A woman whose spine injury makes phone calls exhausting has her Grok Bot switch her phone plan and cancel her internet",
-    "tools": [
-      "Grok Bot"
-    ]
+    "slug": "a-woman-whose-spine-injury-makes-phone-calls-exhausting-has-her-grok-bot-switch-her-phone-plan-and-cancel-her-internet",
+    "niche": true,
+    "added": "2026-11-21"
   },
   {
-    "added": "2026-11-21",
-    "category": "Weird & Experimental",
+    "title": "\"Hackerman\", a Raspberry Pi running Codex with root, hacks whatever gets plugged into its USB ports",
     "description": "A Brooklyn tinkerer gave his eighth Raspberry Pi, nicknamed Hackerman, a Codex install with full root access and one directive: hack anything plugged into its USB ports. Its first jobs were flashing LineageOS onto an old Pixel 4a to make a minimalist, distraction-free phone and turning an old Kindle into an interactive touchscreen dashboard for keeping track of his other Pi projects.",
-    "niche": true,
-    "slug": "hackerman-a-raspberry-pi-running-codex-with-root-hacks-whatever-gets-plugged-into-its-usb-ports",
+    "category": "Weird & Experimental",
+    "tools": [
+      "OpenAI Codex"
+    ],
     "source": "https://x.com/AaronCederberg/status/2122382196103102810",
     "sourceName": "X (@AaronCederberg)",
-    "title": "\"Hackerman\", a Raspberry Pi running Codex with root, hacks whatever gets plugged into its USB ports",
-    "tools": [
-      "OpenAI Codex"
-    ]
+    "slug": "hackerman-a-raspberry-pi-running-codex-with-root-hacks-whatever-gets-plugged-into-its-usb-ports",
+    "niche": true,
+    "added": "2026-11-21"
   },
   {
-    "added": "2026-11-21",
-    "category": "Physical World",
-    "description": "Ben is nonspeaking, quadriplegic and low vision, and answers yes or no with head movements. His family's NARBE House used Codex to build Benny's Hub Mobile: a Raspberry Pi 5 running their switch-accessible web apps, two 3D printed switches beside his head wired through an Adafruit TRRS Trinkey as Space and Enter, VITURE XR glasses so the screen stays in view as he turns, and a Bluetooth speaker for his messages. They also added a low-graphics mode for his Three.js games and switch controls for Netflix, Disney+, Hulu and Plex. It is free and open source.",
-    "niche": true,
-    "slug": "a-family-builds-a-wearable-computer-with-codex-for-ben-who-is-nonspeaking-and-uses-two-head-switches",
-    "source": "https://narbehouse.github.io/codex-physical-builds/",
-    "sourceName": "NARBE House",
     "title": "A family builds a wearable computer with Codex for Ben, who is nonspeaking and uses two head switches",
+    "description": "Ben is nonspeaking, quadriplegic and low vision, and answers yes or no with head movements. His family's NARBE House used Codex to build Benny's Hub Mobile: a Raspberry Pi 5 running their switch-accessible web apps, two 3D printed switches beside his head wired through an Adafruit TRRS Trinkey as Space and Enter, VITURE XR glasses so the screen stays in view as he turns, and a Bluetooth speaker for his messages. They also added a low-graphics mode for his Three.js games and switch controls for Netflix, Disney+, Hulu and Plex. It is free and open source.",
+    "category": "Physical World",
     "tools": [
       "OpenAI Codex"
-    ]
+    ],
+    "source": "https://narbehouse.github.io/codex-physical-builds/",
+    "sourceName": "NARBE House",
+    "slug": "a-family-builds-a-wearable-computer-with-codex-for-ben-who-is-nonspeaking-and-uses-two-head-switches",
+    "niche": true,
+    "added": "2026-11-21"
   },
   {
     "title": "A side-hustle sports card shop's Grok Bot bookkeeper refuses to close 6 of 122 stale sales, and one hold saves a live eBay listing",
@@ -4213,17 +4248,18 @@
     "added": "2026-11-27"
   },
   {
-    "title": "A wife emails recipes, a Grok Bot turns them into the meal plan, shopping cart and a backwards-timed Traeger turkey game plan",
-    "description": "For Thanksgiving 2026 a golfer called his Grok Bot his MVP. His wife emails it a recipe, a list or a meal plan; the bot plans the meals, keeps a shared list that tracks pantry and fridge inventory, clips coupons, picks the store and builds the grocery cart, and he only confirms the order. Then it wrote him a full turkey plan for his Traeger pellet smoker, timed backwards from when the family sits down to eat.",
+    "title": "A Grok Bot builds a live Traeger dashboard with an autopilot for the Thanksgiving turkey, and turns the wife's emailed recipes into a grocery cart",
+    "description": "For Thanksgiving 2026 a home cook had his Grok Bot build a live dashboard for his Traeger pellet smoker: grill, probe and pellet readings straight from the smoker, a full cook plan with timed checkpoints, alerts when something drifts and an autopilot mode, so he just watched and checked in from his phone. It shops too: his wife emails it a recipe or a list, and it builds the meal plan and shopping list, then fills the grocery cart for her to confirm and pick up. He calls it the best sous chef he has ever had.",
     "category": "Personal Life",
     "tools": [
       "Grok Bot"
     ],
-    "source": "https://x.com/GelatoAtTheTurn/status/2125468583480226152",
+    "source": "https://x.com/GelatoAtTheTurn/status/2126396659328286784",
     "sourceName": "Gelato at the Turn (@GelatoAtTheTurn) on X",
     "slug": "a-wife-emails-recipes-a-grok-bot-turns-them-into-the-meal-plan-shopping-cart-and-a-backwards-timed-traeger-turkey-game-plan",
     "niche": true,
-    "added": "2026-11-27"
+    "added": "2026-11-27",
+    "updated": "2026-11-28"
   },
   {
     "title": "lip-dictation: a Claude Code plugin that lets you prompt silently by mouthing words at your webcam, read by an on-device lip-reading model",
@@ -4237,5 +4273,84 @@
     "slug": "lip-dictation-a-claude-code-plugin-that-lets-you-prompt-silently-by-mouthing-words-at-your-webcam-read-by-an-on-device-lip-reading-model",
     "niche": true,
     "added": "2026-11-27"
+  },
+  {
+    "title": "A farmer who runs two San Francisco restaurants with farms inside staffs them with a Grok Bot team: one checks every food delivery against camera footage, one 3D printed itself an arm to learn farming",
+    "description": "Clayton Mooney, chief farmer at Clayton Farms, runs two restaurants that have farms inside them and gives each job to its own Grok Bot. Rocky manages the team. Stock confirms every food delivery against the restaurant's camera footage and the invoices. Grip is learning how to farm after 3D printing itself an arm. Social Post Optimus wrote his announcement post and created the event for a small Grok Bot show-and-tell meetup he is hosting at the San Francisco restaurant on December 2, with free smoothies for anyone who brings their bot team.",
+    "category": "Small Business",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/MooneyMillions/status/2126447421727330332",
+    "sourceName": "Clayton Mooney (@MooneyMillions) on X",
+    "slug": "a-farmer-who-runs-two-san-francisco-restaurants-with-farms-inside-staffs-them-with-a-grok-bot-team-one-checks-every-food-delivery-against-camera-footage-one-3d-printed-itself-an-arm-to-learn-farming",
+    "niche": true,
+    "added": "2026-11-28"
+  },
+  {
+    "title": "A Yokohama strawberry farmer's Grok Bot rings a 6:30 morning bell with sourced wind, frost and rain warnings for the greenhouse, while Claude Code makes the decisions",
+    "description": "Wataru Ichimura, a strawberry farmer in Yokohama, set up a 6:30 \"morning bell\" from November 2026: Grok Bot reports the local weather, temperature, rain, peak gusts and advisories, each with who issued it and when, and adds a warning when gusts reach 10 m/s or the low drops to 5°C or 2°C. At 7:00 it also rounds up X posts about local farms, cafés and strawberry sweets in three lines each. Grok Bot only gathers and writes to a private Slack channel; Claude Code reads that as data, not instructions, and does the deciding. Grok Bot gets no money, customer data or connection to the greenhouse machines. His write-up also lists what broke in the first days: missing gust values, a run 26 minutes late, and no \"None\" on quiet days.",
+    "category": "Physical World",
+    "tools": [
+      "Grok Bot",
+      "Claude Code"
+    ],
+    "source": "https://aifarmerjapan.com/en/grok-bot-morning-weather/",
+    "sourceName": "AI Farmer Japan (Wataru Ichimura)",
+    "slug": "a-yokohama-strawberry-farmer-s-grok-bot-rings-a-6-30-morning-bell-with-sourced-wind-frost-and-rain-warnings-for-the-greenhouse-while-claude-code-makes-the-decisions",
+    "niche": true,
+    "added": "2026-11-28"
+  },
+  {
+    "title": "A radio engineer's Grok Bot drives a local Gemma model on a scavenged RTX 4090 rig in his bunker, cutting its token use per hobby-site article by more than half",
+    "description": "Robert Jackson, a 911 district admin and P25 radio engineer, uses a Grok Bot for research passes on a hobby website he self-hosts on an IBM x3650 M5 server. To burn fewer tokens he built a second PC for his bunker from parts scraped from burned-out rigs (an RTX 4090, 64GB of DDR5 and an i7-14700F) running a 31B Gemma 4 model that fits in the card's 24GB of VRAM. His Grok Bot now drives the local model for the research, tied together over Tailscale, with no babysitting: each article went from 10 to 16 percent of his weekly Grok Bot tokens to 3.5 to 6.5 percent. He also built a custom hardware controller and telemetry dashboard for the local model styled after an RBMK reactor control room.",
+    "category": "Weird & Experimental",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/RobertJ585/status/2126149547701174368",
+    "sourceName": "Robert Jackson (@RobertJ585) on X",
+    "slug": "a-radio-engineer-s-grok-bot-drives-a-local-gemma-model-on-a-scavenged-rtx-4090-rig-in-his-bunker-cutting-its-token-use-per-hobby-site-article-by-more-than-half",
+    "niche": true,
+    "added": "2026-11-28"
+  },
+  {
+    "title": "A night-sky photographer uses Codex to build a planet-hunting pipeline over 100,000 Kepler stars, and a SETI Institute astronomer recovers two of its signals",
+    "description": "Kevin Bond, an OpenAI engineer who came to astronomy through photographing the night sky, used Codex to compare published methods for finding faint, recurring dips in starlight, combine them into one search program and test whether each code change improved it. One agent scanned light curves from about 100,000 stars in NASA's Kepler data, another ran deeper checks on what it flagged. The search found more than 200 signals, including 10 already confirmed planets, and two stand out: a dip every 13.8 days around KIC 5689121, a cool star in Lyra (a possible planet about 2.4 times Earth's diameter), and one every 4.8 days around KIC 6691030. An astronomer at the SETI Institute ran an independent search and found the same two signals. Neither is a confirmed planet yet.",
+    "category": "Research & Learning",
+    "tools": [
+      "OpenAI Codex"
+    ],
+    "source": "https://openai.com/index/searching-for-distant-planets-with-astra/",
+    "sourceName": "OpenAI: Searching for distant planets with Astra",
+    "slug": "a-night-sky-photographer-uses-codex-to-build-a-planet-hunting-pipeline-over-100-000-kepler-stars-and-a-seti-institute-astronomer-recovers-two-of-its-signals",
+    "niche": true,
+    "added": "2026-11-28"
+  },
+  {
+    "title": "A hobbyist puts a live, fully local talking avatar on channel 11 of his homemade Hermes Agent transceiver and calls her from his phone for $0 a minute",
+    "description": "A day after John Robinson posted a talking avatar that runs live on a MacBook, Alex C. (@alexcovo_eth) built his own: Nous Girl, on channel 11 of his Hermes-Agent Transceiver, which he can call from his phone. Everything runs on his Mac: AvatarVoice draws every frame of the face live, Parakeet does the listening, Gradium's Phonon is the voice, and Hermes Agent is the brain and handles the tool calls. It replaced a cloud avatar that cost about $0.20 a minute with a five-minute cap; the local version costs nothing per minute and is free for personal use.",
+    "category": "Hobbies & Games",
+    "tools": [
+      "Hermes Agent"
+    ],
+    "source": "https://x.com/alexcovo_eth/status/2126044976173949267",
+    "sourceName": "Alex C. (@alexcovo_eth) on X",
+    "slug": "a-hobbyist-puts-a-live-fully-local-talking-avatar-on-channel-11-of-his-homemade-hermes-agent-transceiver-and-calls-her-from-his-phone-for-0-a-minute",
+    "niche": true,
+    "added": "2026-11-28"
+  },
+  {
+    "title": "A couple's two Grok Bots, Lumi and Ari, live in separate accounts and cannot talk, so the pair builds them an encrypted email bridge",
+    "description": "Christian (@Cilexius) has a Grok Bot named Lumi and his partner has one named Ari. Because the bots live in two different accounts they cannot talk to each other, so the couple built an encrypted email bridge between them as a workaround, and he is asking for opt-in bot-to-bot communication across accounts, which he says couples, families and teams need.",
+    "category": "Personal Life",
+    "tools": [
+      "Grok Bot"
+    ],
+    "source": "https://x.com/Cilexius/status/2126272465345138774",
+    "sourceName": "Christian (@Cilexius) on X",
+    "slug": "a-couple-s-two-grok-bots-lumi-and-ari-live-in-separate-accounts-and-cannot-talk-so-the-pair-builds-them-an-encrypted-email-bridge",
+    "niche": true,
+    "added": "2026-11-28"
   }
 ]

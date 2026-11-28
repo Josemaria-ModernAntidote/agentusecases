@@ -10,7 +10,8 @@ if (!KEY) throw new Error('IndexNow key file missing from public/');
 
 const items = JSON.parse(readFileSync(new URL('../src/data/usecases.json', import.meta.url), 'utf8'));
 const day = process.argv[2] || items.map(i => i.added).sort().at(-1);
-const fresh = items.filter(i => i.added === day);
+// Entries added that day, plus older entries corrected that day (their "updated" date), so a re-sourced page is recrawled too.
+const fresh = items.filter(i => i.added === day || i.updated === day);
 // Same rule as slugify() in src/lib/site.ts (& becomes "and"), so category URLs such as /categories/hobbies-and-games/ match the site.
 const slug = s => s.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const paths = new Set(['/', '/new/', '/niche/', '/use-cases/', '/stats/', '/sources/', '/authors/', '/llms.txt', '/llms-full.txt', `/archive/${day.slice(0, 7)}/`]);
@@ -30,7 +31,7 @@ for (const i of fresh) {
 const feedUrls = [...feeds].map(p => `https://${HOST}${p}`);
 if (process.env.DRY) { console.log(JSON.stringify({ ...body, websub: feedUrls }, null, 2)); process.exit(0); }
 const res = await fetch('https://api.indexnow.org/indexnow', { method: 'POST', headers: { 'content-type': 'application/json; charset=utf-8' }, body: JSON.stringify(body) });
-console.log(`IndexNow ${res.status} ${res.statusText}: ${urlList.length} URLs for ${day} (${fresh.length} new entries)`);
+console.log(`IndexNow ${res.status} ${res.statusText}: ${urlList.length} URLs for ${day} (${fresh.filter(i => i.added === day).length} new, ${fresh.filter(i => i.added !== day).length} corrected)`);
 let ok = 0;
 for (const u of feedUrls) {
   const r = await fetch(HUB, { method: 'POST', headers: { 'content-type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams({ 'hub.mode': 'publish', 'hub.url': u }) });

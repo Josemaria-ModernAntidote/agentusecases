@@ -18,6 +18,7 @@ export async function GET() {
       agents: d.tools,
       niche: !!d.niche,
       added: d.added || null,
+      updated: (d as any).updated || d.added || null,
       url: abs(`/use-cases/${d.slug}/`),
       markdown: abs(`/use-cases/${d.slug}.md`),
       json: abs(`/use-cases/${d.slug}.json`),

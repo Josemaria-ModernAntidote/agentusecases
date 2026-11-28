@@ -10,11 +10,12 @@ if (existsSync(root)) {
   const added = new Map(data.filter(d => d.added).map(d => [d.slug, d.added]));
   let updated = new Date().toISOString().slice(0, 10);
   try { updated = execSync('git log -1 --format=%cs -- src/data/usecases.json', { encoding: 'utf8' }).trim() || updated; } catch {}
+  const modified = new Map(data.filter(d => d.updated || d.added).map(d => [d.slug, d.updated || d.added]));
   const monthLast = ym => [...added.values()].filter(a => a.startsWith(ym)).sort().pop();
   const files = [];
   const walk = dir => { for (const n of readdirSync(dir)) { const p = `${dir}/${n}`; if (statSync(p).isDirectory()) walk(p); else if (n.endsWith('.md')) files.push(p.slice(root.length)); } };
   walk(root);
-  const lastmod = p => { const u = p.match(/^\/use-cases\/([^/]+)\.md$/); if (u) return added.get(u[1]) || updated; const a = p.match(/^\/archive\/(\d{4}-\d{2})\.md$/); return (a && monthLast(a[1])) || updated; };
+  const lastmod = p => { const u = p.match(/^\/use-cases\/([^/]+)\.md$/); if (u) return modified.get(u[1]) || updated; const a = p.match(/^\/archive\/(\d{4}-\d{2})\.md$/); return (a && monthLast(a[1])) || updated; };
   const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
   files.sort();
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${files.map(p => `<url><loc>${esc(SITE + p)}</loc><lastmod>${lastmod(p)}</lastmod></url>`).join('\n')}\n</urlset>\n`;
